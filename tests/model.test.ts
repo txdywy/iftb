@@ -122,6 +122,7 @@ function makeLeague(standings: TeamStanding[]): LeagueSnapshot {
     name: '英超',
     country: 'England',
     code: 'PL',
+    emblem: 'assets/leagues/epl.svg',
     season: '2025-2026',
     standings,
     matches: standings.slice(0, -1).map((standing, index) => match(index + 1, standing.teamId, standings[index + 1].teamId)),

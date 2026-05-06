@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { Chart } from '../components/Chart';
 import type { ChartOption } from '../components/Chart';
 import { Delta } from '../components/Delta';
+import { LeagueEmblem } from '../components/LeagueEmblem';
 import { ProbabilityBar } from '../components/ProbabilityBar';
 import { TeamCrest } from '../components/TeamCrest';
 import { formatPercent } from '../lib/format';
@@ -46,6 +47,22 @@ export function Dashboard({ snapshot }: { snapshot: Snapshot }) {
 
   return (
     <div className="space-y-6">
+      <section className="relative overflow-hidden rounded-[8px] border border-line/20 bg-pitch-900/78 p-5 shadow-glow">
+        <div className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-line/70 to-transparent" />
+        <div className="grid gap-5 lg:grid-cols-[1fr_auto] lg:items-center">
+          <div>
+            <h1 className="text-2xl font-semibold text-emerald-50 sm:text-3xl">五大联赛争冠雷达</h1>
+            <p className="mt-2 max-w-2xl text-sm leading-6 text-emerald-50/58">
+              汇总五大联赛实时积分、赛程强度和近期走势，用同一套规则模型追踪冠军概率变化。
+            </p>
+          </div>
+          <div className="grid grid-cols-5 gap-2">
+            {snapshot.leagues.map((league) => (
+              <LeagueEmblem key={league.id} league={league} size="sm" />
+            ))}
+          </div>
+        </div>
+      </section>
       <section className="grid gap-4 lg:grid-cols-5">
         {snapshot.leagues.map((league) => (
           <LeagueCard key={league.id} league={league} />
@@ -77,14 +94,30 @@ function LeagueCard({ league }: { league: Snapshot['leagues'][number] }) {
   return (
     <Link
       to={`/leagues/${league.id}`}
-      className="group rounded-[8px] border border-white/10 bg-pitch-900/78 p-4 transition hover:border-line/35 hover:bg-pitch-850/86"
+      className="group relative overflow-hidden rounded-[8px] border border-white/10 bg-pitch-900/78 p-4 transition hover:border-line/35 hover:bg-pitch-850/86"
     >
+      <div className="absolute -right-5 -top-5 opacity-10 transition group-hover:opacity-20">
+        <LeagueEmblem league={league} size="lg" muted />
+      </div>
       <div className="mb-4 flex items-center justify-between">
-        <div>
-          <h2 className="text-lg font-semibold text-emerald-50">{league.name}</h2>
-          <p className="mt-1 text-xs text-emerald-50/50">{league.country} · {league.season}</p>
+        <div className="flex min-w-0 items-center gap-3">
+          <LeagueEmblem league={league} size="sm" />
+          <div className="min-w-0">
+            <h2 className="truncate text-lg font-semibold text-emerald-50">{league.name}</h2>
+            <p className="mt-1 truncate text-xs text-emerald-50/50">{league.country} · {league.season}</p>
+          </div>
         </div>
         <ArrowRight size={17} className="text-emerald-50/35 transition group-hover:translate-x-1 group-hover:text-line" />
+      </div>
+      <div className="mb-4 grid grid-cols-2 gap-2 border-y border-white/10 py-3 text-xs">
+        <div>
+          <p className="text-emerald-50/42">争冠队</p>
+          <p className="mt-1 font-mono text-emerald-50">{league.topContenders.length}</p>
+        </div>
+        <div>
+          <p className="text-emerald-50/42">场次</p>
+          <p className="mt-1 font-mono text-emerald-50">{league.matches.length}</p>
+        </div>
       </div>
       {leader ? (
         <>

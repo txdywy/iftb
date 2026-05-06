@@ -66,6 +66,7 @@ export interface LeagueSnapshot {
   name: string;
   country: string;
   code: string;
+  emblem?: string;
   season: string;
   standings: TeamStanding[];
   matches: Match[];

@@ -18,6 +18,7 @@ function validateLeague(league: LeagueSnapshot): string[] {
   const errors: string[] = [];
   const prefix = `${league.id ?? 'unknown'}:`;
   if (!league.id || !league.name || !league.code) errors.push(`${prefix} league id/name/code required`);
+  if (league.emblem !== undefined && typeof league.emblem !== 'string') errors.push(`${prefix} emblem must be a string`);
   if (!Array.isArray(league.standings) || league.standings.length === 0) errors.push(`${prefix} standings required`);
   if (!Array.isArray(league.matches)) errors.push(`${prefix} matches must be an array`);
   if (!Array.isArray(league.titleProbabilities)) errors.push(`${prefix} titleProbabilities required`);

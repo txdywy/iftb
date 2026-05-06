@@ -37,9 +37,14 @@ jobs:
         if: env.FOOTBALL_DATA_TOKEN != ''
         run: npm run fetch:data
       - name: Use committed data snapshot
-        if: env.FOOTBALL_DATA_TOKEN == ''
+        if: env.FOOTBALL_DATA_TOKEN == '' && github.event_name == 'push'
         run: |
           echo "::warning::FOOTBALL_DATA_TOKEN is not configured; using committed public/data/latest.json"
+      - name: Require token for scheduled data refresh
+        if: env.FOOTBALL_DATA_TOKEN == '' && github.event_name != 'push'
+        run: |
+          echo "::error::FOOTBALL_DATA_TOKEN is required for scheduled or manual real data refresh"
+          exit 1
       - run: npm run validate:data
       - id: hash
         run: echo "data_hash=$(sha256sum public/data/latest.json | cut -d ' ' -f1)" >> "$GITHUB_OUTPUT"

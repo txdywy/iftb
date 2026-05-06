@@ -4,6 +4,7 @@ import { useParams } from 'react-router-dom';
 import { Chart } from '../components/Chart';
 import type { ChartOption } from '../components/Chart';
 import { Delta } from '../components/Delta';
+import { LeagueEmblem } from '../components/LeagueEmblem';
 import { ProbabilityBar } from '../components/ProbabilityBar';
 import { TeamCrest } from '../components/TeamCrest';
 import { formatPercent } from '../lib/format';
@@ -24,17 +25,28 @@ export function LeaguePage({ snapshot }: { snapshot: Snapshot }) {
 
   return (
     <div className="space-y-6">
-      <section className="rounded-[8px] border border-line/20 bg-pitch-900/75 p-5 shadow-glow">
-        <div className="flex flex-col justify-between gap-4 md:flex-row md:items-end">
-          <div>
-            <h1 className="text-3xl font-semibold text-emerald-50">{league.name}</h1>
-            <p className="mt-2 text-sm text-emerald-50/58">
-              {league.country} · {league.season} · {league.matches.length} matches tracked
-            </p>
+      <section className="relative overflow-hidden rounded-[8px] border border-line/20 bg-pitch-900/75 p-5 shadow-glow">
+        <div className="absolute -right-8 -top-10 opacity-10">
+          <LeagueEmblem league={league} size="lg" muted />
+        </div>
+        <div className="relative flex flex-col justify-between gap-4 md:flex-row md:items-end">
+          <div className="flex items-center gap-4">
+            <LeagueEmblem league={league} size="lg" />
+            <div>
+              <h1 className="text-3xl font-semibold text-emerald-50">{league.name}</h1>
+              <p className="mt-2 text-sm text-emerald-50/58">
+                {league.country} · {league.season} · {league.matches.length} matches tracked
+              </p>
+            </div>
           </div>
           <div className="rounded-[6px] border border-white/10 bg-white/[0.045] px-3 py-2 text-xs text-emerald-50/58">
             Data quality: <span className="font-mono text-line">{league.dataQuality.status}</span>
           </div>
+        </div>
+        <div className="relative mt-5 grid gap-2 sm:grid-cols-3">
+          <Metric label="榜首概率" value={league.topContenders[0] ? formatPercent(league.topContenders[0].probability) : '—'} />
+          <Metric label="争冠梯队" value={`${league.topContenders.length}`} />
+          <Metric label="积分榜球队" value={`${league.standings.length}`} />
         </div>
         {league.dataQuality.warnings.length ? (
           <div className="mt-4 rounded-[6px] border border-warning/25 bg-warning/10 p-3 text-sm text-yellow-100">
@@ -54,6 +66,15 @@ export function LeaguePage({ snapshot }: { snapshot: Snapshot }) {
       </section>
 
       {selectedTeam ? <TeamDrawer team={selectedTeam} standing={league.standings.find((item) => item.teamId === selectedTeam.teamId)} onClose={() => setSelectedTeamId(null)} /> : null}
+    </div>
+  );
+}
+
+function Metric({ label, value }: { label: string; value: string }) {
+  return (
+    <div className="rounded-[6px] border border-white/10 bg-white/[0.04] p-3">
+      <p className="text-xs text-emerald-50/45">{label}</p>
+      <p className="mt-1 font-mono text-lg text-line">{value}</p>
     </div>
   );
 }

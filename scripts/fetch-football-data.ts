@@ -1,9 +1,21 @@
 import { LEAGUES } from '../src/data/leagues';
 import type { LeagueMeta } from '../src/data/leagues';
 import type { LeagueSnapshot, Match, TeamStanding } from '../src/types';
-import { currentSeasonLabel, seasonStartYear } from './shared';
+import { LEAGUE_ASSET_ROOT, currentSeasonLabel, seasonStartYear } from './shared';
+import { mkdir, writeFile } from 'node:fs/promises';
+import path from 'node:path';
+
+interface FootballDataCompetitionResponse {
+  id?: number;
+  name?: string;
+  code?: string;
+  emblem?: string;
+  area?: { name?: string };
+  currentSeason?: { startDate?: string; endDate?: string };
+}
 
 interface FootballDataStandingResponse {
+  competition?: FootballDataCompetitionResponse;
   season?: { startDate?: string; endDate?: string };
   standings?: Array<{
     type: string;
@@ -36,28 +48,37 @@ interface FootballDataMatchesResponse {
 }
 
 export async function fetchFootballDataLeagues(token: string, now = new Date()): Promise<LeagueSnapshot[]> {
-  return Promise.all(LEAGUES.map((league) => fetchLeague(league, token, now)));
+  const snapshots: LeagueSnapshot[] = [];
+  for (const league of LEAGUES) {
+    snapshots.push(await fetchLeague(league, token, now));
+  }
+  return snapshots;
 }
 
 async function fetchLeague(league: LeagueMeta, token: string, now: Date): Promise<LeagueSnapshot> {
   const season = seasonStartYear(now);
   const warnings: string[] = [];
-  const [standingResponse, matchesResponse] = await Promise.all([
-    requestFootballData<FootballDataStandingResponse>(`/competitions/${league.code}/standings?season=${season}`, token),
-    requestFootballData<FootballDataMatchesResponse>(`/competitions/${league.code}/matches?season=${season}`, token)
-  ]);
+  const standingResponse = await requestFootballData<FootballDataStandingResponse>(`/competitions/${league.code}/standings?season=${season}`, token);
+  const matchesResponse = await requestFootballData<FootballDataMatchesResponse>(`/competitions/${league.code}/matches?season=${season}`, token);
+  const competitionResponse = standingResponse.competition;
 
   const standings = adaptStandings(standingResponse);
   const matches = adaptMatches(matchesResponse);
+  const emblem = await resolveLeagueEmblem(league, competitionResponse?.emblem, warnings);
   if (!standings.length) warnings.push('No standings returned');
   if (!matches.length) warnings.push('No matches returned');
 
   return {
     id: league.id,
-    name: league.name,
-    country: league.country,
+    name: competitionResponse?.name ?? league.name,
+    country: competitionResponse?.area?.name ?? league.country,
     code: league.code,
-    season: standingResponse.season?.startDate ? seasonLabelFromDate(standingResponse.season.startDate) : currentSeasonLabel(now),
+    emblem,
+    season: standingResponse.season?.startDate
+      ? seasonLabelFromDate(standingResponse.season.startDate)
+      : competitionResponse?.currentSeason?.startDate
+        ? seasonLabelFromDate(competitionResponse.currentSeason.startDate)
+        : currentSeasonLabel(now),
     standings,
     matches,
     titleProbabilities: [],
@@ -71,14 +92,72 @@ async function fetchLeague(league: LeagueMeta, token: string, now: Date): Promis
   };
 }
 
+async function resolveLeagueEmblem(league: LeagueMeta, emblemUrl: string | undefined, warnings: string[]): Promise<string> {
+  const fallback = `assets/leagues/${league.id}.svg`;
+  if (!emblemUrl) {
+    warnings.push('No competition emblem returned');
+    return fallback;
+  }
+
+  try {
+    const response = await fetch(emblemUrl);
+    if (!response.ok) {
+      warnings.push(`Competition emblem download failed: ${response.status}`);
+      return fallback;
+    }
+
+    const contentType = response.headers.get('content-type') ?? '';
+    const extension = extensionFor(contentType, emblemUrl);
+    const fileName = `${league.id}${extension}`;
+    await mkdir(LEAGUE_ASSET_ROOT, { recursive: true });
+    await writeFile(path.join(LEAGUE_ASSET_ROOT, fileName), Buffer.from(await response.arrayBuffer()));
+    return `assets/leagues/${fileName}`;
+  } catch (error) {
+    warnings.push(`Competition emblem download failed: ${error instanceof Error ? error.message : 'unknown error'}`);
+    return fallback;
+  }
+}
+
+function extensionFor(contentType: string, url: string): string {
+  if (contentType.includes('svg')) return '.svg';
+  if (contentType.includes('png')) return '.png';
+  if (contentType.includes('jpeg') || contentType.includes('jpg')) return '.jpg';
+  const pathname = new URL(url).pathname.toLowerCase();
+  if (pathname.endsWith('.png')) return '.png';
+  if (pathname.endsWith('.jpg') || pathname.endsWith('.jpeg')) return '.jpg';
+  return '.svg';
+}
+
+let lastRequestAt = 0;
+
 async function requestFootballData<T>(pathname: string, token: string): Promise<T> {
+  await waitForRateLimitSlot();
   const response = await fetch(`https://api.football-data.org/v4${pathname}`, {
     headers: { 'X-Auth-Token': token }
   });
+  lastRequestAt = Date.now();
+  if (response.status === 429) {
+    const resetSeconds = Number(response.headers.get('X-RequestCounter-Reset') ?? 60);
+    await sleep((Number.isFinite(resetSeconds) ? resetSeconds : 60) * 1000 + 1000);
+    return requestFootballData<T>(pathname, token);
+  }
   if (!response.ok) {
     throw new Error(`football-data request failed ${response.status}: ${pathname}`);
   }
   return response.json() as Promise<T>;
+}
+
+async function waitForRateLimitSlot(): Promise<void> {
+  const delay = Number(process.env.FOOTBALL_DATA_REQUEST_DELAY_MS ?? 6500);
+  if (!Number.isFinite(delay) || delay <= 0) return;
+  const elapsed = Date.now() - lastRequestAt;
+  if (elapsed < delay) {
+    await sleep(delay - elapsed);
+  }
+}
+
+function sleep(ms: number): Promise<void> {
+  return new Promise((resolve) => setTimeout(resolve, ms));
 }
 
 export function adaptStandings(response: FootballDataStandingResponse): TeamStanding[] {
