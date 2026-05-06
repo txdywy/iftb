@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="IFTB">
+  <defs>
+    <linearGradient id="bg" x1="8" y1="5" x2="58" y2="60" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#10251f"/>
+      <stop offset="1" stop-color="#07100d"/>
+    </linearGradient>
+    <linearGradient id="line" x1="14" y1="46" x2="50" y2="18" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#6bf2b8"/>
+      <stop offset="1" stop-color="#52d9ff"/>
+    </linearGradient>
+  </defs>
+  <rect x="3" y="3" width="58" height="58" rx="13" fill="url(#bg)"/>
+  <rect x="3" y="3" width="58" height="58" rx="13" fill="none" stroke="#6bf2b8" stroke-opacity=".38" stroke-width="2"/>
+  <path d="M16 44h32M22 39l4-16h12l4 16M25 23c0-5 14-5 14 0" fill="none" stroke="#6bf2b8" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M18 34c8 0 10-11 16-11 5 0 6 7 12 7" fill="none" stroke="url(#line)" stroke-width="3" stroke-linecap="round"/>
+  <circle cx="18" cy="34" r="3" fill="#52d9ff"/>
+  <circle cx="34" cy="23" r="3" fill="#6bf2b8"/>
+  <circle cx="46" cy="30" r="3" fill="#52d9ff"/>
+</svg>
