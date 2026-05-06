@@ -9,6 +9,7 @@ export const DATA_ROOT = path.join(process.cwd(), 'public', 'data');
 export const LATEST_PATH = path.join(DATA_ROOT, 'latest.json');
 export const HISTORY_INDEX_PATH = path.join(DATA_ROOT, 'history', 'index.json');
 export const LEAGUE_ASSET_ROOT = path.join(process.cwd(), 'public', 'assets', 'leagues');
+export const TEAM_ASSET_ROOT = path.join(process.cwd(), 'public', 'assets', 'teams');
 
 export function currentSeasonLabel(now = new Date()): string {
   const year = now.getUTCMonth() >= 6 ? now.getUTCFullYear() : now.getUTCFullYear() - 1;

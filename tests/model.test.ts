@@ -5,6 +5,7 @@ import { calculateLeagueProbabilities, calculateSnapshotProbabilities } from '..
 import { adaptMatches, adaptStandings } from '../scripts/fetch-football-data';
 import { sampleSnapshot } from '../scripts/shared';
 import { validateSnapshot } from '../scripts/validate-data';
+import { contendersTrend, leagueLeaderTrend } from '../src/lib/history';
 
 describe('league mapping', () => {
   it('maps the five target leagues to football-data codes', () => {
@@ -15,6 +16,24 @@ describe('league mapping', () => {
       ['seriea', 'SA'],
       ['ligue1', 'FL1']
     ]);
+  });
+});
+
+describe('history trend helpers', () => {
+  it('builds league leader and contender trend series from snapshots', () => {
+    const first = calculateSnapshotProbabilities(sampleSnapshot(new Date('2026-05-06T00:00:00Z')));
+    const secondBase = sampleSnapshot(new Date('2026-05-07T00:00:00Z'));
+    secondBase.leagues[0].standings[0].points += 3;
+    const second = calculateSnapshotProbabilities(secondBase, [first]);
+    const leaderTrend = leagueLeaderTrend([first, second]);
+    expect(leaderTrend.labels).toHaveLength(2);
+    expect(leaderTrend.series).toHaveLength(5);
+    expect(leaderTrend.series[0].values).toHaveLength(2);
+
+    const teamIds = second.leagues[0].titleProbabilities.slice(0, 2).map((team) => team.teamId);
+    const trend = contendersTrend([first, second], 'epl', teamIds);
+    expect(trend.series).toHaveLength(2);
+    expect(trend.series[0].values.every((value) => value === null || Number.isFinite(value))).toBe(true);
   });
 });
 

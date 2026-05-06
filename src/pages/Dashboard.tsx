@@ -7,9 +7,10 @@ import { LeagueEmblem } from '../components/LeagueEmblem';
 import { ProbabilityBar } from '../components/ProbabilityBar';
 import { TeamCrest } from '../components/TeamCrest';
 import { formatPercent } from '../lib/format';
+import { leagueLeaderTrend } from '../lib/history';
 import type { Snapshot, TitleProbability } from '../types';
 
-export function Dashboard({ snapshot }: { snapshot: Snapshot }) {
+export function Dashboard({ snapshot, historySnapshots }: { snapshot: Snapshot; historySnapshots: Snapshot[] }) {
   const movers = snapshot.leagues
     .flatMap((league) =>
       league.titleProbabilities.slice(0, 8).map((team) => ({
@@ -21,29 +22,8 @@ export function Dashboard({ snapshot }: { snapshot: Snapshot }) {
     .sort((a, b) => Math.abs(b.probabilityDeltaPrevious ?? 0) - Math.abs(a.probabilityDeltaPrevious ?? 0))
     .slice(0, 8);
 
-  const option: ChartOption = {
-    tooltip: { trigger: 'axis' as const },
-    legend: { top: 0, textStyle: { color: '#b8d5ca' } },
-    grid: { left: 34, right: 12, top: 48, bottom: 32 },
-    xAxis: {
-      type: 'category' as const,
-      data: snapshot.leagues.map((league) => league.name)
-    },
-    yAxis: {
-      type: 'value' as const,
-      axisLabel: { formatter: (value: number) => `${value}%` },
-      max: 100
-    },
-    series: [
-      {
-        name: '榜首概率',
-        type: 'bar' as const,
-        data: snapshot.leagues.map((league) => Math.round((league.topContenders[0]?.probability ?? 0) * 1000) / 10),
-        barWidth: 24,
-        itemStyle: { borderRadius: [4, 4, 0, 0] }
-      }
-    ]
-  };
+  const hasTrend = historySnapshots.length > 1;
+  const option = hasTrend ? leaderTrendOption(historySnapshots) : leaderBarOption(snapshot);
 
   return (
     <div className="space-y-6">
@@ -71,7 +51,12 @@ export function Dashboard({ snapshot }: { snapshot: Snapshot }) {
       <section className="grid gap-6 lg:grid-cols-[1.35fr_0.65fr]">
         <div className="rounded-[8px] border border-white/10 bg-pitch-900/72 p-4 shadow-glow">
           <div className="mb-3 flex items-center justify-between">
-            <h2 className="text-base font-semibold text-emerald-50">五大联赛榜首概率</h2>
+            <div>
+              <h2 className="text-base font-semibold text-emerald-50">{hasTrend ? '五大联赛榜首趋势' : '五大联赛榜首概率'}</h2>
+              <p className="mt-1 text-xs text-emerald-50/45">
+                {hasTrend ? `${historySnapshots.length} 个历史快照` : '历史快照不足，先显示当前分布'}
+              </p>
+            </div>
             <TrendingUp size={18} className="text-line" />
           </div>
           <Chart option={option} />
@@ -87,6 +72,60 @@ export function Dashboard({ snapshot }: { snapshot: Snapshot }) {
       </section>
     </div>
   );
+}
+
+function leaderBarOption(snapshot: Snapshot): ChartOption {
+  return {
+    tooltip: { trigger: 'axis' as const },
+    legend: { top: 0, textStyle: { color: '#b8d5ca' } },
+    grid: { left: 34, right: 12, top: 48, bottom: 32 },
+    xAxis: {
+      type: 'category' as const,
+      data: snapshot.leagues.map((league) => league.name)
+    },
+    yAxis: {
+      type: 'value' as const,
+      axisLabel: { formatter: (value: number) => `${value}%` },
+      max: 100
+    },
+    series: [
+      {
+        name: '榜首概率',
+        type: 'bar' as const,
+        data: snapshot.leagues.map((league) => Math.round((league.topContenders[0]?.probability ?? 0) * 1000) / 10),
+        barWidth: 24,
+        itemStyle: { borderRadius: [4, 4, 0, 0] }
+      }
+    ]
+  };
+}
+
+function leaderTrendOption(historySnapshots: Snapshot[]): ChartOption {
+  const trend = leagueLeaderTrend(historySnapshots);
+  return {
+    tooltip: { trigger: 'axis' as const },
+    legend: { top: 0, textStyle: { color: '#b8d5ca' } },
+    grid: { left: 38, right: 18, top: 56, bottom: 48 },
+    dataZoom: [{ type: 'inside' as const }, { type: 'slider' as const, height: 18, bottom: 8 }],
+    xAxis: {
+      type: 'category' as const,
+      data: trend.labels,
+      boundaryGap: false
+    },
+    yAxis: {
+      type: 'value' as const,
+      axisLabel: { formatter: (value: number) => `${value}%` },
+      max: 100
+    },
+    series: trend.series.map((item) => ({
+      name: item.name,
+      type: 'line' as const,
+      data: item.values,
+      smooth: true,
+      symbolSize: 5,
+      connectNulls: true
+    }))
+  };
 }
 
 function LeagueCard({ league }: { league: Snapshot['leagues'][number] }) {

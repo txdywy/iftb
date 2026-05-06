@@ -1,7 +1,7 @@
 import { LEAGUES } from '../src/data/leagues';
 import type { LeagueMeta } from '../src/data/leagues';
 import type { LeagueSnapshot, Match, TeamStanding } from '../src/types';
-import { LEAGUE_ASSET_ROOT, currentSeasonLabel, seasonStartYear } from './shared';
+import { LEAGUE_ASSET_ROOT, TEAM_ASSET_ROOT, currentSeasonLabel, seasonStartYear } from './shared';
 import { mkdir, writeFile } from 'node:fs/promises';
 import path from 'node:path';
 
@@ -62,7 +62,7 @@ async function fetchLeague(league: LeagueMeta, token: string, now: Date): Promis
   const matchesResponse = await requestFootballData<FootballDataMatchesResponse>(`/competitions/${league.code}/matches?season=${season}`, token);
   const competitionResponse = standingResponse.competition;
 
-  const standings = adaptStandings(standingResponse);
+  const standings = await localizeTeamCrests(league, adaptStandings(standingResponse), warnings);
   const matches = adaptMatches(matchesResponse);
   const emblem = await resolveLeagueEmblem(league, competitionResponse?.emblem, warnings);
   if (!standings.length) warnings.push('No standings returned');
@@ -118,6 +118,27 @@ async function resolveLeagueEmblem(league: LeagueMeta, emblemUrl: string | undef
   }
 }
 
+async function localizeTeamCrests(league: LeagueMeta, standings: TeamStanding[], warnings: string[]): Promise<TeamStanding[]> {
+  const localized: TeamStanding[] = [];
+  for (const standing of standings) {
+    if (!standing.crest) {
+      localized.push(standing);
+      continue;
+    }
+
+    const localCrest = await downloadAsset({
+      url: standing.crest,
+      root: path.join(TEAM_ASSET_ROOT, league.id),
+      publicRoot: `assets/teams/${league.id}`,
+      basename: String(standing.teamId),
+      warningLabel: `${standing.shortName} crest`,
+      warnings
+    });
+    localized.push({ ...standing, crest: localCrest ?? standing.crest });
+  }
+  return localized;
+}
+
 function extensionFor(contentType: string, url: string): string {
   if (contentType.includes('svg')) return '.svg';
   if (contentType.includes('png')) return '.png';
@@ -126,6 +147,40 @@ function extensionFor(contentType: string, url: string): string {
   if (pathname.endsWith('.png')) return '.png';
   if (pathname.endsWith('.jpg') || pathname.endsWith('.jpeg')) return '.jpg';
   return '.svg';
+}
+
+async function downloadAsset({
+  url,
+  root,
+  publicRoot,
+  basename,
+  warningLabel,
+  warnings
+}: {
+  url: string;
+  root: string;
+  publicRoot: string;
+  basename: string;
+  warningLabel: string;
+  warnings: string[];
+}): Promise<string | null> {
+  try {
+    const response = await fetch(url);
+    if (!response.ok) {
+      warnings.push(`${warningLabel} download failed: ${response.status}`);
+      return null;
+    }
+
+    const contentType = response.headers.get('content-type') ?? '';
+    const extension = extensionFor(contentType, url);
+    const fileName = `${basename}${extension}`;
+    await mkdir(root, { recursive: true });
+    await writeFile(path.join(root, fileName), Buffer.from(await response.arrayBuffer()));
+    return `${publicRoot}/${fileName}`;
+  } catch (error) {
+    warnings.push(`${warningLabel} download failed: ${error instanceof Error ? error.message : 'unknown error'}`);
+    return null;
+  }
 }
 
 let lastRequestAt = 0;

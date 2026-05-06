@@ -8,9 +8,10 @@ import { LeagueEmblem } from '../components/LeagueEmblem';
 import { ProbabilityBar } from '../components/ProbabilityBar';
 import { TeamCrest } from '../components/TeamCrest';
 import { formatPercent } from '../lib/format';
+import { contendersTrend } from '../lib/history';
 import type { LeagueSnapshot, Snapshot, TeamStanding, TitleProbability } from '../types';
 
-export function LeaguePage({ snapshot }: { snapshot: Snapshot }) {
+export function LeaguePage({ snapshot, historySnapshots }: { snapshot: Snapshot; historySnapshots: Snapshot[] }) {
   const { leagueId } = useParams();
   const league = snapshot.leagues.find((item) => item.id === leagueId) ?? snapshot.leagues[0];
   const [selectedTeamId, setSelectedTeamId] = useState<number | null>(null);
@@ -61,8 +62,13 @@ export function LeaguePage({ snapshot }: { snapshot: Snapshot }) {
       </section>
 
       <section className="rounded-[8px] border border-white/10 bg-pitch-900/72 p-4">
-        <h2 className="mb-3 text-base font-semibold text-emerald-50">Top 5 概率分布</h2>
-        <Chart option={probabilityChartOption(league)} className="min-h-[320px]" />
+        <div className="mb-3">
+          <h2 className="text-base font-semibold text-emerald-50">{historySnapshots.length > 1 ? 'Top 5 概率趋势' : 'Top 5 概率分布'}</h2>
+          <p className="mt-1 text-xs text-emerald-50/45">
+            {historySnapshots.length > 1 ? `${historySnapshots.length} 个快照，默认追踪当前 Top 5` : '历史快照不足，先显示当前概率条形图'}
+          </p>
+        </div>
+        <Chart option={historySnapshots.length > 1 ? probabilityTrendOption(league, historySnapshots) : probabilityChartOption(league)} className="min-h-[320px]" />
       </section>
 
       {selectedTeam ? <TeamDrawer team={selectedTeam} standing={league.standings.find((item) => item.teamId === selectedTeam.teamId)} onClose={() => setSelectedTeamId(null)} /> : null}
@@ -192,15 +198,32 @@ function TeamDrawer({ team, standing, onClose }: { team: TitleProbability; stand
           <div className="space-y-3">
             {features.map(([key, value]) => (
               <div key={key} className="flex items-center justify-between gap-3 text-sm">
-                <span className="text-emerald-50/58">{key}</span>
+                <span className="text-emerald-50/58">{featureLabel(key)}</span>
                 <span className="font-mono text-emerald-50">{Number(value).toFixed(3)}</span>
               </div>
             ))}
           </div>
         </div>
+        <div className="mt-4 rounded-[8px] border border-white/10 bg-white/[0.035] p-4">
+          <h3 className="mb-2 font-semibold text-emerald-50">模型说明</h3>
+          <p className="text-sm leading-6 text-emerald-50/58">
+            规则模型综合积分效率、与榜首差距、净胜球效率、近期状态和剩余赛程强度；特征在联赛内归一化后用 softmax 转换为冠军概率。
+          </p>
+        </div>
       </aside>
     </div>
   );
+}
+
+function featureLabel(key: string): string {
+  const labels: Record<string, string> = {
+    pointsPerGame: '场均积分',
+    pointsGapAdjusted: '积分差修正',
+    goalDiffPerGame: '场均净胜球',
+    recentPpg: '近期场均积分',
+    remainingScheduleAdvantage: '剩余赛程优势'
+  };
+  return labels[key] ?? key;
 }
 
 function probabilityChartOption(league: LeagueSnapshot): ChartOption {
@@ -227,5 +250,34 @@ function probabilityChartOption(league: LeagueSnapshot): ChartOption {
         itemStyle: { borderRadius: [0, 4, 4, 0] }
       }
     ]
+  };
+}
+
+function probabilityTrendOption(league: LeagueSnapshot, historySnapshots: Snapshot[]): ChartOption {
+  const teamIds = league.titleProbabilities.slice(0, 5).map((team) => team.teamId);
+  const trend = contendersTrend(historySnapshots, league.id, teamIds);
+  return {
+    tooltip: { trigger: 'axis' as const },
+    legend: { top: 0, textStyle: { color: '#b8d5ca' } },
+    grid: { left: 42, right: 18, top: 56, bottom: 48 },
+    dataZoom: [{ type: 'inside' as const }, { type: 'slider' as const, height: 18, bottom: 8 }],
+    xAxis: {
+      type: 'category' as const,
+      data: trend.labels,
+      boundaryGap: false
+    },
+    yAxis: {
+      type: 'value' as const,
+      max: 100,
+      axisLabel: { formatter: (value: number) => `${value}%` }
+    },
+    series: trend.series.map((item) => ({
+      name: item.name,
+      type: 'line' as const,
+      data: item.values,
+      smooth: true,
+      symbolSize: 5,
+      connectNulls: true
+    }))
   };
 }

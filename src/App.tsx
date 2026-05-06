@@ -1,20 +1,23 @@
 import { useEffect, useMemo, useState } from 'react';
 import { Navigate, Route, Routes } from 'react-router-dom';
 import { AppShell } from './components/AppShell';
-import { loadLatestSnapshot } from './lib/data';
+import { loadLatestSnapshot, loadRecentSnapshots } from './lib/data';
 import { Dashboard } from './pages/Dashboard';
 import { LeaguePage } from './pages/LeaguePage';
 import type { Snapshot } from './types';
 
 export default function App() {
   const [snapshot, setSnapshot] = useState<Snapshot | null>(null);
+  const [historySnapshots, setHistorySnapshots] = useState<Snapshot[]>([]);
   const [error, setError] = useState<string | null>(null);
 
   useEffect(() => {
     let active = true;
-    loadLatestSnapshot()
-      .then((data) => {
-        if (active) setSnapshot(data);
+    Promise.all([loadLatestSnapshot(), loadRecentSnapshots()])
+      .then(([data, history]) => {
+        if (!active) return;
+        setSnapshot(data);
+        setHistorySnapshots(history.length ? history : [data]);
       })
       .catch((err: unknown) => {
         if (active) setError(err instanceof Error ? err.message : '数据加载失败');
@@ -49,8 +52,8 @@ export default function App() {
             </div>
           </div>
           <Routes>
-            <Route path="/" element={<Dashboard snapshot={snapshot} />} />
-            <Route path="/leagues/:leagueId" element={<LeaguePage snapshot={snapshot} />} />
+            <Route path="/" element={<Dashboard snapshot={snapshot} historySnapshots={historySnapshots} />} />
+            <Route path="/leagues/:leagueId" element={<LeaguePage snapshot={snapshot} historySnapshots={historySnapshots} />} />
             <Route path="*" element={<Navigate to="/" replace />} />
           </Routes>
         </>
