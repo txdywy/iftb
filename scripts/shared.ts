@@ -30,6 +30,7 @@ const ODDS_TEAM_ALIASES: Record<string, string> = {
   bayerleverkusen: 'bayer04leverkusen',
   tsghoffenheim: 'tsg1899hoffenheim',
   tsg1899hoffenheim: 'tsg1899hoffenheim',
+  werderbremen: 'svwerderbremen',
   bayernmunich: 'bayernmunchen',
   bayernmunchen: 'bayernmunchen',
   heidenheim: '1heidenheim1846',
