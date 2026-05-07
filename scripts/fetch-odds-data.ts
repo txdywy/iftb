@@ -1,4 +1,4 @@
-import { ODDS_API_MARKET, ODDS_API_SPORT_KEYS } from './shared';
+import { ODDS_API_MARKET, ODDS_API_SPORT_KEYS, normalizeOddsTeamName } from './shared';
 import type { BookmakerOdds, LeagueOdds, LeagueSnapshot, TeamOdds } from '../src/types';
 
 const ODDS_API_BASE_URL = 'https://api.the-odds-api.com/v4/sports';
@@ -193,19 +193,10 @@ function oddsWarnings(events: OddsApiEvent[], bookmakerCount: number, matchedOut
 }
 
 function matchStanding(outcomeName: string, league: LeagueSnapshot): LeagueSnapshot['standings'][number] | null {
-  const normalizedOutcome = normalizeTeamName(outcomeName);
+  const normalizedOutcome = normalizeOddsTeamName(outcomeName);
   return league.standings.find((standing) => {
-    return normalizeTeamName(standing.teamName) === normalizedOutcome || normalizeTeamName(standing.shortName) === normalizedOutcome;
+    return normalizeOddsTeamName(standing.teamName) === normalizedOutcome || normalizeOddsTeamName(standing.shortName) === normalizedOutcome;
   }) ?? null;
-}
-
-function normalizeTeamName(name: string): string {
-  return name
-    .toLowerCase()
-    .normalize('NFD')
-    .replace(/[̀-ͯ]/g, '')
-    .replace(/\b(fc|cf|sc|afc|calcio|club|de|the)\b/g, '')
-    .replace(/[^a-z0-9]/g, '');
 }
 
 function oddsToProbability(oddsDecimal: number): number {

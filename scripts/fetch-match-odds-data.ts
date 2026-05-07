@@ -1,4 +1,4 @@
-import { ODDS_API_MATCH_MARKET, ODDS_API_SPORT_KEYS } from './shared';
+import { ODDS_API_MATCH_MARKET, ODDS_API_SPORT_KEYS, normalizeOddsTeamName } from './shared';
 import type { LeagueMatchOdds, LeagueSnapshot, MatchOdds, MatchOddsOutcome, TeamMarketSchedule } from '../src/types';
 
 const ODDS_API_BASE_URL = 'https://api.the-odds-api.com/v4/sports';
@@ -154,9 +154,9 @@ function aggregateTeamSchedules(league: LeagueSnapshot, matchOdds: MatchOdds[]):
 }
 
 function expectedPointsForTeam(teamId: number, match: MatchOdds): number {
-  const homeWin = match.outcomes.find((outcome) => normalizeTeamName(outcome.name) === normalizeTeamName(match.homeTeamName))?.impliedProbability ?? 0;
-  const awayWin = match.outcomes.find((outcome) => normalizeTeamName(outcome.name) === normalizeTeamName(match.awayTeamName))?.impliedProbability ?? 0;
-  const draw = match.outcomes.find((outcome) => normalizeTeamName(outcome.name) === 'draw')?.impliedProbability ?? 0;
+  const homeWin = match.outcomes.find((outcome) => normalizeOddsTeamName(outcome.name) === normalizeOddsTeamName(match.homeTeamName))?.impliedProbability ?? 0;
+  const awayWin = match.outcomes.find((outcome) => normalizeOddsTeamName(outcome.name) === normalizeOddsTeamName(match.awayTeamName))?.impliedProbability ?? 0;
+  const draw = match.outcomes.find((outcome) => normalizeOddsTeamName(outcome.name) === 'draw')?.impliedProbability ?? 0;
   if (teamId === match.homeTeamId) return homeWin * 3 + draw;
   if (teamId === match.awayTeamId) return awayWin * 3 + draw;
   return 0;
@@ -225,17 +225,8 @@ function readOutcome(value: unknown): OddsApiOutcome | null {
 }
 
 function matchStanding(teamName: string, league: LeagueSnapshot): LeagueSnapshot['standings'][number] | null {
-  const normalized = normalizeTeamName(teamName);
-  return league.standings.find((standing) => normalizeTeamName(standing.teamName) === normalized || normalizeTeamName(standing.shortName) === normalized) ?? null;
-}
-
-function normalizeTeamName(name: string): string {
-  return name
-    .toLowerCase()
-    .normalize('NFD')
-    .replace(/[̀-ͯ]/g, '')
-    .replace(/\b(fc|cf|sc|afc|calcio|club|de|the)\b/g, '')
-    .replace(/[^a-z0-9]/g, '');
+  const normalized = normalizeOddsTeamName(teamName);
+  return league.standings.find((standing) => normalizeOddsTeamName(standing.teamName) === normalized || normalizeOddsTeamName(standing.shortName) === normalized) ?? null;
 }
 
 function oddsToProbability(oddsDecimal: number): number {

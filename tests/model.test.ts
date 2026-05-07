@@ -5,7 +5,7 @@ import { calculateLeagueProbabilities, calculateSnapshotProbabilities } from '..
 import { adaptMatches, adaptStandings } from '../scripts/fetch-football-data';
 import { parseLeagueOdds } from '../scripts/fetch-odds-data';
 import { parseLeagueMatchOdds } from '../scripts/fetch-match-odds-data';
-import { sampleSnapshot } from '../scripts/shared';
+import { normalizeOddsTeamName, sampleSnapshot } from '../scripts/shared';
 import { validateSnapshot } from '../scripts/validate-data';
 import { contendersTrend, leagueLeaderTrend } from '../src/lib/history';
 
@@ -84,6 +84,13 @@ describe('odds integration', () => {
 });
 
 describe('match odds integration', () => {
+  it('normalizes common bookmaker team aliases', () => {
+    expect(normalizeOddsTeamName('Brighton and Hove Albion')).toBe(normalizeOddsTeamName('Brighton & Hove Albion FC'));
+    expect(normalizeOddsTeamName('Bayer Leverkusen')).toBe(normalizeOddsTeamName('Bayer 04 Leverkusen'));
+    expect(normalizeOddsTeamName('Inter Milan')).toBe(normalizeOddsTeamName('FC Internazionale Milano'));
+    expect(normalizeOddsTeamName('Lyon')).toBe(normalizeOddsTeamName('Olympique Lyonnais'));
+  });
+
   it('converts h2h odds to market expected points', () => {
     const league = makeLeague([
       team(1, 'Arsenal', 1, 10, 25, 15),
