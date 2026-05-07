@@ -56,6 +56,7 @@ jobs:
             git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
             git add public/data
             git commit -m "chore: update football data"
+            git pull --rebase origin main
             git push
           fi
       - name: Step summary
