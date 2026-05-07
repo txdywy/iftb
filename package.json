@@ -11,7 +11,8 @@
     "test": "vitest run",
     "fetch:data": "tsx scripts/update-data.ts",
     "sample:data": "tsx scripts/update-data.ts --sample",
-    "validate:data": "tsx scripts/validate-data.ts public/data/latest.json"
+    "validate:data": "tsx scripts/validate-data.ts public/data/latest.json",
+    "diagnose:odds": "tsx scripts/diagnose-odds-api.ts"
   },
   "dependencies": {
     "@vitejs/plugin-react": "^5.0.0",
