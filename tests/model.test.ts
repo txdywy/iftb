@@ -87,6 +87,8 @@ describe('match odds integration', () => {
   it('normalizes common bookmaker team aliases', () => {
     expect(normalizeOddsTeamName('Brighton and Hove Albion')).toBe(normalizeOddsTeamName('Brighton & Hove Albion FC'));
     expect(normalizeOddsTeamName('Bayer Leverkusen')).toBe(normalizeOddsTeamName('Bayer 04 Leverkusen'));
+    expect(normalizeOddsTeamName('TSG Hoffenheim')).toBe(normalizeOddsTeamName('TSG 1899 Hoffenheim'));
+    expect(normalizeOddsTeamName('1. FC Heidenheim')).toBe(normalizeOddsTeamName('1. FC Heidenheim 1846'));
     expect(normalizeOddsTeamName('Inter Milan')).toBe(normalizeOddsTeamName('FC Internazionale Milano'));
     expect(normalizeOddsTeamName('Lyon')).toBe(normalizeOddsTeamName('Olympique Lyonnais'));
   });
