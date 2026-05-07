@@ -11,6 +11,16 @@ export const HISTORY_INDEX_PATH = path.join(DATA_ROOT, 'history', 'index.json');
 export const LEAGUE_ASSET_ROOT = path.join(process.cwd(), 'public', 'assets', 'leagues');
 export const TEAM_ASSET_ROOT = path.join(process.cwd(), 'public', 'assets', 'teams');
 
+export const ODDS_API_SPORT_KEYS = {
+  epl: 'soccer_epl',
+  laliga: 'soccer_spain_la_liga',
+  bundesliga: 'soccer_germany_bundesliga',
+  seriea: 'soccer_italy_serie_a',
+  ligue1: 'soccer_france_ligue_one'
+} as const;
+
+export const ODDS_API_MARKET = 'outrights';
+
 export function currentSeasonLabel(now = new Date()): string {
   const year = now.getUTCMonth() >= 6 ? now.getUTCFullYear() : now.getUTCFullYear() - 1;
   return `${year}-${year + 1}`;

@@ -9,7 +9,7 @@ import { ProbabilityBar } from '../components/ProbabilityBar';
 import { TeamCrest } from '../components/TeamCrest';
 import { formatPercent } from '../lib/format';
 import { contendersTrend } from '../lib/history';
-import type { LeagueSnapshot, Snapshot, TeamStanding, TitleProbability } from '../types';
+import type { LeagueSnapshot, Snapshot, TeamOdds, TeamStanding, TitleProbability } from '../types';
 
 export function LeaguePage({ snapshot, historySnapshots }: { snapshot: Snapshot; historySnapshots: Snapshot[] }) {
   const { leagueId } = useParams();
@@ -61,6 +61,8 @@ export function LeaguePage({ snapshot, historySnapshots }: { snapshot: Snapshot;
         <ProbabilityTable league={league} onSelect={setSelectedTeamId} />
       </section>
 
+      {league.odds ? <MarketEdgePanel league={league} onSelect={setSelectedTeamId} /> : null}
+
       <section className="rounded-[8px] border border-white/10 bg-pitch-900/72 p-4">
         <div className="mb-3">
           <h2 className="text-base font-semibold text-emerald-50">{historySnapshots.length > 1 ? 'Top 5 概率趋势' : 'Top 5 概率分布'}</h2>
@@ -71,7 +73,14 @@ export function LeaguePage({ snapshot, historySnapshots }: { snapshot: Snapshot;
         <Chart option={historySnapshots.length > 1 ? probabilityTrendOption(league, historySnapshots) : probabilityChartOption(league)} className="min-h-[320px]" />
       </section>
 
-      {selectedTeam ? <TeamDrawer team={selectedTeam} standing={league.standings.find((item) => item.teamId === selectedTeam.teamId)} onClose={() => setSelectedTeamId(null)} /> : null}
+      {selectedTeam ? (
+        <TeamDrawer
+          team={selectedTeam}
+          teamOdds={league.odds?.teams.find((item) => item.teamId === selectedTeam.teamId)}
+          standing={league.standings.find((item) => item.teamId === selectedTeam.teamId)}
+          onClose={() => setSelectedTeamId(null)}
+        />
+      ) : null}
     </div>
   );
 }
@@ -130,33 +139,101 @@ function StandingsTable({ league, onSelect }: { league: LeagueSnapshot; onSelect
   );
 }
 
+function MarketEdgePanel({ league, onSelect }: { league: LeagueSnapshot; onSelect: (teamId: number) => void }) {
+  const edges = league.titleProbabilities
+    .map((team) => {
+      const teamOdds = league.odds?.teams.find((item) => item.teamId === team.teamId);
+      return teamOdds ? { team, teamOdds, edge: team.probability - teamOdds.consensusProbability } : null;
+    })
+    .filter((item): item is { team: TitleProbability; teamOdds: TeamOdds; edge: number } => item !== null)
+    .sort((a, b) => Math.abs(b.edge) - Math.abs(a.edge))
+    .slice(0, 6);
+
+  if (!edges.length) return null;
+
+  return (
+    <section className="rounded-[8px] border border-cyanline/20 bg-pitch-900/72 p-4">
+      <div className="mb-4 flex flex-col justify-between gap-2 sm:flex-row sm:items-end">
+        <div>
+          <h2 className="text-base font-semibold text-emerald-50">模型与市场分歧</h2>
+          <p className="mt-1 text-xs text-emerald-50/45">
+            覆盖率 {formatPercent(league.odds?.dataQuality.coverageRatio ?? 0)} · {league.odds?.dataQuality.bookmakerCount ?? 0} 家机构
+          </p>
+        </div>
+        <p className="text-xs text-emerald-50/45">正值表示模型更看好，负值表示市场更看好。</p>
+      </div>
+      <div className="grid gap-3 md:grid-cols-2 xl:grid-cols-3">
+        {edges.map(({ team, teamOdds, edge }) => (
+          <button
+            key={team.teamId}
+            onClick={() => onSelect(team.teamId)}
+            className="rounded-[6px] border border-white/[0.08] bg-white/[0.035] p-3 text-left transition hover:border-cyanline/35 hover:bg-cyanline/[0.08]"
+          >
+            <div className="mb-3 flex items-center gap-3">
+              <TeamCrest name={team.teamName} crest={team.crest} size="sm" />
+              <div className="min-w-0 flex-1">
+                <p className="truncate font-medium text-emerald-50">{team.shortName}</p>
+                <p className="text-xs text-emerald-50/45">{edge >= 0 ? '模型更看好' : '市场更看好'}</p>
+              </div>
+              <span className={`font-mono text-sm ${edge >= 0 ? 'text-line' : 'text-danger'}`}>{formatPercent(edge)}</span>
+            </div>
+            <div className="grid grid-cols-2 gap-2 text-xs">
+              <OddsMetric label="模型" value={formatPercent(team.probability)} accent="text-line" />
+              <OddsMetric label="赔率" value={formatPercent(teamOdds.consensusProbability)} accent="text-cyanline" />
+            </div>
+          </button>
+        ))}
+      </div>
+    </section>
+  );
+}
+
 function ProbabilityTable({ league, onSelect }: { league: LeagueSnapshot; onSelect: (teamId: number) => void }) {
   return (
     <div className="rounded-[8px] border border-white/10 bg-pitch-900/72 p-4">
       <h2 className="mb-4 font-semibold text-emerald-50">冠军概率榜</h2>
       <div className="space-y-4">
-        {league.titleProbabilities.slice(0, 8).map((team, index) => (
-          <button
-            key={team.teamId}
-            onClick={() => onSelect(team.teamId)}
-            className="block w-full rounded-[6px] border border-white/[0.08] bg-white/[0.035] p-3 text-left transition hover:border-line/30 hover:bg-line/[0.08]"
-          >
-            <div className="mb-3 flex items-center gap-3">
-              <span className="w-6 font-mono text-xs text-emerald-50/42">{index + 1}</span>
-              <TeamCrest name={team.teamName} crest={team.crest} size="sm" />
-              <span className="min-w-0 flex-1 truncate font-medium text-emerald-50">{team.shortName}</span>
-              <span className="font-mono text-line">{formatPercent(team.probability)}</span>
-              <Delta value={team.probabilityDeltaPrevious} />
-            </div>
-            <ProbabilityBar value={team.probability} compact />
-          </button>
-        ))}
+        {league.titleProbabilities.slice(0, 8).map((team, index) => {
+          const teamOdds = league.odds?.teams.find((item) => item.teamId === team.teamId);
+          return (
+            <button
+              key={team.teamId}
+              onClick={() => onSelect(team.teamId)}
+              className="block w-full rounded-[6px] border border-white/[0.08] bg-white/[0.035] p-3 text-left transition hover:border-line/30 hover:bg-line/[0.08]"
+            >
+              <div className="mb-3 flex items-center gap-3">
+                <span className="w-6 font-mono text-xs text-emerald-50/42">{index + 1}</span>
+                <TeamCrest name={team.teamName} crest={team.crest} size="sm" />
+                <span className="min-w-0 flex-1 truncate font-medium text-emerald-50">{team.shortName}</span>
+                <span className="font-mono text-line">{formatPercent(team.probability)}</span>
+                <Delta value={team.probabilityDeltaPrevious} />
+              </div>
+              {teamOdds ? (
+                <div className="mb-3 grid grid-cols-3 gap-2 rounded-[6px] bg-white/[0.035] px-3 py-2 text-xs">
+                  <OddsMetric label="模型" value={formatPercent(team.probability)} accent="text-line" />
+                  <OddsMetric label="赔率" value={formatPercent(teamOdds.consensusProbability)} accent="text-cyanline" />
+                  <OddsMetric label="差值" value={formatPercent(team.probability - teamOdds.consensusProbability)} accent={team.probability >= teamOdds.consensusProbability ? 'text-line' : 'text-danger'} />
+                </div>
+              ) : null}
+              <ProbabilityBar value={team.probability} compact />
+            </button>
+          );
+        })}
       </div>
     </div>
   );
 }
 
-function TeamDrawer({ team, standing, onClose }: { team: TitleProbability; standing?: TeamStanding; onClose: () => void }) {
+function OddsMetric({ label, value, accent }: { label: string; value: string; accent: string }) {
+  return (
+    <div>
+      <p className="text-emerald-50/42">{label}</p>
+      <p className={`mt-1 font-mono ${accent}`}>{value}</p>
+    </div>
+  );
+}
+
+function TeamDrawer({ team, teamOdds, standing, onClose }: { team: TitleProbability; teamOdds?: TeamOdds; standing?: TeamStanding; onClose: () => void }) {
   const features = Object.entries(team.features);
   return (
     <div className="fixed inset-0 z-40 bg-black/48 backdrop-blur-sm" onClick={onClose}>
@@ -193,6 +270,7 @@ function TeamDrawer({ team, standing, onClose }: { team: TitleProbability; stand
             ))}
           </div>
         ) : null}
+        {teamOdds ? <OddsBreakdown teamOdds={teamOdds} modelProbability={team.probability} /> : null}
         <div className="rounded-[8px] border border-white/10 bg-white/[0.035] p-4">
           <h3 className="mb-3 font-semibold text-emerald-50">模型特征</h3>
           <div className="space-y-3">
@@ -211,6 +289,31 @@ function TeamDrawer({ team, standing, onClose }: { team: TitleProbability; stand
           </p>
         </div>
       </aside>
+    </div>
+  );
+}
+
+function OddsBreakdown({ teamOdds, modelProbability }: { teamOdds: TeamOdds; modelProbability: number }) {
+  const sortedOdds = [...teamOdds.bookmakerOdds].sort((a, b) => a.oddsDecimal - b.oddsDecimal);
+  return (
+    <div className="mb-4 rounded-[8px] border border-cyanline/20 bg-cyanline/[0.06] p-4">
+      <div className="mb-3 flex items-center justify-between gap-3">
+        <h3 className="font-semibold text-emerald-50">机构赔率</h3>
+        <span className="font-mono text-xs text-cyanline">共识 {formatPercent(teamOdds.consensusProbability)}</span>
+      </div>
+      <div className="mb-3 grid grid-cols-2 gap-2 text-xs">
+        <OddsMetric label="模型概率" value={formatPercent(modelProbability)} accent="text-line" />
+        <OddsMetric label="模型-赔率" value={formatPercent(modelProbability - teamOdds.consensusProbability)} accent={modelProbability >= teamOdds.consensusProbability ? 'text-line' : 'text-danger'} />
+      </div>
+      <div className="space-y-2">
+        {sortedOdds.slice(0, 6).map((odds) => (
+          <div key={`${odds.bookmaker}-${odds.lastUpdated}`} className="flex items-center justify-between gap-3 rounded-[6px] bg-white/[0.04] px-3 py-2 text-sm">
+            <span className="min-w-0 flex-1 truncate text-emerald-50/70">{odds.bookmaker}</span>
+            <span className="font-mono text-emerald-50">{odds.oddsDecimal.toFixed(2)}</span>
+            <span className="font-mono text-cyanline">{formatPercent(odds.impliedProbability)}</span>
+          </div>
+        ))}
+      </div>
     </div>
   );
 }

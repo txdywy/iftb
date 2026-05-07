@@ -3,6 +3,7 @@ import { LEAGUES } from '../src/data/leagues';
 import type { LeagueSnapshot, TeamStanding } from '../src/types';
 import { calculateLeagueProbabilities, calculateSnapshotProbabilities } from '../scripts/calculate-title-probability';
 import { adaptMatches, adaptStandings } from '../scripts/fetch-football-data';
+import { parseLeagueOdds } from '../scripts/fetch-odds-data';
 import { sampleSnapshot } from '../scripts/shared';
 import { validateSnapshot } from '../scripts/validate-data';
 import { contendersTrend, leagueLeaderTrend } from '../src/lib/history';
@@ -34,6 +35,50 @@ describe('history trend helpers', () => {
     const trend = contendersTrend([first, second], 'epl', teamIds);
     expect(trend.series).toHaveLength(2);
     expect(trend.series[0].values.every((value) => value === null || Number.isFinite(value))).toBe(true);
+  });
+});
+
+describe('odds integration', () => {
+  it('normalizes bookmaker odds against the full market overround', () => {
+    const league = makeLeague([
+      team(1, 'Arsenal', 1, 10, 25, 15),
+      team(2, 'Liverpool', 2, 10, 24, 12),
+      team(3, 'Manchester City', 3, 10, 23, 10),
+      team(4, 'Chelsea', 4, 10, 18, 4)
+    ]);
+    const odds = parseLeagueOdds(league, [
+      {
+        bookmakers: [
+          {
+            key: 'book',
+            title: 'Book',
+            last_update: '2026-05-07T00:00:00Z',
+            markets: [
+              {
+                key: 'outrights',
+                outcomes: [
+                  { name: 'Arsenal', price: 2 },
+                  { name: 'Liverpool', price: 4 },
+                  { name: 'Manchester City', price: 5 },
+                  { name: 'Unmapped FC', price: 10 }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]);
+
+    league.odds = odds;
+    expect(odds.teams.find((item) => item.teamId === 1)?.consensusProbability).toBeCloseTo(0.4762, 4);
+    expect(odds.dataQuality).toMatchObject({
+      bookmakerCount: 1,
+      matchedOutcomeCount: 3,
+      unmatchedOutcomeCount: 1,
+      coverageRatio: 0.75
+    });
+    expect(league.dataQuality.warnings.some((warning) => warning.includes('Unmapped FC'))).toBe(true);
+    expect(validateSnapshot({ generatedAt: '2026-05-07T00:00:00Z', modelVersion: 'test', leagues: [league, league, league, league, { ...league, id: 'laliga' }] })).toContain('laliga: odds leagueId must match league id');
   });
 });
 

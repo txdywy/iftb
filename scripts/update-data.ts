@@ -1,6 +1,7 @@
 import path from 'node:path';
 import { calculateSnapshotProbabilities } from './calculate-title-probability';
 import { fetchFootballDataLeagues } from './fetch-football-data';
+import { fetchLeagueOdds } from './fetch-odds-data';
 import {
   DATA_ROOT,
   HISTORY_INDEX_PATH,
@@ -29,6 +30,14 @@ async function main() {
         modelVersion: MODEL_VERSION,
         leagues: await fetchFootballDataLeagues(requiredToken(), now)
       };
+
+  if (!sample) {
+    const oddsByLeagueId = await fetchLeagueOdds(baseSnapshot.leagues);
+    baseSnapshot.leagues = baseSnapshot.leagues.map((league) => {
+      const odds = oddsByLeagueId.get(league.id);
+      return odds ? { ...league, odds } : league;
+    });
+  }
 
   const snapshot = calculateSnapshotProbabilities(baseSnapshot, previousSnapshots);
   const errors = validateSnapshot(snapshot);

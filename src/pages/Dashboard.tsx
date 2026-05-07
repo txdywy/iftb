@@ -22,6 +22,16 @@ export function Dashboard({ snapshot, historySnapshots }: { snapshot: Snapshot; 
     .sort((a, b) => Math.abs(b.probabilityDeltaPrevious ?? 0) - Math.abs(a.probabilityDeltaPrevious ?? 0))
     .slice(0, 8);
 
+  const marketEdges = snapshot.leagues
+    .flatMap((league) =>
+      league.titleProbabilities.slice(0, 8).flatMap((team) => {
+        const teamOdds = league.odds?.teams.find((item) => item.teamId === team.teamId);
+        return teamOdds ? [{ ...team, leagueName: league.name, marketProbability: teamOdds.consensusProbability, edge: team.probability - teamOdds.consensusProbability }] : [];
+      })
+    )
+    .sort((a, b) => Math.abs(b.edge) - Math.abs(a.edge))
+    .slice(0, 8);
+
   const hasTrend = historySnapshots.length > 1;
   const option = hasTrend ? leaderTrendOption(historySnapshots) : leaderBarOption(snapshot);
 
@@ -61,12 +71,22 @@ export function Dashboard({ snapshot, historySnapshots }: { snapshot: Snapshot; 
           </div>
           <Chart option={option} />
         </div>
-        <div className="rounded-[8px] border border-white/10 bg-pitch-900/72 p-4">
-          <h2 className="mb-4 text-base font-semibold text-emerald-50">最近变化榜</h2>
-          <div className="space-y-3">
-            {movers.length ? movers.map((team) => <MoverRow key={`${team.leagueName}-${team.teamId}`} team={team} />) : (
-              <p className="text-sm text-emerald-50/55">暂无历史快照，下一次更新后显示变化。</p>
-            )}
+        <div className="space-y-6">
+          <div className="rounded-[8px] border border-white/10 bg-pitch-900/72 p-4">
+            <h2 className="mb-4 text-base font-semibold text-emerald-50">最近变化榜</h2>
+            <div className="space-y-3">
+              {movers.length ? movers.map((team) => <MoverRow key={`${team.leagueName}-${team.teamId}`} team={team} />) : (
+                <p className="text-sm text-emerald-50/55">暂无历史快照，下一次更新后显示变化。</p>
+              )}
+            </div>
+          </div>
+          <div className="rounded-[8px] border border-cyanline/20 bg-pitch-900/72 p-4">
+            <h2 className="mb-4 text-base font-semibold text-emerald-50">市场分歧榜</h2>
+            <div className="space-y-3">
+              {marketEdges.length ? marketEdges.map((team) => <MarketEdgeRow key={`${team.leagueName}-${team.teamId}`} team={team} />) : (
+                <p className="text-sm text-emerald-50/55">暂无赔率数据，配置 ODDS_API_KEY 后显示市场分歧。</p>
+              )}
+            </div>
           </div>
         </div>
       </section>
@@ -130,6 +150,7 @@ function leaderTrendOption(historySnapshots: Snapshot[]): ChartOption {
 
 function LeagueCard({ league }: { league: Snapshot['leagues'][number] }) {
   const leader = league.topContenders[0];
+  const leaderOdds = leader ? league.odds?.teams.find((team) => team.teamId === leader.teamId) : undefined;
   return (
     <Link
       to={`/leagues/${league.id}`}
@@ -165,6 +186,11 @@ function LeagueCard({ league }: { league: Snapshot['leagues'][number] }) {
             <div className="min-w-0">
               <p className="truncate font-medium text-emerald-50">{leader.shortName}</p>
               <p className="font-mono text-2xl font-semibold text-line">{formatPercent(leader.probability)}</p>
+              {leaderOdds ? (
+                <p className="mt-1 text-xs text-emerald-50/48">
+                  赔率共识 <span className="font-mono text-cyanline">{formatPercent(leaderOdds.consensusProbability)}</span>
+                </p>
+              ) : null}
             </div>
           </div>
           <div className="space-y-3">
@@ -181,6 +207,22 @@ function LeagueCard({ league }: { league: Snapshot['leagues'][number] }) {
         <span>{league.standings.length} teams</span>
       </div>
     </Link>
+  );
+}
+
+function MarketEdgeRow({ team }: { team: TitleProbability & { leagueName: string; marketProbability: number; edge: number } }) {
+  return (
+    <div className="flex items-center gap-3 rounded-[6px] bg-white/[0.04] p-2.5">
+      <TeamCrest name={team.teamName} crest={team.crest} size="sm" />
+      <div className="min-w-0 flex-1">
+        <p className="truncate text-sm text-emerald-50">{team.shortName}</p>
+        <p className="text-xs text-emerald-50/45">{team.leagueName} · {team.edge >= 0 ? '模型更看好' : '市场更看好'}</p>
+      </div>
+      <div className="text-right">
+        <p className={`font-mono text-xs ${team.edge >= 0 ? 'text-line' : 'text-danger'}`}>{formatPercent(team.edge)}</p>
+        <p className="font-mono text-[11px] text-cyanline">赔率 {formatPercent(team.marketProbability)}</p>
+      </div>
+    </div>
   );
 }
 
