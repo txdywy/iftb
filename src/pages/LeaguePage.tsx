@@ -149,7 +149,15 @@ function MarketEdgePanel({ league, onSelect }: { league: LeagueSnapshot; onSelec
     .sort((a, b) => Math.abs(b.edge) - Math.abs(a.edge))
     .slice(0, 6);
 
-  if (!edges.length) return null;
+  if (!edges.length) {
+    const warning = league.odds?.dataQuality.warnings[0] ?? '赔率接口已返回，但暂无可匹配的争冠球队。';
+    return (
+      <section className="rounded-[8px] border border-cyanline/20 bg-pitch-900/72 p-4">
+        <h2 className="text-base font-semibold text-emerald-50">模型与市场分歧</h2>
+        <p className="mt-2 text-sm text-emerald-50/55">{warning}</p>
+      </section>
+    );
+  }
 
   return (
     <section className="rounded-[8px] border border-cyanline/20 bg-pitch-900/72 p-4">

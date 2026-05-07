@@ -41,7 +41,7 @@ export async function fetchLeagueOdds(leagues: LeagueSnapshot[]): Promise<Map<st
       await sleep(ODDS_API_RATE_LIMIT_MS);
       const events = await requestOddsApi(sportKey, apiKey);
       const odds = parseLeagueOdds(league, events);
-      if (odds.teams.length) oddsByLeagueId.set(league.id, odds);
+      oddsByLeagueId.set(league.id, odds);
     } catch (error) {
       league.dataQuality.warnings.push(`Odds unavailable: ${error instanceof Error ? error.message : 'unknown error'}`);
     }
@@ -154,7 +154,7 @@ export function parseLeagueOdds(league: LeagueSnapshot, events: OddsApiEvent[]):
     }
   }
 
-  const warnings = unmatchedNames.size ? [`Unmatched teams: ${Array.from(unmatchedNames).slice(0, 8).join(', ')}`] : [];
+  const warnings = oddsWarnings(events, bookmakerNames.size, matchedOutcomeCount, unmatchedNames);
   if (warnings.length) {
     league.dataQuality.warnings.push(`Odds ${warnings.join(' | ')}`);
   }
@@ -181,6 +181,15 @@ export function parseLeagueOdds(league: LeagueSnapshot, events: OddsApiEvent[]):
       warnings
     }
   };
+}
+
+function oddsWarnings(events: OddsApiEvent[], bookmakerCount: number, matchedOutcomeCount: number, unmatchedNames: Set<string>): string[] {
+  const warnings: string[] = [];
+  if (!events.length) warnings.push('API returned no outright events');
+  else if (!bookmakerCount) warnings.push('No bookmakers returned an outrights market');
+  else if (!matchedOutcomeCount) warnings.push('No odds outcomes matched standings teams');
+  if (unmatchedNames.size) warnings.push(`Unmatched teams: ${Array.from(unmatchedNames).slice(0, 8).join(', ')}`);
+  return warnings;
 }
 
 function matchStanding(outcomeName: string, league: LeagueSnapshot): LeagueSnapshot['standings'][number] | null {

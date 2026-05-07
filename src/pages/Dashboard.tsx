@@ -84,7 +84,7 @@ export function Dashboard({ snapshot, historySnapshots }: { snapshot: Snapshot; 
             <h2 className="mb-4 text-base font-semibold text-emerald-50">市场分歧榜</h2>
             <div className="space-y-3">
               {marketEdges.length ? marketEdges.map((team) => <MarketEdgeRow key={`${team.leagueName}-${team.teamId}`} team={team} />) : (
-                <p className="text-sm text-emerald-50/55">暂无赔率数据，配置 ODDS_API_KEY 后显示市场分歧。</p>
+                <p className="text-sm text-emerald-50/55">{marketEdgeEmptyText(snapshot)}</p>
               )}
             </div>
           </div>
@@ -92,6 +92,13 @@ export function Dashboard({ snapshot, historySnapshots }: { snapshot: Snapshot; 
       </section>
     </div>
   );
+}
+
+function marketEdgeEmptyText(snapshot: Snapshot): string {
+  const oddsWarnings = snapshot.leagues.flatMap((league) => league.odds?.dataQuality.warnings.map((warning) => `${league.name}: ${warning}`) ?? []);
+  if (oddsWarnings.length) return oddsWarnings.slice(0, 2).join('；');
+  if (snapshot.leagues.some((league) => league.odds)) return '赔率接口已返回，但暂无可匹配的争冠球队。';
+  return '暂无赔率数据，配置 ODDS_API_KEY 后显示市场分歧。';
 }
 
 function leaderBarOption(snapshot: Snapshot): ChartOption {
