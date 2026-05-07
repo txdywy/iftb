@@ -35,14 +35,14 @@ jobs:
           cache: npm
       - run: npm ci
       - name: Generate data snapshot
-        if: env.FOOTBALL_DATA_TOKEN != ''
+        if: github.event_name != 'push' && env.FOOTBALL_DATA_TOKEN != ''
         run: npm run fetch:data
       - name: Use committed data snapshot
-        if: env.FOOTBALL_DATA_TOKEN == '' && github.event_name == 'push'
+        if: github.event_name == 'push'
         run: |
-          echo "::warning::FOOTBALL_DATA_TOKEN is not configured; using committed public/data/latest.json"
+          echo "::notice::Push builds use committed public/data/latest.json; scheduled/manual runs refresh data"
       - name: Require token for scheduled data refresh
-        if: env.FOOTBALL_DATA_TOKEN == '' && github.event_name != 'push'
+        if: github.event_name != 'push' && env.FOOTBALL_DATA_TOKEN == ''
         run: |
           echo "::error::FOOTBALL_DATA_TOKEN is required for scheduled or manual real data refresh"
           exit 1
@@ -50,6 +50,7 @@ jobs:
       - id: hash
         run: echo "data_hash=$(sha256sum public/data/latest.json | cut -d ' ' -f1)" >> "$GITHUB_OUTPUT"
       - name: Commit data changes
+        if: github.event_name != 'push'
         run: |
           if [[ -n "$(git status --porcelain public/data)" ]]; then
             git config user.name "github-actions[bot]"
