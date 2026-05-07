@@ -47,14 +47,7 @@ function validateLeague(league: LeagueSnapshot): string[] {
     if (league.odds.leagueId !== league.id) errors.push(`${prefix} odds leagueId must match league id`);
     if (!isIsoDate(league.odds.fetchedAt)) errors.push(`${prefix} odds fetchedAt must be an ISO date`);
     if (!Array.isArray(league.odds.teams)) errors.push(`${prefix} odds teams must be an array`);
-    if (!league.odds.dataQuality) errors.push(`${prefix} odds dataQuality is required`);
-    else {
-      checkedNonNegativeInteger(league.odds.dataQuality.bookmakerCount, `${prefix} odds.dataQuality.bookmakerCount`, errors);
-      checkedNonNegativeInteger(league.odds.dataQuality.matchedOutcomeCount, `${prefix} odds.dataQuality.matchedOutcomeCount`, errors);
-      checkedNonNegativeInteger(league.odds.dataQuality.unmatchedOutcomeCount, `${prefix} odds.dataQuality.unmatchedOutcomeCount`, errors);
-      checkedProbability(league.odds.dataQuality.coverageRatio, `${prefix} odds.dataQuality.coverageRatio`, errors);
-      if (!Array.isArray(league.odds.dataQuality.warnings)) errors.push(`${prefix} odds.dataQuality.warnings must be an array`);
-    }
+    validateOddsDataQuality(league.odds.dataQuality, `${prefix} odds`, errors);
 
     const standingIds = new Set(standings.map((standing) => standing.teamId));
     const oddsTeams = Array.isArray(league.odds.teams) ? league.odds.teams : [];
@@ -72,7 +65,43 @@ function validateLeague(league: LeagueSnapshot): string[] {
     }
   }
 
+  if (league.matchOdds) {
+    if (league.matchOdds.leagueId !== league.id) errors.push(`${prefix} matchOdds leagueId must match league id`);
+    if (!isIsoDate(league.matchOdds.fetchedAt)) errors.push(`${prefix} matchOdds fetchedAt must be an ISO date`);
+    if (!Array.isArray(league.matchOdds.matches)) errors.push(`${prefix} matchOdds matches must be an array`);
+    if (!Array.isArray(league.matchOdds.teamSchedules)) errors.push(`${prefix} matchOdds teamSchedules must be an array`);
+    validateOddsDataQuality(league.matchOdds.dataQuality, `${prefix} matchOdds`, errors);
+
+    const standingIds = new Set(standings.map((standing) => standing.teamId));
+    for (const schedule of Array.isArray(league.matchOdds.teamSchedules) ? league.matchOdds.teamSchedules : []) {
+      if (!standingIds.has(schedule.teamId)) errors.push(`${prefix} matchOdds schedule ${schedule.teamName} is not in standings`);
+      checkedNonNegativeInteger(schedule.matches, `${prefix} ${schedule.teamName}.matches`, errors);
+      checkedNumber(schedule.expectedPoints, `${prefix} ${schedule.teamName}.expectedPoints`, errors);
+      checkedNumber(schedule.expectedPpg, `${prefix} ${schedule.teamName}.expectedPpg`, errors);
+    }
+    for (const matchOdds of Array.isArray(league.matchOdds.matches) ? league.matchOdds.matches : []) {
+      if (!isIsoDate(matchOdds.utcDate)) errors.push(`${prefix} matchOdds ${matchOdds.homeTeamName}-${matchOdds.awayTeamName}.utcDate must be an ISO date`);
+      checkedNonNegativeInteger(matchOdds.bookmakerCount, `${prefix} matchOdds ${matchOdds.homeTeamName}-${matchOdds.awayTeamName}.bookmakerCount`, errors);
+      for (const outcome of Array.isArray(matchOdds.outcomes) ? matchOdds.outcomes : []) {
+        checkedDecimalOdds(outcome.oddsDecimal, `${prefix} matchOdds ${outcome.name}.oddsDecimal`, errors);
+        checkedProbability(outcome.impliedProbability, `${prefix} matchOdds ${outcome.name}.impliedProbability`, errors);
+      }
+    }
+  }
+
   return errors;
+}
+
+function validateOddsDataQuality(dataQuality: { bookmakerCount: number; matchedOutcomeCount: number; unmatchedOutcomeCount: number; coverageRatio: number; warnings: string[] } | undefined, label: string, errors: string[]): void {
+  if (!dataQuality) {
+    errors.push(`${label} dataQuality is required`);
+    return;
+  }
+  checkedNonNegativeInteger(dataQuality.bookmakerCount, `${label}.dataQuality.bookmakerCount`, errors);
+  checkedNonNegativeInteger(dataQuality.matchedOutcomeCount, `${label}.dataQuality.matchedOutcomeCount`, errors);
+  checkedNonNegativeInteger(dataQuality.unmatchedOutcomeCount, `${label}.dataQuality.unmatchedOutcomeCount`, errors);
+  checkedProbability(dataQuality.coverageRatio, `${label}.dataQuality.coverageRatio`, errors);
+  if (!Array.isArray(dataQuality.warnings)) errors.push(`${label}.dataQuality.warnings must be an array`);
 }
 
 function checkedNumber(value: number, label: string, errors: string[]): number {

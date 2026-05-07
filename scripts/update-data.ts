@@ -2,6 +2,7 @@ import path from 'node:path';
 import { calculateSnapshotProbabilities } from './calculate-title-probability';
 import { fetchFootballDataLeagues } from './fetch-football-data';
 import { fetchLeagueOdds } from './fetch-odds-data';
+import { fetchLeagueMatchOdds } from './fetch-match-odds-data';
 import {
   DATA_ROOT,
   HISTORY_INDEX_PATH,
@@ -32,10 +33,14 @@ async function main() {
       };
 
   if (!sample) {
-    const oddsByLeagueId = await fetchLeagueOdds(baseSnapshot.leagues);
+    const [oddsByLeagueId, matchOddsByLeagueId] = await Promise.all([
+      fetchLeagueOdds(baseSnapshot.leagues),
+      fetchLeagueMatchOdds(baseSnapshot.leagues)
+    ]);
     baseSnapshot.leagues = baseSnapshot.leagues.map((league) => {
       const odds = oddsByLeagueId.get(league.id);
-      return odds ? { ...league, odds } : league;
+      const matchOdds = matchOddsByLeagueId.get(league.id);
+      return { ...league, ...(odds ? { odds } : {}), ...(matchOdds ? { matchOdds } : {}) };
     });
   }
 

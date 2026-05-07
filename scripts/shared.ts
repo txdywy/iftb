@@ -20,6 +20,7 @@ export const ODDS_API_SPORT_KEYS = {
 } as const;
 
 export const ODDS_API_MARKET = 'outrights';
+export const ODDS_API_MATCH_MARKET = 'h2h';
 
 export function currentSeasonLabel(now = new Date()): string {
   const year = now.getUTCMonth() >= 6 ? now.getUTCFullYear() : now.getUTCFullYear() - 1;

@@ -67,6 +67,19 @@ jobs:
             echo "- Time: $(date -u +'%Y-%m-%dT%H:%M:%SZ')"
             echo "- Leagues: $(node -e "console.log(require('./public/data/latest.json').leagues.length)")"
             echo "- Hash: ${{ steps.hash.outputs.data_hash }}"
+            node - <<'NODE'
+            const data = require('./public/data/latest.json');
+            console.log('- Outright odds:');
+            for (const league of data.leagues) {
+              const quality = league.odds?.dataQuality;
+              console.log(`  - ${league.name}: ${league.odds?.teams?.length ?? 0} teams, coverage=${quality ? `${Math.round(quality.coverageRatio * 100)}%` : 'n/a'}`);
+            }
+            console.log('- Match odds:');
+            for (const league of data.leagues) {
+              const quality = league.matchOdds?.dataQuality;
+              console.log(`  - ${league.name}: ${league.matchOdds?.matches?.length ?? 0} matches, coverage=${quality ? `${Math.round(quality.coverageRatio * 100)}%` : 'n/a'}`);
+            }
+            NODE
           } >> "$GITHUB_STEP_SUMMARY"
 
   build:

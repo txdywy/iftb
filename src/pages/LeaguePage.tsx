@@ -9,7 +9,7 @@ import { ProbabilityBar } from '../components/ProbabilityBar';
 import { TeamCrest } from '../components/TeamCrest';
 import { formatPercent } from '../lib/format';
 import { contendersTrend } from '../lib/history';
-import type { LeagueSnapshot, Snapshot, TeamOdds, TeamStanding, TitleProbability } from '../types';
+import type { LeagueMatchOdds, LeagueSnapshot, MatchOdds, Snapshot, TeamOdds, TeamStanding, TitleProbability } from '../types';
 
 export function LeaguePage({ snapshot, historySnapshots }: { snapshot: Snapshot; historySnapshots: Snapshot[] }) {
   const { leagueId } = useParams();
@@ -62,6 +62,7 @@ export function LeaguePage({ snapshot, historySnapshots }: { snapshot: Snapshot;
       </section>
 
       {league.odds ? <MarketEdgePanel league={league} onSelect={setSelectedTeamId} /> : null}
+      {league.matchOdds ? <MarketSchedulePanel league={league} onSelect={setSelectedTeamId} /> : null}
 
       <section className="rounded-[8px] border border-white/10 bg-pitch-900/72 p-4">
         <div className="mb-3">
@@ -77,6 +78,7 @@ export function LeaguePage({ snapshot, historySnapshots }: { snapshot: Snapshot;
         <TeamDrawer
           team={selectedTeam}
           teamOdds={league.odds?.teams.find((item) => item.teamId === selectedTeam.teamId)}
+          matchOdds={league.matchOdds}
           standing={league.standings.find((item) => item.teamId === selectedTeam.teamId)}
           onClose={() => setSelectedTeamId(null)}
         />
@@ -196,6 +198,49 @@ function MarketEdgePanel({ league, onSelect }: { league: LeagueSnapshot; onSelec
   );
 }
 
+function MarketSchedulePanel({ league, onSelect }: { league: LeagueSnapshot; onSelect: (teamId: number) => void }) {
+  const schedules = league.matchOdds?.teamSchedules.slice(0, 8) ?? [];
+  if (!schedules.length) {
+    const warning = league.matchOdds?.dataQuality.warnings[0] ?? '暂无可匹配的比赛赔率。';
+    return (
+      <section className="rounded-[8px] border border-cyanline/20 bg-pitch-900/72 p-4">
+        <h2 className="text-base font-semibold text-emerald-50">市场预期赛程</h2>
+        <p className="mt-2 text-sm text-emerald-50/55">{warning}</p>
+      </section>
+    );
+  }
+
+  return (
+    <section className="rounded-[8px] border border-cyanline/20 bg-pitch-900/72 p-4">
+      <div className="mb-4 flex flex-col justify-between gap-2 sm:flex-row sm:items-end">
+        <div>
+          <h2 className="text-base font-semibold text-emerald-50">市场预期赛程</h2>
+          <p className="mt-1 text-xs text-emerald-50/45">
+            覆盖率 {formatPercent(league.matchOdds?.dataQuality.coverageRatio ?? 0)} · {league.matchOdds?.dataQuality.bookmakerCount ?? 0} 个机构盘口
+          </p>
+        </div>
+        <p className="text-xs text-emerald-50/45">基于未来比赛 1X2 赔率换算的预期积分。</p>
+      </div>
+      <div className="grid gap-3 md:grid-cols-2 xl:grid-cols-4">
+        {schedules.map((schedule) => (
+          <button
+            key={schedule.teamId}
+            onClick={() => onSelect(schedule.teamId)}
+            className="rounded-[6px] border border-white/[0.08] bg-white/[0.035] p-3 text-left transition hover:border-cyanline/35 hover:bg-cyanline/[0.08]"
+          >
+            <p className="truncate font-medium text-emerald-50">{schedule.teamName}</p>
+            <div className="mt-3 grid grid-cols-3 gap-2 text-xs">
+              <OddsMetric label="场次" value={`${schedule.matches}`} accent="text-emerald-50" />
+              <OddsMetric label="预期分" value={schedule.expectedPoints.toFixed(1)} accent="text-cyanline" />
+              <OddsMetric label="预期PPG" value={schedule.expectedPpg.toFixed(2)} accent="text-line" />
+            </div>
+          </button>
+        ))}
+      </div>
+    </section>
+  );
+}
+
 function ProbabilityTable({ league, onSelect }: { league: LeagueSnapshot; onSelect: (teamId: number) => void }) {
   return (
     <div className="rounded-[8px] border border-white/10 bg-pitch-900/72 p-4">
@@ -241,7 +286,19 @@ function OddsMetric({ label, value, accent }: { label: string; value: string; ac
   );
 }
 
-function TeamDrawer({ team, teamOdds, standing, onClose }: { team: TitleProbability; teamOdds?: TeamOdds; standing?: TeamStanding; onClose: () => void }) {
+function TeamDrawer({
+  team,
+  teamOdds,
+  matchOdds,
+  standing,
+  onClose
+}: {
+  team: TitleProbability;
+  teamOdds?: TeamOdds;
+  matchOdds?: LeagueMatchOdds;
+  standing?: TeamStanding;
+  onClose: () => void;
+}) {
   const features = Object.entries(team.features);
   return (
     <div className="fixed inset-0 z-40 bg-black/48 backdrop-blur-sm" onClick={onClose}>
@@ -279,6 +336,7 @@ function TeamDrawer({ team, teamOdds, standing, onClose }: { team: TitleProbabil
           </div>
         ) : null}
         {teamOdds ? <OddsBreakdown teamOdds={teamOdds} modelProbability={team.probability} /> : null}
+        {matchOdds ? <TeamMatchOddsBreakdown teamId={team.teamId} matchOdds={matchOdds} /> : null}
         <div className="rounded-[8px] border border-white/10 bg-white/[0.035] p-4">
           <h3 className="mb-3 font-semibold text-emerald-50">模型特征</h3>
           <div className="space-y-3">
@@ -299,6 +357,58 @@ function TeamDrawer({ team, teamOdds, standing, onClose }: { team: TitleProbabil
       </aside>
     </div>
   );
+}
+
+function TeamMatchOddsBreakdown({ teamId, matchOdds }: { teamId: number; matchOdds: LeagueMatchOdds }) {
+  const teamMatches = matchOdds.matches.filter((match) => match.homeTeamId === teamId || match.awayTeamId === teamId).slice(0, 5);
+  if (!teamMatches.length) return null;
+
+  return (
+    <div className="mb-4 rounded-[8px] border border-cyanline/20 bg-cyanline/[0.06] p-4">
+      <h3 className="mb-3 font-semibold text-emerald-50">未来赔率赛程</h3>
+      <div className="space-y-2">
+        {teamMatches.map((match) => (
+          <TeamMatchOddsRow key={`${match.homeTeamId}-${match.awayTeamId}-${match.utcDate}`} teamId={teamId} match={match} />
+        ))}
+      </div>
+    </div>
+  );
+}
+
+function TeamMatchOddsRow({ teamId, match }: { teamId: number; match: MatchOdds }) {
+  const opponent = teamId === match.homeTeamId ? match.awayTeamName : match.homeTeamName;
+  const expectedPoints = expectedPointsForTeam(teamId, match);
+  return (
+    <div className="rounded-[6px] bg-white/[0.04] px-3 py-2 text-sm">
+      <div className="mb-2 flex items-center justify-between gap-3">
+        <span className="truncate text-emerald-50/75">vs {opponent}</span>
+        <span className="font-mono text-cyanline">预期 {expectedPoints.toFixed(2)} 分</span>
+      </div>
+      <div className="grid grid-cols-3 gap-2 text-xs">
+        {match.outcomes.slice(0, 3).map((outcome) => (
+          <OddsMetric key={outcome.name} label={outcome.name} value={formatPercent(outcome.impliedProbability)} accent="text-emerald-50" />
+        ))}
+      </div>
+    </div>
+  );
+}
+
+function expectedPointsForTeam(teamId: number, match: MatchOdds): number {
+  const homeWin = match.outcomes.find((outcome) => normalizeTeamName(outcome.name) === normalizeTeamName(match.homeTeamName))?.impliedProbability ?? 0;
+  const awayWin = match.outcomes.find((outcome) => normalizeTeamName(outcome.name) === normalizeTeamName(match.awayTeamName))?.impliedProbability ?? 0;
+  const draw = match.outcomes.find((outcome) => normalizeTeamName(outcome.name) === 'draw')?.impliedProbability ?? 0;
+  if (teamId === match.homeTeamId) return homeWin * 3 + draw;
+  if (teamId === match.awayTeamId) return awayWin * 3 + draw;
+  return 0;
+}
+
+function normalizeTeamName(name: string): string {
+  return name
+    .toLowerCase()
+    .normalize('NFD')
+    .replace(/[̀-ͯ]/g, '')
+    .replace(/\b(fc|cf|sc|afc|calcio|club|de|the)\b/g, '')
+    .replace(/[^a-z0-9]/g, '');
 }
 
 function OddsBreakdown({ teamOdds, modelProbability }: { teamOdds: TeamOdds; modelProbability: number }) {

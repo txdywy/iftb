@@ -4,6 +4,7 @@ import type { LeagueSnapshot, TeamStanding } from '../src/types';
 import { calculateLeagueProbabilities, calculateSnapshotProbabilities } from '../scripts/calculate-title-probability';
 import { adaptMatches, adaptStandings } from '../scripts/fetch-football-data';
 import { parseLeagueOdds } from '../scripts/fetch-odds-data';
+import { parseLeagueMatchOdds } from '../scripts/fetch-match-odds-data';
 import { sampleSnapshot } from '../scripts/shared';
 import { validateSnapshot } from '../scripts/validate-data';
 import { contendersTrend, leagueLeaderTrend } from '../src/lib/history';
@@ -79,6 +80,45 @@ describe('odds integration', () => {
     });
     expect(league.dataQuality.warnings.some((warning) => warning.includes('Unmapped FC'))).toBe(true);
     expect(validateSnapshot({ generatedAt: '2026-05-07T00:00:00Z', modelVersion: 'test', leagues: [league, league, league, league, { ...league, id: 'laliga' }] })).toContain('laliga: odds leagueId must match league id');
+  });
+});
+
+describe('match odds integration', () => {
+  it('converts h2h odds to market expected points', () => {
+    const league = makeLeague([
+      team(1, 'Arsenal', 1, 10, 25, 15),
+      team(2, 'Liverpool', 2, 10, 24, 12)
+    ]);
+    league.matches = [match(10, 1, 2)];
+
+    const matchOdds = parseLeagueMatchOdds(league, [
+      {
+        commence_time: '2026-05-10T12:00:00Z',
+        home_team: 'Arsenal',
+        away_team: 'Liverpool',
+        bookmakers: [
+          {
+            title: 'Book',
+            markets: [
+              {
+                key: 'h2h',
+                outcomes: [
+                  { name: 'Arsenal', price: 2 },
+                  { name: 'Draw', price: 4 },
+                  { name: 'Liverpool', price: 4 }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]);
+
+    league.matchOdds = matchOdds;
+    expect(matchOdds.matches[0].matchId).toBe(10);
+    expect(matchOdds.teamSchedules.find((item) => item.teamId === 1)?.expectedPoints).toBeCloseTo(1.75, 2);
+    expect(matchOdds.teamSchedules.find((item) => item.teamId === 2)?.expectedPoints).toBeCloseTo(1, 2);
+    expect(validateSnapshot({ generatedAt: '2026-05-07T00:00:00Z', modelVersion: 'test', leagues: [league, league, league, league, league] })).toEqual([]);
   });
 });
 

@@ -91,6 +91,40 @@ export interface LeagueOdds {
   dataQuality: OddsDataQuality;
 }
 
+export interface MatchOddsOutcome {
+  name: string;
+  oddsDecimal: number;
+  impliedProbability: number;
+}
+
+export interface MatchOdds {
+  matchId?: number;
+  utcDate: string;
+  homeTeamId?: number;
+  awayTeamId?: number;
+  homeTeamName: string;
+  awayTeamName: string;
+  outcomes: MatchOddsOutcome[];
+  bookmakerCount: number;
+}
+
+export interface TeamMarketSchedule {
+  teamId: number;
+  teamName: string;
+  matches: number;
+  expectedPoints: number;
+  expectedPpg: number;
+}
+
+export interface LeagueMatchOdds {
+  leagueId: LeagueId;
+  fetchedAt: string;
+  source: string;
+  matches: MatchOdds[];
+  teamSchedules: TeamMarketSchedule[];
+  dataQuality: OddsDataQuality;
+}
+
 export interface LeagueSnapshot {
   id: LeagueId;
   name: string;
@@ -104,6 +138,7 @@ export interface LeagueSnapshot {
   topContenders: TitleProbability[];
   dataQuality: DataQuality;
   odds?: LeagueOdds;
+  matchOdds?: LeagueMatchOdds;
 }
 
 export interface Snapshot {

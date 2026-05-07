@@ -32,6 +32,11 @@ export function Dashboard({ snapshot, historySnapshots }: { snapshot: Snapshot; 
     .sort((a, b) => Math.abs(b.edge) - Math.abs(a.edge))
     .slice(0, 8);
 
+  const marketSchedules = snapshot.leagues
+    .flatMap((league) => league.matchOdds?.teamSchedules.map((schedule) => ({ ...schedule, leagueName: league.name })) ?? [])
+    .sort((a, b) => b.expectedPpg - a.expectedPpg)
+    .slice(0, 8);
+
   const hasTrend = historySnapshots.length > 1;
   const option = hasTrend ? leaderTrendOption(historySnapshots) : leaderBarOption(snapshot);
 
@@ -85,6 +90,14 @@ export function Dashboard({ snapshot, historySnapshots }: { snapshot: Snapshot; 
             <div className="space-y-3">
               {marketEdges.length ? marketEdges.map((team) => <MarketEdgeRow key={`${team.leagueName}-${team.teamId}`} team={team} />) : (
                 <p className="text-sm text-emerald-50/55">{marketEdgeEmptyText(snapshot)}</p>
+              )}
+            </div>
+          </div>
+          <div className="rounded-[8px] border border-cyanline/20 bg-pitch-900/72 p-4">
+            <h2 className="mb-4 text-base font-semibold text-emerald-50">市场赛程榜</h2>
+            <div className="space-y-3">
+              {marketSchedules.length ? marketSchedules.map((schedule) => <MarketScheduleRow key={`${schedule.leagueName}-${schedule.teamId}`} schedule={schedule} />) : (
+                <p className="text-sm text-emerald-50/55">暂无比赛赔率数据，下一次手动或定时刷新后显示市场预期赛程。</p>
               )}
             </div>
           </div>
@@ -233,6 +246,24 @@ function MarketEdgeRow({ team }: { team: TitleProbability & { leagueName: string
         <p className={`font-mono text-xs ${team.edge >= 0 ? 'text-line' : 'text-danger'}`}>{formatPercent(team.edge)}</p>
         <p className="font-mono text-[11px] text-cyanline">赔率 {formatPercent(team.marketProbability)}</p>
       </div>
+    </div>
+  );
+}
+
+function MarketScheduleRow({ schedule }: { schedule: { teamId: number; teamName: string; leagueName: string; matches: number; expectedPoints: number; expectedPpg: number } }) {
+  return (
+    <div className="rounded-[6px] bg-white/[0.04] p-2.5">
+      <div className="mb-2 flex items-center justify-between gap-3">
+        <div className="min-w-0">
+          <p className="truncate text-sm text-emerald-50">{schedule.teamName}</p>
+          <p className="text-xs text-emerald-50/45">{schedule.leagueName} · {schedule.matches} 场</p>
+        </div>
+        <p className="font-mono text-xs text-line">{schedule.expectedPpg.toFixed(2)} PPG</p>
+      </div>
+      <div className="h-1.5 overflow-hidden rounded-full bg-white/[0.08]">
+        <div className="h-full rounded-full bg-cyanline" style={{ width: `${Math.min(100, (schedule.expectedPpg / 3) * 100)}%` }} />
+      </div>
+      <p className="mt-1 font-mono text-[11px] text-cyanline">预期积分 {schedule.expectedPoints.toFixed(1)}</p>
     </div>
   );
 }
