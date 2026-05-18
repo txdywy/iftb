@@ -80,17 +80,21 @@ export function parseLeagueMatchOdds(league: LeagueSnapshot, events: OddsApiEven
     const marketOutcomes = consensusH2hOutcomes(event.bookmakers);
     if (!marketOutcomes.length) continue;
 
-    bookmakerCount += event.bookmakers.filter((bookmaker) => bookmaker.markets.some((market) => market.key === ODDS_API_MATCH_MARKET)).length;
+    const matchId = matchExistingFixtureId(event, league);
+    if (matchId === undefined) continue;
+
+    const eventBookmakerCount = event.bookmakers.filter((bookmaker) => bookmaker.markets.some((market) => market.key === ODDS_API_MATCH_MARKET)).length;
+    bookmakerCount += eventBookmakerCount;
     matchedOutcomeCount += marketOutcomes.length;
     matchedMatches.push({
-      matchId: matchExistingFixtureId(event, league),
+      matchId,
       utcDate: event.commence_time,
       homeTeamId: homeStanding.teamId,
       awayTeamId: awayStanding.teamId,
       homeTeamName: homeStanding.teamName,
       awayTeamName: awayStanding.teamName,
       outcomes: marketOutcomes,
-      bookmakerCount
+      bookmakerCount: eventBookmakerCount
     });
   }
 
