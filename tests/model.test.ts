@@ -130,6 +130,25 @@ describe('match odds integration', () => {
     expect(matchOdds.teamSchedules.find((item) => item.teamId === 2)?.expectedPoints).toBeCloseTo(1, 2);
     expect(validateSnapshot({ generatedAt: '2026-05-07T00:00:00Z', modelVersion: 'test', leagues: [league, league, league, league, league] })).toEqual([]);
   });
+
+  it('ignores match odds events that do not belong to current fixtures', () => {
+    const league = makeLeague([
+      team(1, 'Arsenal', 1, 10, 25, 15),
+      team(2, 'Liverpool', 2, 10, 24, 12)
+    ]);
+    league.matches = [match(10, 1, 2)];
+
+    const matchOdds = parseLeagueMatchOdds(league, [
+      matchOddsEvent('2026-05-10T12:00:00Z'),
+      matchOddsEvent('2026-08-10T12:00:00Z')
+    ]);
+
+    league.matchOdds = matchOdds;
+    expect(matchOdds.matches).toHaveLength(1);
+    expect(matchOdds.dataQuality.coverageRatio).toBe(1);
+    expect(matchOdds.teamSchedules.find((item) => item.teamId === 1)?.matches).toBe(1);
+    expect(validateSnapshot({ generatedAt: '2026-05-07T00:00:00Z', modelVersion: 'test', leagues: [league, league, league, league, league] })).toEqual([]);
+  });
 });
 
 describe('football-data adapters', () => {
@@ -276,5 +295,28 @@ function match(id: number, homeTeamId: number, awayTeamId: number) {
     awayTeamName: `Away ${awayTeamId}`,
     homeScore: null,
     awayScore: null
+  };
+}
+
+function matchOddsEvent(commenceTime: string) {
+  return {
+    commence_time: commenceTime,
+    home_team: 'Arsenal',
+    away_team: 'Liverpool',
+    bookmakers: [
+      {
+        title: 'Book',
+        markets: [
+          {
+            key: 'h2h',
+            outcomes: [
+              { name: 'Arsenal', price: 2 },
+              { name: 'Draw', price: 4 },
+              { name: 'Liverpool', price: 4 }
+            ]
+          }
+        ]
+      }
+    ]
   };
 }
