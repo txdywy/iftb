@@ -247,6 +247,18 @@ describe('title probability model', () => {
     expect(calculated.titleProbabilities.find((item) => item.teamId === 1)?.probability).toBe(1);
     expect(calculated.titleProbabilities.find((item) => item.teamId === 2)?.probability).toBe(0);
   });
+
+  it('does not lock a champion mid-season when match data is missing', () => {
+    const league = makeLeague([
+      team(1, 'Leader', 1, 20, 50, 30),
+      team(2, 'Chaser', 2, 20, 46, 20),
+      team(3, 'Third', 3, 20, 42, 12)
+    ]);
+    league.matches = [];
+    const calculated = calculateLeagueProbabilities(league);
+    expect(calculated.titleProbabilities.some((item) => item.probability === 1)).toBe(false);
+    expect(calculated.titleProbabilities.reduce((sum, item) => sum + item.probability, 0)).toBeCloseTo(1, 3);
+  });
 });
 
 function makeLeague(standings: TeamStanding[]): LeagueSnapshot {

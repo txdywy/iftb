@@ -22,39 +22,7 @@ export const ODDS_API_SPORT_KEYS = {
 export const ODDS_API_MARKET = 'outrights';
 export const ODDS_API_MATCH_MARKET = 'h2h';
 
-const ODDS_TEAM_ALIASES: Record<string, string> = {
-  brightonandhovealbion: 'brightonhovealbion',
-  celtavigo: 'rcceltavigo',
-  athleticbilbao: 'athletic',
-  oviedo: 'realoviedo',
-  bayerleverkusen: 'bayer04leverkusen',
-  tsghoffenheim: 'tsg1899hoffenheim',
-  tsg1899hoffenheim: 'tsg1899hoffenheim',
-  werderbremen: 'svwerderbremen',
-  bayernmunich: 'bayernmunchen',
-  bayernmunchen: 'bayernmunchen',
-  heidenheim: '1heidenheim1846',
-  '1heidenheim': '1heidenheim1846',
-  fsvmainz05: '1fsvmainz05',
-  mainz05: '1fsvmainz05',
-  intermilan: 'internazionalemilano',
-  inter: 'internazionalemilano',
-  como: 'como1907',
-  pisa: 'acpisa1909',
-  angers: 'angerssco',
-  lyon: 'olympiquelyonnais',
-  rennes: 'staderennais1901'
-};
-
-export function normalizeOddsTeamName(name: string): string {
-  const normalized = name
-    .toLowerCase()
-    .normalize('NFD')
-    .replace(/[̀-ͯ]/g, '')
-    .replace(/\b(fc|cf|sc|afc|calcio|club|de|the)\b/g, '')
-    .replace(/[^a-z0-9]/g, '');
-  return ODDS_TEAM_ALIASES[normalized] ?? normalized;
-}
+export { normalizeOddsTeamName } from '../src/lib/teamName';
 
 export function currentSeasonLabel(now = new Date()): string {
   const year = now.getUTCMonth() >= 6 ? now.getUTCFullYear() : now.getUTCFullYear() - 1;

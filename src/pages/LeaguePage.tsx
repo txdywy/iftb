@@ -9,6 +9,7 @@ import { ProbabilityBar } from '../components/ProbabilityBar';
 import { TeamCrest } from '../components/TeamCrest';
 import { formatPercent } from '../lib/format';
 import { contendersTrend } from '../lib/history';
+import { normalizeOddsTeamName } from '../lib/teamName';
 import type { LeagueMatchOdds, LeagueSnapshot, MatchOdds, Snapshot, TeamOdds, TeamStanding, TitleProbability } from '../types';
 
 export function LeaguePage({ snapshot, historySnapshots }: { snapshot: Snapshot; historySnapshots: Snapshot[] }) {
@@ -19,6 +20,12 @@ export function LeaguePage({ snapshot, historySnapshots }: { snapshot: Snapshot;
     if (!selectedTeamId) return null;
     return league.titleProbabilities.find((team) => team.teamId === selectedTeamId) ?? null;
   }, [league.titleProbabilities, selectedTeamId]);
+
+  const hasTrend = historySnapshots.length > 1;
+  const chartOption = useMemo(
+    () => (hasTrend ? probabilityTrendOption(league, historySnapshots) : probabilityChartOption(league)),
+    [hasTrend, league, historySnapshots]
+  );
 
   if (!league) {
     return <div className="rounded-[8px] border border-white/10 bg-white/5 p-4">没有可用联赛数据。</div>;
@@ -66,12 +73,12 @@ export function LeaguePage({ snapshot, historySnapshots }: { snapshot: Snapshot;
 
       <section className="rounded-[8px] border border-white/10 bg-pitch-900/72 p-4">
         <div className="mb-3">
-          <h2 className="text-base font-semibold text-emerald-50">{historySnapshots.length > 1 ? 'Top 5 概率趋势' : 'Top 5 概率分布'}</h2>
+          <h2 className="text-base font-semibold text-emerald-50">{hasTrend ? 'Top 5 概率趋势' : 'Top 5 概率分布'}</h2>
           <p className="mt-1 text-xs text-emerald-50/45">
-            {historySnapshots.length > 1 ? `${historySnapshots.length} 个快照，默认追踪当前 Top 5` : '历史快照不足，先显示当前概率条形图'}
+            {hasTrend ? `${historySnapshots.length} 个快照，默认追踪当前 Top 5` : '历史快照不足，先显示当前概率条形图'}
           </p>
         </div>
-        <Chart option={historySnapshots.length > 1 ? probabilityTrendOption(league, historySnapshots) : probabilityChartOption(league)} className="min-h-[320px]" />
+        <Chart option={chartOption} className="min-h-[320px]" />
       </section>
 
       {selectedTeam ? (
@@ -312,6 +319,14 @@ function TeamDrawer({
             <div>
               <h2 className="text-xl font-semibold text-emerald-50">{team.teamName}</h2>
               <p className="mt-1 font-mono text-line">{formatPercent(team.probability)} title probability</p>
+              <div className="mt-1.5 flex items-center gap-3 text-xs">
+                <span className="flex items-center gap-1 text-emerald-50/50">
+                  较上次 <Delta value={team.probabilityDeltaPrevious} />
+                </span>
+                <span className="flex items-center gap-1 text-emerald-50/50">
+                  近7天 <Delta value={team.probabilityDelta7d} />
+                </span>
+              </div>
             </div>
           </div>
           <button className="rounded-[6px] p-2 text-emerald-50/60 hover:bg-white/[0.08] hover:text-emerald-50" onClick={onClose} aria-label="关闭">
@@ -394,21 +409,12 @@ function TeamMatchOddsRow({ teamId, match }: { teamId: number; match: MatchOdds 
 }
 
 function expectedPointsForTeam(teamId: number, match: MatchOdds): number {
-  const homeWin = match.outcomes.find((outcome) => normalizeTeamName(outcome.name) === normalizeTeamName(match.homeTeamName))?.impliedProbability ?? 0;
-  const awayWin = match.outcomes.find((outcome) => normalizeTeamName(outcome.name) === normalizeTeamName(match.awayTeamName))?.impliedProbability ?? 0;
-  const draw = match.outcomes.find((outcome) => normalizeTeamName(outcome.name) === 'draw')?.impliedProbability ?? 0;
+  const homeWin = match.outcomes.find((outcome) => normalizeOddsTeamName(outcome.name) === normalizeOddsTeamName(match.homeTeamName))?.impliedProbability ?? 0;
+  const awayWin = match.outcomes.find((outcome) => normalizeOddsTeamName(outcome.name) === normalizeOddsTeamName(match.awayTeamName))?.impliedProbability ?? 0;
+  const draw = match.outcomes.find((outcome) => normalizeOddsTeamName(outcome.name) === 'draw')?.impliedProbability ?? 0;
   if (teamId === match.homeTeamId) return homeWin * 3 + draw;
   if (teamId === match.awayTeamId) return awayWin * 3 + draw;
   return 0;
-}
-
-function normalizeTeamName(name: string): string {
-  return name
-    .toLowerCase()
-    .normalize('NFD')
-    .replace(/[̀-ͯ]/g, '')
-    .replace(/\b(fc|cf|sc|afc|calcio|club|de|the)\b/g, '')
-    .replace(/[^a-z0-9]/g, '');
 }
 
 function OddsBreakdown({ teamOdds, modelProbability }: { teamOdds: TeamOdds; modelProbability: number }) {

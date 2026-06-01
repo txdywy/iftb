@@ -17,7 +17,9 @@ export async function loadHistoryIndex(): Promise<HistoryIndex> {
 }
 
 export async function loadSnapshot(path: string): Promise<Snapshot | null> {
-  const response = await fetch(dataUrl(path), { cache: 'no-store' });
+  // History snapshots live at immutable, timestamped paths, so they are safe to
+  // cache and reuse across visits instead of re-downloading every load.
+  const response = await fetch(dataUrl(path), { cache: 'force-cache' });
   if (!response.ok) return null;
   return response.json() as Promise<Snapshot>;
 }
