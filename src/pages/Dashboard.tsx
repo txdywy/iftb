@@ -1,4 +1,5 @@
 import { ArrowRight, TrendingUp } from 'lucide-react';
+import { useMemo } from 'react';
 import { Link } from 'react-router-dom';
 import { Chart } from '../components/Chart';
 import type { ChartOption } from '../components/Chart';
@@ -11,34 +12,49 @@ import { leagueLeaderTrend } from '../lib/history';
 import type { Snapshot, TitleProbability } from '../types';
 
 export function Dashboard({ snapshot, historySnapshots }: { snapshot: Snapshot; historySnapshots: Snapshot[] }) {
-  const movers = snapshot.leagues
-    .flatMap((league) =>
-      league.titleProbabilities.slice(0, 8).map((team) => ({
-        ...team,
-        leagueName: league.name
-      }))
-    )
-    .filter((team) => team.probabilityDeltaPrevious !== undefined)
-    .sort((a, b) => Math.abs(b.probabilityDeltaPrevious ?? 0) - Math.abs(a.probabilityDeltaPrevious ?? 0))
-    .slice(0, 8);
+  const movers = useMemo(
+    () =>
+      snapshot.leagues
+        .flatMap((league) =>
+          league.titleProbabilities.slice(0, 8).map((team) => ({
+            ...team,
+            leagueName: league.name
+          }))
+        )
+        .filter((team) => team.probabilityDeltaPrevious !== undefined)
+        .sort((a, b) => Math.abs(b.probabilityDeltaPrevious ?? 0) - Math.abs(a.probabilityDeltaPrevious ?? 0))
+        .slice(0, 8),
+    [snapshot]
+  );
 
-  const marketEdges = snapshot.leagues
-    .flatMap((league) =>
-      league.titleProbabilities.slice(0, 8).flatMap((team) => {
-        const teamOdds = league.odds?.teams.find((item) => item.teamId === team.teamId);
-        return teamOdds ? [{ ...team, leagueName: league.name, marketProbability: teamOdds.consensusProbability, edge: team.probability - teamOdds.consensusProbability }] : [];
-      })
-    )
-    .sort((a, b) => Math.abs(b.edge) - Math.abs(a.edge))
-    .slice(0, 8);
+  const marketEdges = useMemo(
+    () =>
+      snapshot.leagues
+        .flatMap((league) =>
+          league.titleProbabilities.slice(0, 8).flatMap((team) => {
+            const teamOdds = league.odds?.teams.find((item) => item.teamId === team.teamId);
+            return teamOdds ? [{ ...team, leagueName: league.name, marketProbability: teamOdds.consensusProbability, edge: team.probability - teamOdds.consensusProbability }] : [];
+          })
+        )
+        .sort((a, b) => Math.abs(b.edge) - Math.abs(a.edge))
+        .slice(0, 8),
+    [snapshot]
+  );
 
-  const marketSchedules = snapshot.leagues
-    .flatMap((league) => league.matchOdds?.teamSchedules.map((schedule) => ({ ...schedule, leagueName: league.name })) ?? [])
-    .sort((a, b) => b.expectedPpg - a.expectedPpg)
-    .slice(0, 8);
+  const marketSchedules = useMemo(
+    () =>
+      snapshot.leagues
+        .flatMap((league) => league.matchOdds?.teamSchedules.map((schedule) => ({ ...schedule, leagueName: league.name })) ?? [])
+        .sort((a, b) => b.expectedPpg - a.expectedPpg)
+        .slice(0, 8),
+    [snapshot]
+  );
 
   const hasTrend = historySnapshots.length > 1;
-  const option = hasTrend ? leaderTrendOption(historySnapshots) : leaderBarOption(snapshot);
+  const option = useMemo(
+    () => (hasTrend ? leaderTrendOption(historySnapshots) : leaderBarOption(snapshot)),
+    [hasTrend, historySnapshots, snapshot]
+  );
 
   return (
     <div className="space-y-6">

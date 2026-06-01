@@ -17,12 +17,16 @@ import {
 import { validateSnapshot } from './validate-data';
 import type { HistoryIndex, Snapshot } from '../src/types';
 
+// Enough recent snapshots to cover the 7-day delta window with margin
+// (the scheduler runs ~4x/day, so 7 days ≈ 28 snapshots).
+const DELTA_HISTORY_LIMIT = 60;
+
 async function main() {
   const sample = process.argv.includes('--sample');
   const now = new Date();
   const previousLatest = await readJsonIfExists<Snapshot>(LATEST_PATH);
   const historyIndex = (await readJsonIfExists<HistoryIndex>(HISTORY_INDEX_PATH)) ?? { snapshots: [] };
-  const previousSnapshots = previousLatest ? [previousLatest] : [];
+  const previousSnapshots = await loadPreviousSnapshots(historyIndex, previousLatest);
 
   const baseSnapshot: Snapshot = sample
     ? sampleSnapshot(now)
@@ -83,6 +87,26 @@ function requiredToken(): string {
     throw new Error('FOOTBALL_DATA_TOKEN is required unless running with --sample');
   }
   return token;
+}
+
+// Returns historical snapshots ordered oldest -> newest so the model can compute
+// both the latest-snapshot delta and the week-over-week (7d) delta. Falls back to
+// just the latest snapshot when the on-disk history cannot be read.
+async function loadPreviousSnapshots(historyIndex: HistoryIndex, previousLatest: Snapshot | null): Promise<Snapshot[]> {
+  const publicRoot = path.join(process.cwd(), 'public');
+  const recentEntries = historyIndex.snapshots.slice(0, DELTA_HISTORY_LIMIT);
+  const loaded = await Promise.all(
+    recentEntries.map((entry) => readJsonIfExists<Snapshot>(path.join(publicRoot, entry.path)))
+  );
+  const snapshots = loaded.filter((snapshot): snapshot is Snapshot => snapshot !== null);
+
+  if (previousLatest && !snapshots.some((snapshot) => snapshot.generatedAt === previousLatest.generatedAt)) {
+    snapshots.push(previousLatest);
+  }
+  if (!snapshots.length) {
+    return previousLatest ? [previousLatest] : [];
+  }
+  return snapshots.sort((a, b) => Date.parse(a.generatedAt) - Date.parse(b.generatedAt));
 }
 
 function historyPathFor(isoDate: string): string {

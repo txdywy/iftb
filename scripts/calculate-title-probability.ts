@@ -23,7 +23,9 @@ export function calculateLeagueProbabilities(league: LeagueSnapshot, previousSna
 
   const maxPlayed = Math.max(...league.standings.map((team) => team.playedGames));
   const maxSeasonGames = league.id === 'bundesliga' ? 34 : 38;
-  const finished = maxPlayed >= maxSeasonGames || league.matches.every((match) => match.status === 'FINISHED');
+  const finished =
+    maxPlayed >= maxSeasonGames ||
+    (league.matches.length > 0 && league.matches.every((match) => match.status === 'FINISHED'));
   if (finished) {
     const sorted = [...league.standings].sort(compareChampionTiebreaker);
     const champion = sorted[0];
@@ -211,8 +213,12 @@ function confidenceFor(team: TeamStanding, league: LeagueSnapshot): number {
 }
 
 function deltasFor(teamId: number, leagueId: string, probability: number, previousSnapshots: Snapshot[]) {
+  // previousSnapshots is ordered oldest -> newest.
   const previous = previousSnapshots.at(-1)?.leagues.find((league) => league.id === leagueId)?.titleProbabilities.find((team) => team.teamId === teamId);
-  const sevenDay = previousSnapshots.find((snapshot) => Date.now() - Date.parse(snapshot.generatedAt) >= 7 * 86400000)
+  // Newest snapshot that is at least 7 days old, for a stable week-over-week delta.
+  const sevenDaySnapshots = previousSnapshots.filter((snapshot) => Date.now() - Date.parse(snapshot.generatedAt) >= 7 * 86400000);
+  const sevenDay = sevenDaySnapshots
+    .at(-1)
     ?.leagues.find((league) => league.id === leagueId)
     ?.titleProbabilities.find((team) => team.teamId === teamId);
   return {

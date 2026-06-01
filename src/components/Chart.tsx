@@ -36,17 +36,31 @@ interface ChartProps {
 
 export function Chart({ option, className = '' }: ChartProps) {
   const ref = useRef<HTMLDivElement>(null);
+  const chartRef = useRef<echarts.ECharts | null>(null);
 
+  // Initialize once per mounted element; observe container resize so the chart
+  // reflows inside flex/grid layouts, not just on window resize.
   useEffect(() => {
     if (!ref.current) return;
     const chart = echarts.init(ref.current, 'iftb-dark');
-    chart.setOption(option);
+    chartRef.current = chart;
+
     const resize = () => chart.resize();
     window.addEventListener('resize', resize);
+    const observer = new ResizeObserver(resize);
+    observer.observe(ref.current);
+
     return () => {
       window.removeEventListener('resize', resize);
+      observer.disconnect();
       chart.dispose();
+      chartRef.current = null;
     };
+  }, []);
+
+  // Update options in place instead of recreating the instance on each render.
+  useEffect(() => {
+    chartRef.current?.setOption(option, true);
   }, [option]);
 
   return <div ref={ref} className={`chart w-full ${className}`} />;
