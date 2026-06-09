@@ -185,21 +185,38 @@ async function downloadAsset({
 
 let lastRequestAt = 0;
 
+const MAX_RETRIES = 3;
+const INITIAL_RETRY_DELAY_MS = 2000;
+
 async function requestFootballData<T>(pathname: string, token: string): Promise<T> {
-  await waitForRateLimitSlot();
-  const response = await fetch(`https://api.football-data.org/v4${pathname}`, {
-    headers: { 'X-Auth-Token': token }
-  });
-  lastRequestAt = Date.now();
-  if (response.status === 429) {
-    const resetSeconds = Number(response.headers.get('X-RequestCounter-Reset') ?? 60);
-    await sleep((Number.isFinite(resetSeconds) ? resetSeconds : 60) * 1000 + 1000);
-    return requestFootballData<T>(pathname, token);
+  for (let attempt = 0; attempt <= MAX_RETRIES; attempt++) {
+    try {
+      await waitForRateLimitSlot();
+      const response = await fetch(`https://api.football-data.org/v4${pathname}`, {
+        headers: { 'X-Auth-Token': token }
+      });
+      lastRequestAt = Date.now();
+      if (response.status === 429) {
+        const resetSeconds = Number(response.headers.get('X-RequestCounter-Reset') ?? 60);
+        await sleep((Number.isFinite(resetSeconds) ? resetSeconds : 60) * 1000 + 1000);
+        continue; // retry after rate-limit cooldown
+      }
+      if (!response.ok) {
+        throw new Error(`football-data request failed ${response.status}: ${pathname}`);
+      }
+      return response.json() as Promise<T>;
+    } catch (error) {
+      if (attempt < MAX_RETRIES) {
+        const delay = INITIAL_RETRY_DELAY_MS * 2 ** attempt;
+        console.warn(`[fetch] attempt ${attempt + 1} failed for ${pathname}, retrying in ${delay}ms:`, error instanceof Error ? error.message : error);
+        await sleep(delay);
+        continue;
+      }
+      throw error;
+    }
   }
-  if (!response.ok) {
-    throw new Error(`football-data request failed ${response.status}: ${pathname}`);
-  }
-  return response.json() as Promise<T>;
+  // Unreachable, but satisfies TypeScript
+  throw new Error(`exhausted retries for ${pathname}`);
 }
 
 async function waitForRateLimitSlot(): Promise<void> {
