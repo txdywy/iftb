@@ -9,7 +9,7 @@ export function TeamCrest({ name, crest, size = 'md' }: TeamCrestProps) {
   if (crest) {
     return (
       <span className={`${dimensions} grid shrink-0 place-items-center rounded-[6px] bg-white/90 p-1`}>
-        <img src={crest} alt="" className="max-h-full max-w-full object-contain" loading="lazy" />
+        <img src={crest} alt="" className="max-h-full max-w-full object-contain" loading="lazy" onError={(e) => { (e.target as HTMLImageElement).style.display = 'none'; }} />
       </span>
     );
   }

@@ -45,7 +45,11 @@ export function Chart({ option, className = '' }: ChartProps) {
     const chart = echarts.init(ref.current, 'iftb-dark');
     chartRef.current = chart;
 
-    const resize = () => chart.resize();
+    let raf = 0;
+    const resize = () => {
+      cancelAnimationFrame(raf);
+      raf = requestAnimationFrame(() => chart.resize());
+    };
     window.addEventListener('resize', resize);
     const observer = new ResizeObserver(resize);
     observer.observe(ref.current);
@@ -53,6 +57,7 @@ export function Chart({ option, className = '' }: ChartProps) {
     return () => {
       window.removeEventListener('resize', resize);
       observer.disconnect();
+      cancelAnimationFrame(raf);
       chart.dispose();
       chartRef.current = null;
     };

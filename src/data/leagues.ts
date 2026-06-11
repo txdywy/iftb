@@ -15,4 +15,3 @@ export const LEAGUES: LeagueMeta[] = [
   { id: 'ligue1', name: '法甲', country: 'France', code: 'FL1' }
 ];
 
-export const leagueById = new Map(LEAGUES.map((league) => [league.id, league]));

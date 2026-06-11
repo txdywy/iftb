@@ -1,5 +1,6 @@
-import { ODDS_API_MATCH_MARKET, ODDS_API_SPORT_KEYS, normalizeOddsTeamName } from './shared';
+import { ODDS_API_MATCH_MARKET, ODDS_API_SPORT_KEYS, normalizeOddsTeamName, readRecord, readArray, readString, readNumber, round, sleep } from './shared';
 import type { LeagueMatchOdds, LeagueSnapshot, MatchOdds, MatchOddsOutcome, TeamMarketSchedule } from '../src/types';
+import { expectedPointsForTeam } from '../src/lib/odds';
 
 const ODDS_API_BASE_URL = 'https://api.the-odds-api.com/v4/sports';
 const ODDS_API_REGIONS = 'eu,uk';
@@ -17,6 +18,7 @@ interface OddsApiMarket {
 }
 
 interface OddsApiBookmaker {
+  key?: string;
   title: string;
   markets: OddsApiMarket[];
 }
@@ -133,11 +135,16 @@ function consensusH2hOutcomes(bookmakers: OddsApiBookmaker[]): MatchOddsOutcome[
     }
   }
 
-  return Array.from(outcomeProbabilities.entries()).map(([name, probabilities]) => ({
-    name,
-    oddsDecimal: round(1 / average(probabilities)),
-    impliedProbability: round(average(probabilities))
-  }));
+  return Array.from(outcomeProbabilities.entries())
+    .filter(([, probabilities]) => probabilities.length > 0)
+    .map(([name, probabilities]) => {
+      const avg = average(probabilities);
+      return {
+        name,
+        oddsDecimal: avg > 0 ? round(1 / avg) : 0,
+        impliedProbability: round(avg)
+      };
+    });
 }
 
 function aggregateTeamSchedules(league: LeagueSnapshot, matchOdds: MatchOdds[]): TeamMarketSchedule[] {
@@ -155,15 +162,6 @@ function aggregateTeamSchedules(league: LeagueSnapshot, matchOdds: MatchOdds[]):
     })
     .filter((team) => team.matches > 0)
     .sort((a, b) => b.expectedPpg - a.expectedPpg);
-}
-
-function expectedPointsForTeam(teamId: number, match: MatchOdds): number {
-  const homeWin = match.outcomes.find((outcome) => normalizeOddsTeamName(outcome.name) === normalizeOddsTeamName(match.homeTeamName))?.impliedProbability ?? 0;
-  const awayWin = match.outcomes.find((outcome) => normalizeOddsTeamName(outcome.name) === normalizeOddsTeamName(match.awayTeamName))?.impliedProbability ?? 0;
-  const draw = match.outcomes.find((outcome) => normalizeOddsTeamName(outcome.name) === 'draw')?.impliedProbability ?? 0;
-  if (teamId === match.homeTeamId) return homeWin * 3 + draw;
-  if (teamId === match.awayTeamId) return awayWin * 3 + draw;
-  return 0;
 }
 
 function matchExistingFixtureId(event: OddsApiEvent, league: LeagueSnapshot): number | undefined {
@@ -238,29 +236,8 @@ function oddsToProbability(oddsDecimal: number): number {
 }
 
 function average(values: number[]): number {
-  return values.reduce((sum, value) => sum + value, 0) / Math.max(values.length, 1);
+  if (!values.length) return 0;
+  const result = values.reduce((sum, value) => sum + value, 0) / values.length;
+  return Number.isFinite(result) ? result : 0;
 }
 
-function readRecord(value: unknown): Record<string, unknown> {
-  return value && typeof value === 'object' && !Array.isArray(value) ? value as Record<string, unknown> : {};
-}
-
-function readArray(value: unknown): unknown[] {
-  return Array.isArray(value) ? value : [];
-}
-
-function readString(value: unknown): string {
-  return typeof value === 'string' ? value : '';
-}
-
-function readNumber(value: unknown): number {
-  return typeof value === 'number' ? value : Number.NaN;
-}
-
-function round(value: number): number {
-  return Math.round(value * 10000) / 10000;
-}
-
-function sleep(ms: number): Promise<void> {
-  return new Promise((resolve) => setTimeout(resolve, ms));
-}

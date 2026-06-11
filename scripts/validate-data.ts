@@ -136,7 +136,12 @@ async function main() {
   if (!target) {
     throw new Error('Usage: tsx scripts/validate-data.ts <snapshot.json>');
   }
-  const snapshot = JSON.parse(await readFile(target, 'utf8')) as Snapshot;
+  let snapshot: Snapshot;
+  try {
+    snapshot = JSON.parse(await readFile(target, 'utf8')) as Snapshot;
+  } catch (err) {
+    throw new Error(`Failed to parse ${target}: ${err instanceof Error ? err.message : 'unknown error'}`);
+  }
   const errors = validateSnapshot(snapshot);
   if (errors.length) {
     console.error(errors.join('\n'));

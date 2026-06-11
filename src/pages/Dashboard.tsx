@@ -1,14 +1,14 @@
+import React, { useMemo } from 'react';
 import { ArrowRight, TrendingUp } from 'lucide-react';
-import { useMemo } from 'react';
 import { Link } from 'react-router-dom';
 import { Chart } from '../components/Chart';
-import type { ChartOption } from '../components/Chart';
+import { ErrorBoundary } from '../components/ErrorBoundary';
 import { Delta } from '../components/Delta';
 import { LeagueEmblem } from '../components/LeagueEmblem';
 import { ProbabilityBar } from '../components/ProbabilityBar';
 import { TeamCrest } from '../components/TeamCrest';
 import { formatPercent } from '../lib/format';
-import { leagueLeaderTrend } from '../lib/history';
+import { leaderBarOption, leaderTrendOption } from './dashboard/chartOptions';
 import type { Snapshot, TitleProbability } from '../types';
 
 export function Dashboard({ snapshot, historySnapshots }: { snapshot: Snapshot; historySnapshots: Snapshot[] }) {
@@ -90,7 +90,7 @@ export function Dashboard({ snapshot, historySnapshots }: { snapshot: Snapshot; 
             </div>
             <TrendingUp size={18} className="text-line" />
           </div>
-          <Chart option={option} />
+          <ErrorBoundary><Chart option={option} /></ErrorBoundary>
         </div>
         <div className="space-y-6">
           <div className="rounded-[8px] border border-white/10 bg-pitch-900/72 p-4">
@@ -134,61 +134,7 @@ function marketEdgeEmptyText(snapshot: Snapshot): string {
   return '暂无赔率数据，配置 ODDS_API_KEY 后显示市场分歧。';
 }
 
-function leaderBarOption(snapshot: Snapshot): ChartOption {
-  return {
-    tooltip: { trigger: 'axis' as const },
-    legend: { top: 0, textStyle: { color: '#b8d5ca' } },
-    grid: { left: 34, right: 12, top: 48, bottom: 32 },
-    xAxis: {
-      type: 'category' as const,
-      data: snapshot.leagues.map((league) => league.name)
-    },
-    yAxis: {
-      type: 'value' as const,
-      axisLabel: { formatter: (value: number) => `${value}%` },
-      max: 100
-    },
-    series: [
-      {
-        name: '榜首概率',
-        type: 'bar' as const,
-        data: snapshot.leagues.map((league) => Math.round((league.topContenders[0]?.probability ?? 0) * 1000) / 10),
-        barWidth: 24,
-        itemStyle: { borderRadius: [4, 4, 0, 0] }
-      }
-    ]
-  };
-}
-
-function leaderTrendOption(historySnapshots: Snapshot[]): ChartOption {
-  const trend = leagueLeaderTrend(historySnapshots);
-  return {
-    tooltip: { trigger: 'axis' as const },
-    legend: { top: 0, textStyle: { color: '#b8d5ca' } },
-    grid: { left: 38, right: 18, top: 56, bottom: 48 },
-    dataZoom: [{ type: 'inside' as const }, { type: 'slider' as const, height: 18, bottom: 8 }],
-    xAxis: {
-      type: 'category' as const,
-      data: trend.labels,
-      boundaryGap: false
-    },
-    yAxis: {
-      type: 'value' as const,
-      axisLabel: { formatter: (value: number) => `${value}%` },
-      max: 100
-    },
-    series: trend.series.map((item) => ({
-      name: item.name,
-      type: 'line' as const,
-      data: item.values,
-      smooth: true,
-      symbolSize: 5,
-      connectNulls: true
-    }))
-  };
-}
-
-function LeagueCard({ league }: { league: Snapshot['leagues'][number] }) {
+const LeagueCard = React.memo(function LeagueCard({ league }: { league: Snapshot['leagues'][number] }) {
   const leader = league.topContenders[0];
   const leaderOdds = leader ? league.odds?.teams.find((team) => team.teamId === leader.teamId) : undefined;
   return (
@@ -248,9 +194,9 @@ function LeagueCard({ league }: { league: Snapshot['leagues'][number] }) {
       </div>
     </Link>
   );
-}
+});
 
-function MarketEdgeRow({ team }: { team: TitleProbability & { leagueName: string; marketProbability: number; edge: number } }) {
+const MarketEdgeRow = React.memo(function MarketEdgeRow({ team }: { team: TitleProbability & { leagueName: string; marketProbability: number; edge: number } }) {
   return (
     <div className="flex items-center gap-3 rounded-[6px] bg-white/[0.04] p-2.5">
       <TeamCrest name={team.teamName} crest={team.crest} size="sm" />
@@ -264,9 +210,9 @@ function MarketEdgeRow({ team }: { team: TitleProbability & { leagueName: string
       </div>
     </div>
   );
-}
+});
 
-function MarketScheduleRow({ schedule }: { schedule: { teamId: number; teamName: string; leagueName: string; matches: number; expectedPoints: number; expectedPpg: number } }) {
+const MarketScheduleRow = React.memo(function MarketScheduleRow({ schedule }: { schedule: { teamId: number; teamName: string; leagueName: string; matches: number; expectedPoints: number; expectedPpg: number } }) {
   return (
     <div className="rounded-[6px] bg-white/[0.04] p-2.5">
       <div className="mb-2 flex items-center justify-between gap-3">
@@ -282,9 +228,9 @@ function MarketScheduleRow({ schedule }: { schedule: { teamId: number; teamName:
       <p className="mt-1 font-mono text-[11px] text-cyanline">预期积分 {schedule.expectedPoints.toFixed(1)}</p>
     </div>
   );
-}
+});
 
-function MoverRow({ team }: { team: TitleProbability & { leagueName: string } }) {
+const MoverRow = React.memo(function MoverRow({ team }: { team: TitleProbability & { leagueName: string } }) {
   return (
     <div className="flex items-center gap-3 rounded-[6px] bg-white/[0.04] p-2.5">
       <TeamCrest name={team.teamName} crest={team.crest} size="sm" />
@@ -295,4 +241,4 @@ function MoverRow({ team }: { team: TitleProbability & { leagueName: string } })
       <Delta value={team.probabilityDeltaPrevious} />
     </div>
   );
-}
+});

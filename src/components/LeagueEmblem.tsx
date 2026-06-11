@@ -17,7 +17,7 @@ export function LeagueEmblem({ league, size = 'md', muted = false }: LeagueEmble
   if (league.emblem) {
     return (
       <span className={className}>
-        <img src={league.emblem} alt="" className="max-h-full max-w-full object-contain" loading="lazy" />
+        <img src={league.emblem} alt="" className="max-h-full max-w-full object-contain" loading="lazy" onError={(e) => { (e.target as HTMLImageElement).style.display = 'none'; }} />
       </span>
     );
   }

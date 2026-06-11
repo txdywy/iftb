@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest';
 import { LEAGUES } from '../src/data/leagues';
-import type { LeagueSnapshot, TeamStanding } from '../src/types';
+import type { LeagueSnapshot, Match, MatchStatus, TeamStanding } from '../src/types';
 import { calculateLeagueProbabilities, calculateSnapshotProbabilities } from '../scripts/calculate-title-probability';
 import { adaptMatches, adaptStandings } from '../scripts/fetch-football-data';
 import { parseLeagueOdds } from '../scripts/fetch-odds-data';
@@ -295,11 +295,11 @@ function team(teamId: number, teamName: string, position: number, playedGames: n
   };
 }
 
-function match(id: number, homeTeamId: number, awayTeamId: number) {
+function match(id: number, homeTeamId: number, awayTeamId: number): Match {
   return {
     id,
     utcDate: '2026-05-10T12:00:00Z',
-    status: 'SCHEDULED',
+    status: 'SCHEDULED' as MatchStatus,
     matchday: 35,
     homeTeamId,
     homeTeamName: `Home ${homeTeamId}`,

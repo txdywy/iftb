@@ -64,7 +64,7 @@ async function main() {
   await writeJson(HISTORY_INDEX_PATH, {
     snapshots: [
       { generatedAt: snapshot.generatedAt, path: publicSnapshotPath, hash },
-      ...historyIndex.snapshots.filter((entry) => entry.hash !== hash)
+      ...historyIndex.snapshots.filter((entry) => entry.hash !== hash && entry.path !== publicSnapshotPath)
     ].slice(0, 240)
   } satisfies HistoryIndex);
 
@@ -96,7 +96,13 @@ async function loadPreviousSnapshots(historyIndex: HistoryIndex, previousLatest:
   const publicRoot = path.join(process.cwd(), 'public');
   const recentEntries = historyIndex.snapshots.slice(0, DELTA_HISTORY_LIMIT);
   const loaded = await Promise.all(
-    recentEntries.map((entry) => readJsonIfExists<Snapshot>(path.join(publicRoot, entry.path)))
+    recentEntries.map(async (entry) => {
+      try {
+        return await readJsonIfExists<Snapshot>(path.join(publicRoot, entry.path));
+      } catch {
+        return null;
+      }
+    })
   );
   const snapshots = loaded.filter((snapshot): snapshot is Snapshot => snapshot !== null);
 

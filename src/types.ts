@@ -1,5 +1,7 @@
 export type LeagueId = 'epl' | 'laliga' | 'bundesliga' | 'seriea' | 'ligue1';
 
+export type MatchStatus = 'SCHEDULED' | 'TIMED' | 'IN_PLAY' | 'PAUSED' | 'FINISHED' | 'POSTPONED' | 'CANCELLED' | 'SUSPENDED' | 'AWARDED';
+
 export type DataQualityStatus = 'ok' | 'partial' | 'stale' | 'error';
 
 export interface TeamStanding {
@@ -22,7 +24,7 @@ export interface TeamStanding {
 export interface Match {
   id: number;
   utcDate: string;
-  status: string;
+  status: MatchStatus;
   matchday?: number;
   homeTeamId: number;
   homeTeamName: string;

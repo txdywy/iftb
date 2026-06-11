@@ -1,4 +1,4 @@
-import { ODDS_API_MARKET, ODDS_API_SPORT_KEYS, normalizeOddsTeamName } from './shared';
+import { ODDS_API_MARKET, ODDS_API_SPORT_KEYS, normalizeOddsTeamName, readRecord, readArray, readString, readNumber, round, sleep } from './shared';
 import type { BookmakerOdds, LeagueOdds, LeagueSnapshot, TeamOdds } from '../src/types';
 
 const ODDS_API_BASE_URL = 'https://api.the-odds-api.com/v4/sports';
@@ -51,6 +51,8 @@ export async function fetchLeagueOdds(leagues: LeagueSnapshot[]): Promise<Map<st
 }
 
 async function requestOddsApi(sportKey: string, apiKey: string): Promise<OddsApiEvent[]> {
+  // NOTE: The Odds API requires the key as a query parameter (API design limitation).
+  // In CI, the key is only available via the ODDS_API_KEY secret and is never committed.
   const url = new URL(`${ODDS_API_BASE_URL}/${sportKey}/odds`);
   url.searchParams.set('apiKey', apiKey);
   url.searchParams.set('regions', ODDS_API_REGIONS);
@@ -203,26 +205,3 @@ function oddsToProbability(oddsDecimal: number): number {
   return oddsDecimal > 1 ? 1 / oddsDecimal : 0;
 }
 
-function readRecord(value: unknown): Record<string, unknown> {
-  return value && typeof value === 'object' && !Array.isArray(value) ? value as Record<string, unknown> : {};
-}
-
-function readArray(value: unknown): unknown[] {
-  return Array.isArray(value) ? value : [];
-}
-
-function readString(value: unknown): string {
-  return typeof value === 'string' ? value : '';
-}
-
-function readNumber(value: unknown): number {
-  return typeof value === 'number' ? value : Number.NaN;
-}
-
-function round(value: number): number {
-  return Math.round(value * 10000) / 10000;
-}
-
-function sleep(ms: number): Promise<void> {
-  return new Promise((resolve) => setTimeout(resolve, ms));
-}

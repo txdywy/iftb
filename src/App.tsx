@@ -1,6 +1,7 @@
 import { useEffect, useMemo, useState } from 'react';
 import { Navigate, Route, Routes } from 'react-router-dom';
 import { AppShell } from './components/AppShell';
+import { ErrorBoundary } from './components/ErrorBoundary';
 import { loadLatestSnapshot, loadRecentSnapshots } from './lib/data';
 import { Dashboard } from './pages/Dashboard';
 import { LeaguePage } from './pages/LeaguePage';
@@ -37,6 +38,7 @@ export default function App() {
 
   return (
     <AppShell>
+      <ErrorBoundary>
       {error ? <ErrorState message={error} /> : null}
       {!snapshot && !error ? <LoadingState /> : null}
       {snapshot ? (
@@ -51,13 +53,16 @@ export default function App() {
               <span className="rounded-[6px] border border-white/10 bg-white/5 px-2.5 py-1">{snapshot.leagues.length} leagues</span>
             </div>
           </div>
+          <ErrorBoundary>
           <Routes>
             <Route path="/" element={<Dashboard snapshot={snapshot} historySnapshots={historySnapshots} />} />
             <Route path="/leagues/:leagueId" element={<LeaguePage snapshot={snapshot} historySnapshots={historySnapshots} />} />
             <Route path="*" element={<Navigate to="/" replace />} />
           </Routes>
+          </ErrorBoundary>
         </>
       ) : null}
+      </ErrorBoundary>
     </AppShell>
   );
 }

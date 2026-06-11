@@ -1,4 +1,4 @@
-import { ODDS_API_SPORT_KEYS } from './shared';
+import { ODDS_API_SPORT_KEYS, readString, readBoolean } from './shared';
 
 const SPORTS_URL = 'https://api.the-odds-api.com/v4/sports/';
 
@@ -65,14 +65,6 @@ function readSport(value: unknown): SportEntry | null {
     active: readBoolean(record.active),
     has_outrights: readBoolean(record.has_outrights)
   };
-}
-
-function readString(value: unknown): string {
-  return typeof value === 'string' ? value : '';
-}
-
-function readBoolean(value: unknown): boolean {
-  return typeof value === 'boolean' ? value : false;
 }
 
 if (import.meta.url === `file://${process.argv[1]}`) {

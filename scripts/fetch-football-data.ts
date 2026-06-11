@@ -1,7 +1,7 @@
 import { LEAGUES } from '../src/data/leagues';
 import type { LeagueMeta } from '../src/data/leagues';
-import type { LeagueSnapshot, Match, TeamStanding } from '../src/types';
-import { LEAGUE_ASSET_ROOT, TEAM_ASSET_ROOT, currentSeasonLabel, seasonStartYear } from './shared';
+import type { LeagueSnapshot, Match, MatchStatus, TeamStanding } from '../src/types';
+import { LEAGUE_ASSET_ROOT, TEAM_ASSET_ROOT, currentSeasonLabel, seasonStartYear, sleep } from './shared';
 import { mkdir, writeFile } from 'node:fs/promises';
 import path from 'node:path';
 
@@ -39,7 +39,7 @@ interface FootballDataMatchesResponse {
   matches?: Array<{
     id: number;
     utcDate: string;
-    status: string;
+    status: MatchStatus;
     matchday?: number;
     homeTeam: { id: number; name: string };
     awayTeam: { id: number; name: string };
@@ -99,6 +99,11 @@ async function resolveLeagueEmblem(league: LeagueMeta, emblemUrl: string | undef
     return fallback;
   }
 
+  if (!isValidHttpsUrl(emblemUrl)) {
+    warnings.push(`Competition emblem URL is not HTTPS: ${emblemUrl}`);
+    return fallback;
+  }
+
   try {
     const response = await fetch(emblemUrl);
     if (!response.ok) {
@@ -139,6 +144,14 @@ async function localizeTeamCrests(league: LeagueMeta, standings: TeamStanding[],
   return localized;
 }
 
+function isValidHttpsUrl(url: string): boolean {
+  try {
+    return new URL(url).protocol === 'https:';
+  } catch {
+    return false;
+  }
+}
+
 function extensionFor(contentType: string, url: string): string {
   if (contentType.includes('svg')) return '.svg';
   if (contentType.includes('png')) return '.png';
@@ -165,6 +178,7 @@ async function downloadAsset({
   warnings: string[];
 }): Promise<string | null> {
   try {
+    if (!isValidHttpsUrl(url)) return null;
     const response = await fetch(url);
     if (!response.ok) {
       warnings.push(`${warningLabel} download failed: ${response.status}`);
@@ -192,8 +206,13 @@ async function requestFootballData<T>(pathname: string, token: string): Promise<
   for (let attempt = 0; attempt <= MAX_RETRIES; attempt++) {
     try {
       await waitForRateLimitSlot();
-      const response = await fetch(`https://api.football-data.org/v4${pathname}`, {
-        headers: { 'X-Auth-Token': token }
+      const url = `https://api.football-data.org/v4${pathname}`;
+      if (!url.startsWith('https://api.football-data.org/v4/')) {
+        throw new Error(`Invalid API URL: ${pathname}`);
+      }
+      const response = await fetch(url, {
+        headers: { 'X-Auth-Token': token },
+        signal: AbortSignal.timeout(30000)
       });
       lastRequestAt = Date.now();
       if (response.status === 429) {
@@ -204,7 +223,11 @@ async function requestFootballData<T>(pathname: string, token: string): Promise<
       if (!response.ok) {
         throw new Error(`football-data request failed ${response.status}: ${pathname}`);
       }
-      return response.json() as Promise<T>;
+      const data = await response.json();
+      if (!data || typeof data !== 'object') {
+        throw new Error(`football-data returned non-object response for ${pathname}`);
+      }
+      return data as T;
     } catch (error) {
       if (attempt < MAX_RETRIES) {
         const delay = INITIAL_RETRY_DELAY_MS * 2 ** attempt;
@@ -228,17 +251,13 @@ async function waitForRateLimitSlot(): Promise<void> {
   }
 }
 
-function sleep(ms: number): Promise<void> {
-  return new Promise((resolve) => setTimeout(resolve, ms));
-}
-
 export function adaptStandings(response: FootballDataStandingResponse): TeamStanding[] {
   const table = response.standings?.find((standing) => standing.type === 'TOTAL')?.table ?? [];
   return table.map((row) => ({
-    teamId: row.team.id,
-    teamName: row.team.name,
-    shortName: row.team.shortName ?? row.team.name,
-    crest: row.team.crest,
+    teamId: row.team?.id ?? 0,
+    teamName: row.team?.name ?? 'Unknown',
+    shortName: row.team?.shortName ?? row.team?.name ?? 'Unknown',
+    crest: row.team?.crest,
     position: row.position,
     playedGames: row.playedGames,
     won: row.won,
@@ -258,12 +277,12 @@ export function adaptMatches(response: FootballDataMatchesResponse): Match[] {
     utcDate: match.utcDate,
     status: match.status,
     matchday: match.matchday,
-    homeTeamId: match.homeTeam.id,
-    homeTeamName: match.homeTeam.name,
-    awayTeamId: match.awayTeam.id,
-    awayTeamName: match.awayTeam.name,
-    homeScore: match.score.fullTime.home,
-    awayScore: match.score.fullTime.away
+    homeTeamId: match.homeTeam?.id ?? 0,
+    homeTeamName: match.homeTeam?.name ?? 'Unknown',
+    awayTeamId: match.awayTeam?.id ?? 0,
+    awayTeamName: match.awayTeam?.name ?? 'Unknown',
+    homeScore: match.score?.fullTime?.home ?? null,
+    awayScore: match.score?.fullTime?.away ?? null
   }));
 }
 

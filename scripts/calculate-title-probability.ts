@@ -1,4 +1,5 @@
 import type { LeagueSnapshot, ProbabilityFeatures, Snapshot, TeamStanding, TitleProbability } from '../src/types';
+import { MAX_SEASON_GAMES } from './shared';
 
 const WEIGHTS: Record<keyof ProbabilityFeatures, number> = {
   pointsPerGame: 0.4,
@@ -22,7 +23,7 @@ export function calculateLeagueProbabilities(league: LeagueSnapshot, previousSna
   }
 
   const maxPlayed = Math.max(...league.standings.map((team) => team.playedGames));
-  const maxSeasonGames = league.id === 'bundesliga' ? 34 : 38;
+  const maxSeasonGames = MAX_SEASON_GAMES[league.id] ?? 38;
   const finished =
     maxPlayed >= maxSeasonGames ||
     (league.matches.length > 0 && league.matches.every((match) => match.status === 'FINISHED'));
@@ -109,7 +110,7 @@ function remainingScheduleAdvantage(team: TeamStanding, league: LeagueSnapshot):
   const futureOpponents = league.matches
     .filter((match) => match.status !== 'FINISHED' && (match.homeTeamId === team.teamId || match.awayTeamId === team.teamId))
     .map((match) => (match.homeTeamId === team.teamId ? match.awayTeamId : match.homeTeamId));
-  if (!futureOpponents.length) return Number.NaN;
+  if (!futureOpponents.length) return 0;
   const pointsByTeam = new Map(league.standings.map((standing) => [standing.teamId, standing.points / Math.max(standing.playedGames, 1)]));
   const averageOpponentPpg = futureOpponents.reduce((sum, teamId) => sum + (pointsByTeam.get(teamId) ?? 1.3), 0) / futureOpponents.length;
   const leagueAverage = league.standings.reduce((sum, standing) => sum + standing.points / Math.max(standing.playedGames, 1), 0) / league.standings.length;
@@ -207,12 +208,12 @@ function sanitizeFeatures(features: ProbabilityFeatures): ProbabilityFeatures {
 }
 
 function confidenceFor(team: TeamStanding, league: LeagueSnapshot): number {
-  const maxGames = league.id === 'bundesliga' ? 34 : 38;
+  const maxGames = MAX_SEASON_GAMES[league.id] ?? 38;
   const scheduleCompleteness = league.matches.length > 0 ? 1 : 0.82;
   return Math.min(0.95, 0.54 + (team.playedGames / maxGames) * 0.32 + scheduleCompleteness * 0.09);
 }
 
-function deltasFor(teamId: number, leagueId: string, probability: number, previousSnapshots: Snapshot[]) {
+function deltasFor(teamId: number, leagueId: string, probability: number, previousSnapshots: Snapshot[]): Pick<TitleProbability, 'probabilityDeltaPrevious' | 'probabilityDelta7d'> {
   // previousSnapshots is ordered oldest -> newest.
   const previous = previousSnapshots.at(-1)?.leagues.find((league) => league.id === leagueId)?.titleProbabilities.find((team) => team.teamId === teamId);
   // Newest snapshot that is at least 7 days old, for a stable week-over-week delta.
