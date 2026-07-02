@@ -1,7 +1,7 @@
 import { LEAGUES } from '../src/data/leagues';
 import type { LeagueMeta } from '../src/data/leagues';
 import type { LeagueSnapshot, Match, MatchStatus, TeamStanding } from '../src/types';
-import { LEAGUE_ASSET_ROOT, TEAM_ASSET_ROOT, currentSeasonLabel, seasonStartYear, sleep } from './shared';
+import { LEAGUE_ASSET_ROOT, TEAM_ASSET_ROOT, currentSeasonLabel, sleep } from './shared';
 import { mkdir, writeFile } from 'node:fs/promises';
 import path from 'node:path';
 
@@ -56,10 +56,14 @@ export async function fetchFootballDataLeagues(token: string, now = new Date()):
 }
 
 async function fetchLeague(league: LeagueMeta, token: string, now: Date): Promise<LeagueSnapshot> {
-  const season = seasonStartYear(now);
   const warnings: string[] = [];
-  const standingResponse = await requestFootballData<FootballDataStandingResponse>(`/competitions/${league.code}/standings?season=${season}`, token);
-  const matchesResponse = await requestFootballData<FootballDataMatchesResponse>(`/competitions/${league.code}/matches?season=${season}`, token);
+  // No `season` query param: football-data.org defaults to each competition's
+  // currently running season. Guessing the season year from the local clock
+  // is unreliable, since leagues don't all start on the same date (e.g.
+  // Bundesliga kicks off in late August) and the new season's data may not
+  // exist yet on the API when our naive July cutover fires, causing 404s.
+  const standingResponse = await requestFootballData<FootballDataStandingResponse>(`/competitions/${league.code}/standings`, token);
+  const matchesResponse = await requestFootballData<FootballDataMatchesResponse>(`/competitions/${league.code}/matches`, token);
   const competitionResponse = standingResponse.competition;
 
   const standings = await localizeTeamCrests(league, adaptStandings(standingResponse), warnings);
