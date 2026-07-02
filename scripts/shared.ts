@@ -29,10 +29,6 @@ export function currentSeasonLabel(now = new Date()): string {
   return `${year}-${year + 1}`;
 }
 
-export function seasonStartYear(now = new Date()): number {
-  return now.getUTCMonth() >= 6 ? now.getUTCFullYear() : now.getUTCFullYear() - 1;
-}
-
 export function stableJson(value: unknown): string {
   return `${JSON.stringify(value, null, 2)}\n`;
 }
