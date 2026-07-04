@@ -49,10 +49,10 @@ jobs:
       - name: Commit data changes
         if: github.event_name != 'push'
         run: |
-          if [[ -n "$(git status --porcelain public/data)" ]]; then
+          if [[ -n "$(git status --porcelain public/data public/assets)" ]]; then
             git config user.name "github-actions[bot]"
             git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-            git add public/data
+            git add public/data public/assets
             git commit -m "chore: update football data"
             git pull --rebase origin main
             git push
