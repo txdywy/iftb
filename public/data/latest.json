@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-17T22:19:03.356Z",
+  "generatedAt": "2026-10-18T07:14:05.291Z",
   "modelVersion": "rule-softmax-v0.1.0",
   "leagues": [
     {
@@ -4912,7 +4912,7 @@
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": 0.0322,
+          "probabilityDeltaPrevious": 0,
           "probabilityDelta7d": 0.1462
         },
         {
@@ -4933,7 +4933,7 @@
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": 0.0068,
+          "probabilityDeltaPrevious": 0,
           "probabilityDelta7d": 0.01
         },
         {
@@ -4954,7 +4954,7 @@
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": 0.0028,
+          "probabilityDeltaPrevious": 0,
           "probabilityDelta7d": 0.0058
         },
         {
@@ -4975,7 +4975,7 @@
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": -0.0019,
+          "probabilityDeltaPrevious": 0,
           "probabilityDelta7d": 0.0096
         },
         {
@@ -4996,7 +4996,7 @@
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": -0.0027,
+          "probabilityDeltaPrevious": 0,
           "probabilityDelta7d": -0.0069
         },
         {
@@ -5017,7 +5017,7 @@
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": -0.0029,
+          "probabilityDeltaPrevious": 0,
           "probabilityDelta7d": -0.012
         },
         {
@@ -5038,7 +5038,7 @@
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": -0.0031,
+          "probabilityDeltaPrevious": 0,
           "probabilityDelta7d": -0.0196
         },
         {
@@ -5059,7 +5059,7 @@
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": -0.0031,
+          "probabilityDeltaPrevious": 0,
           "probabilityDelta7d": -0.0215
         },
         {
@@ -5080,7 +5080,7 @@
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": -0.003,
+          "probabilityDeltaPrevious": 0,
           "probabilityDelta7d": -0.0183
         },
         {
@@ -5101,7 +5101,7 @@
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": -0.0028,
+          "probabilityDeltaPrevious": 0,
           "probabilityDelta7d": -0.015
         },
         {
@@ -5122,7 +5122,7 @@
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": 0.0043,
+          "probabilityDeltaPrevious": 0,
           "probabilityDelta7d": -0.0017
         },
         {
@@ -5143,7 +5143,7 @@
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": -0.0026,
+          "probabilityDeltaPrevious": 0,
           "probabilityDelta7d": 0
         },
         {
@@ -5164,7 +5164,7 @@
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": -0.0077,
+          "probabilityDeltaPrevious": 0,
           "probabilityDelta7d": -0.024
         },
         {
@@ -5185,7 +5185,7 @@
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": -0.0028,
+          "probabilityDeltaPrevious": 0,
           "probabilityDelta7d": -0.0111
         },
         {
@@ -5206,7 +5206,7 @@
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": -0.0025,
+          "probabilityDeltaPrevious": 0,
           "probabilityDelta7d": -0.0003
         },
         {
@@ -5227,7 +5227,7 @@
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": -0.0024,
+          "probabilityDeltaPrevious": 0,
           "probabilityDelta7d": -0.0128
         },
         {
@@ -5248,7 +5248,7 @@
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": -0.0025,
+          "probabilityDeltaPrevious": 0,
           "probabilityDelta7d": -0.0021
         },
         {
@@ -5269,7 +5269,7 @@
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": -0.0022,
+          "probabilityDeltaPrevious": 0,
           "probabilityDelta7d": -0.0094
         },
         {
@@ -5290,7 +5290,7 @@
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": -0.0021,
+          "probabilityDeltaPrevious": 0,
           "probabilityDelta7d": -0.0089
         },
         {
@@ -5311,7 +5311,7 @@
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": -0.002,
+          "probabilityDeltaPrevious": 0,
           "probabilityDelta7d": -0.0083
         }
       ],
@@ -5334,7 +5334,7 @@
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": 0.0322,
+          "probabilityDeltaPrevious": 0,
           "probabilityDelta7d": 0.1462
         },
         {
@@ -5355,7 +5355,7 @@
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": 0.0068,
+          "probabilityDeltaPrevious": 0,
           "probabilityDelta7d": 0.01
         },
         {
@@ -5376,7 +5376,7 @@
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": 0.0028,
+          "probabilityDeltaPrevious": 0,
           "probabilityDelta7d": 0.0058
         },
         {
@@ -5397,7 +5397,7 @@
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": -0.0019,
+          "probabilityDeltaPrevious": 0,
           "probabilityDelta7d": 0.0096
         },
         {
@@ -5418,7 +5418,7 @@
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": -0.0027,
+          "probabilityDeltaPrevious": 0,
           "probabilityDelta7d": -0.0069
         },
         {
@@ -5439,7 +5439,7 @@
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": -0.0029,
+          "probabilityDeltaPrevious": 0,
           "probabilityDelta7d": -0.012
         },
         {
@@ -5460,7 +5460,7 @@
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": -0.0031,
+          "probabilityDeltaPrevious": 0,
           "probabilityDelta7d": -0.0196
         },
         {
@@ -5481,18 +5481,18 @@
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": -0.0031,
+          "probabilityDeltaPrevious": 0,
           "probabilityDelta7d": -0.0215
         }
       ],
       "dataQuality": {
         "status": "ok",
         "warnings": [
-          "Match odds unavailable: The Odds API soccer_epl match odds returned 401",
-          "Odds unavailable: The Odds API soccer_epl returned 422"
+          "Odds unavailable: The Odds API soccer_epl returned 422",
+          "Match odds unavailable: The Odds API soccer_epl match odds returned 401"
         ],
-        "standingsUpdatedAt": "2026-10-17T22:19:03.356Z",
-        "matchesUpdatedAt": "2026-10-17T22:19:03.356Z"
+        "standingsUpdatedAt": "2026-10-18T07:14:05.291Z",
+        "matchesUpdatedAt": "2026-10-18T07:14:05.291Z"
       }
     },
     {
@@ -6716,122 +6716,122 @@
         {
           "id": 564703,
           "utcDate": "2026-10-11T12:00:00Z",
-          "status": "FINISHED",
+          "status": "TIMED",
           "matchday": 8,
           "homeTeamId": 285,
           "homeTeamName": "Elche CF",
           "awayTeamId": 558,
           "awayTeamName": "RC Celta de Vigo",
-          "homeScore": 0,
-          "awayScore": 0
+          "homeScore": null,
+          "awayScore": null
         },
         {
           "id": 564707,
           "utcDate": "2026-10-11T14:15:00Z",
-          "status": "FINISHED",
+          "status": "TIMED",
           "matchday": 8,
           "homeTeamId": 92,
           "homeTeamName": "Real Sociedad de Fútbol",
           "awayTeamId": 560,
           "awayTeamName": "RC Deportivo La Coruña",
-          "homeScore": 3,
-          "awayScore": 2
+          "homeScore": null,
+          "awayScore": null
         },
         {
           "id": 564701,
           "utcDate": "2026-10-11T16:30:00Z",
-          "status": "FINISHED",
+          "status": "TIMED",
           "matchday": 8,
           "homeTeamId": 90,
           "homeTeamName": "Real Betis Balompié",
           "awayTeamId": 79,
           "awayTeamName": "CA Osasuna",
-          "homeScore": 5,
-          "awayScore": 2
+          "homeScore": null,
+          "awayScore": null
         },
         {
           "id": 564705,
           "utcDate": "2026-10-11T19:00:00Z",
-          "status": "FINISHED",
+          "status": "TIMED",
           "matchday": 8,
           "homeTeamId": 5335,
           "homeTeamName": "Real Racing Club de Santander",
           "awayTeamId": 95,
           "awayTeamName": "Valencia CF",
-          "homeScore": 2,
-          "awayScore": 2
+          "homeScore": null,
+          "awayScore": null
         },
         {
           "id": 564704,
           "utcDate": "2026-10-12T19:00:00Z",
-          "status": "FINISHED",
+          "status": "TIMED",
           "matchday": 8,
           "homeTeamId": 88,
           "homeTeamName": "Levante UD",
           "awayTeamId": 559,
           "awayTeamName": "Sevilla FC",
-          "homeScore": 3,
-          "awayScore": 3
+          "homeScore": null,
+          "awayScore": null
         },
         {
           "id": 564716,
           "utcDate": "2026-10-16T19:00:00Z",
-          "status": "FINISHED",
+          "status": "TIMED",
           "matchday": 9,
           "homeTeamId": 560,
           "homeTeamName": "RC Deportivo La Coruña",
           "awayTeamId": 88,
           "awayTeamName": "Levante UD",
-          "homeScore": 1,
-          "awayScore": 1
+          "homeScore": null,
+          "awayScore": null
         },
         {
           "id": 564710,
           "utcDate": "2026-10-17T12:00:00Z",
-          "status": "FINISHED",
+          "status": "TIMED",
           "matchday": 9,
           "homeTeamId": 80,
           "homeTeamName": "RCD Espanyol de Barcelona",
           "awayTeamId": 78,
           "awayTeamName": "Club Atlético de Madrid",
-          "homeScore": 0,
-          "awayScore": 1
+          "homeScore": null,
+          "awayScore": null
         },
         {
           "id": 564708,
           "utcDate": "2026-10-17T14:15:00Z",
-          "status": "FINISHED",
+          "status": "TIMED",
           "matchday": 9,
           "homeTeamId": 94,
           "homeTeamName": "Villarreal CF",
           "awayTeamId": 285,
           "awayTeamName": "Elche CF",
-          "homeScore": 0,
-          "awayScore": 0
+          "homeScore": null,
+          "awayScore": null
         },
         {
           "id": 564713,
           "utcDate": "2026-10-17T16:30:00Z",
-          "status": "FINISHED",
+          "status": "TIMED",
           "matchday": 9,
           "homeTeamId": 90,
           "homeTeamName": "Real Betis Balompié",
           "awayTeamId": 81,
           "awayTeamName": "FC Barcelona",
-          "homeScore": 2,
-          "awayScore": 5
+          "homeScore": null,
+          "awayScore": null
         },
         {
           "id": 564711,
           "utcDate": "2026-10-17T19:00:00Z",
-          "status": "FINISHED",
+          "status": "TIMED",
           "matchday": 9,
           "homeTeamId": 95,
           "homeTeamName": "Valencia CF",
           "awayTeamId": 77,
           "awayTeamName": "Athletic Club",
-          "homeScore": 0,
-          "awayScore": 0
+          "homeScore": null,
+          "awayScore": null
         },
         {
           "id": 564715,
@@ -7146,9 +7146,33 @@
           "awayScore": null
         },
         {
+          "id": 564738,
+          "utcDate": "2026-11-08T00:00:00Z",
+          "status": "SCHEDULED",
+          "matchday": 12,
+          "homeTeamId": 285,
+          "homeTeamName": "Elche CF",
+          "awayTeamId": 90,
+          "awayTeamName": "Real Betis Balompié",
+          "homeScore": null,
+          "awayScore": null
+        },
+        {
+          "id": 564739,
+          "utcDate": "2026-11-08T00:00:00Z",
+          "status": "SCHEDULED",
+          "matchday": 12,
+          "homeTeamId": 79,
+          "homeTeamName": "CA Osasuna",
+          "awayTeamId": 77,
+          "awayTeamName": "Athletic Club",
+          "homeScore": null,
+          "awayScore": null
+        },
+        {
           "id": 564740,
-          "utcDate": "2026-11-06T20:00:00Z",
-          "status": "TIMED",
+          "utcDate": "2026-11-08T00:00:00Z",
+          "status": "SCHEDULED",
           "matchday": 12,
           "homeTeamId": 559,
           "homeTeamName": "Sevilla FC",
@@ -7158,9 +7182,45 @@
           "awayScore": null
         },
         {
+          "id": 564741,
+          "utcDate": "2026-11-08T00:00:00Z",
+          "status": "SCHEDULED",
+          "matchday": 12,
+          "homeTeamId": 95,
+          "homeTeamName": "Valencia CF",
+          "awayTeamId": 86,
+          "awayTeamName": "Real Madrid CF",
+          "homeScore": null,
+          "awayScore": null
+        },
+        {
+          "id": 564742,
+          "utcDate": "2026-11-08T00:00:00Z",
+          "status": "SCHEDULED",
+          "matchday": 12,
+          "homeTeamId": 558,
+          "homeTeamName": "RC Celta de Vigo",
+          "awayTeamId": 88,
+          "awayTeamName": "Levante UD",
+          "homeScore": null,
+          "awayScore": null
+        },
+        {
+          "id": 564743,
+          "utcDate": "2026-11-08T00:00:00Z",
+          "status": "SCHEDULED",
+          "matchday": 12,
+          "homeTeamId": 92,
+          "homeTeamName": "Real Sociedad de Fútbol",
+          "awayTeamId": 87,
+          "awayTeamName": "Rayo Vallecano de Madrid",
+          "homeScore": null,
+          "awayScore": null
+        },
+        {
           "id": 564744,
-          "utcDate": "2026-11-07T13:00:00Z",
-          "status": "TIMED",
+          "utcDate": "2026-11-08T00:00:00Z",
+          "status": "SCHEDULED",
           "matchday": 12,
           "homeTeamId": 84,
           "homeTeamName": "Málaga CF",
@@ -7171,8 +7231,8 @@
         },
         {
           "id": 564745,
-          "utcDate": "2026-11-07T15:15:00Z",
-          "status": "TIMED",
+          "utcDate": "2026-11-08T00:00:00Z",
+          "status": "SCHEDULED",
           "matchday": 12,
           "homeTeamId": 80,
           "homeTeamName": "RCD Espanyol de Barcelona",
@@ -7182,86 +7242,26 @@
           "awayScore": null
         },
         {
-          "id": 564739,
-          "utcDate": "2026-11-07T17:30:00Z",
-          "status": "TIMED",
-          "matchday": 12,
-          "homeTeamId": 79,
-          "homeTeamName": "CA Osasuna",
-          "awayTeamId": 77,
-          "awayTeamName": "Athletic Club",
-          "homeScore": null,
-          "awayScore": null
-        },
-        {
-          "id": 564741,
-          "utcDate": "2026-11-07T20:00:00Z",
-          "status": "TIMED",
-          "matchday": 12,
-          "homeTeamId": 95,
-          "homeTeamName": "Valencia CF",
-          "awayTeamId": 86,
-          "awayTeamName": "Real Madrid CF",
-          "homeScore": null,
-          "awayScore": null
-        },
-        {
-          "id": 564738,
-          "utcDate": "2026-11-08T13:00:00Z",
-          "status": "TIMED",
-          "matchday": 12,
-          "homeTeamId": 285,
-          "homeTeamName": "Elche CF",
-          "awayTeamId": 90,
-          "awayTeamName": "Real Betis Balompié",
-          "homeScore": null,
-          "awayScore": null
-        },
-        {
-          "id": 564743,
-          "utcDate": "2026-11-08T15:15:00Z",
-          "status": "TIMED",
-          "matchday": 12,
-          "homeTeamId": 92,
-          "homeTeamName": "Real Sociedad de Fútbol",
-          "awayTeamId": 87,
-          "awayTeamName": "Rayo Vallecano de Madrid",
-          "homeScore": null,
-          "awayScore": null
-        },
-        {
-          "id": 564742,
-          "utcDate": "2026-11-08T17:30:00Z",
-          "status": "TIMED",
-          "matchday": 12,
-          "homeTeamId": 558,
-          "homeTeamName": "RC Celta de Vigo",
-          "awayTeamId": 88,
-          "awayTeamName": "Levante UD",
-          "homeScore": null,
-          "awayScore": null
-        },
-        {
-          "id": 564747,
-          "utcDate": "2026-11-08T17:30:00Z",
-          "status": "TIMED",
-          "matchday": 12,
-          "homeTeamId": 94,
-          "homeTeamName": "Villarreal CF",
-          "awayTeamId": 82,
-          "awayTeamName": "Getafe CF",
-          "homeScore": null,
-          "awayScore": null
-        },
-        {
           "id": 564746,
-          "utcDate": "2026-11-08T20:00:00Z",
-          "status": "TIMED",
+          "utcDate": "2026-11-08T00:00:00Z",
+          "status": "SCHEDULED",
           "matchday": 12,
           "homeTeamId": 78,
           "homeTeamName": "Club Atlético de Madrid",
           "awayTeamId": 81,
           "awayTeamName": "FC Barcelona",
+          "homeScore": null,
+          "awayScore": null
+        },
+        {
+          "id": 564747,
+          "utcDate": "2026-11-08T00:00:00Z",
+          "status": "SCHEDULED",
+          "matchday": 12,
+          "homeTeamId": 94,
+          "homeTeamName": "Villarreal CF",
+          "awayTeamId": 82,
+          "awayTeamName": "Getafe CF",
           "homeScore": null,
           "awayScore": null
         },
@@ -10392,50 +10392,50 @@
           "teamName": "FC Barcelona",
           "shortName": "Barça",
           "crest": "assets/teams/laliga/81.png",
-          "rawScore": 3.0712,
-          "probability": 0.4003,
+          "rawScore": 3.0345,
+          "probability": 0.3952,
           "confidence": 0.7058,
           "features": {
             "pointsPerGame": 3,
             "pointsGapAdjusted": 1,
             "goalDiffPerGame": 3.3333,
             "recentPpg": 0,
-            "remainingScheduleAdvantage": 0.0623
+            "remainingScheduleAdvantage": 0.0347
           },
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": 0.0969,
-          "probabilityDelta7d": -0.0429
+          "probabilityDeltaPrevious": -0.0051,
+          "probabilityDelta7d": -0.0363
         },
         {
           "teamId": 78,
           "teamName": "Club Atlético de Madrid",
           "shortName": "Atleti",
           "crest": "assets/teams/laliga/78.png",
-          "rawScore": 1.952,
-          "probability": 0.1307,
+          "rawScore": 1.9425,
+          "probability": 0.1326,
           "confidence": 0.7058,
           "features": {
             "pointsPerGame": 2.4444,
             "pointsGapAdjusted": 0.8148,
             "goalDiffPerGame": 1.2222,
             "recentPpg": 0,
-            "remainingScheduleAdvantage": 0.0607
+            "remainingScheduleAdvantage": 0.0739
           },
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": -0.0168,
-          "probabilityDelta7d": 0.0039
+          "probabilityDeltaPrevious": 0.0019,
+          "probabilityDelta7d": 0.0084
         },
         {
           "teamId": 86,
           "teamName": "Real Madrid CF",
           "shortName": "Real Madrid",
           "crest": "assets/teams/laliga/86.png",
-          "rawScore": 1.6425,
-          "probability": 0.0959,
+          "rawScore": 1.625,
+          "probability": 0.0965,
           "confidence": 0.6974,
           "features": {
             "pointsPerGame": 2.25,
@@ -10447,79 +10447,79 @@
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": -0.0121,
-          "probabilityDelta7d": 0.0123
+          "probabilityDeltaPrevious": 0.0006,
+          "probabilityDelta7d": -0.0099
         },
         {
           "teamId": 90,
           "teamName": "Real Betis Balompié",
           "shortName": "Real Betis",
           "crest": "assets/teams/laliga/90.png",
-          "rawScore": 1.3509,
-          "probability": 0.0717,
+          "rawScore": 1.3007,
+          "probability": 0.0698,
           "confidence": 0.7058,
           "features": {
             "pointsPerGame": 2.1111,
             "pointsGapAdjusted": 0.7037,
             "goalDiffPerGame": 0.2222,
             "recentPpg": 0,
-            "remainingScheduleAdvantage": 0.071
+            "remainingScheduleAdvantage": 0.0242
           },
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": -0.0243,
-          "probabilityDelta7d": -0.0061
+          "probabilityDeltaPrevious": -0.0019,
+          "probabilityDelta7d": -0.0064
         },
         {
           "teamId": 559,
           "teamName": "Sevilla FC",
           "shortName": "Sevilla FC",
           "crest": "assets/teams/laliga/559.png",
-          "rawScore": 0.8152,
-          "probability": 0.0419,
+          "rawScore": 0.8066,
+          "probability": 0.0426,
           "confidence": 0.6974,
           "features": {
             "pointsPerGame": 1.75,
             "pointsGapAdjusted": 0.5185,
             "goalDiffPerGame": 0.125,
             "recentPpg": 0,
-            "remainingScheduleAdvantage": 0.0523
+            "remainingScheduleAdvantage": 0.0658
           },
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": -0.006,
-          "probabilityDelta7d": -0.0035
+          "probabilityDeltaPrevious": 0.0007,
+          "probabilityDelta7d": -0.0019
         },
         {
           "teamId": 92,
           "teamName": "Real Sociedad de Fútbol",
           "shortName": "Real Sociedad",
           "crest": "assets/teams/laliga/92.png",
-          "rawScore": 0.5542,
-          "probability": 0.0323,
+          "rawScore": 0.5394,
+          "probability": 0.0326,
           "confidence": 0.6974,
           "features": {
             "pointsPerGame": 1.625,
             "pointsGapAdjusted": 0.4815,
             "goalDiffPerGame": -0.375,
             "recentPpg": 0,
-            "remainingScheduleAdvantage": 0.0385
+            "remainingScheduleAdvantage": 0.0412
           },
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": -0.0052,
-          "probabilityDelta7d": 0.0103
+          "probabilityDeltaPrevious": 0.0003,
+          "probabilityDelta7d": 0.011
         },
         {
           "teamId": 263,
           "teamName": "Deportivo Alavés",
           "shortName": "Alavés",
           "crest": "assets/teams/laliga/263.png",
-          "rawScore": 0.433,
-          "probability": 0.0286,
+          "rawScore": 0.422,
+          "probability": 0.029,
           "confidence": 0.6974,
           "features": {
             "pointsPerGame": 1.375,
@@ -10531,100 +10531,100 @@
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": -0.0038,
-          "probabilityDelta7d": 0.0017
+          "probabilityDeltaPrevious": 0.0004,
+          "probabilityDelta7d": 0.0028
         },
         {
           "teamId": 77,
           "teamName": "Athletic Club",
           "shortName": "Athletic",
           "crest": "assets/teams/laliga/77.png",
-          "rawScore": 0.2497,
-          "probability": 0.0238,
+          "rawScore": 0.2455,
+          "probability": 0.0243,
           "confidence": 0.6889,
           "features": {
             "pointsPerGame": 1.2857,
             "pointsGapAdjusted": 0.3333,
             "goalDiffPerGame": 0.1429,
             "recentPpg": 0,
-            "remainingScheduleAdvantage": 0.0475
+            "remainingScheduleAdvantage": 0.0673
           },
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": -0.0035,
-          "probabilityDelta7d": 0.0022
+          "probabilityDeltaPrevious": 0.0005,
+          "probabilityDelta7d": 0.0032
         },
         {
           "teamId": 560,
           "teamName": "RC Deportivo La Coruña",
           "shortName": "Deportivo",
           "crest": "assets/teams/laliga/560.png",
-          "rawScore": 0.2194,
-          "probability": 0.0231,
+          "rawScore": 0.218,
+          "probability": 0.0236,
           "confidence": 0.7058,
           "features": {
             "pointsPerGame": 1.2222,
             "pointsGapAdjusted": 0.4074,
             "goalDiffPerGame": 0.1111,
             "recentPpg": 0,
-            "remainingScheduleAdvantage": -0.0708
+            "remainingScheduleAdvantage": -0.0601
           },
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": -0.0032,
-          "probabilityDelta7d": -0.0021
+          "probabilityDeltaPrevious": 0.0005,
+          "probabilityDelta7d": -0.001
         },
         {
           "teamId": 94,
           "teamName": "Villarreal CF",
           "shortName": "Villarreal",
           "crest": "assets/teams/laliga/94.png",
-          "rawScore": -0.0107,
-          "probability": 0.0184,
+          "rawScore": -0.0111,
+          "probability": 0.0188,
           "confidence": 0.7058,
           "features": {
             "pointsPerGame": 1,
             "pointsGapAdjusted": 0.3333,
             "goalDiffPerGame": 0,
             "recentPpg": 0,
-            "remainingScheduleAdvantage": -0.0085
+            "remainingScheduleAdvantage": 0.0107
           },
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": -0.0027,
-          "probabilityDelta7d": 0.0009
+          "probabilityDeltaPrevious": 0.0004,
+          "probabilityDelta7d": 0.0038
         },
         {
           "teamId": 558,
           "teamName": "RC Celta de Vigo",
           "shortName": "Celta",
           "crest": "assets/teams/laliga/558.png",
-          "rawScore": -0.0877,
-          "probability": 0.017,
+          "rawScore": -0.0779,
+          "probability": 0.0176,
           "confidence": 0.6974,
           "features": {
             "pointsPerGame": 1,
             "pointsGapAdjusted": 0.2963,
             "goalDiffPerGame": 0.25,
             "recentPpg": 0,
-            "remainingScheduleAdvantage": -0.1201
+            "remainingScheduleAdvantage": -0.0979
           },
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": -0.0022,
-          "probabilityDelta7d": 0.0029
+          "probabilityDeltaPrevious": 0.0006,
+          "probabilityDelta7d": 0.0038
         },
         {
           "teamId": 87,
           "teamName": "Rayo Vallecano de Madrid",
           "shortName": "Rayo Vallecano",
           "crest": "assets/teams/laliga/87.png",
-          "rawScore": -0.0969,
-          "probability": 0.0168,
+          "rawScore": -0.1141,
+          "probability": 0.017,
           "confidence": 0.6889,
           "features": {
             "pointsPerGame": 1.1429,
@@ -10636,37 +10636,37 @@
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": -0.0027,
-          "probabilityDelta7d": 0.0017
+          "probabilityDeltaPrevious": 0.0002,
+          "probabilityDelta7d": 0.0021
         },
         {
           "teamId": 80,
           "teamName": "RCD Espanyol de Barcelona",
           "shortName": "Espanyol",
           "crest": "assets/teams/laliga/80.png",
-          "rawScore": -0.1722,
-          "probability": 0.0156,
+          "rawScore": -0.2082,
+          "probability": 0.0154,
           "confidence": 0.7058,
           "features": {
             "pointsPerGame": 0.8889,
             "pointsGapAdjusted": 0.2963,
             "goalDiffPerGame": -0.1111,
             "recentPpg": 0,
-            "remainingScheduleAdvantage": -0.0228
+            "remainingScheduleAdvantage": -0.0586
           },
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": -0.0023,
-          "probabilityDelta7d": 0.0011
+          "probabilityDeltaPrevious": -0.0002,
+          "probabilityDelta7d": 0.0012
         },
         {
           "teamId": 82,
           "teamName": "Getafe CF",
           "shortName": "Getafe",
           "crest": "assets/teams/laliga/82.png",
-          "rawScore": -0.2384,
-          "probability": 0.0146,
+          "rawScore": -0.2517,
+          "probability": 0.0148,
           "confidence": 0.6974,
           "features": {
             "pointsPerGame": 1,
@@ -10678,7 +10678,7 @@
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": -0.0023,
+          "probabilityDeltaPrevious": 0.0002,
           "probabilityDelta7d": 0.0021
         },
         {
@@ -10686,7 +10686,7 @@
           "teamName": "Levante UD",
           "shortName": "Levante",
           "crest": "assets/teams/laliga/88.png",
-          "rawScore": -0.3139,
+          "rawScore": -0.3326,
           "probability": 0.0136,
           "confidence": 0.6974,
           "features": {
@@ -10694,105 +10694,105 @@
             "pointsGapAdjusted": 0.2593,
             "goalDiffPerGame": -0.5,
             "recentPpg": 0,
-            "remainingScheduleAdvantage": -0.0078
+            "remainingScheduleAdvantage": -0.0161
           },
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": -0.002,
-          "probabilityDelta7d": 0.0041
-        },
-        {
-          "teamId": 79,
-          "teamName": "CA Osasuna",
-          "shortName": "Osasuna",
-          "crest": "assets/teams/laliga/79.png",
-          "rawScore": -0.3642,
-          "probability": 0.0129,
-          "confidence": 0.6974,
-          "features": {
-            "pointsPerGame": 1,
-            "pointsGapAdjusted": 0.2963,
-            "goalDiffPerGame": -1.25,
-            "recentPpg": 0,
-            "remainingScheduleAdvantage": -0.0207
-          },
-          "missingFeatures": [
-            "recentPpg"
-          ],
-          "probabilityDeltaPrevious": -0.0022,
-          "probabilityDelta7d": -0.0005
+          "probabilityDeltaPrevious": 0,
+          "probabilityDelta7d": 0.0043
         },
         {
           "teamId": 5335,
           "teamName": "Real Racing Club de Santander",
           "shortName": "Santander",
           "crest": "assets/teams/laliga/5335.png",
-          "rawScore": -0.3858,
-          "probability": 0.0126,
+          "rawScore": -0.3803,
+          "probability": 0.013,
           "confidence": 0.6974,
           "features": {
             "pointsPerGame": 1,
             "pointsGapAdjusted": 0.2963,
             "goalDiffPerGame": -1.25,
             "recentPpg": 0,
-            "remainingScheduleAdvantage": -0.0498
+            "remainingScheduleAdvantage": -0.0263
           },
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": -0.002,
-          "probabilityDelta7d": 0.0023
+          "probabilityDeltaPrevious": 0.0004,
+          "probabilityDelta7d": 0.0029
+        },
+        {
+          "teamId": 79,
+          "teamName": "CA Osasuna",
+          "shortName": "Osasuna",
+          "crest": "assets/teams/laliga/79.png",
+          "rawScore": -0.3925,
+          "probability": 0.0128,
+          "confidence": 0.6974,
+          "features": {
+            "pointsPerGame": 1,
+            "pointsGapAdjusted": 0.2963,
+            "goalDiffPerGame": -1.25,
+            "recentPpg": 0,
+            "remainingScheduleAdvantage": -0.0447
+          },
+          "missingFeatures": [
+            "recentPpg"
+          ],
+          "probabilityDeltaPrevious": -0.0001,
+          "probabilityDelta7d": -0.0004
         },
         {
           "teamId": 285,
           "teamName": "Elche CF",
           "shortName": "Elche",
           "crest": "assets/teams/laliga/285.png",
-          "rawScore": -0.4096,
-          "probability": 0.0123,
+          "rawScore": -0.4086,
+          "probability": 0.0126,
           "confidence": 0.7058,
           "features": {
             "pointsPerGame": 0.7778,
             "pointsGapAdjusted": 0.2593,
             "goalDiffPerGame": -0.6667,
             "recentPpg": 0,
-            "remainingScheduleAdvantage": 0.0008
+            "remainingScheduleAdvantage": 0.0231
           },
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": -0.0019,
-          "probabilityDelta7d": 0.0039
+          "probabilityDeltaPrevious": 0.0003,
+          "probabilityDelta7d": 0.0044
         },
         {
           "teamId": 95,
           "teamName": "Valencia CF",
           "shortName": "Valencia",
           "crest": "assets/teams/laliga/95.png",
-          "rawScore": -0.5902,
-          "probability": 0.0103,
+          "rawScore": -0.5989,
+          "probability": 0.0104,
           "confidence": 0.7058,
           "features": {
             "pointsPerGame": 0.6667,
             "pointsGapAdjusted": 0.2222,
             "goalDiffPerGame": -1,
             "recentPpg": 0,
-            "remainingScheduleAdvantage": 0.031
+            "remainingScheduleAdvantage": 0.0421
           },
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": -0.0005,
-          "probabilityDelta7d": 0.0038
+          "probabilityDeltaPrevious": 0.0001,
+          "probabilityDelta7d": 0.004
         },
         {
           "teamId": 84,
           "teamName": "Málaga CF",
           "shortName": "Málaga",
           "crest": "assets/teams/laliga/84.png",
-          "rawScore": -0.9001,
-          "probability": 0.0075,
+          "rawScore": -0.9095,
+          "probability": 0.0077,
           "confidence": 0.6974,
           "features": {
             "pointsPerGame": 0.5,
@@ -10804,8 +10804,8 @@
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": -0.0013,
-          "probabilityDelta7d": 0.0016
+          "probabilityDeltaPrevious": 0.0002,
+          "probabilityDelta7d": 0.0019
         }
       ],
       "topContenders": [
@@ -10814,50 +10814,50 @@
           "teamName": "FC Barcelona",
           "shortName": "Barça",
           "crest": "assets/teams/laliga/81.png",
-          "rawScore": 3.0712,
-          "probability": 0.4003,
+          "rawScore": 3.0345,
+          "probability": 0.3952,
           "confidence": 0.7058,
           "features": {
             "pointsPerGame": 3,
             "pointsGapAdjusted": 1,
             "goalDiffPerGame": 3.3333,
             "recentPpg": 0,
-            "remainingScheduleAdvantage": 0.0623
+            "remainingScheduleAdvantage": 0.0347
           },
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": 0.0969,
-          "probabilityDelta7d": -0.0429
+          "probabilityDeltaPrevious": -0.0051,
+          "probabilityDelta7d": -0.0363
         },
         {
           "teamId": 78,
           "teamName": "Club Atlético de Madrid",
           "shortName": "Atleti",
           "crest": "assets/teams/laliga/78.png",
-          "rawScore": 1.952,
-          "probability": 0.1307,
+          "rawScore": 1.9425,
+          "probability": 0.1326,
           "confidence": 0.7058,
           "features": {
             "pointsPerGame": 2.4444,
             "pointsGapAdjusted": 0.8148,
             "goalDiffPerGame": 1.2222,
             "recentPpg": 0,
-            "remainingScheduleAdvantage": 0.0607
+            "remainingScheduleAdvantage": 0.0739
           },
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": -0.0168,
-          "probabilityDelta7d": 0.0039
+          "probabilityDeltaPrevious": 0.0019,
+          "probabilityDelta7d": 0.0084
         },
         {
           "teamId": 86,
           "teamName": "Real Madrid CF",
           "shortName": "Real Madrid",
           "crest": "assets/teams/laliga/86.png",
-          "rawScore": 1.6425,
-          "probability": 0.0959,
+          "rawScore": 1.625,
+          "probability": 0.0965,
           "confidence": 0.6974,
           "features": {
             "pointsPerGame": 2.25,
@@ -10869,79 +10869,79 @@
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": -0.0121,
-          "probabilityDelta7d": 0.0123
+          "probabilityDeltaPrevious": 0.0006,
+          "probabilityDelta7d": -0.0099
         },
         {
           "teamId": 90,
           "teamName": "Real Betis Balompié",
           "shortName": "Real Betis",
           "crest": "assets/teams/laliga/90.png",
-          "rawScore": 1.3509,
-          "probability": 0.0717,
+          "rawScore": 1.3007,
+          "probability": 0.0698,
           "confidence": 0.7058,
           "features": {
             "pointsPerGame": 2.1111,
             "pointsGapAdjusted": 0.7037,
             "goalDiffPerGame": 0.2222,
             "recentPpg": 0,
-            "remainingScheduleAdvantage": 0.071
+            "remainingScheduleAdvantage": 0.0242
           },
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": -0.0243,
-          "probabilityDelta7d": -0.0061
+          "probabilityDeltaPrevious": -0.0019,
+          "probabilityDelta7d": -0.0064
         },
         {
           "teamId": 559,
           "teamName": "Sevilla FC",
           "shortName": "Sevilla FC",
           "crest": "assets/teams/laliga/559.png",
-          "rawScore": 0.8152,
-          "probability": 0.0419,
+          "rawScore": 0.8066,
+          "probability": 0.0426,
           "confidence": 0.6974,
           "features": {
             "pointsPerGame": 1.75,
             "pointsGapAdjusted": 0.5185,
             "goalDiffPerGame": 0.125,
             "recentPpg": 0,
-            "remainingScheduleAdvantage": 0.0523
+            "remainingScheduleAdvantage": 0.0658
           },
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": -0.006,
-          "probabilityDelta7d": -0.0035
+          "probabilityDeltaPrevious": 0.0007,
+          "probabilityDelta7d": -0.0019
         },
         {
           "teamId": 92,
           "teamName": "Real Sociedad de Fútbol",
           "shortName": "Real Sociedad",
           "crest": "assets/teams/laliga/92.png",
-          "rawScore": 0.5542,
-          "probability": 0.0323,
+          "rawScore": 0.5394,
+          "probability": 0.0326,
           "confidence": 0.6974,
           "features": {
             "pointsPerGame": 1.625,
             "pointsGapAdjusted": 0.4815,
             "goalDiffPerGame": -0.375,
             "recentPpg": 0,
-            "remainingScheduleAdvantage": 0.0385
+            "remainingScheduleAdvantage": 0.0412
           },
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": -0.0052,
-          "probabilityDelta7d": 0.0103
+          "probabilityDeltaPrevious": 0.0003,
+          "probabilityDelta7d": 0.011
         },
         {
           "teamId": 263,
           "teamName": "Deportivo Alavés",
           "shortName": "Alavés",
           "crest": "assets/teams/laliga/263.png",
-          "rawScore": 0.433,
-          "probability": 0.0286,
+          "rawScore": 0.422,
+          "probability": 0.029,
           "confidence": 0.6974,
           "features": {
             "pointsPerGame": 1.375,
@@ -10953,39 +10953,39 @@
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": -0.0038,
-          "probabilityDelta7d": 0.0017
+          "probabilityDeltaPrevious": 0.0004,
+          "probabilityDelta7d": 0.0028
         },
         {
           "teamId": 77,
           "teamName": "Athletic Club",
           "shortName": "Athletic",
           "crest": "assets/teams/laliga/77.png",
-          "rawScore": 0.2497,
-          "probability": 0.0238,
+          "rawScore": 0.2455,
+          "probability": 0.0243,
           "confidence": 0.6889,
           "features": {
             "pointsPerGame": 1.2857,
             "pointsGapAdjusted": 0.3333,
             "goalDiffPerGame": 0.1429,
             "recentPpg": 0,
-            "remainingScheduleAdvantage": 0.0475
+            "remainingScheduleAdvantage": 0.0673
           },
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": -0.0035,
-          "probabilityDelta7d": 0.0022
+          "probabilityDeltaPrevious": 0.0005,
+          "probabilityDelta7d": 0.0032
         }
       ],
       "dataQuality": {
         "status": "ok",
         "warnings": [
-          "Match odds unavailable: The Odds API soccer_spain_la_liga match odds returned 401",
-          "Odds unavailable: The Odds API soccer_spain_la_liga returned 422"
+          "Odds unavailable: The Odds API soccer_spain_la_liga returned 422",
+          "Match odds unavailable: The Odds API soccer_spain_la_liga match odds returned 401"
         ],
-        "standingsUpdatedAt": "2026-10-17T22:19:03.356Z",
-        "matchesUpdatedAt": "2026-10-17T22:19:03.356Z"
+        "standingsUpdatedAt": "2026-10-18T07:14:05.291Z",
+        "matchesUpdatedAt": "2026-10-18T07:14:05.291Z"
       }
     },
     {
@@ -14978,7 +14978,7 @@
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": 0.0118,
+          "probabilityDeltaPrevious": 0,
           "probabilityDelta7d": 0.0347
         },
         {
@@ -14999,7 +14999,7 @@
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": 0.0023,
+          "probabilityDeltaPrevious": 0,
           "probabilityDelta7d": 0.0179
         },
         {
@@ -15020,7 +15020,7 @@
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": -0.0001,
+          "probabilityDeltaPrevious": 0,
           "probabilityDelta7d": -0.0368
         },
         {
@@ -15062,7 +15062,7 @@
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": -0.0006,
+          "probabilityDeltaPrevious": 0,
           "probabilityDelta7d": 0.0147
         },
         {
@@ -15083,7 +15083,7 @@
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": -0.0011,
+          "probabilityDeltaPrevious": 0,
           "probabilityDelta7d": 0.0133
         },
         {
@@ -15104,7 +15104,7 @@
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": -0.0006,
+          "probabilityDeltaPrevious": 0,
           "probabilityDelta7d": -0.0225
         },
         {
@@ -15125,7 +15125,7 @@
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": -0.0012,
+          "probabilityDeltaPrevious": 0,
           "probabilityDelta7d": -0.008
         },
         {
@@ -15146,7 +15146,7 @@
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": -0.0005,
+          "probabilityDeltaPrevious": 0,
           "probabilityDelta7d": -0.0149
         },
         {
@@ -15167,7 +15167,7 @@
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": -0.0021,
+          "probabilityDeltaPrevious": 0,
           "probabilityDelta7d": 0.0096
         },
         {
@@ -15188,7 +15188,7 @@
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": -0.0016,
+          "probabilityDeltaPrevious": 0,
           "probabilityDelta7d": 0.0102
         },
         {
@@ -15209,7 +15209,7 @@
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": -0.001,
+          "probabilityDeltaPrevious": 0,
           "probabilityDelta7d": 0.0046
         },
         {
@@ -15230,7 +15230,7 @@
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": -0.0009,
+          "probabilityDeltaPrevious": 0,
           "probabilityDelta7d": -0.007
         },
         {
@@ -15251,7 +15251,7 @@
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": -0.0009,
+          "probabilityDeltaPrevious": 0,
           "probabilityDelta7d": -0.0093
         },
         {
@@ -15272,7 +15272,7 @@
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": -0.0009,
+          "probabilityDeltaPrevious": 0,
           "probabilityDelta7d": 0.0005
         },
         {
@@ -15293,7 +15293,7 @@
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": -0.0013,
+          "probabilityDeltaPrevious": 0,
           "probabilityDelta7d": 0.0013
         },
         {
@@ -15314,7 +15314,7 @@
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": -0.0007,
+          "probabilityDeltaPrevious": 0,
           "probabilityDelta7d": -0.0012
         },
         {
@@ -15335,7 +15335,7 @@
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": -0.0006,
+          "probabilityDeltaPrevious": 0,
           "probabilityDelta7d": -0.0004
         }
       ],
@@ -15358,7 +15358,7 @@
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": 0.0118,
+          "probabilityDeltaPrevious": 0,
           "probabilityDelta7d": 0.0347
         },
         {
@@ -15379,7 +15379,7 @@
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": 0.0023,
+          "probabilityDeltaPrevious": 0,
           "probabilityDelta7d": 0.0179
         },
         {
@@ -15400,7 +15400,7 @@
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": -0.0001,
+          "probabilityDeltaPrevious": 0,
           "probabilityDelta7d": -0.0368
         },
         {
@@ -15442,7 +15442,7 @@
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": -0.0006,
+          "probabilityDeltaPrevious": 0,
           "probabilityDelta7d": 0.0147
         },
         {
@@ -15463,7 +15463,7 @@
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": -0.0011,
+          "probabilityDeltaPrevious": 0,
           "probabilityDelta7d": 0.0133
         },
         {
@@ -15484,7 +15484,7 @@
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": -0.0006,
+          "probabilityDeltaPrevious": 0,
           "probabilityDelta7d": -0.0225
         },
         {
@@ -15505,18 +15505,18 @@
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": -0.0012,
+          "probabilityDeltaPrevious": 0,
           "probabilityDelta7d": -0.008
         }
       ],
       "dataQuality": {
         "status": "ok",
         "warnings": [
-          "Match odds unavailable: The Odds API soccer_germany_bundesliga match odds returned 401",
-          "Odds unavailable: The Odds API soccer_germany_bundesliga returned 422"
+          "Odds unavailable: The Odds API soccer_germany_bundesliga returned 422",
+          "Match odds unavailable: The Odds API soccer_germany_bundesliga match odds returned 401"
         ],
-        "standingsUpdatedAt": "2026-10-17T22:19:03.356Z",
-        "matchesUpdatedAt": "2026-10-17T22:19:03.356Z"
+        "standingsUpdatedAt": "2026-10-18T07:14:05.291Z",
+        "matchesUpdatedAt": "2026-10-18T07:14:05.291Z"
       }
     },
     {
@@ -20429,8 +20429,8 @@
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": 0.0202,
-          "probabilityDelta7d": 0.0026
+          "probabilityDeltaPrevious": 0,
+          "probabilityDelta7d": 0.0004
         },
         {
           "teamId": 100,
@@ -20450,8 +20450,8 @@
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": 0.0096,
-          "probabilityDelta7d": -0.0019
+          "probabilityDeltaPrevious": 0,
+          "probabilityDelta7d": -0.0039
         },
         {
           "teamId": 110,
@@ -20471,8 +20471,8 @@
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": -0.0039,
-          "probabilityDelta7d": 0.0074
+          "probabilityDeltaPrevious": 0,
+          "probabilityDelta7d": 0.0073
         },
         {
           "teamId": 104,
@@ -20492,8 +20492,8 @@
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": -0.002,
-          "probabilityDelta7d": -0.0083
+          "probabilityDeltaPrevious": 0,
+          "probabilityDelta7d": -0.0081
         },
         {
           "teamId": 98,
@@ -20513,8 +20513,8 @@
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": -0.0026,
-          "probabilityDelta7d": -0.0077
+          "probabilityDeltaPrevious": 0,
+          "probabilityDelta7d": -0.0081
         },
         {
           "teamId": 109,
@@ -20534,8 +20534,8 @@
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": -0.0024,
-          "probabilityDelta7d": -0.0044
+          "probabilityDeltaPrevious": 0,
+          "probabilityDelta7d": -0.0039
         },
         {
           "teamId": 470,
@@ -20555,8 +20555,8 @@
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": -0.0021,
-          "probabilityDelta7d": -0.0039
+          "probabilityDeltaPrevious": 0,
+          "probabilityDelta7d": 0.0086
         },
         {
           "teamId": 7397,
@@ -20576,8 +20576,8 @@
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": -0.002,
-          "probabilityDelta7d": -0.0042
+          "probabilityDeltaPrevious": 0,
+          "probabilityDelta7d": -0.0039
         },
         {
           "teamId": 113,
@@ -20597,8 +20597,8 @@
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": -0.0014,
-          "probabilityDelta7d": 0.0047
+          "probabilityDeltaPrevious": 0,
+          "probabilityDelta7d": -0.0097
         },
         {
           "teamId": 102,
@@ -20618,8 +20618,8 @@
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": -0.0016,
-          "probabilityDelta7d": 0.0092
+          "probabilityDeltaPrevious": 0,
+          "probabilityDelta7d": 0.0097
         },
         {
           "teamId": 471,
@@ -20639,8 +20639,8 @@
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": -0.0013,
-          "probabilityDelta7d": -0.0035
+          "probabilityDeltaPrevious": 0,
+          "probabilityDelta7d": -0.0031
         },
         {
           "teamId": 586,
@@ -20660,8 +20660,8 @@
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": -0.0011,
-          "probabilityDelta7d": 0.0075
+          "probabilityDeltaPrevious": 0,
+          "probabilityDelta7d": 0.008
         },
         {
           "teamId": 5890,
@@ -20681,8 +20681,8 @@
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": -0.0009,
-          "probabilityDelta7d": -0.0039
+          "probabilityDeltaPrevious": 0,
+          "probabilityDelta7d": -0.0031
         },
         {
           "teamId": 103,
@@ -20702,8 +20702,8 @@
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": -0.0037,
-          "probabilityDelta7d": 0.0066
+          "probabilityDeltaPrevious": 0,
+          "probabilityDelta7d": 0.0068
         },
         {
           "teamId": 115,
@@ -20723,8 +20723,8 @@
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": -0.0007,
-          "probabilityDelta7d": -0.002
+          "probabilityDeltaPrevious": 0,
+          "probabilityDelta7d": -0.0015
         },
         {
           "teamId": 112,
@@ -20744,8 +20744,8 @@
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": -0.0007,
-          "probabilityDelta7d": -0.0006
+          "probabilityDeltaPrevious": 0,
+          "probabilityDelta7d": -0.0001
         },
         {
           "teamId": 5911,
@@ -20765,8 +20765,8 @@
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": -0.0005,
-          "probabilityDelta7d": -0.0018
+          "probabilityDeltaPrevious": 0,
+          "probabilityDelta7d": -0.0013
         },
         {
           "teamId": 107,
@@ -20786,8 +20786,8 @@
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": -0.0014,
-          "probabilityDelta7d": -0.0011
+          "probabilityDeltaPrevious": 0,
+          "probabilityDelta7d": -0.0005
         },
         {
           "teamId": 99,
@@ -20807,8 +20807,8 @@
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": -0.0006,
-          "probabilityDelta7d": -0.0002
+          "probabilityDeltaPrevious": 0,
+          "probabilityDelta7d": 0.0005
         },
         {
           "teamId": 454,
@@ -20828,8 +20828,8 @@
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": -0.0006,
-          "probabilityDelta7d": 0.0055
+          "probabilityDeltaPrevious": 0,
+          "probabilityDelta7d": 0.0061
         }
       ],
       "topContenders": [
@@ -20851,8 +20851,8 @@
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": 0.0202,
-          "probabilityDelta7d": 0.0026
+          "probabilityDeltaPrevious": 0,
+          "probabilityDelta7d": 0.0004
         },
         {
           "teamId": 100,
@@ -20872,8 +20872,8 @@
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": 0.0096,
-          "probabilityDelta7d": -0.0019
+          "probabilityDeltaPrevious": 0,
+          "probabilityDelta7d": -0.0039
         },
         {
           "teamId": 110,
@@ -20893,8 +20893,8 @@
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": -0.0039,
-          "probabilityDelta7d": 0.0074
+          "probabilityDeltaPrevious": 0,
+          "probabilityDelta7d": 0.0073
         },
         {
           "teamId": 104,
@@ -20914,8 +20914,8 @@
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": -0.002,
-          "probabilityDelta7d": -0.0083
+          "probabilityDeltaPrevious": 0,
+          "probabilityDelta7d": -0.0081
         },
         {
           "teamId": 98,
@@ -20935,8 +20935,8 @@
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": -0.0026,
-          "probabilityDelta7d": -0.0077
+          "probabilityDeltaPrevious": 0,
+          "probabilityDelta7d": -0.0081
         },
         {
           "teamId": 109,
@@ -20956,8 +20956,8 @@
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": -0.0024,
-          "probabilityDelta7d": -0.0044
+          "probabilityDeltaPrevious": 0,
+          "probabilityDelta7d": -0.0039
         },
         {
           "teamId": 470,
@@ -20977,8 +20977,8 @@
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": -0.0021,
-          "probabilityDelta7d": -0.0039
+          "probabilityDeltaPrevious": 0,
+          "probabilityDelta7d": 0.0086
         },
         {
           "teamId": 7397,
@@ -20998,18 +20998,18 @@
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": -0.002,
-          "probabilityDelta7d": -0.0042
+          "probabilityDeltaPrevious": 0,
+          "probabilityDelta7d": -0.0039
         }
       ],
       "dataQuality": {
         "status": "ok",
         "warnings": [
-          "Match odds unavailable: The Odds API soccer_italy_serie_a match odds returned 401",
-          "Odds unavailable: The Odds API soccer_italy_serie_a returned 422"
+          "Odds unavailable: The Odds API soccer_italy_serie_a returned 422",
+          "Match odds unavailable: The Odds API soccer_italy_serie_a match odds returned 401"
         ],
-        "standingsUpdatedAt": "2026-10-17T22:19:03.356Z",
-        "matchesUpdatedAt": "2026-10-17T22:19:03.356Z"
+        "standingsUpdatedAt": "2026-10-18T07:14:05.291Z",
+        "matchesUpdatedAt": "2026-10-18T07:14:05.291Z"
       }
     },
     {
@@ -25002,8 +25002,8 @@
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": 0.0007,
-          "probabilityDelta7d": -0.0573
+          "probabilityDeltaPrevious": 0,
+          "probabilityDelta7d": -0.0117
         },
         {
           "teamId": 524,
@@ -25023,8 +25023,8 @@
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": -0.0055,
-          "probabilityDelta7d": 0.0538
+          "probabilityDeltaPrevious": 0,
+          "probabilityDelta7d": 0.0171
         },
         {
           "teamId": 529,
@@ -25044,8 +25044,8 @@
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": -0.0014,
-          "probabilityDelta7d": 0.0333
+          "probabilityDeltaPrevious": 0,
+          "probabilityDelta7d": 0.0251
         },
         {
           "teamId": 521,
@@ -25065,8 +25065,8 @@
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": -0.0087,
-          "probabilityDelta7d": -0.0297
+          "probabilityDeltaPrevious": 0,
+          "probabilityDelta7d": -0.0172
         },
         {
           "teamId": 523,
@@ -25086,8 +25086,8 @@
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": 0.0005,
-          "probabilityDelta7d": -0.0247
+          "probabilityDeltaPrevious": 0,
+          "probabilityDelta7d": -0.0103
         },
         {
           "teamId": 1045,
@@ -25107,8 +25107,8 @@
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": -0.0006,
-          "probabilityDelta7d": -0.0528
+          "probabilityDeltaPrevious": 0,
+          "probabilityDelta7d": -0.0084
         },
         {
           "teamId": 546,
@@ -25128,8 +25128,8 @@
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": 0.0158,
-          "probabilityDelta7d": 0.0137
+          "probabilityDeltaPrevious": 0,
+          "probabilityDelta7d": 0.0099
         },
         {
           "teamId": 511,
@@ -25149,8 +25149,8 @@
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": -0.0009,
-          "probabilityDelta7d": 0.0222
+          "probabilityDeltaPrevious": 0,
+          "probabilityDelta7d": 0.0125
         },
         {
           "teamId": 512,
@@ -25170,8 +25170,8 @@
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": 0.0021,
-          "probabilityDelta7d": 0.0209
+          "probabilityDeltaPrevious": 0,
+          "probabilityDelta7d": -0.0015
         },
         {
           "teamId": 525,
@@ -25191,8 +25191,8 @@
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": 0.0003,
-          "probabilityDelta7d": 0.0162
+          "probabilityDeltaPrevious": 0,
+          "probabilityDelta7d": -0.0019
         },
         {
           "teamId": 522,
@@ -25212,8 +25212,8 @@
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": -0.0006,
-          "probabilityDelta7d": 0.0162
+          "probabilityDeltaPrevious": 0,
+          "probabilityDelta7d": 0.0107
         },
         {
           "teamId": 516,
@@ -25233,8 +25233,8 @@
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": -0.0006,
-          "probabilityDelta7d": 0.0143
+          "probabilityDeltaPrevious": 0,
+          "probabilityDelta7d": 0.0102
         },
         {
           "teamId": 532,
@@ -25254,8 +25254,8 @@
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": -0.0005,
-          "probabilityDelta7d": -0.0131
+          "probabilityDeltaPrevious": 0,
+          "probabilityDelta7d": -0.003
         },
         {
           "teamId": 576,
@@ -25275,8 +25275,8 @@
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": 0.001,
-          "probabilityDelta7d": -0.0114
+          "probabilityDeltaPrevious": 0,
+          "probabilityDelta7d": -0.0146
         },
         {
           "teamId": 535,
@@ -25297,7 +25297,7 @@
             "recentPpg"
           ],
           "probabilityDeltaPrevious": 0,
-          "probabilityDelta7d": -0.0077
+          "probabilityDelta7d": -0.0061
         },
         {
           "teamId": 519,
@@ -25318,7 +25318,7 @@
             "recentPpg"
           ],
           "probabilityDeltaPrevious": 0,
-          "probabilityDelta7d": 0.002
+          "probabilityDelta7d": -0.005
         },
         {
           "teamId": 531,
@@ -25338,8 +25338,8 @@
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": -0.0014,
-          "probabilityDelta7d": 0.0012
+          "probabilityDeltaPrevious": 0,
+          "probabilityDelta7d": -0.0049
         },
         {
           "teamId": 533,
@@ -25359,8 +25359,8 @@
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": -0.0003,
-          "probabilityDelta7d": 0.0026
+          "probabilityDeltaPrevious": 0,
+          "probabilityDelta7d": -0.0011
         }
       ],
       "topContenders": [
@@ -25382,8 +25382,8 @@
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": 0.0007,
-          "probabilityDelta7d": -0.0573
+          "probabilityDeltaPrevious": 0,
+          "probabilityDelta7d": -0.0117
         },
         {
           "teamId": 524,
@@ -25403,8 +25403,8 @@
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": -0.0055,
-          "probabilityDelta7d": 0.0538
+          "probabilityDeltaPrevious": 0,
+          "probabilityDelta7d": 0.0171
         },
         {
           "teamId": 529,
@@ -25424,8 +25424,8 @@
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": -0.0014,
-          "probabilityDelta7d": 0.0333
+          "probabilityDeltaPrevious": 0,
+          "probabilityDelta7d": 0.0251
         },
         {
           "teamId": 521,
@@ -25445,8 +25445,8 @@
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": -0.0087,
-          "probabilityDelta7d": -0.0297
+          "probabilityDeltaPrevious": 0,
+          "probabilityDelta7d": -0.0172
         },
         {
           "teamId": 523,
@@ -25466,8 +25466,8 @@
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": 0.0005,
-          "probabilityDelta7d": -0.0247
+          "probabilityDeltaPrevious": 0,
+          "probabilityDelta7d": -0.0103
         },
         {
           "teamId": 1045,
@@ -25487,8 +25487,8 @@
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": -0.0006,
-          "probabilityDelta7d": -0.0528
+          "probabilityDeltaPrevious": 0,
+          "probabilityDelta7d": -0.0084
         },
         {
           "teamId": 546,
@@ -25508,8 +25508,8 @@
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": 0.0158,
-          "probabilityDelta7d": 0.0137
+          "probabilityDeltaPrevious": 0,
+          "probabilityDelta7d": 0.0099
         },
         {
           "teamId": 511,
@@ -25529,18 +25529,18 @@
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": -0.0009,
-          "probabilityDelta7d": 0.0222
+          "probabilityDeltaPrevious": 0,
+          "probabilityDelta7d": 0.0125
         }
       ],
       "dataQuality": {
         "status": "ok",
         "warnings": [
-          "Match odds unavailable: The Odds API soccer_france_ligue_one match odds returned 401",
-          "Odds unavailable: The Odds API soccer_france_ligue_one returned 422"
+          "Odds unavailable: The Odds API soccer_france_ligue_one returned 422",
+          "Match odds unavailable: The Odds API soccer_france_ligue_one match odds returned 401"
         ],
-        "standingsUpdatedAt": "2026-10-17T22:19:03.356Z",
-        "matchesUpdatedAt": "2026-10-17T22:19:03.356Z"
+        "standingsUpdatedAt": "2026-10-18T07:14:05.291Z",
+        "matchesUpdatedAt": "2026-10-18T07:14:05.291Z"
       }
     }
   ]
