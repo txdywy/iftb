@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-19T07:46:44.813Z",
+  "generatedAt": "2026-10-19T15:36:11.269Z",
   "modelVersion": "rule-softmax-v0.1.0",
   "leagues": [
     {
@@ -5491,8 +5491,8 @@
           "Odds unavailable: The Odds API soccer_epl returned 422",
           "Match odds unavailable: The Odds API soccer_epl match odds returned 401"
         ],
-        "standingsUpdatedAt": "2026-10-19T07:46:44.813Z",
-        "matchesUpdatedAt": "2026-10-19T07:46:44.813Z"
+        "standingsUpdatedAt": "2026-10-19T15:36:11.269Z",
+        "matchesUpdatedAt": "2026-10-19T15:36:11.269Z"
       }
     },
     {
@@ -10981,11 +10981,11 @@
       "dataQuality": {
         "status": "ok",
         "warnings": [
-          "Odds unavailable: The Odds API soccer_spain_la_liga returned 422",
-          "Match odds unavailable: The Odds API soccer_spain_la_liga match odds returned 401"
+          "Match odds unavailable: The Odds API soccer_spain_la_liga match odds returned 401",
+          "Odds unavailable: The Odds API soccer_spain_la_liga returned 422"
         ],
-        "standingsUpdatedAt": "2026-10-19T07:46:44.813Z",
-        "matchesUpdatedAt": "2026-10-19T07:46:44.813Z"
+        "standingsUpdatedAt": "2026-10-19T15:36:11.269Z",
+        "matchesUpdatedAt": "2026-10-19T15:36:11.269Z"
       }
     },
     {
@@ -15515,8 +15515,8 @@
           "Odds unavailable: The Odds API soccer_germany_bundesliga returned 422",
           "Match odds unavailable: The Odds API soccer_germany_bundesliga match odds returned 401"
         ],
-        "standingsUpdatedAt": "2026-10-19T07:46:44.813Z",
-        "matchesUpdatedAt": "2026-10-19T07:46:44.813Z"
+        "standingsUpdatedAt": "2026-10-19T15:36:11.269Z",
+        "matchesUpdatedAt": "2026-10-19T15:36:11.269Z"
       }
     },
     {
@@ -21005,11 +21005,11 @@
       "dataQuality": {
         "status": "ok",
         "warnings": [
-          "Odds unavailable: The Odds API soccer_italy_serie_a returned 422",
-          "Match odds unavailable: The Odds API soccer_italy_serie_a match odds returned 401"
+          "Match odds unavailable: The Odds API soccer_italy_serie_a match odds returned 401",
+          "Odds unavailable: The Odds API soccer_italy_serie_a returned 422"
         ],
-        "standingsUpdatedAt": "2026-10-19T07:46:44.813Z",
-        "matchesUpdatedAt": "2026-10-19T07:46:44.813Z"
+        "standingsUpdatedAt": "2026-10-19T15:36:11.269Z",
+        "matchesUpdatedAt": "2026-10-19T15:36:11.269Z"
       }
     },
     {
@@ -25536,11 +25536,11 @@
       "dataQuality": {
         "status": "ok",
         "warnings": [
-          "Odds unavailable: The Odds API soccer_france_ligue_one returned 422",
-          "Match odds unavailable: The Odds API soccer_france_ligue_one match odds returned 401"
+          "Match odds unavailable: The Odds API soccer_france_ligue_one match odds returned 401",
+          "Odds unavailable: The Odds API soccer_france_ligue_one returned 422"
         ],
-        "standingsUpdatedAt": "2026-10-19T07:46:44.813Z",
-        "matchesUpdatedAt": "2026-10-19T07:46:44.813Z"
+        "standingsUpdatedAt": "2026-10-19T15:36:11.269Z",
+        "matchesUpdatedAt": "2026-10-19T15:36:11.269Z"
       }
     }
   ]
