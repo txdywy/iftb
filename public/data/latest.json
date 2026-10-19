@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-18T22:25:47.120Z",
+  "generatedAt": "2026-10-19T07:46:44.813Z",
   "modelVersion": "rule-softmax-v0.1.0",
   "leagues": [
     {
@@ -4912,7 +4912,7 @@
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": 0.0005,
+          "probabilityDeltaPrevious": 0,
           "probabilityDelta7d": 0.1062
         },
         {
@@ -4933,7 +4933,7 @@
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": 0.0003,
+          "probabilityDeltaPrevious": 0,
           "probabilityDelta7d": 0.043
         },
         {
@@ -4954,7 +4954,7 @@
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": -0.0016,
+          "probabilityDeltaPrevious": 0,
           "probabilityDelta7d": 0.0376
         },
         {
@@ -4975,7 +4975,7 @@
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": 0.0001,
+          "probabilityDeltaPrevious": 0,
           "probabilityDelta7d": 0.006
         },
         {
@@ -4996,7 +4996,7 @@
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": 0.0001,
+          "probabilityDeltaPrevious": 0,
           "probabilityDelta7d": 0.0009
         },
         {
@@ -5164,7 +5164,7 @@
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": 0.0001,
+          "probabilityDeltaPrevious": 0,
           "probabilityDelta7d": -0.0113
         },
         {
@@ -5185,7 +5185,7 @@
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": 0.0001,
+          "probabilityDeltaPrevious": 0,
           "probabilityDelta7d": -0.0163
         },
         {
@@ -5206,7 +5206,7 @@
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": 0.0001,
+          "probabilityDeltaPrevious": 0,
           "probabilityDelta7d": -0.0011
         },
         {
@@ -5269,7 +5269,7 @@
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": 0.0003,
+          "probabilityDeltaPrevious": 0,
           "probabilityDelta7d": -0.011
         },
         {
@@ -5334,7 +5334,7 @@
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": 0.0005,
+          "probabilityDeltaPrevious": 0,
           "probabilityDelta7d": 0.1062
         },
         {
@@ -5355,7 +5355,7 @@
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": 0.0003,
+          "probabilityDeltaPrevious": 0,
           "probabilityDelta7d": 0.043
         },
         {
@@ -5376,7 +5376,7 @@
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": -0.0016,
+          "probabilityDeltaPrevious": 0,
           "probabilityDelta7d": 0.0376
         },
         {
@@ -5397,7 +5397,7 @@
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": 0.0001,
+          "probabilityDeltaPrevious": 0,
           "probabilityDelta7d": 0.006
         },
         {
@@ -5418,7 +5418,7 @@
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": 0.0001,
+          "probabilityDeltaPrevious": 0,
           "probabilityDelta7d": 0.0009
         },
         {
@@ -5491,8 +5491,8 @@
           "Odds unavailable: The Odds API soccer_epl returned 422",
           "Match odds unavailable: The Odds API soccer_epl match odds returned 401"
         ],
-        "standingsUpdatedAt": "2026-10-18T22:25:47.120Z",
-        "matchesUpdatedAt": "2026-10-18T22:25:47.120Z"
+        "standingsUpdatedAt": "2026-10-19T07:46:44.813Z",
+        "matchesUpdatedAt": "2026-10-19T07:46:44.813Z"
       }
     },
     {
@@ -10405,8 +10405,8 @@
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": 0.0237,
-          "probabilityDelta7d": -0.0045
+          "probabilityDeltaPrevious": 0,
+          "probabilityDelta7d": -0.0099
         },
         {
           "teamId": 78,
@@ -10426,8 +10426,8 @@
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": 0.0021,
-          "probabilityDelta7d": 0.0055
+          "probabilityDeltaPrevious": 0,
+          "probabilityDelta7d": 0.0057
         },
         {
           "teamId": 86,
@@ -10447,8 +10447,8 @@
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": 0.0245,
-          "probabilityDelta7d": 0.0149
+          "probabilityDeltaPrevious": 0,
+          "probabilityDelta7d": 0.0152
         },
         {
           "teamId": 90,
@@ -10468,8 +10468,8 @@
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": -0.0007,
-          "probabilityDelta7d": -0.0281
+          "probabilityDeltaPrevious": 0,
+          "probabilityDelta7d": -0.0284
         },
         {
           "teamId": 92,
@@ -10489,8 +10489,8 @@
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": -0.0021,
-          "probabilityDelta7d": 0.0099
+          "probabilityDeltaPrevious": 0,
+          "probabilityDelta7d": 0.0104
         },
         {
           "teamId": 559,
@@ -10510,8 +10510,8 @@
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": -0.0096,
-          "probabilityDelta7d": -0.0116
+          "probabilityDeltaPrevious": 0,
+          "probabilityDelta7d": -0.0109
         },
         {
           "teamId": 263,
@@ -10531,8 +10531,8 @@
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": -0.0033,
-          "probabilityDelta7d": -0.0046
+          "probabilityDeltaPrevious": 0,
+          "probabilityDelta7d": -0.0041
         },
         {
           "teamId": 77,
@@ -10552,8 +10552,8 @@
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": -0.003,
-          "probabilityDelta7d": 0.0001
+          "probabilityDeltaPrevious": 0,
+          "probabilityDelta7d": 0.0009
         },
         {
           "teamId": 558,
@@ -10573,8 +10573,8 @@
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": -0.0034,
-          "probabilityDelta7d": 0.0068
+          "probabilityDeltaPrevious": 0,
+          "probabilityDelta7d": 0.0071
         },
         {
           "teamId": 560,
@@ -10594,8 +10594,8 @@
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": -0.0033,
-          "probabilityDelta7d": -0.0003
+          "probabilityDeltaPrevious": 0,
+          "probabilityDelta7d": 0.0001
         },
         {
           "teamId": 79,
@@ -10615,8 +10615,8 @@
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": -0.0025,
-          "probabilityDelta7d": 0.006
+          "probabilityDeltaPrevious": 0,
+          "probabilityDelta7d": 0.0064
         },
         {
           "teamId": 94,
@@ -10636,8 +10636,8 @@
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": -0.003,
-          "probabilityDelta7d": 0.0008
+          "probabilityDeltaPrevious": 0,
+          "probabilityDelta7d": 0.0013
         },
         {
           "teamId": 87,
@@ -10657,8 +10657,8 @@
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": -0.0024,
-          "probabilityDelta7d": 0
+          "probabilityDeltaPrevious": 0,
+          "probabilityDelta7d": 0.0005
         },
         {
           "teamId": 80,
@@ -10678,8 +10678,8 @@
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": -0.0029,
-          "probabilityDelta7d": -0.001
+          "probabilityDeltaPrevious": 0,
+          "probabilityDelta7d": -0.0005
         },
         {
           "teamId": 82,
@@ -10699,8 +10699,8 @@
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": -0.0025,
-          "probabilityDelta7d": 0
+          "probabilityDeltaPrevious": 0,
+          "probabilityDelta7d": 0.0004
         },
         {
           "teamId": 88,
@@ -10720,8 +10720,8 @@
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": -0.0027,
-          "probabilityDelta7d": 0.0027
+          "probabilityDeltaPrevious": 0,
+          "probabilityDelta7d": 0.0031
         },
         {
           "teamId": 285,
@@ -10741,8 +10741,8 @@
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": -0.0025,
-          "probabilityDelta7d": 0.0015
+          "probabilityDeltaPrevious": 0,
+          "probabilityDelta7d": 0.0019
         },
         {
           "teamId": 5335,
@@ -10762,8 +10762,8 @@
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": -0.0021,
-          "probabilityDelta7d": -0.0004
+          "probabilityDeltaPrevious": 0,
+          "probabilityDelta7d": -0.0011
         },
         {
           "teamId": 95,
@@ -10783,8 +10783,8 @@
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": -0.0023,
-          "probabilityDelta7d": 0.0027
+          "probabilityDeltaPrevious": 0,
+          "probabilityDelta7d": 0.0019
         },
         {
           "teamId": 84,
@@ -10804,8 +10804,8 @@
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": -0.002,
-          "probabilityDelta7d": -0.0002
+          "probabilityDeltaPrevious": 0,
+          "probabilityDelta7d": 0.0001
         }
       ],
       "topContenders": [
@@ -10827,8 +10827,8 @@
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": 0.0237,
-          "probabilityDelta7d": -0.0045
+          "probabilityDeltaPrevious": 0,
+          "probabilityDelta7d": -0.0099
         },
         {
           "teamId": 78,
@@ -10848,8 +10848,8 @@
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": 0.0021,
-          "probabilityDelta7d": 0.0055
+          "probabilityDeltaPrevious": 0,
+          "probabilityDelta7d": 0.0057
         },
         {
           "teamId": 86,
@@ -10869,8 +10869,8 @@
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": 0.0245,
-          "probabilityDelta7d": 0.0149
+          "probabilityDeltaPrevious": 0,
+          "probabilityDelta7d": 0.0152
         },
         {
           "teamId": 90,
@@ -10890,8 +10890,8 @@
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": -0.0007,
-          "probabilityDelta7d": -0.0281
+          "probabilityDeltaPrevious": 0,
+          "probabilityDelta7d": -0.0284
         },
         {
           "teamId": 92,
@@ -10911,8 +10911,8 @@
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": -0.0021,
-          "probabilityDelta7d": 0.0099
+          "probabilityDeltaPrevious": 0,
+          "probabilityDelta7d": 0.0104
         },
         {
           "teamId": 559,
@@ -10932,8 +10932,8 @@
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": -0.0096,
-          "probabilityDelta7d": -0.0116
+          "probabilityDeltaPrevious": 0,
+          "probabilityDelta7d": -0.0109
         },
         {
           "teamId": 263,
@@ -10953,8 +10953,8 @@
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": -0.0033,
-          "probabilityDelta7d": -0.0046
+          "probabilityDeltaPrevious": 0,
+          "probabilityDelta7d": -0.0041
         },
         {
           "teamId": 77,
@@ -10974,8 +10974,8 @@
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": -0.003,
-          "probabilityDelta7d": 0.0001
+          "probabilityDeltaPrevious": 0,
+          "probabilityDelta7d": 0.0009
         }
       ],
       "dataQuality": {
@@ -10984,8 +10984,8 @@
           "Odds unavailable: The Odds API soccer_spain_la_liga returned 422",
           "Match odds unavailable: The Odds API soccer_spain_la_liga match odds returned 401"
         ],
-        "standingsUpdatedAt": "2026-10-18T22:25:47.120Z",
-        "matchesUpdatedAt": "2026-10-18T22:25:47.120Z"
+        "standingsUpdatedAt": "2026-10-19T07:46:44.813Z",
+        "matchesUpdatedAt": "2026-10-19T07:46:44.813Z"
       }
     },
     {
@@ -14978,7 +14978,7 @@
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": 0.0004,
+          "probabilityDeltaPrevious": 0,
           "probabilityDelta7d": 0.0585
         },
         {
@@ -14999,7 +14999,7 @@
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": 0.0002,
+          "probabilityDeltaPrevious": 0,
           "probabilityDelta7d": -0.0239
         },
         {
@@ -15020,7 +15020,7 @@
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": 0.0003,
+          "probabilityDeltaPrevious": 0,
           "probabilityDelta7d": 0.0383
         },
         {
@@ -15041,7 +15041,7 @@
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": 0.0002,
+          "probabilityDeltaPrevious": 0,
           "probabilityDelta7d": -0.0476
         },
         {
@@ -15062,7 +15062,7 @@
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": 0.0001,
+          "probabilityDeltaPrevious": 0,
           "probabilityDelta7d": 0.0141
         },
         {
@@ -15083,7 +15083,7 @@
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": 0.0001,
+          "probabilityDeltaPrevious": 0,
           "probabilityDelta7d": 0.0139
         },
         {
@@ -15104,7 +15104,7 @@
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": 0.0001,
+          "probabilityDeltaPrevious": 0,
           "probabilityDelta7d": -0.022
         },
         {
@@ -15125,7 +15125,7 @@
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": 0.0001,
+          "probabilityDeltaPrevious": 0,
           "probabilityDelta7d": -0.0081
         },
         {
@@ -15167,7 +15167,7 @@
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": 0.0001,
+          "probabilityDeltaPrevious": 0,
           "probabilityDelta7d": 0.0089
         },
         {
@@ -15251,7 +15251,7 @@
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": -0.0017,
+          "probabilityDeltaPrevious": 0,
           "probabilityDelta7d": 0.0044
         },
         {
@@ -15314,7 +15314,7 @@
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": 0.0001,
+          "probabilityDeltaPrevious": 0,
           "probabilityDelta7d": -0.0003
         },
         {
@@ -15335,7 +15335,7 @@
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": -0.0001,
+          "probabilityDeltaPrevious": 0,
           "probabilityDelta7d": -0.0022
         }
       ],
@@ -15358,7 +15358,7 @@
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": 0.0004,
+          "probabilityDeltaPrevious": 0,
           "probabilityDelta7d": 0.0585
         },
         {
@@ -15379,7 +15379,7 @@
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": 0.0002,
+          "probabilityDeltaPrevious": 0,
           "probabilityDelta7d": -0.0239
         },
         {
@@ -15400,7 +15400,7 @@
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": 0.0003,
+          "probabilityDeltaPrevious": 0,
           "probabilityDelta7d": 0.0383
         },
         {
@@ -15421,7 +15421,7 @@
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": 0.0002,
+          "probabilityDeltaPrevious": 0,
           "probabilityDelta7d": -0.0476
         },
         {
@@ -15442,7 +15442,7 @@
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": 0.0001,
+          "probabilityDeltaPrevious": 0,
           "probabilityDelta7d": 0.0141
         },
         {
@@ -15463,7 +15463,7 @@
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": 0.0001,
+          "probabilityDeltaPrevious": 0,
           "probabilityDelta7d": 0.0139
         },
         {
@@ -15484,7 +15484,7 @@
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": 0.0001,
+          "probabilityDeltaPrevious": 0,
           "probabilityDelta7d": -0.022
         },
         {
@@ -15505,7 +15505,7 @@
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": 0.0001,
+          "probabilityDeltaPrevious": 0,
           "probabilityDelta7d": -0.0081
         }
       ],
@@ -15515,8 +15515,8 @@
           "Odds unavailable: The Odds API soccer_germany_bundesliga returned 422",
           "Match odds unavailable: The Odds API soccer_germany_bundesliga match odds returned 401"
         ],
-        "standingsUpdatedAt": "2026-10-18T22:25:47.120Z",
-        "matchesUpdatedAt": "2026-10-18T22:25:47.120Z"
+        "standingsUpdatedAt": "2026-10-19T07:46:44.813Z",
+        "matchesUpdatedAt": "2026-10-19T07:46:44.813Z"
       }
     },
     {
@@ -20429,8 +20429,8 @@
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": 0.0003,
-          "probabilityDelta7d": -0.0125
+          "probabilityDeltaPrevious": 0,
+          "probabilityDelta7d": -0.0108
         },
         {
           "teamId": 110,
@@ -20450,8 +20450,8 @@
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": 0.0143,
-          "probabilityDelta7d": -0.0027
+          "probabilityDeltaPrevious": 0,
+          "probabilityDelta7d": -0.0032
         },
         {
           "teamId": 100,
@@ -20471,8 +20471,8 @@
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": 0.0003,
-          "probabilityDelta7d": -0.0014
+          "probabilityDeltaPrevious": 0,
+          "probabilityDelta7d": -0.0004
         },
         {
           "teamId": 98,
@@ -20492,8 +20492,8 @@
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": -0.0037,
-          "probabilityDelta7d": 0.0043
+          "probabilityDeltaPrevious": 0,
+          "probabilityDelta7d": 0.0045
         },
         {
           "teamId": 104,
@@ -20513,8 +20513,8 @@
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": -0.0008,
-          "probabilityDelta7d": -0.0082
+          "probabilityDeltaPrevious": 0,
+          "probabilityDelta7d": -0.0088
         },
         {
           "teamId": 7397,
@@ -20534,8 +20534,8 @@
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": -0.0001,
-          "probabilityDelta7d": 0.0046
+          "probabilityDeltaPrevious": 0,
+          "probabilityDelta7d": 0.0047
         },
         {
           "teamId": 470,
@@ -20555,8 +20555,8 @@
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": -0.0006,
-          "probabilityDelta7d": 0.0071
+          "probabilityDeltaPrevious": 0,
+          "probabilityDelta7d": 0.0068
         },
         {
           "teamId": 109,
@@ -20576,8 +20576,8 @@
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": -0.0077,
-          "probabilityDelta7d": -0.0109
+          "probabilityDeltaPrevious": 0,
+          "probabilityDelta7d": -0.0119
         },
         {
           "teamId": 113,
@@ -20597,8 +20597,8 @@
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": -0.0002,
-          "probabilityDelta7d": -0.0104
+          "probabilityDeltaPrevious": 0,
+          "probabilityDelta7d": -0.0102
         },
         {
           "teamId": 102,
@@ -20618,8 +20618,8 @@
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": 0.0017,
-          "probabilityDelta7d": 0.0054
+          "probabilityDeltaPrevious": 0,
+          "probabilityDelta7d": 0.0056
         },
         {
           "teamId": 5890,
@@ -20639,8 +20639,8 @@
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": -0.0004,
-          "probabilityDelta7d": 0.0095
+          "probabilityDeltaPrevious": 0,
+          "probabilityDelta7d": 0.0093
         },
         {
           "teamId": 471,
@@ -20660,8 +20660,8 @@
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": -0.0005,
-          "probabilityDelta7d": -0.004
+          "probabilityDeltaPrevious": 0,
+          "probabilityDelta7d": -0.0042
         },
         {
           "teamId": 586,
@@ -20681,8 +20681,8 @@
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": -0.0003,
-          "probabilityDelta7d": 0.0088
+          "probabilityDeltaPrevious": 0,
+          "probabilityDelta7d": 0.0086
         },
         {
           "teamId": 103,
@@ -20702,8 +20702,8 @@
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": -0.0003,
-          "probabilityDelta7d": 0.0003
+          "probabilityDeltaPrevious": 0,
+          "probabilityDelta7d": 0.0002
         },
         {
           "teamId": 115,
@@ -20723,8 +20723,8 @@
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": -0.0003,
-          "probabilityDelta7d": -0.0026
+          "probabilityDeltaPrevious": 0,
+          "probabilityDelta7d": -0.0023
         },
         {
           "teamId": 112,
@@ -20744,7 +20744,7 @@
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": -0.0005,
+          "probabilityDeltaPrevious": 0,
           "probabilityDelta7d": 0.0014
         },
         {
@@ -20765,8 +20765,8 @@
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": -0.0003,
-          "probabilityDelta7d": 0.0015
+          "probabilityDeltaPrevious": 0,
+          "probabilityDelta7d": 0.0014
         },
         {
           "teamId": 107,
@@ -20786,8 +20786,8 @@
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": -0.0003,
-          "probabilityDelta7d": 0.0009
+          "probabilityDeltaPrevious": 0,
+          "probabilityDelta7d": 0.0008
         },
         {
           "teamId": 99,
@@ -20807,8 +20807,8 @@
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": -0.0004,
-          "probabilityDelta7d": 0.0012
+          "probabilityDeltaPrevious": 0,
+          "probabilityDelta7d": 0.0008
         },
         {
           "teamId": 454,
@@ -20828,8 +20828,8 @@
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": -0.0003,
-          "probabilityDelta7d": 0.0077
+          "probabilityDeltaPrevious": 0,
+          "probabilityDelta7d": 0.0076
         }
       ],
       "topContenders": [
@@ -20851,8 +20851,8 @@
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": 0.0003,
-          "probabilityDelta7d": -0.0125
+          "probabilityDeltaPrevious": 0,
+          "probabilityDelta7d": -0.0108
         },
         {
           "teamId": 110,
@@ -20872,8 +20872,8 @@
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": 0.0143,
-          "probabilityDelta7d": -0.0027
+          "probabilityDeltaPrevious": 0,
+          "probabilityDelta7d": -0.0032
         },
         {
           "teamId": 100,
@@ -20893,8 +20893,8 @@
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": 0.0003,
-          "probabilityDelta7d": -0.0014
+          "probabilityDeltaPrevious": 0,
+          "probabilityDelta7d": -0.0004
         },
         {
           "teamId": 98,
@@ -20914,8 +20914,8 @@
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": -0.0037,
-          "probabilityDelta7d": 0.0043
+          "probabilityDeltaPrevious": 0,
+          "probabilityDelta7d": 0.0045
         },
         {
           "teamId": 104,
@@ -20935,8 +20935,8 @@
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": -0.0008,
-          "probabilityDelta7d": -0.0082
+          "probabilityDeltaPrevious": 0,
+          "probabilityDelta7d": -0.0088
         },
         {
           "teamId": 7397,
@@ -20956,8 +20956,8 @@
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": -0.0001,
-          "probabilityDelta7d": 0.0046
+          "probabilityDeltaPrevious": 0,
+          "probabilityDelta7d": 0.0047
         },
         {
           "teamId": 470,
@@ -20977,8 +20977,8 @@
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": -0.0006,
-          "probabilityDelta7d": 0.0071
+          "probabilityDeltaPrevious": 0,
+          "probabilityDelta7d": 0.0068
         },
         {
           "teamId": 109,
@@ -20998,18 +20998,18 @@
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": -0.0077,
-          "probabilityDelta7d": -0.0109
+          "probabilityDeltaPrevious": 0,
+          "probabilityDelta7d": -0.0119
         }
       ],
       "dataQuality": {
         "status": "ok",
         "warnings": [
-          "Match odds unavailable: The Odds API soccer_italy_serie_a match odds returned 401",
-          "Odds unavailable: The Odds API soccer_italy_serie_a returned 422"
+          "Odds unavailable: The Odds API soccer_italy_serie_a returned 422",
+          "Match odds unavailable: The Odds API soccer_italy_serie_a match odds returned 401"
         ],
-        "standingsUpdatedAt": "2026-10-18T22:25:47.120Z",
-        "matchesUpdatedAt": "2026-10-18T22:25:47.120Z"
+        "standingsUpdatedAt": "2026-10-19T07:46:44.813Z",
+        "matchesUpdatedAt": "2026-10-19T07:46:44.813Z"
       }
     },
     {
@@ -25002,8 +25002,8 @@
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": 0.0156,
-          "probabilityDelta7d": 0.0052
+          "probabilityDeltaPrevious": 0,
+          "probabilityDelta7d": 0.0067
         },
         {
           "teamId": 524,
@@ -25023,8 +25023,8 @@
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": -0.009,
-          "probabilityDelta7d": -0.0003
+          "probabilityDeltaPrevious": 0,
+          "probabilityDelta7d": -0.0014
         },
         {
           "teamId": 1045,
@@ -25044,7 +25044,7 @@
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": -0.0062,
+          "probabilityDeltaPrevious": 0,
           "probabilityDelta7d": 0.0126
         },
         {
@@ -25065,8 +25065,8 @@
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": -0.0077,
-          "probabilityDelta7d": -0.0412
+          "probabilityDeltaPrevious": 0,
+          "probabilityDelta7d": -0.0431
         },
         {
           "teamId": 521,
@@ -25086,8 +25086,8 @@
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": -0.0078,
-          "probabilityDelta7d": -0.0258
+          "probabilityDeltaPrevious": 0,
+          "probabilityDelta7d": -0.0225
         },
         {
           "teamId": 529,
@@ -25107,8 +25107,8 @@
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": -0.0024,
-          "probabilityDelta7d": -0.0306
+          "probabilityDeltaPrevious": 0,
+          "probabilityDelta7d": -0.032
         },
         {
           "teamId": 525,
@@ -25128,8 +25128,8 @@
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": -0.0012,
-          "probabilityDelta7d": 0.0178
+          "probabilityDeltaPrevious": 0,
+          "probabilityDelta7d": 0.0189
         },
         {
           "teamId": 546,
@@ -25149,8 +25149,8 @@
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": 0.001,
-          "probabilityDelta7d": 0.0137
+          "probabilityDeltaPrevious": 0,
+          "probabilityDelta7d": 0.0143
         },
         {
           "teamId": 516,
@@ -25170,8 +25170,8 @@
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": 0.0016,
-          "probabilityDelta7d": 0.0251
+          "probabilityDeltaPrevious": 0,
+          "probabilityDelta7d": 0.0138
         },
         {
           "teamId": 512,
@@ -25191,8 +25191,8 @@
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": 0.0018,
-          "probabilityDelta7d": 0.0043
+          "probabilityDeltaPrevious": 0,
+          "probabilityDelta7d": 0.0049
         },
         {
           "teamId": 511,
@@ -25212,8 +25212,8 @@
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": 0.0019,
-          "probabilityDelta7d": 0.0152
+          "probabilityDeltaPrevious": 0,
+          "probabilityDelta7d": 0.0157
         },
         {
           "teamId": 522,
@@ -25233,8 +25233,8 @@
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": -0.0023,
-          "probabilityDelta7d": -0.0031
+          "probabilityDeltaPrevious": 0,
+          "probabilityDelta7d": -0.0024
         },
         {
           "teamId": 519,
@@ -25254,8 +25254,8 @@
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": 0.0014,
-          "probabilityDelta7d": 0.014
+          "probabilityDeltaPrevious": 0,
+          "probabilityDelta7d": 0.0143
         },
         {
           "teamId": 576,
@@ -25275,7 +25275,7 @@
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": 0.0024,
+          "probabilityDeltaPrevious": 0,
           "probabilityDelta7d": -0.0018
         },
         {
@@ -25296,8 +25296,8 @@
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": 0.0024,
-          "probabilityDelta7d": -0.0025
+          "probabilityDeltaPrevious": 0,
+          "probabilityDelta7d": -0.0016
         },
         {
           "teamId": 535,
@@ -25317,8 +25317,8 @@
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": 0.0026,
-          "probabilityDelta7d": -0.0027
+          "probabilityDeltaPrevious": 0,
+          "probabilityDelta7d": -0.0022
         },
         {
           "teamId": 531,
@@ -25338,8 +25338,8 @@
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": 0.0027,
-          "probabilityDelta7d": -0.0018
+          "probabilityDeltaPrevious": 0,
+          "probabilityDelta7d": 0.0036
         },
         {
           "teamId": 533,
@@ -25359,8 +25359,8 @@
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": 0.0032,
-          "probabilityDelta7d": 0.0021
+          "probabilityDeltaPrevious": 0,
+          "probabilityDelta7d": 0.0023
         }
       ],
       "topContenders": [
@@ -25382,8 +25382,8 @@
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": 0.0156,
-          "probabilityDelta7d": 0.0052
+          "probabilityDeltaPrevious": 0,
+          "probabilityDelta7d": 0.0067
         },
         {
           "teamId": 524,
@@ -25403,8 +25403,8 @@
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": -0.009,
-          "probabilityDelta7d": -0.0003
+          "probabilityDeltaPrevious": 0,
+          "probabilityDelta7d": -0.0014
         },
         {
           "teamId": 1045,
@@ -25424,7 +25424,7 @@
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": -0.0062,
+          "probabilityDeltaPrevious": 0,
           "probabilityDelta7d": 0.0126
         },
         {
@@ -25445,8 +25445,8 @@
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": -0.0077,
-          "probabilityDelta7d": -0.0412
+          "probabilityDeltaPrevious": 0,
+          "probabilityDelta7d": -0.0431
         },
         {
           "teamId": 521,
@@ -25466,8 +25466,8 @@
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": -0.0078,
-          "probabilityDelta7d": -0.0258
+          "probabilityDeltaPrevious": 0,
+          "probabilityDelta7d": -0.0225
         },
         {
           "teamId": 529,
@@ -25487,8 +25487,8 @@
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": -0.0024,
-          "probabilityDelta7d": -0.0306
+          "probabilityDeltaPrevious": 0,
+          "probabilityDelta7d": -0.032
         },
         {
           "teamId": 525,
@@ -25508,8 +25508,8 @@
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": -0.0012,
-          "probabilityDelta7d": 0.0178
+          "probabilityDeltaPrevious": 0,
+          "probabilityDelta7d": 0.0189
         },
         {
           "teamId": 546,
@@ -25529,18 +25529,18 @@
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": 0.001,
-          "probabilityDelta7d": 0.0137
+          "probabilityDeltaPrevious": 0,
+          "probabilityDelta7d": 0.0143
         }
       ],
       "dataQuality": {
         "status": "ok",
         "warnings": [
-          "Match odds unavailable: The Odds API soccer_france_ligue_one match odds returned 401",
-          "Odds unavailable: The Odds API soccer_france_ligue_one returned 422"
+          "Odds unavailable: The Odds API soccer_france_ligue_one returned 422",
+          "Match odds unavailable: The Odds API soccer_france_ligue_one match odds returned 401"
         ],
-        "standingsUpdatedAt": "2026-10-18T22:25:47.120Z",
-        "matchesUpdatedAt": "2026-10-18T22:25:47.120Z"
+        "standingsUpdatedAt": "2026-10-19T07:46:44.813Z",
+        "matchesUpdatedAt": "2026-10-19T07:46:44.813Z"
       }
     }
   ]
