@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-20T07:34:53.358Z",
+  "generatedAt": "2026-10-20T13:33:23.042Z",
   "modelVersion": "rule-softmax-v0.1.0",
   "leagues": [
     {
@@ -1773,20 +1773,20 @@
           "awayScore": null
         },
         {
-          "id": 560662,
-          "utcDate": "2026-12-02T20:00:00Z",
+          "id": 560668,
+          "utcDate": "2026-12-01T20:00:00Z",
           "status": "TIMED",
           "matchday": 13,
-          "homeTeamId": 73,
-          "homeTeamName": "Tottenham Hotspur FC",
-          "awayTeamId": 63,
-          "awayTeamName": "Fulham FC",
+          "homeTeamId": 1076,
+          "homeTeamName": "Coventry City FC",
+          "awayTeamId": 349,
+          "awayTeamName": "Ipswich Town FC",
           "homeScore": null,
           "awayScore": null
         },
         {
           "id": 560663,
-          "utcDate": "2026-12-02T20:00:00Z",
+          "utcDate": "2026-12-02T19:30:00Z",
           "status": "TIMED",
           "matchday": 13,
           "homeTeamId": 64,
@@ -1798,7 +1798,7 @@
         },
         {
           "id": 560664,
-          "utcDate": "2026-12-02T20:00:00Z",
+          "utcDate": "2026-12-02T19:30:00Z",
           "status": "TIMED",
           "matchday": 13,
           "homeTeamId": 322,
@@ -1810,7 +1810,7 @@
         },
         {
           "id": 560665,
-          "utcDate": "2026-12-02T20:00:00Z",
+          "utcDate": "2026-12-02T19:30:00Z",
           "status": "TIMED",
           "matchday": 13,
           "homeTeamId": 61,
@@ -1821,8 +1821,20 @@
           "awayScore": null
         },
         {
+          "id": 560669,
+          "utcDate": "2026-12-02T19:30:00Z",
+          "status": "TIMED",
+          "matchday": 13,
+          "homeTeamId": 65,
+          "homeTeamName": "Manchester City FC",
+          "awayTeamId": 341,
+          "awayTeamName": "Leeds United FC",
+          "homeScore": null,
+          "awayScore": null
+        },
+        {
           "id": 560666,
-          "utcDate": "2026-12-02T20:00:00Z",
+          "utcDate": "2026-12-02T20:15:00Z",
           "status": "TIMED",
           "matchday": 13,
           "homeTeamId": 58,
@@ -1834,7 +1846,7 @@
         },
         {
           "id": 560667,
-          "utcDate": "2026-12-02T20:00:00Z",
+          "utcDate": "2026-12-02T20:15:00Z",
           "status": "TIMED",
           "matchday": 13,
           "homeTeamId": 402,
@@ -1845,32 +1857,8 @@
           "awayScore": null
         },
         {
-          "id": 560668,
-          "utcDate": "2026-12-02T20:00:00Z",
-          "status": "TIMED",
-          "matchday": 13,
-          "homeTeamId": 1076,
-          "homeTeamName": "Coventry City FC",
-          "awayTeamId": 349,
-          "awayTeamName": "Ipswich Town FC",
-          "homeScore": null,
-          "awayScore": null
-        },
-        {
-          "id": 560669,
-          "utcDate": "2026-12-02T20:00:00Z",
-          "status": "TIMED",
-          "matchday": 13,
-          "homeTeamId": 65,
-          "homeTeamName": "Manchester City FC",
-          "awayTeamId": 341,
-          "awayTeamName": "Leeds United FC",
-          "homeScore": null,
-          "awayScore": null
-        },
-        {
           "id": 560670,
-          "utcDate": "2026-12-02T20:00:00Z",
+          "utcDate": "2026-12-02T20:15:00Z",
           "status": "TIMED",
           "matchday": 13,
           "homeTeamId": 67,
@@ -1882,7 +1870,7 @@
         },
         {
           "id": 560671,
-          "utcDate": "2026-12-02T20:00:00Z",
+          "utcDate": "2026-12-02T20:15:00Z",
           "status": "TIMED",
           "matchday": 13,
           "homeTeamId": 1044,
@@ -1893,14 +1881,26 @@
           "awayScore": null
         },
         {
-          "id": 560672,
-          "utcDate": "2026-12-05T15:00:00Z",
+          "id": 560662,
+          "utcDate": "2026-12-03T20:00:00Z",
           "status": "TIMED",
-          "matchday": 14,
+          "matchday": 13,
           "homeTeamId": 73,
           "homeTeamName": "Tottenham Hotspur FC",
-          "awayTeamId": 57,
-          "awayTeamName": "Arsenal FC",
+          "awayTeamId": 63,
+          "awayTeamName": "Fulham FC",
+          "homeScore": null,
+          "awayScore": null
+        },
+        {
+          "id": 560676,
+          "utcDate": "2026-12-05T12:30:00Z",
+          "status": "TIMED",
+          "matchday": 14,
+          "homeTeamId": 61,
+          "homeTeamName": "Chelsea FC",
+          "awayTeamId": 64,
+          "awayTeamName": "Liverpool FC",
           "homeScore": null,
           "awayScore": null
         },
@@ -1925,42 +1925,6 @@
           "homeTeamName": "Leeds United FC",
           "awayTeamId": 349,
           "awayTeamName": "Ipswich Town FC",
-          "homeScore": null,
-          "awayScore": null
-        },
-        {
-          "id": 560675,
-          "utcDate": "2026-12-05T15:00:00Z",
-          "status": "TIMED",
-          "matchday": 14,
-          "homeTeamId": 67,
-          "homeTeamName": "Newcastle United FC",
-          "awayTeamId": 71,
-          "awayTeamName": "Sunderland AFC",
-          "homeScore": null,
-          "awayScore": null
-        },
-        {
-          "id": 560676,
-          "utcDate": "2026-12-05T15:00:00Z",
-          "status": "TIMED",
-          "matchday": 14,
-          "homeTeamId": 61,
-          "homeTeamName": "Chelsea FC",
-          "awayTeamId": 64,
-          "awayTeamName": "Liverpool FC",
-          "homeScore": null,
-          "awayScore": null
-        },
-        {
-          "id": 560677,
-          "utcDate": "2026-12-05T15:00:00Z",
-          "status": "TIMED",
-          "matchday": 14,
-          "homeTeamId": 402,
-          "homeTeamName": "Brentford FC",
-          "awayTeamId": 65,
-          "awayTeamName": "Manchester City FC",
           "homeScore": null,
           "awayScore": null
         },
@@ -1990,7 +1954,7 @@
         },
         {
           "id": 560680,
-          "utcDate": "2026-12-05T15:00:00Z",
+          "utcDate": "2026-12-05T17:30:00Z",
           "status": "TIMED",
           "matchday": 14,
           "homeTeamId": 351,
@@ -2001,8 +1965,32 @@
           "awayScore": null
         },
         {
+          "id": 560677,
+          "utcDate": "2026-12-05T20:00:00Z",
+          "status": "TIMED",
+          "matchday": 14,
+          "homeTeamId": 402,
+          "homeTeamName": "Brentford FC",
+          "awayTeamId": 65,
+          "awayTeamName": "Manchester City FC",
+          "homeScore": null,
+          "awayScore": null
+        },
+        {
+          "id": 560675,
+          "utcDate": "2026-12-06T14:00:00Z",
+          "status": "TIMED",
+          "matchday": 14,
+          "homeTeamId": 67,
+          "homeTeamName": "Newcastle United FC",
+          "awayTeamId": 71,
+          "awayTeamName": "Sunderland AFC",
+          "homeScore": null,
+          "awayScore": null
+        },
+        {
           "id": 560681,
-          "utcDate": "2026-12-05T15:00:00Z",
+          "utcDate": "2026-12-06T14:00:00Z",
           "status": "TIMED",
           "matchday": 14,
           "homeTeamId": 62,
@@ -2013,50 +2001,14 @@
           "awayScore": null
         },
         {
-          "id": 560682,
-          "utcDate": "2026-12-12T15:00:00Z",
+          "id": 560672,
+          "utcDate": "2026-12-06T16:30:00Z",
           "status": "TIMED",
-          "matchday": 15,
-          "homeTeamId": 71,
-          "homeTeamName": "Sunderland AFC",
-          "awayTeamId": 351,
-          "awayTeamName": "Nottingham Forest FC",
-          "homeScore": null,
-          "awayScore": null
-        },
-        {
-          "id": 560683,
-          "utcDate": "2026-12-12T15:00:00Z",
-          "status": "TIMED",
-          "matchday": 15,
-          "homeTeamId": 354,
-          "homeTeamName": "Crystal Palace FC",
-          "awayTeamId": 66,
-          "awayTeamName": "Manchester United FC",
-          "homeScore": null,
-          "awayScore": null
-        },
-        {
-          "id": 560684,
-          "utcDate": "2026-12-12T15:00:00Z",
-          "status": "TIMED",
-          "matchday": 15,
-          "homeTeamId": 322,
-          "homeTeamName": "Hull City AFC",
-          "awayTeamId": 73,
-          "awayTeamName": "Tottenham Hotspur FC",
-          "homeScore": null,
-          "awayScore": null
-        },
-        {
-          "id": 560685,
-          "utcDate": "2026-12-12T15:00:00Z",
-          "status": "TIMED",
-          "matchday": 15,
-          "homeTeamId": 397,
-          "homeTeamName": "Brighton & Hove Albion FC",
-          "awayTeamId": 62,
-          "awayTeamName": "Everton FC",
+          "matchday": 14,
+          "homeTeamId": 73,
+          "homeTeamName": "Tottenham Hotspur FC",
+          "awayTeamId": 57,
+          "awayTeamName": "Arsenal FC",
           "homeScore": null,
           "awayScore": null
         },
@@ -2069,42 +2021,6 @@
           "homeTeamName": "Ipswich Town FC",
           "awayTeamId": 67,
           "awayTeamName": "Newcastle United FC",
-          "homeScore": null,
-          "awayScore": null
-        },
-        {
-          "id": 560687,
-          "utcDate": "2026-12-12T15:00:00Z",
-          "status": "TIMED",
-          "matchday": 15,
-          "homeTeamId": 1076,
-          "homeTeamName": "Coventry City FC",
-          "awayTeamId": 58,
-          "awayTeamName": "Aston Villa FC",
-          "homeScore": null,
-          "awayScore": null
-        },
-        {
-          "id": 560688,
-          "utcDate": "2026-12-12T15:00:00Z",
-          "status": "TIMED",
-          "matchday": 15,
-          "homeTeamId": 57,
-          "homeTeamName": "Arsenal FC",
-          "awayTeamId": 1044,
-          "awayTeamName": "AFC Bournemouth",
-          "homeScore": null,
-          "awayScore": null
-        },
-        {
-          "id": 560689,
-          "utcDate": "2026-12-12T15:00:00Z",
-          "status": "TIMED",
-          "matchday": 15,
-          "homeTeamId": 65,
-          "homeTeamName": "Manchester City FC",
-          "awayTeamId": 61,
-          "awayTeamName": "Chelsea FC",
           "homeScore": null,
           "awayScore": null
         },
@@ -2133,6 +2049,102 @@
           "awayScore": null
         },
         {
+          "id": 560689,
+          "utcDate": "2026-12-12T17:30:00Z",
+          "status": "TIMED",
+          "matchday": 15,
+          "homeTeamId": 65,
+          "homeTeamName": "Manchester City FC",
+          "awayTeamId": 61,
+          "awayTeamName": "Chelsea FC",
+          "homeScore": null,
+          "awayScore": null
+        },
+        {
+          "id": 560682,
+          "utcDate": "2026-12-13T14:00:00Z",
+          "status": "TIMED",
+          "matchday": 15,
+          "homeTeamId": 71,
+          "homeTeamName": "Sunderland AFC",
+          "awayTeamId": 351,
+          "awayTeamName": "Nottingham Forest FC",
+          "homeScore": null,
+          "awayScore": null
+        },
+        {
+          "id": 560685,
+          "utcDate": "2026-12-13T14:00:00Z",
+          "status": "TIMED",
+          "matchday": 15,
+          "homeTeamId": 397,
+          "homeTeamName": "Brighton & Hove Albion FC",
+          "awayTeamId": 62,
+          "awayTeamName": "Everton FC",
+          "homeScore": null,
+          "awayScore": null
+        },
+        {
+          "id": 560688,
+          "utcDate": "2026-12-13T14:00:00Z",
+          "status": "TIMED",
+          "matchday": 15,
+          "homeTeamId": 57,
+          "homeTeamName": "Arsenal FC",
+          "awayTeamId": 1044,
+          "awayTeamName": "AFC Bournemouth",
+          "homeScore": null,
+          "awayScore": null
+        },
+        {
+          "id": 560687,
+          "utcDate": "2026-12-13T16:30:00Z",
+          "status": "TIMED",
+          "matchday": 15,
+          "homeTeamId": 1076,
+          "homeTeamName": "Coventry City FC",
+          "awayTeamId": 58,
+          "awayTeamName": "Aston Villa FC",
+          "homeScore": null,
+          "awayScore": null
+        },
+        {
+          "id": 560683,
+          "utcDate": "2026-12-13T19:00:00Z",
+          "status": "TIMED",
+          "matchday": 15,
+          "homeTeamId": 354,
+          "homeTeamName": "Crystal Palace FC",
+          "awayTeamId": 66,
+          "awayTeamName": "Manchester United FC",
+          "homeScore": null,
+          "awayScore": null
+        },
+        {
+          "id": 560684,
+          "utcDate": "2026-12-14T20:00:00Z",
+          "status": "TIMED",
+          "matchday": 15,
+          "homeTeamId": 322,
+          "homeTeamName": "Hull City AFC",
+          "awayTeamId": 73,
+          "awayTeamName": "Tottenham Hotspur FC",
+          "homeScore": null,
+          "awayScore": null
+        },
+        {
+          "id": 560695,
+          "utcDate": "2026-12-19T12:30:00Z",
+          "status": "TIMED",
+          "matchday": 16,
+          "homeTeamId": 402,
+          "homeTeamName": "Brentford FC",
+          "awayTeamId": 67,
+          "awayTeamName": "Newcastle United FC",
+          "homeScore": null,
+          "awayScore": null
+        },
+        {
           "id": 560692,
           "utcDate": "2026-12-19T15:00:00Z",
           "status": "TIMED",
@@ -2141,18 +2153,6 @@
           "homeTeamName": "Leeds United FC",
           "awayTeamId": 63,
           "awayTeamName": "Fulham FC",
-          "homeScore": null,
-          "awayScore": null
-        },
-        {
-          "id": 560693,
-          "utcDate": "2026-12-19T15:00:00Z",
-          "status": "TIMED",
-          "matchday": 16,
-          "homeTeamId": 397,
-          "homeTeamName": "Brighton & Hove Albion FC",
-          "awayTeamId": 349,
-          "awayTeamName": "Ipswich Town FC",
           "homeScore": null,
           "awayScore": null
         },
@@ -2169,18 +2169,6 @@
           "awayScore": null
         },
         {
-          "id": 560695,
-          "utcDate": "2026-12-19T15:00:00Z",
-          "status": "TIMED",
-          "matchday": 16,
-          "homeTeamId": 402,
-          "homeTeamName": "Brentford FC",
-          "awayTeamId": 67,
-          "awayTeamName": "Newcastle United FC",
-          "homeScore": null,
-          "awayScore": null
-        },
-        {
           "id": 560696,
           "utcDate": "2026-12-19T15:00:00Z",
           "status": "TIMED",
@@ -2189,18 +2177,6 @@
           "homeTeamName": "Manchester City FC",
           "awayTeamId": 322,
           "awayTeamName": "Hull City AFC",
-          "homeScore": null,
-          "awayScore": null
-        },
-        {
-          "id": 560697,
-          "utcDate": "2026-12-19T15:00:00Z",
-          "status": "TIMED",
-          "matchday": 16,
-          "homeTeamId": 71,
-          "homeTeamName": "Sunderland AFC",
-          "awayTeamId": 354,
-          "awayTeamName": "Crystal Palace FC",
           "homeScore": null,
           "awayScore": null
         },
@@ -2217,20 +2193,8 @@
           "awayScore": null
         },
         {
-          "id": 560699,
-          "utcDate": "2026-12-19T15:00:00Z",
-          "status": "TIMED",
-          "matchday": 16,
-          "homeTeamId": 57,
-          "homeTeamName": "Arsenal FC",
-          "awayTeamId": 66,
-          "awayTeamName": "Manchester United FC",
-          "homeScore": null,
-          "awayScore": null
-        },
-        {
           "id": 560700,
-          "utcDate": "2026-12-19T15:00:00Z",
+          "utcDate": "2026-12-19T17:30:00Z",
           "status": "TIMED",
           "matchday": 16,
           "homeTeamId": 64,
@@ -2241,8 +2205,44 @@
           "awayScore": null
         },
         {
+          "id": 560693,
+          "utcDate": "2026-12-20T14:00:00Z",
+          "status": "TIMED",
+          "matchday": 16,
+          "homeTeamId": 397,
+          "homeTeamName": "Brighton & Hove Albion FC",
+          "awayTeamId": 349,
+          "awayTeamName": "Ipswich Town FC",
+          "homeScore": null,
+          "awayScore": null
+        },
+        {
+          "id": 560697,
+          "utcDate": "2026-12-20T14:00:00Z",
+          "status": "TIMED",
+          "matchday": 16,
+          "homeTeamId": 71,
+          "homeTeamName": "Sunderland AFC",
+          "awayTeamId": 354,
+          "awayTeamName": "Crystal Palace FC",
+          "homeScore": null,
+          "awayScore": null
+        },
+        {
+          "id": 560699,
+          "utcDate": "2026-12-20T16:30:00Z",
+          "status": "TIMED",
+          "matchday": 16,
+          "homeTeamId": 57,
+          "homeTeamName": "Arsenal FC",
+          "awayTeamId": 66,
+          "awayTeamName": "Manchester United FC",
+          "homeScore": null,
+          "awayScore": null
+        },
+        {
           "id": 560701,
-          "utcDate": "2026-12-19T15:00:00Z",
+          "utcDate": "2026-12-21T20:00:00Z",
           "status": "TIMED",
           "matchday": 16,
           "homeTeamId": 61,
@@ -5488,11 +5488,11 @@
       "dataQuality": {
         "status": "ok",
         "warnings": [
-          "Match odds unavailable: The Odds API soccer_epl match odds returned 401",
-          "Odds unavailable: The Odds API soccer_epl returned 422"
+          "Odds unavailable: The Odds API soccer_epl returned 422",
+          "Match odds unavailable: The Odds API soccer_epl match odds returned 401"
         ],
-        "standingsUpdatedAt": "2026-10-20T07:34:53.358Z",
-        "matchesUpdatedAt": "2026-10-20T07:34:53.358Z"
+        "standingsUpdatedAt": "2026-10-20T13:33:23.042Z",
+        "matchesUpdatedAt": "2026-10-20T13:33:23.042Z"
       }
     },
     {
@@ -10981,11 +10981,11 @@
       "dataQuality": {
         "status": "ok",
         "warnings": [
-          "Match odds unavailable: The Odds API soccer_spain_la_liga match odds returned 401",
-          "Odds unavailable: The Odds API soccer_spain_la_liga returned 422"
+          "Odds unavailable: The Odds API soccer_spain_la_liga returned 422",
+          "Match odds unavailable: The Odds API soccer_spain_la_liga match odds returned 401"
         ],
-        "standingsUpdatedAt": "2026-10-20T07:34:53.358Z",
-        "matchesUpdatedAt": "2026-10-20T07:34:53.358Z"
+        "standingsUpdatedAt": "2026-10-20T13:33:23.042Z",
+        "matchesUpdatedAt": "2026-10-20T13:33:23.042Z"
       }
     },
     {
@@ -15512,11 +15512,11 @@
       "dataQuality": {
         "status": "ok",
         "warnings": [
-          "Match odds unavailable: The Odds API soccer_germany_bundesliga match odds returned 401",
-          "Odds unavailable: The Odds API soccer_germany_bundesliga returned 422"
+          "Odds unavailable: The Odds API soccer_germany_bundesliga returned 422",
+          "Match odds unavailable: The Odds API soccer_germany_bundesliga match odds returned 401"
         ],
-        "standingsUpdatedAt": "2026-10-20T07:34:53.358Z",
-        "matchesUpdatedAt": "2026-10-20T07:34:53.358Z"
+        "standingsUpdatedAt": "2026-10-20T13:33:23.042Z",
+        "matchesUpdatedAt": "2026-10-20T13:33:23.042Z"
       }
     },
     {
@@ -20430,7 +20430,7 @@
             "recentPpg"
           ],
           "probabilityDeltaPrevious": 0,
-          "probabilityDelta7d": 0.0062
+          "probabilityDelta7d": 0.0058
         },
         {
           "teamId": 110,
@@ -20451,7 +20451,7 @@
             "recentPpg"
           ],
           "probabilityDeltaPrevious": 0,
-          "probabilityDelta7d": 0.0119
+          "probabilityDelta7d": 0.0097
         },
         {
           "teamId": 100,
@@ -20472,7 +20472,7 @@
             "recentPpg"
           ],
           "probabilityDeltaPrevious": 0,
-          "probabilityDelta7d": 0.0114
+          "probabilityDelta7d": 0.0124
         },
         {
           "teamId": 98,
@@ -20493,7 +20493,7 @@
             "recentPpg"
           ],
           "probabilityDeltaPrevious": 0,
-          "probabilityDelta7d": 0.0092
+          "probabilityDelta7d": 0.009
         },
         {
           "teamId": 7397,
@@ -20514,7 +20514,7 @@
             "recentPpg"
           ],
           "probabilityDeltaPrevious": 0,
-          "probabilityDelta7d": 0.0062
+          "probabilityDelta7d": 0.0078
         },
         {
           "teamId": 470,
@@ -20556,7 +20556,7 @@
             "recentPpg"
           ],
           "probabilityDeltaPrevious": 0,
-          "probabilityDelta7d": -0.0217
+          "probabilityDelta7d": -0.0208
         },
         {
           "teamId": 109,
@@ -20577,7 +20577,7 @@
             "recentPpg"
           ],
           "probabilityDeltaPrevious": 0,
-          "probabilityDelta7d": -0.0129
+          "probabilityDelta7d": -0.0116
         },
         {
           "teamId": 113,
@@ -20598,7 +20598,7 @@
             "recentPpg"
           ],
           "probabilityDeltaPrevious": 0,
-          "probabilityDelta7d": -0.0112
+          "probabilityDelta7d": -0.0113
         },
         {
           "teamId": 586,
@@ -20619,7 +20619,7 @@
             "recentPpg"
           ],
           "probabilityDeltaPrevious": 0,
-          "probabilityDelta7d": 0.0064
+          "probabilityDelta7d": 0.0056
         },
         {
           "teamId": 102,
@@ -20640,7 +20640,7 @@
             "recentPpg"
           ],
           "probabilityDeltaPrevious": 0,
-          "probabilityDelta7d": -0.0075
+          "probabilityDelta7d": -0.0094
         },
         {
           "teamId": 5890,
@@ -20661,7 +20661,7 @@
             "recentPpg"
           ],
           "probabilityDeltaPrevious": 0,
-          "probabilityDelta7d": 0.0063
+          "probabilityDelta7d": 0.0059
         },
         {
           "teamId": 471,
@@ -20682,7 +20682,7 @@
             "recentPpg"
           ],
           "probabilityDeltaPrevious": 0,
-          "probabilityDelta7d": -0.0068
+          "probabilityDelta7d": -0.0061
         },
         {
           "teamId": 5911,
@@ -20703,7 +20703,7 @@
             "recentPpg"
           ],
           "probabilityDeltaPrevious": 0,
-          "probabilityDelta7d": 0.0078
+          "probabilityDelta7d": 0.0086
         },
         {
           "teamId": 103,
@@ -20724,7 +20724,7 @@
             "recentPpg"
           ],
           "probabilityDeltaPrevious": 0,
-          "probabilityDelta7d": -0.0033
+          "probabilityDelta7d": -0.0036
         },
         {
           "teamId": 115,
@@ -20745,7 +20745,7 @@
             "recentPpg"
           ],
           "probabilityDeltaPrevious": 0,
-          "probabilityDelta7d": -0.0037
+          "probabilityDelta7d": -0.0039
         },
         {
           "teamId": 107,
@@ -20808,7 +20808,7 @@
             "recentPpg"
           ],
           "probabilityDeltaPrevious": 0,
-          "probabilityDelta7d": -0.0027
+          "probabilityDelta7d": -0.0026
         },
         {
           "teamId": 454,
@@ -20852,7 +20852,7 @@
             "recentPpg"
           ],
           "probabilityDeltaPrevious": 0,
-          "probabilityDelta7d": 0.0062
+          "probabilityDelta7d": 0.0058
         },
         {
           "teamId": 110,
@@ -20873,7 +20873,7 @@
             "recentPpg"
           ],
           "probabilityDeltaPrevious": 0,
-          "probabilityDelta7d": 0.0119
+          "probabilityDelta7d": 0.0097
         },
         {
           "teamId": 100,
@@ -20894,7 +20894,7 @@
             "recentPpg"
           ],
           "probabilityDeltaPrevious": 0,
-          "probabilityDelta7d": 0.0114
+          "probabilityDelta7d": 0.0124
         },
         {
           "teamId": 98,
@@ -20915,7 +20915,7 @@
             "recentPpg"
           ],
           "probabilityDeltaPrevious": 0,
-          "probabilityDelta7d": 0.0092
+          "probabilityDelta7d": 0.009
         },
         {
           "teamId": 7397,
@@ -20936,7 +20936,7 @@
             "recentPpg"
           ],
           "probabilityDeltaPrevious": 0,
-          "probabilityDelta7d": 0.0062
+          "probabilityDelta7d": 0.0078
         },
         {
           "teamId": 470,
@@ -20978,7 +20978,7 @@
             "recentPpg"
           ],
           "probabilityDeltaPrevious": 0,
-          "probabilityDelta7d": -0.0217
+          "probabilityDelta7d": -0.0208
         },
         {
           "teamId": 109,
@@ -20999,17 +20999,17 @@
             "recentPpg"
           ],
           "probabilityDeltaPrevious": 0,
-          "probabilityDelta7d": -0.0129
+          "probabilityDelta7d": -0.0116
         }
       ],
       "dataQuality": {
         "status": "ok",
         "warnings": [
-          "Match odds unavailable: The Odds API soccer_italy_serie_a match odds returned 401",
-          "Odds unavailable: The Odds API soccer_italy_serie_a returned 422"
+          "Odds unavailable: The Odds API soccer_italy_serie_a returned 422",
+          "Match odds unavailable: The Odds API soccer_italy_serie_a match odds returned 401"
         ],
-        "standingsUpdatedAt": "2026-10-20T07:34:53.358Z",
-        "matchesUpdatedAt": "2026-10-20T07:34:53.358Z"
+        "standingsUpdatedAt": "2026-10-20T13:33:23.042Z",
+        "matchesUpdatedAt": "2026-10-20T13:33:23.042Z"
       }
     },
     {
@@ -25539,8 +25539,8 @@
           "Match odds unavailable: The Odds API soccer_france_ligue_one match odds returned 401",
           "Odds unavailable: The Odds API soccer_france_ligue_one returned 422"
         ],
-        "standingsUpdatedAt": "2026-10-20T07:34:53.358Z",
-        "matchesUpdatedAt": "2026-10-20T07:34:53.358Z"
+        "standingsUpdatedAt": "2026-10-20T13:33:23.042Z",
+        "matchesUpdatedAt": "2026-10-20T13:33:23.042Z"
       }
     }
   ]
