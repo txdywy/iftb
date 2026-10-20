@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-20T18:27:48.150Z",
+  "generatedAt": "2026-10-20T23:10:55.226Z",
   "modelVersion": "rule-softmax-v0.1.0",
   "leagues": [
     {
@@ -5491,8 +5491,8 @@
           "Match odds unavailable: The Odds API soccer_epl match odds returned 401",
           "Odds unavailable: The Odds API soccer_epl returned 422"
         ],
-        "standingsUpdatedAt": "2026-10-20T18:27:48.150Z",
-        "matchesUpdatedAt": "2026-10-20T18:27:48.150Z"
+        "standingsUpdatedAt": "2026-10-20T23:10:55.226Z",
+        "matchesUpdatedAt": "2026-10-20T23:10:55.226Z"
       }
     },
     {
@@ -10984,8 +10984,8 @@
           "Odds unavailable: The Odds API soccer_spain_la_liga returned 422",
           "Match odds unavailable: The Odds API soccer_spain_la_liga match odds returned 401"
         ],
-        "standingsUpdatedAt": "2026-10-20T18:27:48.150Z",
-        "matchesUpdatedAt": "2026-10-20T18:27:48.150Z"
+        "standingsUpdatedAt": "2026-10-20T23:10:55.226Z",
+        "matchesUpdatedAt": "2026-10-20T23:10:55.226Z"
       }
     },
     {
@@ -15515,8 +15515,8 @@
           "Odds unavailable: The Odds API soccer_germany_bundesliga returned 422",
           "Match odds unavailable: The Odds API soccer_germany_bundesliga match odds returned 401"
         ],
-        "standingsUpdatedAt": "2026-10-20T18:27:48.150Z",
-        "matchesUpdatedAt": "2026-10-20T18:27:48.150Z"
+        "standingsUpdatedAt": "2026-10-20T23:10:55.226Z",
+        "matchesUpdatedAt": "2026-10-20T23:10:55.226Z"
       }
     },
     {
@@ -20430,7 +20430,7 @@
             "recentPpg"
           ],
           "probabilityDeltaPrevious": 0,
-          "probabilityDelta7d": 0.0058
+          "probabilityDelta7d": 0.0062
         },
         {
           "teamId": 110,
@@ -20451,7 +20451,7 @@
             "recentPpg"
           ],
           "probabilityDeltaPrevious": 0,
-          "probabilityDelta7d": 0.0097
+          "probabilityDelta7d": 0.0119
         },
         {
           "teamId": 100,
@@ -20472,7 +20472,7 @@
             "recentPpg"
           ],
           "probabilityDeltaPrevious": 0,
-          "probabilityDelta7d": 0.0124
+          "probabilityDelta7d": 0.0114
         },
         {
           "teamId": 98,
@@ -20493,7 +20493,7 @@
             "recentPpg"
           ],
           "probabilityDeltaPrevious": 0,
-          "probabilityDelta7d": 0.009
+          "probabilityDelta7d": 0.0092
         },
         {
           "teamId": 7397,
@@ -20514,7 +20514,7 @@
             "recentPpg"
           ],
           "probabilityDeltaPrevious": 0,
-          "probabilityDelta7d": 0.0078
+          "probabilityDelta7d": 0.0062
         },
         {
           "teamId": 470,
@@ -20556,7 +20556,7 @@
             "recentPpg"
           ],
           "probabilityDeltaPrevious": 0,
-          "probabilityDelta7d": -0.0208
+          "probabilityDelta7d": -0.0217
         },
         {
           "teamId": 109,
@@ -20577,7 +20577,7 @@
             "recentPpg"
           ],
           "probabilityDeltaPrevious": 0,
-          "probabilityDelta7d": -0.0116
+          "probabilityDelta7d": -0.0129
         },
         {
           "teamId": 113,
@@ -20598,7 +20598,7 @@
             "recentPpg"
           ],
           "probabilityDeltaPrevious": 0,
-          "probabilityDelta7d": -0.0113
+          "probabilityDelta7d": -0.0112
         },
         {
           "teamId": 586,
@@ -20619,7 +20619,7 @@
             "recentPpg"
           ],
           "probabilityDeltaPrevious": 0,
-          "probabilityDelta7d": 0.0056
+          "probabilityDelta7d": 0.0064
         },
         {
           "teamId": 102,
@@ -20640,7 +20640,7 @@
             "recentPpg"
           ],
           "probabilityDeltaPrevious": 0,
-          "probabilityDelta7d": -0.0094
+          "probabilityDelta7d": -0.0075
         },
         {
           "teamId": 5890,
@@ -20661,7 +20661,7 @@
             "recentPpg"
           ],
           "probabilityDeltaPrevious": 0,
-          "probabilityDelta7d": 0.0059
+          "probabilityDelta7d": 0.0063
         },
         {
           "teamId": 471,
@@ -20682,7 +20682,7 @@
             "recentPpg"
           ],
           "probabilityDeltaPrevious": 0,
-          "probabilityDelta7d": -0.0061
+          "probabilityDelta7d": -0.0068
         },
         {
           "teamId": 5911,
@@ -20703,7 +20703,7 @@
             "recentPpg"
           ],
           "probabilityDeltaPrevious": 0,
-          "probabilityDelta7d": 0.0086
+          "probabilityDelta7d": 0.0078
         },
         {
           "teamId": 103,
@@ -20724,7 +20724,7 @@
             "recentPpg"
           ],
           "probabilityDeltaPrevious": 0,
-          "probabilityDelta7d": -0.0036
+          "probabilityDelta7d": -0.0033
         },
         {
           "teamId": 115,
@@ -20745,7 +20745,7 @@
             "recentPpg"
           ],
           "probabilityDeltaPrevious": 0,
-          "probabilityDelta7d": -0.0039
+          "probabilityDelta7d": -0.0037
         },
         {
           "teamId": 107,
@@ -20808,7 +20808,7 @@
             "recentPpg"
           ],
           "probabilityDeltaPrevious": 0,
-          "probabilityDelta7d": -0.0026
+          "probabilityDelta7d": -0.0027
         },
         {
           "teamId": 454,
@@ -20852,7 +20852,7 @@
             "recentPpg"
           ],
           "probabilityDeltaPrevious": 0,
-          "probabilityDelta7d": 0.0058
+          "probabilityDelta7d": 0.0062
         },
         {
           "teamId": 110,
@@ -20873,7 +20873,7 @@
             "recentPpg"
           ],
           "probabilityDeltaPrevious": 0,
-          "probabilityDelta7d": 0.0097
+          "probabilityDelta7d": 0.0119
         },
         {
           "teamId": 100,
@@ -20894,7 +20894,7 @@
             "recentPpg"
           ],
           "probabilityDeltaPrevious": 0,
-          "probabilityDelta7d": 0.0124
+          "probabilityDelta7d": 0.0114
         },
         {
           "teamId": 98,
@@ -20915,7 +20915,7 @@
             "recentPpg"
           ],
           "probabilityDeltaPrevious": 0,
-          "probabilityDelta7d": 0.009
+          "probabilityDelta7d": 0.0092
         },
         {
           "teamId": 7397,
@@ -20936,7 +20936,7 @@
             "recentPpg"
           ],
           "probabilityDeltaPrevious": 0,
-          "probabilityDelta7d": 0.0078
+          "probabilityDelta7d": 0.0062
         },
         {
           "teamId": 470,
@@ -20978,7 +20978,7 @@
             "recentPpg"
           ],
           "probabilityDeltaPrevious": 0,
-          "probabilityDelta7d": -0.0208
+          "probabilityDelta7d": -0.0217
         },
         {
           "teamId": 109,
@@ -20999,7 +20999,7 @@
             "recentPpg"
           ],
           "probabilityDeltaPrevious": 0,
-          "probabilityDelta7d": -0.0116
+          "probabilityDelta7d": -0.0129
         }
       ],
       "dataQuality": {
@@ -21008,8 +21008,8 @@
           "Odds unavailable: The Odds API soccer_italy_serie_a returned 422",
           "Match odds unavailable: The Odds API soccer_italy_serie_a match odds returned 401"
         ],
-        "standingsUpdatedAt": "2026-10-20T18:27:48.150Z",
-        "matchesUpdatedAt": "2026-10-20T18:27:48.150Z"
+        "standingsUpdatedAt": "2026-10-20T23:10:55.226Z",
+        "matchesUpdatedAt": "2026-10-20T23:10:55.226Z"
       }
     },
     {
@@ -25536,11 +25536,11 @@
       "dataQuality": {
         "status": "ok",
         "warnings": [
-          "Odds unavailable: The Odds API soccer_france_ligue_one returned 422",
-          "Match odds unavailable: The Odds API soccer_france_ligue_one match odds returned 401"
+          "Match odds unavailable: The Odds API soccer_france_ligue_one match odds returned 401",
+          "Odds unavailable: The Odds API soccer_france_ligue_one returned 422"
         ],
-        "standingsUpdatedAt": "2026-10-20T18:27:48.150Z",
-        "matchesUpdatedAt": "2026-10-20T18:27:48.150Z"
+        "standingsUpdatedAt": "2026-10-20T23:10:55.226Z",
+        "matchesUpdatedAt": "2026-10-20T23:10:55.226Z"
       }
     }
   ]
