@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-21T18:39:08.249Z",
+  "generatedAt": "2026-10-21T23:19:50.268Z",
   "modelVersion": "rule-softmax-v0.1.0",
   "leagues": [
     {
@@ -5488,11 +5488,11 @@
       "dataQuality": {
         "status": "ok",
         "warnings": [
-          "Odds unavailable: The Odds API soccer_epl returned 422",
-          "Match odds unavailable: The Odds API soccer_epl match odds returned 401"
+          "Match odds unavailable: The Odds API soccer_epl match odds returned 401",
+          "Odds unavailable: The Odds API soccer_epl returned 422"
         ],
-        "standingsUpdatedAt": "2026-10-21T18:39:08.249Z",
-        "matchesUpdatedAt": "2026-10-21T18:39:08.249Z"
+        "standingsUpdatedAt": "2026-10-21T23:19:50.268Z",
+        "matchesUpdatedAt": "2026-10-21T23:19:50.268Z"
       }
     },
     {
@@ -5673,8 +5673,8 @@
           "won": 2,
           "draw": 4,
           "lost": 3,
-          "goalsFor": 14,
-          "goalsAgainst": 16,
+          "goalsFor": 15,
+          "goalsAgainst": 17,
           "goalDifference": -2,
           "points": 10,
           "form": null
@@ -5705,8 +5705,8 @@
           "won": 2,
           "draw": 3,
           "lost": 3,
-          "goalsFor": 7,
-          "goalsAgainst": 8,
+          "goalsFor": 8,
+          "goalsAgainst": 9,
           "goalDifference": -1,
           "points": 9,
           "form": null
@@ -6896,14 +6896,14 @@
         {
           "id": 564685,
           "utcDate": "2026-10-21T18:00:00Z",
-          "status": "IN_PLAY",
+          "status": "FINISHED",
           "matchday": 6,
           "homeTeamId": 88,
           "homeTeamName": "Levante UD",
           "awayTeamId": 77,
           "awayTeamName": "Athletic Club",
-          "homeScore": 2,
-          "awayScore": 0
+          "homeScore": 3,
+          "awayScore": 1
         },
         {
           "id": 564719,
@@ -10392,8 +10392,8 @@
           "teamName": "FC Barcelona",
           "shortName": "Barça",
           "crest": "assets/teams/laliga/81.png",
-          "rawScore": 2.9504,
-          "probability": 0.3891,
+          "rawScore": 2.9568,
+          "probability": 0.3894,
           "confidence": 0.7058,
           "features": {
             "pointsPerGame": 3,
@@ -10405,16 +10405,16 @@
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": 0.0383,
-          "probabilityDelta7d": 0.0358
+          "probabilityDeltaPrevious": 0.0003,
+          "probabilityDelta7d": 0.0361
         },
         {
           "teamId": 78,
           "teamName": "Club Atlético de Madrid",
           "shortName": "Atleti",
           "crest": "assets/teams/laliga/78.png",
-          "rawScore": 1.814,
-          "probability": 0.1249,
+          "rawScore": 1.8205,
+          "probability": 0.125,
           "confidence": 0.7058,
           "features": {
             "pointsPerGame": 2.4444,
@@ -10426,16 +10426,16 @@
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": 0.0032,
-          "probabilityDelta7d": 0.0084
+          "probabilityDeltaPrevious": 0.0001,
+          "probabilityDelta7d": 0.0085
         },
         {
           "teamId": 86,
           "teamName": "Real Madrid CF",
           "shortName": "Real Madrid",
           "crest": "assets/teams/laliga/86.png",
-          "rawScore": 1.7806,
-          "probability": 0.1208,
+          "rawScore": 1.7877,
+          "probability": 0.121,
           "confidence": 0.7058,
           "features": {
             "pointsPerGame": 2.3333,
@@ -10447,16 +10447,16 @@
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": 0.0021,
-          "probabilityDelta7d": 0.0172
+          "probabilityDeltaPrevious": 0.0002,
+          "probabilityDelta7d": 0.0174
         },
         {
           "teamId": 90,
           "teamName": "Real Betis Balompié",
           "shortName": "Real Betis",
           "crest": "assets/teams/laliga/90.png",
-          "rawScore": 1.2324,
-          "probability": 0.0698,
+          "rawScore": 1.2408,
+          "probability": 0.07,
           "confidence": 0.7058,
           "features": {
             "pointsPerGame": 2.1111,
@@ -10468,15 +10468,15 @@
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": 0,
-          "probabilityDelta7d": -0.0299
+          "probabilityDeltaPrevious": 0.0002,
+          "probabilityDelta7d": -0.0297
         },
         {
           "teamId": 92,
           "teamName": "Real Sociedad de Fútbol",
           "shortName": "Real Sociedad",
           "crest": "assets/teams/laliga/92.png",
-          "rawScore": 0.7369,
+          "rawScore": 0.7421,
           "probability": 0.0425,
           "confidence": 0.7058,
           "features": {
@@ -10489,7 +10489,7 @@
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": -0.0028,
+          "probabilityDeltaPrevious": 0,
           "probabilityDelta7d": 0.0067
         },
         {
@@ -10497,8 +10497,8 @@
           "teamName": "Sevilla FC",
           "shortName": "Sevilla FC",
           "crest": "assets/teams/laliga/559.png",
-          "rawScore": 0.4785,
-          "probability": 0.0328,
+          "rawScore": 0.486,
+          "probability": 0.0329,
           "confidence": 0.7058,
           "features": {
             "pointsPerGame": 1.5556,
@@ -10510,16 +10510,16 @@
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": -0.0028,
-          "probabilityDelta7d": -0.013
+          "probabilityDeltaPrevious": 0.0001,
+          "probabilityDelta7d": -0.0129
         },
         {
           "teamId": 263,
           "teamName": "Deportivo Alavés",
           "shortName": "Alavés",
           "crest": "assets/teams/laliga/263.png",
-          "rawScore": 0.1029,
-          "probability": 0.0226,
+          "rawScore": 0.1039,
+          "probability": 0.0225,
           "confidence": 0.7058,
           "features": {
             "pointsPerGame": 1.2222,
@@ -10531,16 +10531,16 @@
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": -0.0038,
-          "probabilityDelta7d": -0.0083
+          "probabilityDeltaPrevious": -0.0001,
+          "probabilityDelta7d": -0.0084
         },
         {
           "teamId": 558,
           "teamName": "RC Celta de Vigo",
           "shortName": "Celta",
           "crest": "assets/teams/laliga/558.png",
-          "rawScore": 0.0491,
-          "probability": 0.0214,
+          "rawScore": 0.0474,
+          "probability": 0.0212,
           "confidence": 0.7058,
           "features": {
             "pointsPerGame": 1.2222,
@@ -10552,16 +10552,16 @@
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": -0.0039,
-          "probabilityDelta7d": 0.0029
+          "probabilityDeltaPrevious": -0.0002,
+          "probabilityDelta7d": 0.0027
         },
         {
           "teamId": 560,
           "teamName": "RC Deportivo La Coruña",
           "shortName": "Deportivo",
           "crest": "assets/teams/laliga/560.png",
-          "rawScore": 0.0405,
-          "probability": 0.0212,
+          "rawScore": 0.041,
+          "probability": 0.0211,
           "confidence": 0.7058,
           "features": {
             "pointsPerGame": 1.2222,
@@ -10573,58 +10573,58 @@
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": -0.0034,
-          "probabilityDelta7d": -0.0037
+          "probabilityDeltaPrevious": -0.0001,
+          "probabilityDelta7d": -0.0038
         },
         {
           "teamId": 77,
           "teamName": "Athletic Club",
           "shortName": "Athletic",
           "crest": "assets/teams/laliga/77.png",
-          "rawScore": -0.0813,
-          "probability": 0.0188,
+          "rawScore": -0.0834,
+          "probability": 0.0186,
           "confidence": 0.6974,
           "features": {
             "pointsPerGame": 1.125,
             "pointsGapAdjusted": 0.3333,
             "goalDiffPerGame": -0.125,
             "recentPpg": 0,
-            "remainingScheduleAdvantage": 0.0299
+            "remainingScheduleAdvantage": 0.0227
           },
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": -0.0072,
-          "probabilityDelta7d": -0.0068
+          "probabilityDeltaPrevious": -0.0002,
+          "probabilityDelta7d": -0.007
         },
         {
           "teamId": 88,
           "teamName": "Levante UD",
           "shortName": "Levante",
           "crest": "assets/teams/laliga/88.png",
-          "rawScore": -0.0928,
-          "probability": 0.0186,
+          "rawScore": -0.0969,
+          "probability": 0.0184,
           "confidence": 0.7058,
           "features": {
             "pointsPerGame": 1.1111,
             "pointsGapAdjusted": 0.3704,
             "goalDiffPerGame": -0.2222,
             "recentPpg": 0,
-            "remainingScheduleAdvantage": 0.0032
+            "remainingScheduleAdvantage": -0.0046
           },
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": 0.0034,
-          "probabilityDelta7d": 0.0048
+          "probabilityDeltaPrevious": -0.0002,
+          "probabilityDelta7d": 0.0046
         },
         {
           "teamId": 79,
           "teamName": "CA Osasuna",
           "shortName": "Osasuna",
           "crest": "assets/teams/laliga/79.png",
-          "rawScore": -0.1481,
-          "probability": 0.0176,
+          "rawScore": -0.1449,
+          "probability": 0.0175,
           "confidence": 0.7058,
           "features": {
             "pointsPerGame": 1.2222,
@@ -10636,15 +10636,15 @@
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": -0.0025,
-          "probabilityDelta7d": 0.0031
+          "probabilityDeltaPrevious": -0.0001,
+          "probabilityDelta7d": 0.003
         },
         {
           "teamId": 94,
           "teamName": "Villarreal CF",
           "shortName": "Villarreal",
           "crest": "assets/teams/laliga/94.png",
-          "rawScore": -0.1805,
+          "rawScore": -0.1771,
           "probability": 0.017,
           "confidence": 0.7058,
           "features": {
@@ -10657,7 +10657,7 @@
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": -0.0031,
+          "probabilityDeltaPrevious": 0,
           "probabilityDelta7d": -0.0021
         },
         {
@@ -10665,7 +10665,7 @@
           "teamName": "Rayo Vallecano de Madrid",
           "shortName": "Rayo Vallecano",
           "crest": "assets/teams/laliga/87.png",
-          "rawScore": -0.206,
+          "rawScore": -0.2008,
           "probability": 0.0166,
           "confidence": 0.6974,
           "features": {
@@ -10678,7 +10678,7 @@
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": -0.0027,
+          "probabilityDeltaPrevious": 0,
           "probabilityDelta7d": -0.0019
         },
         {
@@ -10686,7 +10686,7 @@
           "teamName": "RCD Espanyol de Barcelona",
           "shortName": "Espanyol",
           "crest": "assets/teams/laliga/80.png",
-          "rawScore": -0.3325,
+          "rawScore": -0.3292,
           "probability": 0.0146,
           "confidence": 0.7058,
           "features": {
@@ -10699,7 +10699,7 @@
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": -0.0029,
+          "probabilityDeltaPrevious": 0,
           "probabilityDelta7d": -0.0037
         },
         {
@@ -10707,7 +10707,7 @@
           "teamName": "Getafe CF",
           "shortName": "Getafe",
           "crest": "assets/teams/laliga/82.png",
-          "rawScore": -0.3454,
+          "rawScore": -0.3422,
           "probability": 0.0144,
           "confidence": 0.7058,
           "features": {
@@ -10720,7 +10720,7 @@
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": -0.0027,
+          "probabilityDeltaPrevious": 0,
           "probabilityDelta7d": -0.0018
         },
         {
@@ -10728,7 +10728,7 @@
           "teamName": "Elche CF",
           "shortName": "Elche",
           "crest": "assets/teams/laliga/285.png",
-          "rawScore": -0.5776,
+          "rawScore": -0.5734,
           "probability": 0.0114,
           "confidence": 0.7058,
           "features": {
@@ -10741,7 +10741,7 @@
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": -0.0026,
+          "probabilityDeltaPrevious": 0,
           "probabilityDelta7d": -0.001
         },
         {
@@ -10749,8 +10749,8 @@
           "teamName": "Real Racing Club de Santander",
           "shortName": "Santander",
           "crest": "assets/teams/laliga/5335.png",
-          "rawScore": -0.6822,
-          "probability": 0.0103,
+          "rawScore": -0.6815,
+          "probability": 0.0102,
           "confidence": 0.7058,
           "features": {
             "pointsPerGame": 0.8889,
@@ -10762,15 +10762,15 @@
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": -0.0022,
-          "probabilityDelta7d": -0.0038
+          "probabilityDeltaPrevious": -0.0001,
+          "probabilityDelta7d": -0.0039
         },
         {
           "teamId": 95,
           "teamName": "Valencia CF",
           "shortName": "Valencia",
           "crest": "assets/teams/laliga/95.png",
-          "rawScore": -0.7687,
+          "rawScore": -0.7639,
           "probability": 0.0094,
           "confidence": 0.7058,
           "features": {
@@ -10783,7 +10783,7 @@
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": -0.0023,
+          "probabilityDeltaPrevious": 0,
           "probabilityDelta7d": -0.0007
         },
         {
@@ -10791,7 +10791,7 @@
           "teamName": "Málaga CF",
           "shortName": "Málaga",
           "crest": "assets/teams/laliga/84.png",
-          "rawScore": -1.1546,
+          "rawScore": -1.1524,
           "probability": 0.0064,
           "confidence": 0.7058,
           "features": {
@@ -10804,7 +10804,7 @@
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": -0.0018,
+          "probabilityDeltaPrevious": 0,
           "probabilityDelta7d": -0.0019
         }
       ],
@@ -10814,8 +10814,8 @@
           "teamName": "FC Barcelona",
           "shortName": "Barça",
           "crest": "assets/teams/laliga/81.png",
-          "rawScore": 2.9504,
-          "probability": 0.3891,
+          "rawScore": 2.9568,
+          "probability": 0.3894,
           "confidence": 0.7058,
           "features": {
             "pointsPerGame": 3,
@@ -10827,16 +10827,16 @@
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": 0.0383,
-          "probabilityDelta7d": 0.0358
+          "probabilityDeltaPrevious": 0.0003,
+          "probabilityDelta7d": 0.0361
         },
         {
           "teamId": 78,
           "teamName": "Club Atlético de Madrid",
           "shortName": "Atleti",
           "crest": "assets/teams/laliga/78.png",
-          "rawScore": 1.814,
-          "probability": 0.1249,
+          "rawScore": 1.8205,
+          "probability": 0.125,
           "confidence": 0.7058,
           "features": {
             "pointsPerGame": 2.4444,
@@ -10848,16 +10848,16 @@
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": 0.0032,
-          "probabilityDelta7d": 0.0084
+          "probabilityDeltaPrevious": 0.0001,
+          "probabilityDelta7d": 0.0085
         },
         {
           "teamId": 86,
           "teamName": "Real Madrid CF",
           "shortName": "Real Madrid",
           "crest": "assets/teams/laliga/86.png",
-          "rawScore": 1.7806,
-          "probability": 0.1208,
+          "rawScore": 1.7877,
+          "probability": 0.121,
           "confidence": 0.7058,
           "features": {
             "pointsPerGame": 2.3333,
@@ -10869,16 +10869,16 @@
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": 0.0021,
-          "probabilityDelta7d": 0.0172
+          "probabilityDeltaPrevious": 0.0002,
+          "probabilityDelta7d": 0.0174
         },
         {
           "teamId": 90,
           "teamName": "Real Betis Balompié",
           "shortName": "Real Betis",
           "crest": "assets/teams/laliga/90.png",
-          "rawScore": 1.2324,
-          "probability": 0.0698,
+          "rawScore": 1.2408,
+          "probability": 0.07,
           "confidence": 0.7058,
           "features": {
             "pointsPerGame": 2.1111,
@@ -10890,15 +10890,15 @@
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": 0,
-          "probabilityDelta7d": -0.0299
+          "probabilityDeltaPrevious": 0.0002,
+          "probabilityDelta7d": -0.0297
         },
         {
           "teamId": 92,
           "teamName": "Real Sociedad de Fútbol",
           "shortName": "Real Sociedad",
           "crest": "assets/teams/laliga/92.png",
-          "rawScore": 0.7369,
+          "rawScore": 0.7421,
           "probability": 0.0425,
           "confidence": 0.7058,
           "features": {
@@ -10911,7 +10911,7 @@
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": -0.0028,
+          "probabilityDeltaPrevious": 0,
           "probabilityDelta7d": 0.0067
         },
         {
@@ -10919,8 +10919,8 @@
           "teamName": "Sevilla FC",
           "shortName": "Sevilla FC",
           "crest": "assets/teams/laliga/559.png",
-          "rawScore": 0.4785,
-          "probability": 0.0328,
+          "rawScore": 0.486,
+          "probability": 0.0329,
           "confidence": 0.7058,
           "features": {
             "pointsPerGame": 1.5556,
@@ -10932,16 +10932,16 @@
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": -0.0028,
-          "probabilityDelta7d": -0.013
+          "probabilityDeltaPrevious": 0.0001,
+          "probabilityDelta7d": -0.0129
         },
         {
           "teamId": 263,
           "teamName": "Deportivo Alavés",
           "shortName": "Alavés",
           "crest": "assets/teams/laliga/263.png",
-          "rawScore": 0.1029,
-          "probability": 0.0226,
+          "rawScore": 0.1039,
+          "probability": 0.0225,
           "confidence": 0.7058,
           "features": {
             "pointsPerGame": 1.2222,
@@ -10953,16 +10953,16 @@
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": -0.0038,
-          "probabilityDelta7d": -0.0083
+          "probabilityDeltaPrevious": -0.0001,
+          "probabilityDelta7d": -0.0084
         },
         {
           "teamId": 558,
           "teamName": "RC Celta de Vigo",
           "shortName": "Celta",
           "crest": "assets/teams/laliga/558.png",
-          "rawScore": 0.0491,
-          "probability": 0.0214,
+          "rawScore": 0.0474,
+          "probability": 0.0212,
           "confidence": 0.7058,
           "features": {
             "pointsPerGame": 1.2222,
@@ -10974,18 +10974,18 @@
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": -0.0039,
-          "probabilityDelta7d": 0.0029
+          "probabilityDeltaPrevious": -0.0002,
+          "probabilityDelta7d": 0.0027
         }
       ],
       "dataQuality": {
         "status": "ok",
         "warnings": [
-          "Odds unavailable: The Odds API soccer_spain_la_liga returned 422",
-          "Match odds unavailable: The Odds API soccer_spain_la_liga match odds returned 401"
+          "Match odds unavailable: The Odds API soccer_spain_la_liga match odds returned 401",
+          "Odds unavailable: The Odds API soccer_spain_la_liga returned 422"
         ],
-        "standingsUpdatedAt": "2026-10-21T18:39:08.249Z",
-        "matchesUpdatedAt": "2026-10-21T18:39:08.249Z"
+        "standingsUpdatedAt": "2026-10-21T23:19:50.268Z",
+        "matchesUpdatedAt": "2026-10-21T23:19:50.268Z"
       }
     },
     {
@@ -15512,11 +15512,11 @@
       "dataQuality": {
         "status": "ok",
         "warnings": [
-          "Odds unavailable: The Odds API soccer_germany_bundesliga returned 422",
-          "Match odds unavailable: The Odds API soccer_germany_bundesliga match odds returned 401"
+          "Match odds unavailable: The Odds API soccer_germany_bundesliga match odds returned 401",
+          "Odds unavailable: The Odds API soccer_germany_bundesliga returned 422"
         ],
-        "standingsUpdatedAt": "2026-10-21T18:39:08.249Z",
-        "matchesUpdatedAt": "2026-10-21T18:39:08.249Z"
+        "standingsUpdatedAt": "2026-10-21T23:19:50.268Z",
+        "matchesUpdatedAt": "2026-10-21T23:19:50.268Z"
       }
     },
     {
@@ -21008,8 +21008,8 @@
           "Odds unavailable: The Odds API soccer_italy_serie_a returned 422",
           "Match odds unavailable: The Odds API soccer_italy_serie_a match odds returned 401"
         ],
-        "standingsUpdatedAt": "2026-10-21T18:39:08.249Z",
-        "matchesUpdatedAt": "2026-10-21T18:39:08.249Z"
+        "standingsUpdatedAt": "2026-10-21T23:19:50.268Z",
+        "matchesUpdatedAt": "2026-10-21T23:19:50.268Z"
       }
     },
     {
@@ -25536,11 +25536,11 @@
       "dataQuality": {
         "status": "ok",
         "warnings": [
-          "Odds unavailable: The Odds API soccer_france_ligue_one returned 422",
-          "Match odds unavailable: The Odds API soccer_france_ligue_one match odds returned 401"
+          "Match odds unavailable: The Odds API soccer_france_ligue_one match odds returned 401",
+          "Odds unavailable: The Odds API soccer_france_ligue_one returned 422"
         ],
-        "standingsUpdatedAt": "2026-10-21T18:39:08.249Z",
-        "matchesUpdatedAt": "2026-10-21T18:39:08.249Z"
+        "standingsUpdatedAt": "2026-10-21T23:19:50.268Z",
+        "matchesUpdatedAt": "2026-10-21T23:19:50.268Z"
       }
     }
   ]
