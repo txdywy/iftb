@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-21T07:39:52.265Z",
+  "generatedAt": "2026-10-21T13:48:40.224Z",
   "modelVersion": "rule-softmax-v0.1.0",
   "leagues": [
     {
@@ -5491,8 +5491,8 @@
           "Match odds unavailable: The Odds API soccer_epl match odds returned 401",
           "Odds unavailable: The Odds API soccer_epl returned 422"
         ],
-        "standingsUpdatedAt": "2026-10-21T07:39:52.265Z",
-        "matchesUpdatedAt": "2026-10-21T07:39:52.265Z"
+        "standingsUpdatedAt": "2026-10-21T13:48:40.224Z",
+        "matchesUpdatedAt": "2026-10-21T13:48:40.224Z"
       }
     },
     {
@@ -10984,8 +10984,8 @@
           "Match odds unavailable: The Odds API soccer_spain_la_liga match odds returned 401",
           "Odds unavailable: The Odds API soccer_spain_la_liga returned 422"
         ],
-        "standingsUpdatedAt": "2026-10-21T07:39:52.265Z",
-        "matchesUpdatedAt": "2026-10-21T07:39:52.265Z"
+        "standingsUpdatedAt": "2026-10-21T13:48:40.224Z",
+        "matchesUpdatedAt": "2026-10-21T13:48:40.224Z"
       }
     },
     {
@@ -15512,11 +15512,11 @@
       "dataQuality": {
         "status": "ok",
         "warnings": [
-          "Odds unavailable: The Odds API soccer_germany_bundesliga returned 422",
-          "Match odds unavailable: The Odds API soccer_germany_bundesliga match odds returned 401"
+          "Match odds unavailable: The Odds API soccer_germany_bundesliga match odds returned 401",
+          "Odds unavailable: The Odds API soccer_germany_bundesliga returned 422"
         ],
-        "standingsUpdatedAt": "2026-10-21T07:39:52.265Z",
-        "matchesUpdatedAt": "2026-10-21T07:39:52.265Z"
+        "standingsUpdatedAt": "2026-10-21T13:48:40.224Z",
+        "matchesUpdatedAt": "2026-10-21T13:48:40.224Z"
       }
     },
     {
@@ -21008,8 +21008,8 @@
           "Odds unavailable: The Odds API soccer_italy_serie_a returned 422",
           "Match odds unavailable: The Odds API soccer_italy_serie_a match odds returned 401"
         ],
-        "standingsUpdatedAt": "2026-10-21T07:39:52.265Z",
-        "matchesUpdatedAt": "2026-10-21T07:39:52.265Z"
+        "standingsUpdatedAt": "2026-10-21T13:48:40.224Z",
+        "matchesUpdatedAt": "2026-10-21T13:48:40.224Z"
       }
     },
     {
@@ -22079,18 +22079,6 @@
           "awayScore": null
         },
         {
-          "id": 559655,
-          "utcDate": "2026-10-24T15:15:00Z",
-          "status": "TIMED",
-          "matchday": 8,
-          "homeTeamId": 511,
-          "homeTeamName": "Toulouse FC",
-          "awayTeamId": 531,
-          "awayTeamName": "ES Troyes AC",
-          "homeScore": null,
-          "awayScore": null
-        },
-        {
           "id": 559652,
           "utcDate": "2026-10-24T18:45:00Z",
           "status": "TIMED",
@@ -22147,6 +22135,18 @@
           "homeTeamName": "Angers SCO",
           "awayTeamId": 525,
           "awayTeamName": "FC Lorient",
+          "homeScore": null,
+          "awayScore": null
+        },
+        {
+          "id": 559655,
+          "utcDate": "2026-10-25T16:15:00Z",
+          "status": "TIMED",
+          "matchday": 8,
+          "homeTeamId": 511,
+          "homeTeamName": "Toulouse FC",
+          "awayTeamId": 531,
+          "awayTeamName": "ES Troyes AC",
           "homeScore": null,
           "awayScore": null
         },
@@ -22607,21 +22607,33 @@
           "awayScore": null
         },
         {
-          "id": 559603,
-          "utcDate": "2026-12-05T00:00:00Z",
-          "status": "SCHEDULED",
+          "id": 559609,
+          "utcDate": "2026-12-04T19:45:00Z",
+          "status": "TIMED",
           "matchday": 13,
-          "homeTeamId": 531,
-          "homeTeamName": "ES Troyes AC",
-          "awayTeamId": 523,
-          "awayTeamName": "Olympique Lyonnais",
+          "homeTeamId": 511,
+          "homeTeamName": "Toulouse FC",
+          "awayTeamId": 524,
+          "awayTeamName": "Paris Saint-Germain FC",
+          "homeScore": null,
+          "awayScore": null
+        },
+        {
+          "id": 559606,
+          "utcDate": "2026-12-05T16:15:00Z",
+          "status": "TIMED",
+          "matchday": 13,
+          "homeTeamId": 521,
+          "homeTeamName": "Lille OSC",
+          "awayTeamId": 519,
+          "awayTeamName": "AJ Auxerre",
           "homeScore": null,
           "awayScore": null
         },
         {
           "id": 559604,
-          "utcDate": "2026-12-05T00:00:00Z",
-          "status": "SCHEDULED",
+          "utcDate": "2026-12-05T19:45:00Z",
+          "status": "TIMED",
           "matchday": 13,
           "homeTeamId": 548,
           "homeTeamName": "AS Monaco FC",
@@ -22632,8 +22644,8 @@
         },
         {
           "id": 559605,
-          "utcDate": "2026-12-05T00:00:00Z",
-          "status": "SCHEDULED",
+          "utcDate": "2026-12-05T19:45:00Z",
+          "status": "TIMED",
           "matchday": 13,
           "homeTeamId": 546,
           "homeTeamName": "Racing Club de Lens",
@@ -22643,57 +22655,9 @@
           "awayScore": null
         },
         {
-          "id": 559606,
-          "utcDate": "2026-12-05T00:00:00Z",
-          "status": "SCHEDULED",
-          "matchday": 13,
-          "homeTeamId": 521,
-          "homeTeamName": "Lille OSC",
-          "awayTeamId": 519,
-          "awayTeamName": "AJ Auxerre",
-          "homeScore": null,
-          "awayScore": null
-        },
-        {
-          "id": 559607,
-          "utcDate": "2026-12-05T00:00:00Z",
-          "status": "SCHEDULED",
-          "matchday": 13,
-          "homeTeamId": 516,
-          "homeTeamName": "Olympique de Marseille",
-          "awayTeamId": 522,
-          "awayTeamName": "OGC Nice",
-          "homeScore": null,
-          "awayScore": null
-        },
-        {
-          "id": 559608,
-          "utcDate": "2026-12-05T00:00:00Z",
-          "status": "SCHEDULED",
-          "matchday": 13,
-          "homeTeamId": 529,
-          "homeTeamName": "Stade Rennais FC 1901",
-          "awayTeamId": 512,
-          "awayTeamName": "Stade Brestois 29",
-          "homeScore": null,
-          "awayScore": null
-        },
-        {
-          "id": 559609,
-          "utcDate": "2026-12-05T00:00:00Z",
-          "status": "SCHEDULED",
-          "matchday": 13,
-          "homeTeamId": 511,
-          "homeTeamName": "Toulouse FC",
-          "awayTeamId": 524,
-          "awayTeamName": "Paris Saint-Germain FC",
-          "homeScore": null,
-          "awayScore": null
-        },
-        {
           "id": 559610,
-          "utcDate": "2026-12-05T00:00:00Z",
-          "status": "SCHEDULED",
+          "utcDate": "2026-12-05T19:45:00Z",
+          "status": "TIMED",
           "matchday": 13,
           "homeTeamId": 576,
           "homeTeamName": "RC Strasbourg Alsace",
@@ -22704,8 +22668,8 @@
         },
         {
           "id": 559611,
-          "utcDate": "2026-12-05T00:00:00Z",
-          "status": "SCHEDULED",
+          "utcDate": "2026-12-05T19:45:00Z",
+          "status": "TIMED",
           "matchday": 13,
           "homeTeamId": 1045,
           "homeTeamName": "Paris FC",
@@ -22715,21 +22679,57 @@
           "awayScore": null
         },
         {
-          "id": 559595,
-          "utcDate": "2026-12-12T00:00:00Z",
-          "status": "SCHEDULED",
+          "id": 559603,
+          "utcDate": "2026-12-06T14:00:00Z",
+          "status": "TIMED",
+          "matchday": 13,
+          "homeTeamId": 531,
+          "homeTeamName": "ES Troyes AC",
+          "awayTeamId": 523,
+          "awayTeamName": "Olympique Lyonnais",
+          "homeScore": null,
+          "awayScore": null
+        },
+        {
+          "id": 559608,
+          "utcDate": "2026-12-06T16:15:00Z",
+          "status": "TIMED",
+          "matchday": 13,
+          "homeTeamId": 529,
+          "homeTeamName": "Stade Rennais FC 1901",
+          "awayTeamId": 512,
+          "awayTeamName": "Stade Brestois 29",
+          "homeScore": null,
+          "awayScore": null
+        },
+        {
+          "id": 559607,
+          "utcDate": "2026-12-06T19:45:00Z",
+          "status": "TIMED",
+          "matchday": 13,
+          "homeTeamId": 516,
+          "homeTeamName": "Olympique de Marseille",
+          "awayTeamId": 522,
+          "awayTeamName": "OGC Nice",
+          "homeScore": null,
+          "awayScore": null
+        },
+        {
+          "id": 559602,
+          "utcDate": "2026-12-11T19:45:00Z",
+          "status": "TIMED",
           "matchday": 14,
-          "homeTeamId": 522,
-          "homeTeamName": "OGC Nice",
-          "awayTeamId": 546,
-          "awayTeamName": "Racing Club de Lens",
+          "homeTeamId": 519,
+          "homeTeamName": "AJ Auxerre",
+          "awayTeamId": 511,
+          "awayTeamName": "Toulouse FC",
           "homeScore": null,
           "awayScore": null
         },
         {
           "id": 559596,
-          "utcDate": "2026-12-12T00:00:00Z",
-          "status": "SCHEDULED",
+          "utcDate": "2026-12-12T16:15:00Z",
+          "status": "TIMED",
           "matchday": 14,
           "homeTeamId": 524,
           "homeTeamName": "Paris Saint-Germain FC",
@@ -22739,9 +22739,21 @@
           "awayScore": null
         },
         {
+          "id": 559595,
+          "utcDate": "2026-12-12T19:45:00Z",
+          "status": "TIMED",
+          "matchday": 14,
+          "homeTeamId": 522,
+          "homeTeamName": "OGC Nice",
+          "awayTeamId": 546,
+          "awayTeamName": "Racing Club de Lens",
+          "homeScore": null,
+          "awayScore": null
+        },
+        {
           "id": 559597,
-          "utcDate": "2026-12-12T00:00:00Z",
-          "status": "SCHEDULED",
+          "utcDate": "2026-12-12T19:45:00Z",
+          "status": "TIMED",
           "matchday": 14,
           "homeTeamId": 532,
           "homeTeamName": "Angers SCO",
@@ -22752,8 +22764,8 @@
         },
         {
           "id": 559598,
-          "utcDate": "2026-12-12T00:00:00Z",
-          "status": "SCHEDULED",
+          "utcDate": "2026-12-12T19:45:00Z",
+          "status": "TIMED",
           "matchday": 14,
           "homeTeamId": 512,
           "homeTeamName": "Stade Brestois 29",
@@ -22764,8 +22776,8 @@
         },
         {
           "id": 559599,
-          "utcDate": "2026-12-12T00:00:00Z",
-          "status": "SCHEDULED",
+          "utcDate": "2026-12-12T19:45:00Z",
+          "status": "TIMED",
           "matchday": 14,
           "homeTeamId": 533,
           "homeTeamName": "Le Havre AC",
@@ -22775,21 +22787,9 @@
           "awayScore": null
         },
         {
-          "id": 559600,
-          "utcDate": "2026-12-12T00:00:00Z",
-          "status": "SCHEDULED",
-          "matchday": 14,
-          "homeTeamId": 529,
-          "homeTeamName": "Stade Rennais FC 1901",
-          "awayTeamId": 548,
-          "awayTeamName": "AS Monaco FC",
-          "homeScore": null,
-          "awayScore": null
-        },
-        {
           "id": 559601,
-          "utcDate": "2026-12-12T00:00:00Z",
-          "status": "SCHEDULED",
+          "utcDate": "2026-12-13T14:00:00Z",
+          "status": "TIMED",
           "matchday": 14,
           "homeTeamId": 525,
           "homeTeamName": "FC Lorient",
@@ -22799,14 +22799,14 @@
           "awayScore": null
         },
         {
-          "id": 559602,
-          "utcDate": "2026-12-12T00:00:00Z",
-          "status": "SCHEDULED",
+          "id": 559600,
+          "utcDate": "2026-12-13T16:15:00Z",
+          "status": "TIMED",
           "matchday": 14,
-          "homeTeamId": 519,
-          "homeTeamName": "AJ Auxerre",
-          "awayTeamId": 511,
-          "awayTeamName": "Toulouse FC",
+          "homeTeamId": 529,
+          "homeTeamName": "Stade Rennais FC 1901",
+          "awayTeamId": 548,
+          "awayTeamName": "AS Monaco FC",
           "homeScore": null,
           "awayScore": null
         },
@@ -22823,21 +22823,9 @@
           "awayScore": null
         },
         {
-          "id": 559586,
-          "utcDate": "2027-01-02T00:00:00Z",
-          "status": "SCHEDULED",
-          "matchday": 15,
-          "homeTeamId": 535,
-          "homeTeamName": "Le Mans FC",
-          "awayTeamId": 523,
-          "awayTeamName": "Olympique Lyonnais",
-          "homeScore": null,
-          "awayScore": null
-        },
-        {
           "id": 559587,
-          "utcDate": "2027-01-02T00:00:00Z",
-          "status": "SCHEDULED",
+          "utcDate": "2027-01-02T16:00:00Z",
+          "status": "TIMED",
           "matchday": 15,
           "homeTeamId": 512,
           "homeTeamName": "Stade Brestois 29",
@@ -22848,8 +22836,8 @@
         },
         {
           "id": 559588,
-          "utcDate": "2027-01-02T00:00:00Z",
-          "status": "SCHEDULED",
+          "utcDate": "2027-01-02T20:00:00Z",
+          "status": "TIMED",
           "matchday": 15,
           "homeTeamId": 531,
           "homeTeamName": "ES Troyes AC",
@@ -22860,8 +22848,8 @@
         },
         {
           "id": 559589,
-          "utcDate": "2027-01-02T00:00:00Z",
-          "status": "SCHEDULED",
+          "utcDate": "2027-01-02T20:00:00Z",
+          "status": "TIMED",
           "matchday": 15,
           "homeTeamId": 511,
           "homeTeamName": "Toulouse FC",
@@ -22872,8 +22860,8 @@
         },
         {
           "id": 559590,
-          "utcDate": "2027-01-02T00:00:00Z",
-          "status": "SCHEDULED",
+          "utcDate": "2027-01-02T20:00:00Z",
+          "status": "TIMED",
           "matchday": 15,
           "homeTeamId": 548,
           "homeTeamName": "AS Monaco FC",
@@ -22884,8 +22872,8 @@
         },
         {
           "id": 559591,
-          "utcDate": "2027-01-02T00:00:00Z",
-          "status": "SCHEDULED",
+          "utcDate": "2027-01-02T20:00:00Z",
+          "status": "TIMED",
           "matchday": 15,
           "homeTeamId": 1045,
           "homeTeamName": "Paris FC",
@@ -22896,8 +22884,8 @@
         },
         {
           "id": 559592,
-          "utcDate": "2027-01-02T00:00:00Z",
-          "status": "SCHEDULED",
+          "utcDate": "2027-01-02T20:00:00Z",
+          "status": "TIMED",
           "matchday": 15,
           "homeTeamId": 525,
           "homeTeamName": "FC Lorient",
@@ -22907,9 +22895,21 @@
           "awayScore": null
         },
         {
+          "id": 559586,
+          "utcDate": "2027-01-03T14:00:00Z",
+          "status": "TIMED",
+          "matchday": 15,
+          "homeTeamId": 535,
+          "homeTeamName": "Le Mans FC",
+          "awayTeamId": 523,
+          "awayTeamName": "Olympique Lyonnais",
+          "homeScore": null,
+          "awayScore": null
+        },
+        {
           "id": 559593,
-          "utcDate": "2027-01-02T00:00:00Z",
-          "status": "SCHEDULED",
+          "utcDate": "2027-01-03T16:15:00Z",
+          "status": "TIMED",
           "matchday": 15,
           "homeTeamId": 521,
           "homeTeamName": "Lille OSC",
@@ -22932,8 +22932,8 @@
         },
         {
           "id": 559576,
-          "utcDate": "2027-01-16T00:00:00Z",
-          "status": "SCHEDULED",
+          "utcDate": "2027-01-15T19:45:00Z",
+          "status": "TIMED",
           "matchday": 16,
           "homeTeamId": 516,
           "homeTeamName": "Olympique de Marseille",
@@ -22943,33 +22943,21 @@
           "awayScore": null
         },
         {
-          "id": 559577,
-          "utcDate": "2027-01-16T00:00:00Z",
-          "status": "SCHEDULED",
+          "id": 559584,
+          "utcDate": "2027-01-16T16:15:00Z",
+          "status": "TIMED",
           "matchday": 16,
-          "homeTeamId": 523,
-          "homeTeamName": "Olympique Lyonnais",
-          "awayTeamId": 525,
-          "awayTeamName": "FC Lorient",
-          "homeScore": null,
-          "awayScore": null
-        },
-        {
-          "id": 559578,
-          "utcDate": "2027-01-16T00:00:00Z",
-          "status": "SCHEDULED",
-          "matchday": 16,
-          "homeTeamId": 1045,
-          "homeTeamName": "Paris FC",
-          "awayTeamId": 511,
-          "awayTeamName": "Toulouse FC",
+          "homeTeamId": 532,
+          "homeTeamName": "Angers SCO",
+          "awayTeamId": 524,
+          "awayTeamName": "Paris Saint-Germain FC",
           "homeScore": null,
           "awayScore": null
         },
         {
           "id": 559579,
-          "utcDate": "2027-01-16T00:00:00Z",
-          "status": "SCHEDULED",
+          "utcDate": "2027-01-16T19:45:00Z",
+          "status": "TIMED",
           "matchday": 16,
           "homeTeamId": 529,
           "homeTeamName": "Stade Rennais FC 1901",
@@ -22980,8 +22968,8 @@
         },
         {
           "id": 559580,
-          "utcDate": "2027-01-16T00:00:00Z",
-          "status": "SCHEDULED",
+          "utcDate": "2027-01-16T19:45:00Z",
+          "status": "TIMED",
           "matchday": 16,
           "homeTeamId": 522,
           "homeTeamName": "OGC Nice",
@@ -22992,8 +22980,8 @@
         },
         {
           "id": 559581,
-          "utcDate": "2027-01-16T00:00:00Z",
-          "status": "SCHEDULED",
+          "utcDate": "2027-01-16T19:45:00Z",
+          "status": "TIMED",
           "matchday": 16,
           "homeTeamId": 519,
           "homeTeamName": "AJ Auxerre",
@@ -23004,8 +22992,8 @@
         },
         {
           "id": 559582,
-          "utcDate": "2027-01-16T00:00:00Z",
-          "status": "SCHEDULED",
+          "utcDate": "2027-01-16T19:45:00Z",
+          "status": "TIMED",
           "matchday": 16,
           "homeTeamId": 576,
           "homeTeamName": "RC Strasbourg Alsace",
@@ -23015,9 +23003,21 @@
           "awayScore": null
         },
         {
+          "id": 559578,
+          "utcDate": "2027-01-17T14:00:00Z",
+          "status": "TIMED",
+          "matchday": 16,
+          "homeTeamId": 1045,
+          "homeTeamName": "Paris FC",
+          "awayTeamId": 511,
+          "awayTeamName": "Toulouse FC",
+          "homeScore": null,
+          "awayScore": null
+        },
+        {
           "id": 559583,
-          "utcDate": "2027-01-16T00:00:00Z",
-          "status": "SCHEDULED",
+          "utcDate": "2027-01-17T16:15:00Z",
+          "status": "TIMED",
           "matchday": 16,
           "homeTeamId": 548,
           "homeTeamName": "AS Monaco FC",
@@ -23027,45 +23027,33 @@
           "awayScore": null
         },
         {
-          "id": 559584,
-          "utcDate": "2027-01-16T00:00:00Z",
-          "status": "SCHEDULED",
+          "id": 559577,
+          "utcDate": "2027-01-17T19:45:00Z",
+          "status": "TIMED",
           "matchday": 16,
-          "homeTeamId": 532,
-          "homeTeamName": "Angers SCO",
-          "awayTeamId": 524,
-          "awayTeamName": "Paris Saint-Germain FC",
+          "homeTeamId": 523,
+          "homeTeamName": "Olympique Lyonnais",
+          "awayTeamId": 525,
+          "awayTeamName": "FC Lorient",
           "homeScore": null,
           "awayScore": null
         },
         {
-          "id": 559567,
-          "utcDate": "2027-01-23T00:00:00Z",
-          "status": "SCHEDULED",
+          "id": 559572,
+          "utcDate": "2027-01-22T19:45:00Z",
+          "status": "TIMED",
           "matchday": 17,
-          "homeTeamId": 533,
-          "homeTeamName": "Le Havre AC",
-          "awayTeamId": 529,
-          "awayTeamName": "Stade Rennais FC 1901",
-          "homeScore": null,
-          "awayScore": null
-        },
-        {
-          "id": 559568,
-          "utcDate": "2027-01-23T00:00:00Z",
-          "status": "SCHEDULED",
-          "matchday": 17,
-          "homeTeamId": 576,
-          "homeTeamName": "RC Strasbourg Alsace",
-          "awayTeamId": 523,
-          "awayTeamName": "Olympique Lyonnais",
+          "homeTeamId": 531,
+          "homeTeamName": "ES Troyes AC",
+          "awayTeamId": 548,
+          "awayTeamName": "AS Monaco FC",
           "homeScore": null,
           "awayScore": null
         },
         {
           "id": 559569,
-          "utcDate": "2027-01-23T00:00:00Z",
-          "status": "SCHEDULED",
+          "utcDate": "2027-01-23T16:15:00Z",
+          "status": "TIMED",
           "matchday": 17,
           "homeTeamId": 521,
           "homeTeamName": "Lille OSC",
@@ -23076,8 +23064,8 @@
         },
         {
           "id": 559570,
-          "utcDate": "2027-01-23T00:00:00Z",
-          "status": "SCHEDULED",
+          "utcDate": "2027-01-23T19:45:00Z",
+          "status": "TIMED",
           "matchday": 17,
           "homeTeamId": 546,
           "homeTeamName": "Racing Club de Lens",
@@ -23088,8 +23076,8 @@
         },
         {
           "id": 559571,
-          "utcDate": "2027-01-23T00:00:00Z",
-          "status": "SCHEDULED",
+          "utcDate": "2027-01-23T19:45:00Z",
+          "status": "TIMED",
           "matchday": 17,
           "homeTeamId": 524,
           "homeTeamName": "Paris Saint-Germain FC",
@@ -23099,33 +23087,9 @@
           "awayScore": null
         },
         {
-          "id": 559572,
-          "utcDate": "2027-01-23T00:00:00Z",
-          "status": "SCHEDULED",
-          "matchday": 17,
-          "homeTeamId": 531,
-          "homeTeamName": "ES Troyes AC",
-          "awayTeamId": 548,
-          "awayTeamName": "AS Monaco FC",
-          "homeScore": null,
-          "awayScore": null
-        },
-        {
-          "id": 559573,
-          "utcDate": "2027-01-23T00:00:00Z",
-          "status": "SCHEDULED",
-          "matchday": 17,
-          "homeTeamId": 525,
-          "homeTeamName": "FC Lorient",
-          "awayTeamId": 516,
-          "awayTeamName": "Olympique de Marseille",
-          "homeScore": null,
-          "awayScore": null
-        },
-        {
           "id": 559574,
-          "utcDate": "2027-01-23T00:00:00Z",
-          "status": "SCHEDULED",
+          "utcDate": "2027-01-23T19:45:00Z",
+          "status": "TIMED",
           "matchday": 17,
           "homeTeamId": 535,
           "homeTeamName": "Le Mans FC",
@@ -23136,8 +23100,8 @@
         },
         {
           "id": 559575,
-          "utcDate": "2027-01-23T00:00:00Z",
-          "status": "SCHEDULED",
+          "utcDate": "2027-01-23T19:45:00Z",
+          "status": "TIMED",
           "matchday": 17,
           "homeTeamId": 511,
           "homeTeamName": "Toulouse FC",
@@ -23147,81 +23111,45 @@
           "awayScore": null
         },
         {
-          "id": 559558,
-          "utcDate": "2027-01-30T00:00:00Z",
-          "status": "SCHEDULED",
-          "matchday": 18,
-          "homeTeamId": 1045,
-          "homeTeamName": "Paris FC",
-          "awayTeamId": 519,
-          "awayTeamName": "AJ Auxerre",
+          "id": 559567,
+          "utcDate": "2027-01-24T14:00:00Z",
+          "status": "TIMED",
+          "matchday": 17,
+          "homeTeamId": 533,
+          "homeTeamName": "Le Havre AC",
+          "awayTeamId": 529,
+          "awayTeamName": "Stade Rennais FC 1901",
           "homeScore": null,
           "awayScore": null
         },
         {
-          "id": 559559,
-          "utcDate": "2027-01-30T00:00:00Z",
-          "status": "SCHEDULED",
-          "matchday": 18,
-          "homeTeamId": 523,
-          "homeTeamName": "Olympique Lyonnais",
-          "awayTeamId": 521,
-          "awayTeamName": "Lille OSC",
+          "id": 559573,
+          "utcDate": "2027-01-24T16:15:00Z",
+          "status": "TIMED",
+          "matchday": 17,
+          "homeTeamId": 525,
+          "homeTeamName": "FC Lorient",
+          "awayTeamId": 516,
+          "awayTeamName": "Olympique de Marseille",
           "homeScore": null,
           "awayScore": null
         },
         {
-          "id": 559560,
-          "utcDate": "2027-01-30T00:00:00Z",
-          "status": "SCHEDULED",
-          "matchday": 18,
-          "homeTeamId": 529,
-          "homeTeamName": "Stade Rennais FC 1901",
-          "awayTeamId": 525,
-          "awayTeamName": "FC Lorient",
-          "homeScore": null,
-          "awayScore": null
-        },
-        {
-          "id": 559561,
-          "utcDate": "2027-01-30T00:00:00Z",
-          "status": "SCHEDULED",
-          "matchday": 18,
-          "homeTeamId": 535,
-          "homeTeamName": "Le Mans FC",
-          "awayTeamId": 522,
-          "awayTeamName": "OGC Nice",
-          "homeScore": null,
-          "awayScore": null
-        },
-        {
-          "id": 559562,
-          "utcDate": "2027-01-30T00:00:00Z",
-          "status": "SCHEDULED",
-          "matchday": 18,
-          "homeTeamId": 516,
-          "homeTeamName": "Olympique de Marseille",
-          "awayTeamId": 531,
-          "awayTeamName": "ES Troyes AC",
-          "homeScore": null,
-          "awayScore": null
-        },
-        {
-          "id": 559563,
-          "utcDate": "2027-01-30T00:00:00Z",
-          "status": "SCHEDULED",
-          "matchday": 18,
-          "homeTeamId": 532,
-          "homeTeamName": "Angers SCO",
-          "awayTeamId": 533,
-          "awayTeamName": "Le Havre AC",
+          "id": 559568,
+          "utcDate": "2027-01-24T19:45:00Z",
+          "status": "TIMED",
+          "matchday": 17,
+          "homeTeamId": 576,
+          "homeTeamName": "RC Strasbourg Alsace",
+          "awayTeamId": 523,
+          "awayTeamName": "Olympique Lyonnais",
           "homeScore": null,
           "awayScore": null
         },
         {
           "id": 559564,
-          "utcDate": "2027-01-30T00:00:00Z",
-          "status": "SCHEDULED",
+          "utcDate": "2027-01-29T19:45:00Z",
+          "status": "TIMED",
           "matchday": 18,
           "homeTeamId": 512,
           "homeTeamName": "Stade Brestois 29",
@@ -23232,8 +23160,8 @@
         },
         {
           "id": 559565,
-          "utcDate": "2027-01-30T00:00:00Z",
-          "status": "SCHEDULED",
+          "utcDate": "2027-01-30T16:15:00Z",
+          "status": "TIMED",
           "matchday": 18,
           "homeTeamId": 548,
           "homeTeamName": "AS Monaco FC",
@@ -23243,14 +23171,86 @@
           "awayScore": null
         },
         {
+          "id": 559558,
+          "utcDate": "2027-01-30T19:45:00Z",
+          "status": "TIMED",
+          "matchday": 18,
+          "homeTeamId": 1045,
+          "homeTeamName": "Paris FC",
+          "awayTeamId": 519,
+          "awayTeamName": "AJ Auxerre",
+          "homeScore": null,
+          "awayScore": null
+        },
+        {
+          "id": 559561,
+          "utcDate": "2027-01-30T19:45:00Z",
+          "status": "TIMED",
+          "matchday": 18,
+          "homeTeamId": 535,
+          "homeTeamName": "Le Mans FC",
+          "awayTeamId": 522,
+          "awayTeamName": "OGC Nice",
+          "homeScore": null,
+          "awayScore": null
+        },
+        {
+          "id": 559563,
+          "utcDate": "2027-01-30T19:45:00Z",
+          "status": "TIMED",
+          "matchday": 18,
+          "homeTeamId": 532,
+          "homeTeamName": "Angers SCO",
+          "awayTeamId": 533,
+          "awayTeamName": "Le Havre AC",
+          "homeScore": null,
+          "awayScore": null
+        },
+        {
           "id": 559566,
-          "utcDate": "2027-01-30T00:00:00Z",
-          "status": "SCHEDULED",
+          "utcDate": "2027-01-30T19:45:00Z",
+          "status": "TIMED",
           "matchday": 18,
           "homeTeamId": 511,
           "homeTeamName": "Toulouse FC",
           "awayTeamId": 546,
           "awayTeamName": "Racing Club de Lens",
+          "homeScore": null,
+          "awayScore": null
+        },
+        {
+          "id": 559560,
+          "utcDate": "2027-01-31T14:00:00Z",
+          "status": "TIMED",
+          "matchday": 18,
+          "homeTeamId": 529,
+          "homeTeamName": "Stade Rennais FC 1901",
+          "awayTeamId": 525,
+          "awayTeamName": "FC Lorient",
+          "homeScore": null,
+          "awayScore": null
+        },
+        {
+          "id": 559562,
+          "utcDate": "2027-01-31T16:15:00Z",
+          "status": "TIMED",
+          "matchday": 18,
+          "homeTeamId": 516,
+          "homeTeamName": "Olympique de Marseille",
+          "awayTeamId": 531,
+          "awayTeamName": "ES Troyes AC",
+          "homeScore": null,
+          "awayScore": null
+        },
+        {
+          "id": 559559,
+          "utcDate": "2027-01-31T19:45:00Z",
+          "status": "TIMED",
+          "matchday": 18,
+          "homeTeamId": 523,
+          "homeTeamName": "Olympique Lyonnais",
+          "awayTeamId": 521,
+          "awayTeamName": "Lille OSC",
           "homeScore": null,
           "awayScore": null
         },
@@ -25539,8 +25539,8 @@
           "Odds unavailable: The Odds API soccer_france_ligue_one returned 422",
           "Match odds unavailable: The Odds API soccer_france_ligue_one match odds returned 401"
         ],
-        "standingsUpdatedAt": "2026-10-21T07:39:52.265Z",
-        "matchesUpdatedAt": "2026-10-21T07:39:52.265Z"
+        "standingsUpdatedAt": "2026-10-21T13:48:40.224Z",
+        "matchesUpdatedAt": "2026-10-21T13:48:40.224Z"
       }
     }
   ]
