@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-27T07:52:33.559Z",
+  "generatedAt": "2026-10-27T14:31:39.822Z",
   "modelVersion": "rule-softmax-v0.1.0",
   "leagues": [
     {
@@ -5488,11 +5488,11 @@
       "dataQuality": {
         "status": "ok",
         "warnings": [
-          "Odds unavailable: The Odds API soccer_epl returned 422",
-          "Match odds unavailable: The Odds API soccer_epl match odds returned 401"
+          "Match odds unavailable: The Odds API soccer_epl match odds returned 401",
+          "Odds unavailable: The Odds API soccer_epl returned 422"
         ],
-        "standingsUpdatedAt": "2026-10-27T07:52:33.559Z",
-        "matchesUpdatedAt": "2026-10-27T07:52:33.559Z"
+        "standingsUpdatedAt": "2026-10-27T14:31:39.822Z",
+        "matchesUpdatedAt": "2026-10-27T14:31:39.822Z"
       }
     },
     {
@@ -10984,8 +10984,8 @@
           "Match odds unavailable: The Odds API soccer_spain_la_liga match odds returned 401",
           "Odds unavailable: The Odds API soccer_spain_la_liga returned 422"
         ],
-        "standingsUpdatedAt": "2026-10-27T07:52:33.559Z",
-        "matchesUpdatedAt": "2026-10-27T07:52:33.559Z"
+        "standingsUpdatedAt": "2026-10-27T14:31:39.822Z",
+        "matchesUpdatedAt": "2026-10-27T14:31:39.822Z"
       }
     },
     {
@@ -15512,11 +15512,11 @@
       "dataQuality": {
         "status": "ok",
         "warnings": [
-          "Odds unavailable: The Odds API soccer_germany_bundesliga returned 422",
-          "Match odds unavailable: The Odds API soccer_germany_bundesliga match odds returned 401"
+          "Match odds unavailable: The Odds API soccer_germany_bundesliga match odds returned 401",
+          "Odds unavailable: The Odds API soccer_germany_bundesliga returned 422"
         ],
-        "standingsUpdatedAt": "2026-10-27T07:52:33.559Z",
-        "matchesUpdatedAt": "2026-10-27T07:52:33.559Z"
+        "standingsUpdatedAt": "2026-10-27T14:31:39.822Z",
+        "matchesUpdatedAt": "2026-10-27T14:31:39.822Z"
       }
     },
     {
@@ -21005,11 +21005,11 @@
       "dataQuality": {
         "status": "ok",
         "warnings": [
-          "Odds unavailable: The Odds API soccer_italy_serie_a returned 422",
-          "Match odds unavailable: The Odds API soccer_italy_serie_a match odds returned 401"
+          "Match odds unavailable: The Odds API soccer_italy_serie_a match odds returned 401",
+          "Odds unavailable: The Odds API soccer_italy_serie_a returned 422"
         ],
-        "standingsUpdatedAt": "2026-10-27T07:52:33.559Z",
-        "matchesUpdatedAt": "2026-10-27T07:52:33.559Z"
+        "standingsUpdatedAt": "2026-10-27T14:31:39.822Z",
+        "matchesUpdatedAt": "2026-10-27T14:31:39.822Z"
       }
     },
     {
@@ -22187,20 +22187,8 @@
           "awayScore": null
         },
         {
-          "id": 559639,
-          "utcDate": "2026-10-30T20:05:00Z",
-          "status": "TIMED",
-          "matchday": 9,
-          "homeTeamId": 521,
-          "homeTeamName": "Lille OSC",
-          "awayTeamId": 546,
-          "awayTeamName": "Racing Club de Lens",
-          "homeScore": null,
-          "awayScore": null
-        },
-        {
           "id": 559646,
-          "utcDate": "2026-10-31T16:15:00Z",
+          "utcDate": "2026-10-30T18:00:00Z",
           "status": "TIMED",
           "matchday": 9,
           "homeTeamId": 522,
@@ -22211,26 +22199,14 @@
           "awayScore": null
         },
         {
-          "id": 559640,
-          "utcDate": "2026-10-31T19:45:00Z",
+          "id": 559639,
+          "utcDate": "2026-10-30T20:05:00Z",
           "status": "TIMED",
           "matchday": 9,
-          "homeTeamId": 523,
-          "homeTeamName": "Olympique Lyonnais",
-          "awayTeamId": 532,
-          "awayTeamName": "Angers SCO",
-          "homeScore": null,
-          "awayScore": null
-        },
-        {
-          "id": 559641,
-          "utcDate": "2026-10-31T19:45:00Z",
-          "status": "TIMED",
-          "matchday": 9,
-          "homeTeamId": 525,
-          "homeTeamName": "FC Lorient",
-          "awayTeamId": 512,
-          "awayTeamName": "Stade Brestois 29",
+          "homeTeamId": 521,
+          "homeTeamName": "Lille OSC",
+          "awayTeamId": 546,
+          "awayTeamName": "Racing Club de Lens",
           "homeScore": null,
           "awayScore": null
         },
@@ -22259,6 +22235,18 @@
           "awayScore": null
         },
         {
+          "id": 559640,
+          "utcDate": "2026-11-01T16:15:00Z",
+          "status": "TIMED",
+          "matchday": 9,
+          "homeTeamId": 523,
+          "homeTeamName": "Olympique Lyonnais",
+          "awayTeamId": 532,
+          "awayTeamName": "Angers SCO",
+          "homeScore": null,
+          "awayScore": null
+        },
+        {
           "id": 559642,
           "utcDate": "2026-11-01T16:15:00Z",
           "status": "TIMED",
@@ -22279,6 +22267,18 @@
           "homeTeamName": "Olympique de Marseille",
           "awayTeamId": 511,
           "awayTeamName": "Toulouse FC",
+          "homeScore": null,
+          "awayScore": null
+        },
+        {
+          "id": 559641,
+          "utcDate": "2026-11-02T19:45:00Z",
+          "status": "TIMED",
+          "matchday": 9,
+          "homeTeamId": 525,
+          "homeTeamName": "FC Lorient",
+          "awayTeamId": 512,
+          "awayTeamName": "Stade Brestois 29",
           "homeScore": null,
           "awayScore": null
         },
@@ -25536,11 +25536,11 @@
       "dataQuality": {
         "status": "ok",
         "warnings": [
-          "Odds unavailable: The Odds API soccer_france_ligue_one returned 422",
-          "Match odds unavailable: The Odds API soccer_france_ligue_one match odds returned 401"
+          "Match odds unavailable: The Odds API soccer_france_ligue_one match odds returned 401",
+          "Odds unavailable: The Odds API soccer_france_ligue_one returned 422"
         ],
-        "standingsUpdatedAt": "2026-10-27T07:52:33.559Z",
-        "matchesUpdatedAt": "2026-10-27T07:52:33.559Z"
+        "standingsUpdatedAt": "2026-10-27T14:31:39.822Z",
+        "matchesUpdatedAt": "2026-10-27T14:31:39.822Z"
       }
     }
   ]
