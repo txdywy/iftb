@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-27T23:46:56.602Z",
+  "generatedAt": "2026-10-28T08:33:14.568Z",
   "modelVersion": "rule-softmax-v0.1.0",
   "leagues": [
     {
@@ -5491,8 +5491,8 @@
           "Odds unavailable: The Odds API soccer_epl returned 422",
           "Match odds unavailable: The Odds API soccer_epl match odds returned 401"
         ],
-        "standingsUpdatedAt": "2026-10-27T23:46:56.602Z",
-        "matchesUpdatedAt": "2026-10-27T23:46:56.602Z"
+        "standingsUpdatedAt": "2026-10-28T08:33:14.568Z",
+        "matchesUpdatedAt": "2026-10-28T08:33:14.568Z"
       }
     },
     {
@@ -10984,8 +10984,8 @@
           "Odds unavailable: The Odds API soccer_spain_la_liga returned 422",
           "Match odds unavailable: The Odds API soccer_spain_la_liga match odds returned 401"
         ],
-        "standingsUpdatedAt": "2026-10-27T23:46:56.602Z",
-        "matchesUpdatedAt": "2026-10-27T23:46:56.602Z"
+        "standingsUpdatedAt": "2026-10-28T08:33:14.568Z",
+        "matchesUpdatedAt": "2026-10-28T08:33:14.568Z"
       }
     },
     {
@@ -15515,8 +15515,8 @@
           "Odds unavailable: The Odds API soccer_germany_bundesliga returned 422",
           "Match odds unavailable: The Odds API soccer_germany_bundesliga match odds returned 401"
         ],
-        "standingsUpdatedAt": "2026-10-27T23:46:56.602Z",
-        "matchesUpdatedAt": "2026-10-27T23:46:56.602Z"
+        "standingsUpdatedAt": "2026-10-28T08:33:14.568Z",
+        "matchesUpdatedAt": "2026-10-28T08:33:14.568Z"
       }
     },
     {
@@ -20429,7 +20429,7 @@
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": 0.0099,
+          "probabilityDeltaPrevious": 0,
           "probabilityDelta7d": 0.0282
         },
         {
@@ -20450,7 +20450,7 @@
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": -0.011,
+          "probabilityDeltaPrevious": 0,
           "probabilityDelta7d": 0.0029
         },
         {
@@ -20471,7 +20471,7 @@
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": 0.0093,
+          "probabilityDeltaPrevious": 0,
           "probabilityDelta7d": -0.0005
         },
         {
@@ -20492,7 +20492,7 @@
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": -0.0055,
+          "probabilityDeltaPrevious": 0,
           "probabilityDelta7d": 0.005
         },
         {
@@ -20513,7 +20513,7 @@
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": 0.0098,
+          "probabilityDeltaPrevious": 0,
           "probabilityDelta7d": 0.0197
         },
         {
@@ -20534,7 +20534,7 @@
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": -0.0018,
+          "probabilityDeltaPrevious": 0,
           "probabilityDelta7d": 0.0042
         },
         {
@@ -20555,7 +20555,7 @@
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": -0.0017,
+          "probabilityDeltaPrevious": 0,
           "probabilityDelta7d": -0.0061
         },
         {
@@ -20576,7 +20576,7 @@
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": -0.0006,
+          "probabilityDeltaPrevious": 0,
           "probabilityDelta7d": -0.0034
         },
         {
@@ -20597,7 +20597,7 @@
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": -0.0055,
+          "probabilityDeltaPrevious": 0,
           "probabilityDelta7d": -0.0008
         },
         {
@@ -20618,7 +20618,7 @@
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": -0.0038,
+          "probabilityDeltaPrevious": 0,
           "probabilityDelta7d": -0.015
         },
         {
@@ -20639,7 +20639,7 @@
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": -0.0003,
+          "probabilityDeltaPrevious": 0,
           "probabilityDelta7d": -0.0038
         },
         {
@@ -20660,7 +20660,7 @@
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": -0.0002,
+          "probabilityDeltaPrevious": 0,
           "probabilityDelta7d": 0.003
         },
         {
@@ -20681,7 +20681,7 @@
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": 0.0002,
+          "probabilityDeltaPrevious": 0,
           "probabilityDelta7d": -0.007
         },
         {
@@ -20702,7 +20702,7 @@
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": -0.0016,
+          "probabilityDeltaPrevious": 0,
           "probabilityDelta7d": -0.0081
         },
         {
@@ -20723,7 +20723,7 @@
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": -0.0001,
+          "probabilityDeltaPrevious": 0,
           "probabilityDelta7d": -0.007
         },
         {
@@ -20744,7 +20744,7 @@
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": 0.0007,
+          "probabilityDeltaPrevious": 0,
           "probabilityDelta7d": 0.002
         },
         {
@@ -20765,7 +20765,7 @@
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": 0.0005,
+          "probabilityDeltaPrevious": 0,
           "probabilityDelta7d": -0.0044
         },
         {
@@ -20786,7 +20786,7 @@
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": 0.0006,
+          "probabilityDeltaPrevious": 0,
           "probabilityDelta7d": -0.0028
         },
         {
@@ -20807,7 +20807,7 @@
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": 0.0006,
+          "probabilityDeltaPrevious": 0,
           "probabilityDelta7d": -0.0026
         },
         {
@@ -20828,7 +20828,7 @@
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": 0.0006,
+          "probabilityDeltaPrevious": 0,
           "probabilityDelta7d": -0.0035
         }
       ],
@@ -20851,7 +20851,7 @@
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": 0.0099,
+          "probabilityDeltaPrevious": 0,
           "probabilityDelta7d": 0.0282
         },
         {
@@ -20872,7 +20872,7 @@
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": -0.011,
+          "probabilityDeltaPrevious": 0,
           "probabilityDelta7d": 0.0029
         },
         {
@@ -20893,7 +20893,7 @@
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": 0.0093,
+          "probabilityDeltaPrevious": 0,
           "probabilityDelta7d": -0.0005
         },
         {
@@ -20914,7 +20914,7 @@
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": -0.0055,
+          "probabilityDeltaPrevious": 0,
           "probabilityDelta7d": 0.005
         },
         {
@@ -20935,7 +20935,7 @@
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": 0.0098,
+          "probabilityDeltaPrevious": 0,
           "probabilityDelta7d": 0.0197
         },
         {
@@ -20956,7 +20956,7 @@
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": -0.0018,
+          "probabilityDeltaPrevious": 0,
           "probabilityDelta7d": 0.0042
         },
         {
@@ -20977,7 +20977,7 @@
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": -0.0017,
+          "probabilityDeltaPrevious": 0,
           "probabilityDelta7d": -0.0061
         },
         {
@@ -20998,7 +20998,7 @@
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": -0.0006,
+          "probabilityDeltaPrevious": 0,
           "probabilityDelta7d": -0.0034
         }
       ],
@@ -21008,8 +21008,8 @@
           "Odds unavailable: The Odds API soccer_italy_serie_a returned 422",
           "Match odds unavailable: The Odds API soccer_italy_serie_a match odds returned 401"
         ],
-        "standingsUpdatedAt": "2026-10-27T23:46:56.602Z",
-        "matchesUpdatedAt": "2026-10-27T23:46:56.602Z"
+        "standingsUpdatedAt": "2026-10-28T08:33:14.568Z",
+        "matchesUpdatedAt": "2026-10-28T08:33:14.568Z"
       }
     },
     {
@@ -25536,11 +25536,11 @@
       "dataQuality": {
         "status": "ok",
         "warnings": [
-          "Odds unavailable: The Odds API soccer_france_ligue_one returned 422",
-          "Match odds unavailable: The Odds API soccer_france_ligue_one match odds returned 401"
+          "Match odds unavailable: The Odds API soccer_france_ligue_one match odds returned 401",
+          "Odds unavailable: The Odds API soccer_france_ligue_one returned 422"
         ],
-        "standingsUpdatedAt": "2026-10-27T23:46:56.602Z",
-        "matchesUpdatedAt": "2026-10-27T23:46:56.602Z"
+        "standingsUpdatedAt": "2026-10-28T08:33:14.568Z",
+        "matchesUpdatedAt": "2026-10-28T08:33:14.568Z"
       }
     }
   ]
