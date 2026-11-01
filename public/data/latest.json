@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-01T18:56:28.781Z",
+  "generatedAt": "2026-11-01T23:36:09.532Z",
   "modelVersion": "rule-softmax-v0.1.0",
   "leagues": [
     {
@@ -4912,7 +4912,7 @@
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": 0.0438,
+          "probabilityDeltaPrevious": 0,
           "probabilityDelta7d": -0.016
         },
         {
@@ -4933,8 +4933,8 @@
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": 0.0025,
-          "probabilityDelta7d": 0.0283
+          "probabilityDeltaPrevious": 0,
+          "probabilityDelta7d": 0.0282
         },
         {
           "teamId": 65,
@@ -4954,8 +4954,8 @@
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": -0.0005,
-          "probabilityDelta7d": -0.1159
+          "probabilityDeltaPrevious": 0,
+          "probabilityDelta7d": -0.116
         },
         {
           "teamId": 61,
@@ -4975,7 +4975,7 @@
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": -0.0028,
+          "probabilityDeltaPrevious": 0,
           "probabilityDelta7d": 0.0222
         },
         {
@@ -4996,7 +4996,7 @@
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": -0.0133,
+          "probabilityDeltaPrevious": 0,
           "probabilityDelta7d": -0.0112
         },
         {
@@ -5017,7 +5017,7 @@
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": -0.0021,
+          "probabilityDeltaPrevious": 0,
           "probabilityDelta7d": 0.0195
         },
         {
@@ -5038,7 +5038,7 @@
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": -0.0025,
+          "probabilityDeltaPrevious": 0,
           "probabilityDelta7d": 0.015
         },
         {
@@ -5059,7 +5059,7 @@
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": -0.0028,
+          "probabilityDeltaPrevious": 0,
           "probabilityDelta7d": 0.0049
         },
         {
@@ -5080,7 +5080,7 @@
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": -0.0021,
+          "probabilityDeltaPrevious": 0,
           "probabilityDelta7d": 0.0137
         },
         {
@@ -5101,8 +5101,8 @@
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": -0.0019,
-          "probabilityDelta7d": -0.0019
+          "probabilityDeltaPrevious": 0,
+          "probabilityDelta7d": -0.0013
         },
         {
           "teamId": 67,
@@ -5122,8 +5122,8 @@
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": -0.0025,
-          "probabilityDelta7d": 0.0039
+          "probabilityDeltaPrevious": 0,
+          "probabilityDelta7d": 0.0038
         },
         {
           "teamId": 322,
@@ -5143,7 +5143,7 @@
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": -0.002,
+          "probabilityDeltaPrevious": 0,
           "probabilityDelta7d": 0.0055
         },
         {
@@ -5164,7 +5164,7 @@
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": -0.0021,
+          "probabilityDeltaPrevious": 0,
           "probabilityDelta7d": 0.0047
         },
         {
@@ -5185,7 +5185,7 @@
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": -0.0023,
+          "probabilityDeltaPrevious": 0,
           "probabilityDelta7d": 0.004
         },
         {
@@ -5206,7 +5206,7 @@
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": -0.0017,
+          "probabilityDeltaPrevious": 0,
           "probabilityDelta7d": 0.005
         },
         {
@@ -5227,7 +5227,7 @@
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": -0.002,
+          "probabilityDeltaPrevious": 0,
           "probabilityDelta7d": 0.0091
         },
         {
@@ -5248,8 +5248,8 @@
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": -0.0015,
-          "probabilityDelta7d": 0.0024
+          "probabilityDeltaPrevious": 0,
+          "probabilityDelta7d": 0.0023
         },
         {
           "teamId": 351,
@@ -5269,7 +5269,7 @@
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": -0.0015,
+          "probabilityDeltaPrevious": 0,
           "probabilityDelta7d": 0.0024
         },
         {
@@ -5290,7 +5290,7 @@
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": -0.0016,
+          "probabilityDeltaPrevious": 0,
           "probabilityDelta7d": 0.0018
         },
         {
@@ -5311,7 +5311,7 @@
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": -0.0013,
+          "probabilityDeltaPrevious": 0,
           "probabilityDelta7d": 0.0024
         }
       ],
@@ -5334,7 +5334,7 @@
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": 0.0438,
+          "probabilityDeltaPrevious": 0,
           "probabilityDelta7d": -0.016
         },
         {
@@ -5355,8 +5355,8 @@
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": 0.0025,
-          "probabilityDelta7d": 0.0283
+          "probabilityDeltaPrevious": 0,
+          "probabilityDelta7d": 0.0282
         },
         {
           "teamId": 65,
@@ -5376,8 +5376,8 @@
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": -0.0005,
-          "probabilityDelta7d": -0.1159
+          "probabilityDeltaPrevious": 0,
+          "probabilityDelta7d": -0.116
         },
         {
           "teamId": 61,
@@ -5397,7 +5397,7 @@
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": -0.0028,
+          "probabilityDeltaPrevious": 0,
           "probabilityDelta7d": 0.0222
         },
         {
@@ -5418,7 +5418,7 @@
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": -0.0133,
+          "probabilityDeltaPrevious": 0,
           "probabilityDelta7d": -0.0112
         },
         {
@@ -5439,7 +5439,7 @@
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": -0.0021,
+          "probabilityDeltaPrevious": 0,
           "probabilityDelta7d": 0.0195
         },
         {
@@ -5460,7 +5460,7 @@
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": -0.0025,
+          "probabilityDeltaPrevious": 0,
           "probabilityDelta7d": 0.015
         },
         {
@@ -5481,7 +5481,7 @@
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": -0.0028,
+          "probabilityDeltaPrevious": 0,
           "probabilityDelta7d": 0.0049
         }
       ],
@@ -5490,12 +5490,12 @@
         "warnings": [
           "Odds unavailable: The Odds API soccer_epl returned 422"
         ],
-        "standingsUpdatedAt": "2026-11-01T18:56:28.781Z",
-        "matchesUpdatedAt": "2026-11-01T18:56:28.781Z"
+        "standingsUpdatedAt": "2026-11-01T23:36:09.532Z",
+        "matchesUpdatedAt": "2026-11-01T23:36:09.532Z"
       },
       "matchOdds": {
         "leagueId": "epl",
-        "fetchedAt": "2026-11-01T18:57:36.846Z",
+        "fetchedAt": "2026-11-01T23:37:16.660Z",
         "source": "the-odds-api",
         "matches": [
           {
@@ -5508,13 +5508,13 @@
             "outcomes": [
               {
                 "name": "Everton",
-                "oddsDecimal": 3.1282,
-                "impliedProbability": 0.3197
+                "oddsDecimal": 3.1863,
+                "impliedProbability": 0.3138
               },
               {
                 "name": "Newcastle United",
-                "oddsDecimal": 2.4305,
-                "impliedProbability": 0.4114
+                "oddsDecimal": 2.3966,
+                "impliedProbability": 0.4173
               },
               {
                 "name": "Draw",
@@ -5534,21 +5534,21 @@
             "outcomes": [
               {
                 "name": "Coventry City",
-                "oddsDecimal": 4.8714,
-                "impliedProbability": 0.2053
+                "oddsDecimal": 4.8732,
+                "impliedProbability": 0.2052
               },
               {
                 "name": "Everton",
-                "oddsDecimal": 1.8107,
-                "impliedProbability": 0.5523
+                "oddsDecimal": 1.8088,
+                "impliedProbability": 0.5529
               },
               {
                 "name": "Draw",
-                "oddsDecimal": 4.1245,
-                "impliedProbability": 0.2425
+                "oddsDecimal": 4.1332,
+                "impliedProbability": 0.2419
               }
             ],
-            "bookmakerCount": 40
+            "bookmakerCount": 41
           },
           {
             "matchId": 560632,
@@ -5560,21 +5560,21 @@
             "outcomes": [
               {
                 "name": "Leeds United",
-                "oddsDecimal": 2.6566,
-                "impliedProbability": 0.3764
+                "oddsDecimal": 2.655,
+                "impliedProbability": 0.3767
               },
               {
                 "name": "Tottenham Hotspur",
-                "oddsDecimal": 2.9064,
-                "impliedProbability": 0.3441
+                "oddsDecimal": 2.9084,
+                "impliedProbability": 0.3438
               },
               {
                 "name": "Draw",
-                "oddsDecimal": 3.5777,
+                "oddsDecimal": 3.5775,
                 "impliedProbability": 0.2795
               }
             ],
-            "bookmakerCount": 41
+            "bookmakerCount": 42
           },
           {
             "matchId": 560640,
@@ -5586,21 +5586,21 @@
             "outcomes": [
               {
                 "name": "Arsenal",
-                "oddsDecimal": 1.218,
-                "impliedProbability": 0.821
+                "oddsDecimal": 1.2173,
+                "impliedProbability": 0.8215
               },
               {
                 "name": "Hull City",
-                "oddsDecimal": 17.7241,
-                "impliedProbability": 0.0564
+                "oddsDecimal": 17.8453,
+                "impliedProbability": 0.056
               },
               {
                 "name": "Draw",
-                "oddsDecimal": 8.157,
-                "impliedProbability": 0.1226
+                "oddsDecimal": 8.1671,
+                "impliedProbability": 0.1224
               }
             ],
-            "bookmakerCount": 41
+            "bookmakerCount": 42
           },
           {
             "matchId": 560633,
@@ -5612,21 +5612,21 @@
             "outcomes": [
               {
                 "name": "Fulham",
-                "oddsDecimal": 2.2632,
-                "impliedProbability": 0.4418
+                "oddsDecimal": 2.2679,
+                "impliedProbability": 0.4409
               },
               {
                 "name": "Newcastle United",
-                "oddsDecimal": 3.384,
-                "impliedProbability": 0.2955
+                "oddsDecimal": 3.3771,
+                "impliedProbability": 0.2961
               },
               {
                 "name": "Draw",
-                "oddsDecimal": 3.8073,
-                "impliedProbability": 0.2627
+                "oddsDecimal": 3.8029,
+                "impliedProbability": 0.263
               }
             ],
-            "bookmakerCount": 41
+            "bookmakerCount": 42
           },
           {
             "matchId": 560641,
@@ -5638,21 +5638,21 @@
             "outcomes": [
               {
                 "name": "Manchester City",
-                "oddsDecimal": 1.7863,
-                "impliedProbability": 0.5598
+                "oddsDecimal": 1.7875,
+                "impliedProbability": 0.5594
               },
               {
                 "name": "Nottingham Forest",
-                "oddsDecimal": 4.8377,
-                "impliedProbability": 0.2067
+                "oddsDecimal": 4.836,
+                "impliedProbability": 0.2068
               },
               {
                 "name": "Draw",
-                "oddsDecimal": 4.2833,
-                "impliedProbability": 0.2335
+                "oddsDecimal": 4.2776,
+                "impliedProbability": 0.2338
               }
             ],
-            "bookmakerCount": 41
+            "bookmakerCount": 42
           },
           {
             "matchId": 560637,
@@ -5664,21 +5664,21 @@
             "outcomes": [
               {
                 "name": "Bournemouth",
-                "oddsDecimal": 2.0483,
-                "impliedProbability": 0.4882
+                "oddsDecimal": 2.0452,
+                "impliedProbability": 0.4889
               },
               {
                 "name": "Ipswich Town",
-                "oddsDecimal": 3.8854,
-                "impliedProbability": 0.2574
+                "oddsDecimal": 3.8934,
+                "impliedProbability": 0.2568
               },
               {
                 "name": "Draw",
-                "oddsDecimal": 3.9306,
-                "impliedProbability": 0.2544
+                "oddsDecimal": 3.9338,
+                "impliedProbability": 0.2542
               }
             ],
-            "bookmakerCount": 39
+            "bookmakerCount": 40
           },
           {
             "matchId": 560638,
@@ -5690,21 +5690,21 @@
             "outcomes": [
               {
                 "name": "Brentford",
-                "oddsDecimal": 3.8503,
-                "impliedProbability": 0.2597
+                "oddsDecimal": 3.8482,
+                "impliedProbability": 0.2599
               },
               {
                 "name": "Brighton and Hove Albion",
-                "oddsDecimal": 2.0248,
+                "oddsDecimal": 2.0247,
                 "impliedProbability": 0.4939
               },
               {
                 "name": "Draw",
-                "oddsDecimal": 4.0582,
-                "impliedProbability": 0.2464
+                "oddsDecimal": 4.0612,
+                "impliedProbability": 0.2462
               }
             ],
-            "bookmakerCount": 38
+            "bookmakerCount": 39
           },
           {
             "matchId": 560636,
@@ -5716,21 +5716,21 @@
             "outcomes": [
               {
                 "name": "Chelsea",
-                "oddsDecimal": 2.1268,
-                "impliedProbability": 0.4702
+                "oddsDecimal": 2.128,
+                "impliedProbability": 0.4699
               },
               {
                 "name": "Sunderland",
-                "oddsDecimal": 3.772,
-                "impliedProbability": 0.2651
+                "oddsDecimal": 3.7677,
+                "impliedProbability": 0.2654
               },
               {
                 "name": "Draw",
-                "oddsDecimal": 3.7778,
+                "oddsDecimal": 3.7785,
                 "impliedProbability": 0.2647
               }
             ],
-            "bookmakerCount": 39
+            "bookmakerCount": 40
           },
           {
             "matchId": 560635,
@@ -5742,21 +5742,21 @@
             "outcomes": [
               {
                 "name": "Crystal Palace",
-                "oddsDecimal": 5.0826,
-                "impliedProbability": 0.1967
+                "oddsDecimal": 5.0711,
+                "impliedProbability": 0.1972
               },
               {
                 "name": "Liverpool",
-                "oddsDecimal": 1.7316,
-                "impliedProbability": 0.5775
+                "oddsDecimal": 1.7368,
+                "impliedProbability": 0.5758
               },
               {
                 "name": "Draw",
-                "oddsDecimal": 4.4299,
-                "impliedProbability": 0.2257
+                "oddsDecimal": 4.4044,
+                "impliedProbability": 0.227
               }
             ],
-            "bookmakerCount": 39
+            "bookmakerCount": 40
           },
           {
             "matchId": 560639,
@@ -5768,21 +5768,21 @@
             "outcomes": [
               {
                 "name": "Aston Villa",
-                "oddsDecimal": 3.0804,
-                "impliedProbability": 0.3246
+                "oddsDecimal": 3.0964,
+                "impliedProbability": 0.323
               },
               {
                 "name": "Manchester United",
-                "oddsDecimal": 2.382,
-                "impliedProbability": 0.4198
+                "oddsDecimal": 2.3682,
+                "impliedProbability": 0.4223
               },
               {
                 "name": "Draw",
-                "oddsDecimal": 3.913,
-                "impliedProbability": 0.2556
+                "oddsDecimal": 3.9249,
+                "impliedProbability": 0.2548
               }
             ],
-            "bookmakerCount": 38
+            "bookmakerCount": 39
           },
           {
             "matchId": 560645,
@@ -5794,18 +5794,18 @@
             "outcomes": [
               {
                 "name": "Liverpool",
-                "oddsDecimal": 1.8922,
-                "impliedProbability": 0.5285
+                "oddsDecimal": 1.9527,
+                "impliedProbability": 0.5121
               },
               {
                 "name": "Manchester United",
-                "oddsDecimal": 4.2984,
-                "impliedProbability": 0.2326
+                "oddsDecimal": 3.9068,
+                "impliedProbability": 0.256
               },
               {
                 "name": "Draw",
-                "oddsDecimal": 4.1866,
-                "impliedProbability": 0.2389
+                "oddsDecimal": 4.3118,
+                "impliedProbability": 0.2319
               }
             ],
             "bookmakerCount": 18
@@ -5816,145 +5816,145 @@
             "teamId": 57,
             "teamName": "Arsenal FC",
             "matches": 1,
-            "expectedPoints": 2.5856,
-            "expectedPpg": 2.5856
+            "expectedPoints": 2.5869,
+            "expectedPpg": 2.5869
           },
           {
             "teamId": 65,
             "teamName": "Manchester City FC",
             "matches": 1,
-            "expectedPoints": 1.9129,
-            "expectedPpg": 1.9129
+            "expectedPoints": 1.912,
+            "expectedPpg": 1.912
           },
           {
             "teamId": 64,
             "teamName": "Liverpool FC",
             "matches": 2,
-            "expectedPoints": 3.7826,
-            "expectedPpg": 1.8913
+            "expectedPoints": 3.7226,
+            "expectedPpg": 1.8613
           },
           {
             "teamId": 397,
             "teamName": "Brighton & Hove Albion FC",
             "matches": 1,
-            "expectedPoints": 1.7281,
-            "expectedPpg": 1.7281
+            "expectedPoints": 1.7279,
+            "expectedPpg": 1.7279
           },
           {
             "teamId": 1044,
             "teamName": "AFC Bournemouth",
             "matches": 1,
-            "expectedPoints": 1.719,
-            "expectedPpg": 1.719
+            "expectedPoints": 1.7209,
+            "expectedPpg": 1.7209
           },
           {
             "teamId": 61,
             "teamName": "Chelsea FC",
             "matches": 1,
-            "expectedPoints": 1.6753,
-            "expectedPpg": 1.6753
+            "expectedPoints": 1.6744,
+            "expectedPpg": 1.6744
           },
           {
             "teamId": 63,
             "teamName": "Fulham FC",
             "matches": 1,
-            "expectedPoints": 1.5881,
-            "expectedPpg": 1.5881
+            "expectedPoints": 1.5857,
+            "expectedPpg": 1.5857
           },
           {
             "teamId": 62,
             "teamName": "Everton FC",
             "matches": 2,
-            "expectedPoints": 3.1274,
-            "expectedPpg": 1.5637
+            "expectedPoints": 3.1109,
+            "expectedPpg": 1.5555
           },
           {
             "teamId": 341,
             "teamName": "Leeds United FC",
             "matches": 1,
-            "expectedPoints": 1.4087,
-            "expectedPpg": 1.4087
+            "expectedPoints": 1.4096,
+            "expectedPpg": 1.4096
           },
           {
             "teamId": 67,
             "teamName": "Newcastle United FC",
             "matches": 2,
-            "expectedPoints": 2.6523,
-            "expectedPpg": 1.3262
+            "expectedPoints": 2.6721,
+            "expectedPpg": 1.3361
           },
           {
             "teamId": 73,
             "teamName": "Tottenham Hotspur FC",
             "matches": 1,
-            "expectedPoints": 1.3118,
-            "expectedPpg": 1.3118
-          },
-          {
-            "teamId": 58,
-            "teamName": "Aston Villa FC",
-            "matches": 1,
-            "expectedPoints": 1.2294,
-            "expectedPpg": 1.2294
+            "expectedPoints": 1.3109,
+            "expectedPpg": 1.3109
           },
           {
             "teamId": 66,
             "teamName": "Manchester United FC",
             "matches": 2,
-            "expectedPoints": 2.4517,
-            "expectedPpg": 1.2259
+            "expectedPoints": 2.5216,
+            "expectedPpg": 1.2608
+          },
+          {
+            "teamId": 58,
+            "teamName": "Aston Villa FC",
+            "matches": 1,
+            "expectedPoints": 1.2238,
+            "expectedPpg": 1.2238
           },
           {
             "teamId": 71,
             "teamName": "Sunderland AFC",
             "matches": 1,
-            "expectedPoints": 1.06,
-            "expectedPpg": 1.06
-          },
-          {
-            "teamId": 349,
-            "teamName": "Ipswich Town FC",
-            "matches": 1,
-            "expectedPoints": 1.0266,
-            "expectedPpg": 1.0266
+            "expectedPoints": 1.0609,
+            "expectedPpg": 1.0609
           },
           {
             "teamId": 402,
             "teamName": "Brentford FC",
             "matches": 1,
-            "expectedPoints": 1.0255,
-            "expectedPpg": 1.0255
+            "expectedPoints": 1.0259,
+            "expectedPpg": 1.0259
+          },
+          {
+            "teamId": 349,
+            "teamName": "Ipswich Town FC",
+            "matches": 1,
+            "expectedPoints": 1.0246,
+            "expectedPpg": 1.0246
           },
           {
             "teamId": 1076,
             "teamName": "Coventry City FC",
             "matches": 1,
-            "expectedPoints": 0.8584,
-            "expectedPpg": 0.8584
+            "expectedPoints": 0.8575,
+            "expectedPpg": 0.8575
           },
           {
             "teamId": 351,
             "teamName": "Nottingham Forest FC",
             "matches": 1,
-            "expectedPoints": 0.8536,
-            "expectedPpg": 0.8536
+            "expectedPoints": 0.8542,
+            "expectedPpg": 0.8542
           },
           {
             "teamId": 354,
             "teamName": "Crystal Palace FC",
             "matches": 1,
-            "expectedPoints": 0.8158,
-            "expectedPpg": 0.8158
+            "expectedPoints": 0.8186,
+            "expectedPpg": 0.8186
           },
           {
             "teamId": 322,
             "teamName": "Hull City AFC",
             "matches": 1,
-            "expectedPoints": 0.2918,
-            "expectedPpg": 0.2918
+            "expectedPoints": 0.2904,
+            "expectedPpg": 0.2904
           }
         ],
         "dataQuality": {
-          "bookmakerCount": 458,
+          "bookmakerCount": 468,
           "matchedOutcomeCount": 36,
           "unmatchedOutcomeCount": 0,
           "coverageRatio": 0.0412,
@@ -6040,13 +6040,13 @@
           "shortName": "Real Sociedad",
           "crest": "assets/teams/laliga/92.png",
           "position": 5,
-          "playedGames": 10,
+          "playedGames": 11,
           "won": 6,
           "draw": 1,
-          "lost": 3,
-          "goalsFor": 19,
-          "goalsAgainst": 18,
-          "goalDifference": 1,
+          "lost": 4,
+          "goalsFor": 20,
+          "goalsAgainst": 20,
+          "goalDifference": 0,
           "points": 19,
           "form": null
         },
@@ -6072,14 +6072,14 @@
           "shortName": "Athletic",
           "crest": "assets/teams/laliga/77.png",
           "position": 7,
-          "playedGames": 9,
-          "won": 3,
+          "playedGames": 10,
+          "won": 4,
           "draw": 3,
           "lost": 3,
-          "goalsFor": 12,
-          "goalsAgainst": 9,
-          "goalDifference": 3,
-          "points": 12,
+          "goalsFor": 14,
+          "goalsAgainst": 10,
+          "goalDifference": 4,
+          "points": 15,
           "form": null
         },
         {
@@ -6195,27 +6195,11 @@
           "form": null
         },
         {
-          "teamId": 285,
-          "teamName": "Elche CF",
-          "shortName": "Elche",
-          "crest": "assets/teams/laliga/285.png",
-          "position": 15,
-          "playedGames": 11,
-          "won": 2,
-          "draw": 5,
-          "lost": 4,
-          "goalsFor": 14,
-          "goalsAgainst": 17,
-          "goalDifference": -3,
-          "points": 11,
-          "form": null
-        },
-        {
           "teamId": 79,
           "teamName": "CA Osasuna",
           "shortName": "Osasuna",
           "crest": "assets/teams/laliga/79.png",
-          "position": 16,
+          "position": 15,
           "playedGames": 10,
           "won": 3,
           "draw": 2,
@@ -6231,7 +6215,7 @@
           "teamName": "Real Racing Club de Santander",
           "shortName": "Santander",
           "crest": "assets/teams/laliga/5335.png",
-          "position": 17,
+          "position": 16,
           "playedGames": 11,
           "won": 3,
           "draw": 2,
@@ -6240,6 +6224,22 @@
           "goalsAgainst": 29,
           "goalDifference": -14,
           "points": 11,
+          "form": null
+        },
+        {
+          "teamId": 285,
+          "teamName": "Elche CF",
+          "shortName": "Elche",
+          "crest": "assets/teams/laliga/285.png",
+          "position": 17,
+          "playedGames": 11,
+          "won": 2,
+          "draw": 4,
+          "lost": 5,
+          "goalsFor": 14,
+          "goalsAgainst": 18,
+          "goalDifference": -4,
+          "points": 10,
           "form": null
         },
         {
@@ -6265,13 +6265,13 @@
           "crest": "assets/teams/laliga/95.png",
           "position": 19,
           "playedGames": 11,
-          "won": 1,
-          "draw": 4,
+          "won": 2,
+          "draw": 3,
           "lost": 6,
-          "goalsFor": 7,
+          "goalsFor": 8,
           "goalsAgainst": 17,
-          "goalDifference": -10,
-          "points": 7,
+          "goalDifference": -9,
+          "points": 9,
           "form": null
         },
         {
@@ -7567,26 +7567,26 @@
         {
           "id": 564728,
           "utcDate": "2026-11-01T17:30:00Z",
-          "status": "IN_PLAY",
+          "status": "FINISHED",
           "matchday": 11,
           "homeTeamId": 285,
           "homeTeamName": "Elche CF",
           "awayTeamId": 95,
           "awayTeamName": "Valencia CF",
           "homeScore": 0,
-          "awayScore": 0
+          "awayScore": 1
         },
         {
           "id": 564729,
           "utcDate": "2026-11-01T20:00:00Z",
-          "status": "TIMED",
+          "status": "FINISHED",
           "matchday": 11,
           "homeTeamId": 77,
           "homeTeamName": "Athletic Club",
           "awayTeamId": 92,
           "awayTeamName": "Real Sociedad de Fútbol",
-          "homeScore": null,
-          "awayScore": null
+          "homeScore": 2,
+          "awayScore": 1
         },
         {
           "id": 564731,
@@ -10859,420 +10859,420 @@
           "teamName": "FC Barcelona",
           "shortName": "Barça",
           "crest": "assets/teams/laliga/81.png",
-          "rawScore": 3.0009,
-          "probability": 0.3437,
+          "rawScore": 3.2203,
+          "probability": 0.3756,
           "confidence": 0.7226,
           "features": {
             "pointsPerGame": 2.7273,
             "pointsGapAdjusted": 1,
             "goalDiffPerGame": 3.0909,
             "recentPpg": 0,
-            "remainingScheduleAdvantage": 0.0749
+            "remainingScheduleAdvantage": 0.0824
           },
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": 0.03,
-          "probabilityDelta7d": -0.0254
+          "probabilityDeltaPrevious": 0.0319,
+          "probabilityDelta7d": 0.1052
         },
         {
           "teamId": 86,
           "teamName": "Real Madrid CF",
           "shortName": "Real Madrid",
           "crest": "assets/teams/laliga/86.png",
-          "rawScore": 2.2706,
-          "probability": 0.1656,
+          "rawScore": 2.4038,
+          "probability": 0.166,
           "confidence": 0.7226,
           "features": {
             "pointsPerGame": 2.4545,
             "pointsGapAdjusted": 0.9,
             "goalDiffPerGame": 1.6364,
             "recentPpg": 0,
-            "remainingScheduleAdvantage": 0.1363
+            "remainingScheduleAdvantage": 0.1245
           },
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": 0.0304,
-          "probabilityDelta7d": 0.0495
+          "probabilityDeltaPrevious": 0.0004,
+          "probabilityDelta7d": 0.0131
         },
         {
           "teamId": 78,
           "teamName": "Club Atlético de Madrid",
           "shortName": "Atleti",
           "crest": "assets/teams/laliga/78.png",
-          "rawScore": 2.1882,
-          "probability": 0.1525,
+          "rawScore": 2.3217,
+          "probability": 0.1529,
           "confidence": 0.7226,
           "features": {
             "pointsPerGame": 2.5455,
             "pointsGapAdjusted": 0.9333,
             "goalDiffPerGame": 1.2727,
             "recentPpg": 0,
-            "remainingScheduleAdvantage": 0.0476
+            "remainingScheduleAdvantage": 0.0453
           },
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": 0.002,
-          "probabilityDelta7d": 0
+          "probabilityDeltaPrevious": 0.0004,
+          "probabilityDelta7d": -0.0016
         },
         {
           "teamId": 90,
           "teamName": "Real Betis Balompié",
           "shortName": "Real Betis",
           "crest": "assets/teams/laliga/90.png",
-          "rawScore": 1.3282,
-          "probability": 0.0645,
+          "rawScore": 1.401,
+          "probability": 0.0609,
           "confidence": 0.7226,
           "features": {
             "pointsPerGame": 2.0909,
             "pointsGapAdjusted": 0.7667,
             "goalDiffPerGame": 0.2727,
             "recentPpg": 0,
-            "remainingScheduleAdvantage": 0.0353
+            "remainingScheduleAdvantage": 0.0336
           },
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": -0.0041,
-          "probabilityDelta7d": -0.0021
+          "probabilityDeltaPrevious": -0.0036,
+          "probabilityDelta7d": -0.0095
         },
         {
           "teamId": 92,
           "teamName": "Real Sociedad de Fútbol",
           "shortName": "Real Sociedad",
           "crest": "assets/teams/laliga/92.png",
-          "rawScore": 0.9591,
-          "probability": 0.0446,
-          "confidence": 0.7142,
-          "features": {
-            "pointsPerGame": 1.9,
-            "pointsGapAdjusted": 0.6333,
-            "goalDiffPerGame": 0.1,
-            "recentPpg": 0,
-            "remainingScheduleAdvantage": 0.0238
-          },
-          "missingFeatures": [
-            "recentPpg"
-          ],
-          "probabilityDeltaPrevious": -0.0046,
-          "probabilityDelta7d": 0.0032
-        },
-        {
-          "teamId": 559,
-          "teamName": "Sevilla FC",
-          "shortName": "Sevilla FC",
-          "crest": "assets/teams/laliga/559.png",
-          "rawScore": 0.5591,
-          "probability": 0.0299,
+          "rawScore": 0.8471,
+          "probability": 0.035,
           "confidence": 0.7226,
           "features": {
-            "pointsPerGame": 1.5455,
-            "pointsGapAdjusted": 0.5667,
-            "goalDiffPerGame": -0.1818,
+            "pointsPerGame": 1.7273,
+            "pointsGapAdjusted": 0.6333,
+            "goalDiffPerGame": 0,
             "recentPpg": 0,
-            "remainingScheduleAdvantage": 0.052
+            "remainingScheduleAdvantage": 0.0181
           },
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": -0.0108,
-          "probabilityDelta7d": -0.0015
+          "probabilityDeltaPrevious": -0.0096,
+          "probabilityDelta7d": -0.0239
         },
         {
           "teamId": 77,
           "teamName": "Athletic Club",
           "shortName": "Athletic",
           "crest": "assets/teams/laliga/77.png",
-          "rawScore": 0.3245,
-          "probability": 0.0236,
-          "confidence": 0.7058,
+          "rawScore": 0.6613,
+          "probability": 0.0291,
+          "confidence": 0.7142,
           "features": {
-            "pointsPerGame": 1.3333,
-            "pointsGapAdjusted": 0.4,
-            "goalDiffPerGame": 0.3333,
+            "pointsPerGame": 1.5,
+            "pointsGapAdjusted": 0.5,
+            "goalDiffPerGame": 0.4,
             "recentPpg": 0,
-            "remainingScheduleAdvantage": 0.0088
+            "remainingScheduleAdvantage": 0.0353
           },
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": -0.0043,
-          "probabilityDelta7d": -0.0019
+          "probabilityDeltaPrevious": 0.0055,
+          "probabilityDelta7d": 0.0001
+        },
+        {
+          "teamId": 559,
+          "teamName": "Sevilla FC",
+          "shortName": "Sevilla FC",
+          "crest": "assets/teams/laliga/559.png",
+          "rawScore": 0.5964,
+          "probability": 0.0272,
+          "confidence": 0.7226,
+          "features": {
+            "pointsPerGame": 1.5455,
+            "pointsGapAdjusted": 0.5667,
+            "goalDiffPerGame": -0.1818,
+            "recentPpg": 0,
+            "remainingScheduleAdvantage": 0.0628
+          },
+          "missingFeatures": [
+            "recentPpg"
+          ],
+          "probabilityDeltaPrevious": -0.0027,
+          "probabilityDelta7d": -0.0077
         },
         {
           "teamId": 94,
           "teamName": "Villarreal CF",
           "shortName": "Villarreal",
           "crest": "assets/teams/laliga/94.png",
-          "rawScore": 0.0009,
-          "probability": 0.0171,
+          "rawScore": 0.0162,
+          "probability": 0.0152,
           "confidence": 0.7226,
           "features": {
             "pointsPerGame": 1.0909,
             "pointsGapAdjusted": 0.4,
             "goalDiffPerGame": 0,
             "recentPpg": 0,
-            "remainingScheduleAdvantage": -0.0489
+            "remainingScheduleAdvantage": -0.0476
           },
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": -0.0039,
-          "probabilityDelta7d": -0.0042
+          "probabilityDeltaPrevious": -0.0019,
+          "probabilityDelta7d": -0.0094
         },
         {
           "teamId": 560,
           "teamName": "RC Deportivo La Coruña",
           "shortName": "Deportivo",
           "crest": "assets/teams/laliga/560.png",
-          "rawScore": -0.0231,
-          "probability": 0.0167,
+          "rawScore": -0.0126,
+          "probability": 0.0148,
           "confidence": 0.7142,
           "features": {
             "pointsPerGame": 1.1,
             "pointsGapAdjusted": 0.3667,
             "goalDiffPerGame": 0,
             "recentPpg": 0,
-            "remainingScheduleAdvantage": -0.034
+            "remainingScheduleAdvantage": -0.0388
           },
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": -0.0037,
-          "probabilityDelta7d": -0.0014
-        },
-        {
-          "teamId": 87,
-          "teamName": "Rayo Vallecano de Madrid",
-          "shortName": "Rayo Vallecano",
-          "crest": "assets/teams/laliga/87.png",
-          "rawScore": -0.0384,
-          "probability": 0.0165,
-          "confidence": 0.7142,
-          "features": {
-            "pointsPerGame": 1.2,
-            "pointsGapAdjusted": 0.4,
-            "goalDiffPerGame": -0.5,
-            "recentPpg": 0,
-            "remainingScheduleAdvantage": 0.003
-          },
-          "missingFeatures": [
-            "recentPpg"
-          ],
-          "probabilityDeltaPrevious": -0.0037,
-          "probabilityDelta7d": 0.0033
+          "probabilityDeltaPrevious": -0.0019,
+          "probabilityDelta7d": -0.0064
         },
         {
           "teamId": 558,
           "teamName": "RC Celta de Vigo",
           "shortName": "Celta",
           "crest": "assets/teams/laliga/558.png",
-          "rawScore": -0.0416,
-          "probability": 0.0164,
+          "rawScore": -0.0255,
+          "probability": 0.0146,
           "confidence": 0.7226,
           "features": {
             "pointsPerGame": 1.0909,
             "pointsGapAdjusted": 0.4,
             "goalDiffPerGame": 0,
             "recentPpg": 0,
-            "remainingScheduleAdvantage": -0.1002
+            "remainingScheduleAdvantage": -0.0991
           },
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": -0.0036,
-          "probabilityDelta7d": -0.0045
+          "probabilityDeltaPrevious": -0.0018,
+          "probabilityDelta7d": -0.0097
         },
         {
           "teamId": 263,
           "teamName": "Deportivo Alavés",
           "shortName": "Alavés",
           "crest": "assets/teams/laliga/263.png",
-          "rawScore": -0.0572,
-          "probability": 0.0161,
+          "rawScore": -0.0411,
+          "probability": 0.0144,
           "confidence": 0.7226,
           "features": {
             "pointsPerGame": 1.0909,
             "pointsGapAdjusted": 0.4,
             "goalDiffPerGame": -0.1818,
             "recentPpg": 0,
-            "remainingScheduleAdvantage": -0.0494
+            "remainingScheduleAdvantage": -0.0385
           },
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": -0.0037,
-          "probabilityDelta7d": -0.0048
+          "probabilityDeltaPrevious": -0.0017,
+          "probabilityDelta7d": -0.0098
+        },
+        {
+          "teamId": 87,
+          "teamName": "Rayo Vallecano de Madrid",
+          "shortName": "Rayo Vallecano",
+          "crest": "assets/teams/laliga/87.png",
+          "rawScore": -0.0427,
+          "probability": 0.0144,
+          "confidence": 0.7142,
+          "features": {
+            "pointsPerGame": 1.2,
+            "pointsGapAdjusted": 0.4,
+            "goalDiffPerGame": -0.5,
+            "recentPpg": 0,
+            "remainingScheduleAdvantage": -0.0021
+          },
+          "missingFeatures": [
+            "recentPpg"
+          ],
+          "probabilityDeltaPrevious": -0.0021,
+          "probabilityDelta7d": -0.0011
         },
         {
           "teamId": 80,
           "teamName": "RCD Espanyol de Barcelona",
           "shortName": "Espanyol",
           "crest": "assets/teams/laliga/80.png",
-          "rawScore": -0.1118,
-          "probability": 0.0153,
+          "rawScore": -0.1158,
+          "probability": 0.0134,
           "confidence": 0.7226,
           "features": {
             "pointsPerGame": 1,
             "pointsGapAdjusted": 0.3667,
             "goalDiffPerGame": -0.0909,
             "recentPpg": 0,
-            "remainingScheduleAdvantage": -0.0216
+            "remainingScheduleAdvantage": -0.0335
           },
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": -0.0038,
-          "probabilityDelta7d": 0.0034
-        },
-        {
-          "teamId": 285,
-          "teamName": "Elche CF",
-          "shortName": "Elche",
-          "crest": "assets/teams/laliga/285.png",
-          "rawScore": -0.1374,
-          "probability": 0.0149,
-          "confidence": 0.7226,
-          "features": {
-            "pointsPerGame": 1,
-            "pointsGapAdjusted": 0.3667,
-            "goalDiffPerGame": -0.2727,
-            "recentPpg": 0,
-            "remainingScheduleAdvantage": 0.0172
-          },
-          "missingFeatures": [
-            "recentPpg"
-          ],
-          "probabilityDeltaPrevious": -0.0028,
-          "probabilityDelta7d": -0.0008
+          "probabilityDeltaPrevious": -0.0019,
+          "probabilityDelta7d": -0.001
         },
         {
           "teamId": 82,
           "teamName": "Getafe CF",
           "shortName": "Getafe",
           "crest": "assets/teams/laliga/82.png",
-          "rawScore": -0.2161,
-          "probability": 0.0138,
+          "rawScore": -0.2266,
+          "probability": 0.012,
           "confidence": 0.7226,
           "features": {
             "pointsPerGame": 1.0909,
             "pointsGapAdjusted": 0.4,
             "goalDiffPerGame": -0.7273,
             "recentPpg": 0,
-            "remainingScheduleAdvantage": -0.0322
+            "remainingScheduleAdvantage": -0.0281
           },
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": 0.0014,
-          "probabilityDelta7d": 0.0022
+          "probabilityDeltaPrevious": -0.0018,
+          "probabilityDelta7d": -0.0017
         },
         {
           "teamId": 88,
           "teamName": "Levante UD",
           "shortName": "Levante",
           "crest": "assets/teams/laliga/88.png",
-          "rawScore": -0.2875,
-          "probability": 0.0128,
+          "rawScore": -0.3034,
+          "probability": 0.0111,
           "confidence": 0.7226,
           "features": {
             "pointsPerGame": 0.9091,
             "pointsGapAdjusted": 0.3333,
             "goalDiffPerGame": -0.4545,
             "recentPpg": 0,
-            "remainingScheduleAdvantage": 0.0341
+            "remainingScheduleAdvantage": 0.0319
           },
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": -0.0036,
-          "probabilityDelta7d": -0.0051
+          "probabilityDeltaPrevious": -0.0017,
+          "probabilityDelta7d": -0.0072
+        },
+        {
+          "teamId": 285,
+          "teamName": "Elche CF",
+          "shortName": "Elche",
+          "crest": "assets/teams/laliga/285.png",
+          "rawScore": -0.3062,
+          "probability": 0.011,
+          "confidence": 0.7226,
+          "features": {
+            "pointsPerGame": 0.9091,
+            "pointsGapAdjusted": 0.3333,
+            "goalDiffPerGame": -0.3636,
+            "recentPpg": 0,
+            "remainingScheduleAdvantage": -0.0116
+          },
+          "missingFeatures": [
+            "recentPpg"
+          ],
+          "probabilityDeltaPrevious": -0.0039,
+          "probabilityDelta7d": -0.0075
         },
         {
           "teamId": 79,
           "teamName": "CA Osasuna",
           "shortName": "Osasuna",
           "crest": "assets/teams/laliga/79.png",
-          "rawScore": -0.3317,
-          "probability": 0.0123,
+          "rawScore": -0.3571,
+          "probability": 0.0105,
           "confidence": 0.7142,
           "features": {
             "pointsPerGame": 1.1,
             "pointsGapAdjusted": 0.3667,
             "goalDiffPerGame": -1,
             "recentPpg": 0,
-            "remainingScheduleAdvantage": -0.0233
+            "remainingScheduleAdvantage": -0.0251
           },
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": -0.0032,
-          "probabilityDelta7d": -0.0047
+          "probabilityDeltaPrevious": -0.0018,
+          "probabilityDelta7d": -0.0091
         },
         {
           "teamId": 5335,
           "teamName": "Real Racing Club de Santander",
           "shortName": "Santander",
           "crest": "assets/teams/laliga/5335.png",
-          "rawScore": -0.509,
-          "probability": 0.0103,
+          "rawScore": -0.5469,
+          "probability": 0.0087,
           "confidence": 0.7226,
           "features": {
             "pointsPerGame": 1,
             "pointsGapAdjusted": 0.3667,
             "goalDiffPerGame": -1.2727,
             "recentPpg": 0,
-            "remainingScheduleAdvantage": -0.0482
+            "remainingScheduleAdvantage": -0.0469
           },
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": -0.004,
-          "probabilityDelta7d": -0.004
+          "probabilityDeltaPrevious": -0.0016,
+          "probabilityDelta7d": -0.0078
         },
         {
           "teamId": 95,
           "teamName": "Valencia CF",
           "shortName": "Valencia",
           "crest": "assets/teams/laliga/95.png",
-          "rawScore": -0.7846,
-          "probability": 0.0078,
+          "rawScore": -0.5794,
+          "probability": 0.0084,
           "confidence": 0.7226,
           "features": {
-            "pointsPerGame": 0.6364,
-            "pointsGapAdjusted": 0.2333,
-            "goalDiffPerGame": -0.9091,
+            "pointsPerGame": 0.8182,
+            "pointsGapAdjusted": 0.3,
+            "goalDiffPerGame": -0.8182,
             "recentPpg": 0,
-            "remainingScheduleAdvantage": -0.0062
+            "remainingScheduleAdvantage": -0.0122
           },
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": -0.0018,
-          "probabilityDelta7d": -0.0003
+          "probabilityDeltaPrevious": 0.0006,
+          "probabilityDelta7d": -0.0016
         },
         {
           "teamId": 84,
           "teamName": "Málaga CF",
           "shortName": "Málaga",
           "crest": "assets/teams/laliga/84.png",
-          "rawScore": -1.0946,
-          "probability": 0.0057,
+          "rawScore": -1.1654,
+          "probability": 0.0047,
           "confidence": 0.7226,
           "features": {
             "pointsPerGame": 0.4545,
             "pointsGapAdjusted": 0.1667,
             "goalDiffPerGame": -1.1818,
             "recentPpg": 0,
-            "remainingScheduleAdvantage": -0.019
+            "remainingScheduleAdvantage": -0.0274
           },
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": -0.0021,
-          "probabilityDelta7d": -0.0008
+          "probabilityDeltaPrevious": -0.001,
+          "probabilityDelta7d": -0.0035
         }
       ],
       "topContenders": [
@@ -11281,168 +11281,168 @@
           "teamName": "FC Barcelona",
           "shortName": "Barça",
           "crest": "assets/teams/laliga/81.png",
-          "rawScore": 3.0009,
-          "probability": 0.3437,
+          "rawScore": 3.2203,
+          "probability": 0.3756,
           "confidence": 0.7226,
           "features": {
             "pointsPerGame": 2.7273,
             "pointsGapAdjusted": 1,
             "goalDiffPerGame": 3.0909,
             "recentPpg": 0,
-            "remainingScheduleAdvantage": 0.0749
+            "remainingScheduleAdvantage": 0.0824
           },
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": 0.03,
-          "probabilityDelta7d": -0.0254
+          "probabilityDeltaPrevious": 0.0319,
+          "probabilityDelta7d": 0.1052
         },
         {
           "teamId": 86,
           "teamName": "Real Madrid CF",
           "shortName": "Real Madrid",
           "crest": "assets/teams/laliga/86.png",
-          "rawScore": 2.2706,
-          "probability": 0.1656,
+          "rawScore": 2.4038,
+          "probability": 0.166,
           "confidence": 0.7226,
           "features": {
             "pointsPerGame": 2.4545,
             "pointsGapAdjusted": 0.9,
             "goalDiffPerGame": 1.6364,
             "recentPpg": 0,
-            "remainingScheduleAdvantage": 0.1363
+            "remainingScheduleAdvantage": 0.1245
           },
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": 0.0304,
-          "probabilityDelta7d": 0.0495
+          "probabilityDeltaPrevious": 0.0004,
+          "probabilityDelta7d": 0.0131
         },
         {
           "teamId": 78,
           "teamName": "Club Atlético de Madrid",
           "shortName": "Atleti",
           "crest": "assets/teams/laliga/78.png",
-          "rawScore": 2.1882,
-          "probability": 0.1525,
+          "rawScore": 2.3217,
+          "probability": 0.1529,
           "confidence": 0.7226,
           "features": {
             "pointsPerGame": 2.5455,
             "pointsGapAdjusted": 0.9333,
             "goalDiffPerGame": 1.2727,
             "recentPpg": 0,
-            "remainingScheduleAdvantage": 0.0476
+            "remainingScheduleAdvantage": 0.0453
           },
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": 0.002,
-          "probabilityDelta7d": 0
+          "probabilityDeltaPrevious": 0.0004,
+          "probabilityDelta7d": -0.0016
         },
         {
           "teamId": 90,
           "teamName": "Real Betis Balompié",
           "shortName": "Real Betis",
           "crest": "assets/teams/laliga/90.png",
-          "rawScore": 1.3282,
-          "probability": 0.0645,
+          "rawScore": 1.401,
+          "probability": 0.0609,
           "confidence": 0.7226,
           "features": {
             "pointsPerGame": 2.0909,
             "pointsGapAdjusted": 0.7667,
             "goalDiffPerGame": 0.2727,
             "recentPpg": 0,
-            "remainingScheduleAdvantage": 0.0353
+            "remainingScheduleAdvantage": 0.0336
           },
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": -0.0041,
-          "probabilityDelta7d": -0.0021
+          "probabilityDeltaPrevious": -0.0036,
+          "probabilityDelta7d": -0.0095
         },
         {
           "teamId": 92,
           "teamName": "Real Sociedad de Fútbol",
           "shortName": "Real Sociedad",
           "crest": "assets/teams/laliga/92.png",
-          "rawScore": 0.9591,
-          "probability": 0.0446,
-          "confidence": 0.7142,
-          "features": {
-            "pointsPerGame": 1.9,
-            "pointsGapAdjusted": 0.6333,
-            "goalDiffPerGame": 0.1,
-            "recentPpg": 0,
-            "remainingScheduleAdvantage": 0.0238
-          },
-          "missingFeatures": [
-            "recentPpg"
-          ],
-          "probabilityDeltaPrevious": -0.0046,
-          "probabilityDelta7d": 0.0032
-        },
-        {
-          "teamId": 559,
-          "teamName": "Sevilla FC",
-          "shortName": "Sevilla FC",
-          "crest": "assets/teams/laliga/559.png",
-          "rawScore": 0.5591,
-          "probability": 0.0299,
+          "rawScore": 0.8471,
+          "probability": 0.035,
           "confidence": 0.7226,
           "features": {
-            "pointsPerGame": 1.5455,
-            "pointsGapAdjusted": 0.5667,
-            "goalDiffPerGame": -0.1818,
+            "pointsPerGame": 1.7273,
+            "pointsGapAdjusted": 0.6333,
+            "goalDiffPerGame": 0,
             "recentPpg": 0,
-            "remainingScheduleAdvantage": 0.052
+            "remainingScheduleAdvantage": 0.0181
           },
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": -0.0108,
-          "probabilityDelta7d": -0.0015
+          "probabilityDeltaPrevious": -0.0096,
+          "probabilityDelta7d": -0.0239
         },
         {
           "teamId": 77,
           "teamName": "Athletic Club",
           "shortName": "Athletic",
           "crest": "assets/teams/laliga/77.png",
-          "rawScore": 0.3245,
-          "probability": 0.0236,
-          "confidence": 0.7058,
+          "rawScore": 0.6613,
+          "probability": 0.0291,
+          "confidence": 0.7142,
           "features": {
-            "pointsPerGame": 1.3333,
-            "pointsGapAdjusted": 0.4,
-            "goalDiffPerGame": 0.3333,
+            "pointsPerGame": 1.5,
+            "pointsGapAdjusted": 0.5,
+            "goalDiffPerGame": 0.4,
             "recentPpg": 0,
-            "remainingScheduleAdvantage": 0.0088
+            "remainingScheduleAdvantage": 0.0353
           },
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": -0.0043,
-          "probabilityDelta7d": -0.0019
+          "probabilityDeltaPrevious": 0.0055,
+          "probabilityDelta7d": 0.0001
+        },
+        {
+          "teamId": 559,
+          "teamName": "Sevilla FC",
+          "shortName": "Sevilla FC",
+          "crest": "assets/teams/laliga/559.png",
+          "rawScore": 0.5964,
+          "probability": 0.0272,
+          "confidence": 0.7226,
+          "features": {
+            "pointsPerGame": 1.5455,
+            "pointsGapAdjusted": 0.5667,
+            "goalDiffPerGame": -0.1818,
+            "recentPpg": 0,
+            "remainingScheduleAdvantage": 0.0628
+          },
+          "missingFeatures": [
+            "recentPpg"
+          ],
+          "probabilityDeltaPrevious": -0.0027,
+          "probabilityDelta7d": -0.0077
         },
         {
           "teamId": 94,
           "teamName": "Villarreal CF",
           "shortName": "Villarreal",
           "crest": "assets/teams/laliga/94.png",
-          "rawScore": 0.0009,
-          "probability": 0.0171,
+          "rawScore": 0.0162,
+          "probability": 0.0152,
           "confidence": 0.7226,
           "features": {
             "pointsPerGame": 1.0909,
             "pointsGapAdjusted": 0.4,
             "goalDiffPerGame": 0,
             "recentPpg": 0,
-            "remainingScheduleAdvantage": -0.0489
+            "remainingScheduleAdvantage": -0.0476
           },
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": -0.0039,
-          "probabilityDelta7d": -0.0042
+          "probabilityDeltaPrevious": -0.0019,
+          "probabilityDelta7d": -0.0094
         }
       ],
       "dataQuality": {
@@ -11451,66 +11451,14 @@
           "Odds unavailable: The Odds API soccer_spain_la_liga returned 422",
           "Match odds Unmatched teams: Deportivo La Coruña"
         ],
-        "standingsUpdatedAt": "2026-11-01T18:56:28.781Z",
-        "matchesUpdatedAt": "2026-11-01T18:56:28.781Z"
+        "standingsUpdatedAt": "2026-11-01T23:36:09.532Z",
+        "matchesUpdatedAt": "2026-11-01T23:36:09.532Z"
       },
       "matchOdds": {
         "leagueId": "laliga",
-        "fetchedAt": "2026-11-01T18:57:37.947Z",
+        "fetchedAt": "2026-11-01T23:37:17.735Z",
         "source": "the-odds-api",
         "matches": [
-          {
-            "matchId": 564728,
-            "utcDate": "2026-11-01T17:30:00Z",
-            "homeTeamId": 285,
-            "awayTeamId": 95,
-            "homeTeamName": "Elche CF",
-            "awayTeamName": "Valencia CF",
-            "outcomes": [
-              {
-                "name": "Elche CF",
-                "oddsDecimal": 3.6522,
-                "impliedProbability": 0.2738
-              },
-              {
-                "name": "Valencia",
-                "oddsDecimal": 4.7028,
-                "impliedProbability": 0.2126
-              },
-              {
-                "name": "Draw",
-                "oddsDecimal": 1.9472,
-                "impliedProbability": 0.5136
-              }
-            ],
-            "bookmakerCount": 33
-          },
-          {
-            "matchId": 564729,
-            "utcDate": "2026-11-01T20:00:00Z",
-            "homeTeamId": 77,
-            "awayTeamId": 92,
-            "homeTeamName": "Athletic Club",
-            "awayTeamName": "Real Sociedad de Fútbol",
-            "outcomes": [
-              {
-                "name": "Athletic Bilbao",
-                "oddsDecimal": 2.1193,
-                "impliedProbability": 0.4718
-              },
-              {
-                "name": "Real Sociedad",
-                "oddsDecimal": 3.7731,
-                "impliedProbability": 0.265
-              },
-              {
-                "name": "Draw",
-                "oddsDecimal": 3.8005,
-                "impliedProbability": 0.2631
-              }
-            ],
-            "bookmakerCount": 39
-          },
           {
             "matchId": 564740,
             "utcDate": "2026-11-06T20:00:00Z",
@@ -11521,18 +11469,18 @@
             "outcomes": [
               {
                 "name": "Alavés",
-                "oddsDecimal": 4.288,
-                "impliedProbability": 0.2332
+                "oddsDecimal": 4.3117,
+                "impliedProbability": 0.2319
               },
               {
                 "name": "Sevilla",
-                "oddsDecimal": 2.0559,
-                "impliedProbability": 0.4864
+                "oddsDecimal": 2.0548,
+                "impliedProbability": 0.4867
               },
               {
                 "name": "Draw",
-                "oddsDecimal": 3.5664,
-                "impliedProbability": 0.2804
+                "oddsDecimal": 3.5537,
+                "impliedProbability": 0.2814
               }
             ],
             "bookmakerCount": 36
@@ -11547,18 +11495,18 @@
             "outcomes": [
               {
                 "name": "Málaga",
-                "oddsDecimal": 2.5148,
-                "impliedProbability": 0.3976
+                "oddsDecimal": 2.5176,
+                "impliedProbability": 0.3972
               },
               {
                 "name": "Real Racing Club de Santander",
-                "oddsDecimal": 2.9684,
-                "impliedProbability": 0.3369
+                "oddsDecimal": 2.966,
+                "impliedProbability": 0.3372
               },
               {
                 "name": "Draw",
-                "oddsDecimal": 3.7669,
-                "impliedProbability": 0.2655
+                "oddsDecimal": 3.7645,
+                "impliedProbability": 0.2656
               }
             ],
             "bookmakerCount": 37
@@ -11573,18 +11521,18 @@
             "outcomes": [
               {
                 "name": "Athletic Bilbao",
-                "oddsDecimal": 2.34,
-                "impliedProbability": 0.4274
+                "oddsDecimal": 2.3366,
+                "impliedProbability": 0.428
               },
               {
                 "name": "CA Osasuna",
-                "oddsDecimal": 3.4715,
-                "impliedProbability": 0.2881
+                "oddsDecimal": 3.4833,
+                "impliedProbability": 0.2871
               },
               {
                 "name": "Draw",
-                "oddsDecimal": 3.5139,
-                "impliedProbability": 0.2846
+                "oddsDecimal": 3.5095,
+                "impliedProbability": 0.2849
               }
             ],
             "bookmakerCount": 37
@@ -11599,18 +11547,18 @@
             "outcomes": [
               {
                 "name": "Real Madrid",
-                "oddsDecimal": 1.3919,
-                "impliedProbability": 0.7184
+                "oddsDecimal": 1.3767,
+                "impliedProbability": 0.7264
               },
               {
                 "name": "Valencia",
-                "oddsDecimal": 8.3511,
-                "impliedProbability": 0.1197
+                "oddsDecimal": 8.7608,
+                "impliedProbability": 0.1141
               },
               {
                 "name": "Draw",
-                "oddsDecimal": 6.1801,
-                "impliedProbability": 0.1618
+                "oddsDecimal": 6.27,
+                "impliedProbability": 0.1595
               }
             ],
             "bookmakerCount": 37
@@ -11625,18 +11573,18 @@
             "outcomes": [
               {
                 "name": "Elche CF",
-                "oddsDecimal": 3.3158,
-                "impliedProbability": 0.3016
+                "oddsDecimal": 3.3179,
+                "impliedProbability": 0.3014
               },
               {
                 "name": "Real Betis",
-                "oddsDecimal": 2.2654,
-                "impliedProbability": 0.4414
+                "oddsDecimal": 2.2642,
+                "impliedProbability": 0.4417
               },
               {
                 "name": "Draw",
-                "oddsDecimal": 3.8911,
-                "impliedProbability": 0.257
+                "oddsDecimal": 3.892,
+                "impliedProbability": 0.2569
               }
             ],
             "bookmakerCount": 36
@@ -11651,21 +11599,21 @@
             "outcomes": [
               {
                 "name": "Rayo Vallecano",
-                "oddsDecimal": 4.7484,
-                "impliedProbability": 0.2106
+                "oddsDecimal": 4.7342,
+                "impliedProbability": 0.2112
               },
               {
                 "name": "Real Sociedad",
-                "oddsDecimal": 1.8099,
-                "impliedProbability": 0.5525
+                "oddsDecimal": 1.8123,
+                "impliedProbability": 0.5518
               },
               {
                 "name": "Draw",
-                "oddsDecimal": 4.2212,
-                "impliedProbability": 0.2369
+                "oddsDecimal": 4.2197,
+                "impliedProbability": 0.237
               }
             ],
-            "bookmakerCount": 36
+            "bookmakerCount": 37
           },
           {
             "matchId": 564742,
@@ -11677,17 +11625,17 @@
             "outcomes": [
               {
                 "name": "Celta Vigo",
-                "oddsDecimal": 1.8889,
-                "impliedProbability": 0.5294
+                "oddsDecimal": 1.8891,
+                "impliedProbability": 0.5293
               },
               {
                 "name": "Levante",
-                "oddsDecimal": 4.5313,
+                "oddsDecimal": 4.5306,
                 "impliedProbability": 0.2207
               },
               {
                 "name": "Draw",
-                "oddsDecimal": 4.0017,
+                "oddsDecimal": 4.0011,
                 "impliedProbability": 0.2499
               }
             ],
@@ -11703,21 +11651,21 @@
             "outcomes": [
               {
                 "name": "Getafe",
-                "oddsDecimal": 7.0745,
-                "impliedProbability": 0.1414
+                "oddsDecimal": 7.1426,
+                "impliedProbability": 0.14
               },
               {
                 "name": "Villarreal",
-                "oddsDecimal": 1.5618,
-                "impliedProbability": 0.6403
+                "oddsDecimal": 1.5535,
+                "impliedProbability": 0.6437
               },
               {
                 "name": "Draw",
-                "oddsDecimal": 4.5796,
-                "impliedProbability": 0.2184
+                "oddsDecimal": 4.6234,
+                "impliedProbability": 0.2163
               }
             ],
-            "bookmakerCount": 36
+            "bookmakerCount": 37
           },
           {
             "matchId": 564746,
@@ -11729,21 +11677,21 @@
             "outcomes": [
               {
                 "name": "Atlético Madrid",
-                "oddsDecimal": 3.8204,
-                "impliedProbability": 0.2618
+                "oddsDecimal": 3.8391,
+                "impliedProbability": 0.2605
               },
               {
                 "name": "Barcelona",
-                "oddsDecimal": 1.9563,
-                "impliedProbability": 0.5112
+                "oddsDecimal": 1.9524,
+                "impliedProbability": 0.5122
               },
               {
                 "name": "Draw",
-                "oddsDecimal": 4.4039,
-                "impliedProbability": 0.2271
+                "oddsDecimal": 4.3989,
+                "impliedProbability": 0.2273
               }
             ],
-            "bookmakerCount": 34
+            "bookmakerCount": 35
           }
         ],
         "teamSchedules": [
@@ -11751,113 +11699,106 @@
             "teamId": 86,
             "teamName": "Real Madrid CF",
             "matches": 1,
-            "expectedPoints": 2.317,
-            "expectedPpg": 2.317
+            "expectedPoints": 2.3387,
+            "expectedPpg": 2.3387
           },
           {
             "teamId": 94,
             "teamName": "Villarreal CF",
             "matches": 1,
-            "expectedPoints": 2.1393,
-            "expectedPpg": 2.1393
+            "expectedPoints": 2.1474,
+            "expectedPpg": 2.1474
           },
           {
             "teamId": 558,
             "teamName": "RC Celta de Vigo",
             "matches": 1,
-            "expectedPoints": 1.8381,
-            "expectedPpg": 1.8381
+            "expectedPoints": 1.8378,
+            "expectedPpg": 1.8378
           },
           {
             "teamId": 81,
             "teamName": "FC Barcelona",
             "matches": 1,
-            "expectedPoints": 1.7607,
-            "expectedPpg": 1.7607
+            "expectedPoints": 1.7639,
+            "expectedPpg": 1.7639
           },
           {
             "teamId": 559,
             "teamName": "Sevilla FC",
             "matches": 1,
-            "expectedPoints": 1.7396,
-            "expectedPpg": 1.7396
+            "expectedPoints": 1.7415,
+            "expectedPpg": 1.7415
           },
           {
             "teamId": 77,
             "teamName": "Athletic Club",
-            "matches": 2,
-            "expectedPoints": 3.2453,
-            "expectedPpg": 1.6227
+            "matches": 1,
+            "expectedPoints": 1.5689,
+            "expectedPpg": 1.5689
           },
           {
             "teamId": 84,
             "teamName": "Málaga CF",
             "matches": 1,
-            "expectedPoints": 1.4583,
-            "expectedPpg": 1.4583
+            "expectedPoints": 1.4572,
+            "expectedPpg": 1.4572
           },
           {
             "teamId": 5335,
             "teamName": "Real Racing Club de Santander",
             "matches": 1,
-            "expectedPoints": 1.2762,
-            "expectedPpg": 1.2762
+            "expectedPoints": 1.2772,
+            "expectedPpg": 1.2772
           },
           {
             "teamId": 285,
             "teamName": "Elche CF",
-            "matches": 2,
-            "expectedPoints": 2.4968,
-            "expectedPpg": 1.2484
+            "matches": 1,
+            "expectedPoints": 1.1611,
+            "expectedPpg": 1.1611
           },
           {
             "teamId": 79,
             "teamName": "CA Osasuna",
             "matches": 1,
-            "expectedPoints": 1.1489,
-            "expectedPpg": 1.1489
+            "expectedPoints": 1.1462,
+            "expectedPpg": 1.1462
           },
           {
             "teamId": 78,
             "teamName": "Club Atlético de Madrid",
             "matches": 1,
-            "expectedPoints": 1.0125,
-            "expectedPpg": 1.0125
-          },
-          {
-            "teamId": 95,
-            "teamName": "Valencia CF",
-            "matches": 2,
-            "expectedPoints": 1.6723,
-            "expectedPpg": 0.8362
+            "expectedPoints": 1.0088,
+            "expectedPpg": 1.0088
           },
           {
             "teamId": 82,
             "teamName": "Getafe CF",
             "matches": 1,
-            "expectedPoints": 0.6426,
-            "expectedPpg": 0.6426
+            "expectedPoints": 0.6363,
+            "expectedPpg": 0.6363
+          },
+          {
+            "teamId": 95,
+            "teamName": "Valencia CF",
+            "matches": 1,
+            "expectedPoints": 0.5018,
+            "expectedPpg": 0.5018
           },
           {
             "teamId": 263,
             "teamName": "Deportivo Alavés",
             "matches": 1,
-            "expectedPoints": 0.2804,
-            "expectedPpg": 0.2804
+            "expectedPoints": 0.2814,
+            "expectedPpg": 0.2814
           },
           {
             "teamId": 90,
             "teamName": "Real Betis Balompié",
             "matches": 1,
-            "expectedPoints": 0.257,
-            "expectedPpg": 0.257
-          },
-          {
-            "teamId": 92,
-            "teamName": "Real Sociedad de Fútbol",
-            "matches": 2,
-            "expectedPoints": 0.5,
-            "expectedPpg": 0.25
+            "expectedPoints": 0.2569,
+            "expectedPpg": 0.2569
           },
           {
             "teamId": 88,
@@ -11867,18 +11808,25 @@
             "expectedPpg": 0.2499
           },
           {
+            "teamId": 92,
+            "teamName": "Real Sociedad de Fútbol",
+            "matches": 1,
+            "expectedPoints": 0.237,
+            "expectedPpg": 0.237
+          },
+          {
             "teamId": 87,
             "teamName": "Rayo Vallecano de Madrid",
             "matches": 1,
-            "expectedPoints": 0.2369,
-            "expectedPpg": 0.2369
+            "expectedPoints": 0.237,
+            "expectedPpg": 0.237
           }
         ],
         "dataQuality": {
-          "bookmakerCount": 397,
-          "matchedOutcomeCount": 33,
+          "bookmakerCount": 328,
+          "matchedOutcomeCount": 27,
           "unmatchedOutcomeCount": 2,
-          "coverageRatio": 0.0401,
+          "coverageRatio": 0.0331,
           "warnings": [
             "Unmatched teams: Deportivo La Coruña"
           ]
@@ -13026,26 +12974,26 @@
         {
           "id": 565841,
           "utcDate": "2026-11-01T14:30:00Z",
-          "status": "FINISHED",
+          "status": "TIMED",
           "matchday": 8,
           "homeTeamId": 28,
           "homeTeamName": "1. FC Union Berlin",
           "awayTeamId": 1,
           "awayTeamName": "1. FC Köln",
-          "homeScore": 1,
-          "awayScore": 1
+          "homeScore": null,
+          "awayScore": null
         },
         {
           "id": 565844,
           "utcDate": "2026-11-01T16:30:00Z",
-          "status": "FINISHED",
+          "status": "TIMED",
           "matchday": 8,
           "homeTeamId": 19,
           "homeTeamName": "Eintracht Frankfurt",
           "awayTeamId": 7,
           "awayTeamName": "Hamburger SV",
-          "homeScore": 3,
-          "awayScore": 1
+          "homeScore": null,
+          "awayScore": null
         },
         {
           "id": 565852,
@@ -15862,8 +15810,8 @@
           "teamName": "FC Bayern München",
           "shortName": "Bayern",
           "crest": "assets/teams/bundesliga/5.png",
-          "rawScore": 1.8022,
-          "probability": 0.1958,
+          "rawScore": 1.7964,
+          "probability": 0.1956,
           "confidence": 0.7053,
           "features": {
             "pointsPerGame": 2.25,
@@ -15875,16 +15823,16 @@
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": -0.0015,
-          "probabilityDelta7d": -0.0548
+          "probabilityDeltaPrevious": -0.0002,
+          "probabilityDelta7d": -0.0577
         },
         {
           "teamId": 4,
           "teamName": "Borussia Dortmund",
           "shortName": "Dortmund",
           "crest": "assets/teams/bundesliga/4.png",
-          "rawScore": 1.4421,
-          "probability": 0.1366,
+          "rawScore": 1.4363,
+          "probability": 0.1364,
           "confidence": 0.7053,
           "features": {
             "pointsPerGame": 2.25,
@@ -15896,16 +15844,16 @@
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": 0.0007,
-          "probabilityDelta7d": -0.0395
+          "probabilityDeltaPrevious": -0.0002,
+          "probabilityDelta7d": -0.038
         },
         {
           "teamId": 17,
           "teamName": "SC Freiburg",
           "shortName": "Freiburg",
           "crest": "assets/teams/bundesliga/17.png",
-          "rawScore": 1.1453,
-          "probability": 0.1015,
+          "rawScore": 1.1395,
+          "probability": 0.1014,
           "confidence": 0.7053,
           "features": {
             "pointsPerGame": 2,
@@ -15917,16 +15865,16 @@
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": 0.0014,
-          "probabilityDelta7d": 0.0219
+          "probabilityDeltaPrevious": -0.0001,
+          "probabilityDelta7d": 0.0188
         },
         {
           "teamId": 721,
           "teamName": "RB Leipzig",
           "shortName": "RB Leipzig",
           "crest": "assets/teams/bundesliga/721.png",
-          "rawScore": 1.1142,
-          "probability": 0.0984,
+          "rawScore": 1.1084,
+          "probability": 0.0983,
           "confidence": 0.7053,
           "features": {
             "pointsPerGame": 1.875,
@@ -15938,16 +15886,16 @@
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": -0.0005,
-          "probabilityDelta7d": 0.0228
+          "probabilityDeltaPrevious": -0.0001,
+          "probabilityDelta7d": 0.0235
         },
         {
           "teamId": 12,
           "teamName": "SV Werder Bremen",
           "shortName": "Bremen",
           "crest": "assets/teams/bundesliga/12.png",
-          "rawScore": 0.9114,
-          "probability": 0.0804,
+          "rawScore": 0.9056,
+          "probability": 0.0802,
           "confidence": 0.7053,
           "features": {
             "pointsPerGame": 1.875,
@@ -15959,15 +15907,15 @@
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": -0.0021,
-          "probabilityDelta7d": 0.0198
+          "probabilityDeltaPrevious": -0.0002,
+          "probabilityDelta7d": 0.0204
         },
         {
           "teamId": 3,
           "teamName": "Bayer 04 Leverkusen",
           "shortName": "Leverkusen",
           "crest": "assets/teams/bundesliga/3.png",
-          "rawScore": 0.5565,
+          "rawScore": 0.5507,
           "probability": 0.0563,
           "confidence": 0.7053,
           "features": {
@@ -15980,15 +15928,15 @@
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": -0.0008,
-          "probabilityDelta7d": -0.0205
+          "probabilityDeltaPrevious": 0,
+          "probabilityDelta7d": -0.0197
         },
         {
           "teamId": 719,
           "teamName": "SV 07 Elversberg",
           "shortName": "Elversberg",
           "crest": "assets/teams/bundesliga/719.png",
-          "rawScore": 0.463,
+          "rawScore": 0.4572,
           "probability": 0.0513,
           "confidence": 0.7053,
           "features": {
@@ -16001,36 +15949,36 @@
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": -0.0001,
-          "probabilityDelta7d": 0.0176
+          "probabilityDeltaPrevious": 0,
+          "probabilityDelta7d": 0.0178
         },
         {
           "teamId": 19,
           "teamName": "Eintracht Frankfurt",
           "shortName": "Frankfurt",
           "crest": "assets/teams/bundesliga/19.png",
-          "rawScore": 0.0921,
-          "probability": 0.0354,
+          "rawScore": 0.0971,
+          "probability": 0.0358,
           "confidence": 0.7053,
           "features": {
             "pointsPerGame": 1.375,
             "pointsGapAdjusted": 0.6111,
             "goalDiffPerGame": -0.625,
             "recentPpg": 0,
-            "remainingScheduleAdvantage": 0.0187
+            "remainingScheduleAdvantage": 0.0278
           },
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": 0.0105,
-          "probabilityDelta7d": 0.014
+          "probabilityDeltaPrevious": 0.0004,
+          "probabilityDelta7d": 0.0146
         },
         {
           "teamId": 16,
           "teamName": "FC Augsburg",
           "shortName": "Augsburg",
           "crest": "assets/teams/bundesliga/16.png",
-          "rawScore": 0.0779,
+          "rawScore": 0.0721,
           "probability": 0.0349,
           "confidence": 0.7053,
           "features": {
@@ -16043,16 +15991,16 @@
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": -0.001,
-          "probabilityDelta7d": -0.0012
+          "probabilityDeltaPrevious": 0,
+          "probabilityDelta7d": -0.0009
         },
         {
           "teamId": 15,
           "teamName": "1. FSV Mainz 05",
           "shortName": "Mainz",
           "crest": "assets/teams/bundesliga/15.png",
-          "rawScore": 0.0235,
-          "probability": 0.0331,
+          "rawScore": 0.0177,
+          "probability": 0.033,
           "confidence": 0.7053,
           "features": {
             "pointsPerGame": 1.25,
@@ -16064,7 +16012,7 @@
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": 0.0001,
+          "probabilityDeltaPrevious": -0.0001,
           "probabilityDelta7d": -0.0059
         },
         {
@@ -16072,7 +16020,7 @@
           "teamName": "VfB Stuttgart",
           "shortName": "Stuttgart",
           "crest": "assets/teams/bundesliga/10.png",
-          "rawScore": -0.0976,
+          "rawScore": -0.1034,
           "probability": 0.0293,
           "confidence": 0.7053,
           "features": {
@@ -16085,16 +16033,16 @@
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": -0.0011,
-          "probabilityDelta7d": 0.0132
+          "probabilityDeltaPrevious": 0,
+          "probabilityDelta7d": 0.0133
         },
         {
           "teamId": 2,
           "teamName": "TSG 1899 Hoffenheim",
           "shortName": "Hoffenheim",
           "crest": "assets/teams/bundesliga/2.png",
-          "rawScore": -0.1443,
-          "probability": 0.028,
+          "rawScore": -0.1501,
+          "probability": 0.0279,
           "confidence": 0.7053,
           "features": {
             "pointsPerGame": 1.125,
@@ -16106,7 +16054,7 @@
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": -0.0008,
+          "probabilityDeltaPrevious": -0.0001,
           "probabilityDelta7d": -0.0022
         },
         {
@@ -16114,8 +16062,8 @@
           "teamName": "SC Paderborn 07",
           "shortName": "SC Paderborn",
           "crest": "assets/teams/bundesliga/29.png",
-          "rawScore": -0.1511,
-          "probability": 0.0278,
+          "rawScore": -0.1569,
+          "probability": 0.0277,
           "confidence": 0.7053,
           "features": {
             "pointsPerGame": 1.125,
@@ -16127,36 +16075,36 @@
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": -0.001,
-          "probabilityDelta7d": 0.0034
+          "probabilityDeltaPrevious": -0.0001,
+          "probabilityDelta7d": 0.0035
         },
         {
           "teamId": 1,
           "teamName": "1. FC Köln",
           "shortName": "1. FC Köln",
           "crest": "assets/teams/bundesliga/1.png",
-          "rawScore": -0.2651,
-          "probability": 0.0248,
+          "rawScore": -0.2435,
+          "probability": 0.0254,
           "confidence": 0.7053,
           "features": {
             "pointsPerGame": 1.125,
             "pointsGapAdjusted": 0.5,
             "goalDiffPerGame": -0.375,
             "recentPpg": 0,
-            "remainingScheduleAdvantage": -0.1111
+            "remainingScheduleAdvantage": -0.088
           },
           "missingFeatures": [
             "recentPpg"
           ],
           "probabilityDeltaPrevious": 0.0006,
-          "probabilityDelta7d": 0.0038
+          "probabilityDelta7d": 0.0043
         },
         {
           "teamId": 7,
           "teamName": "Hamburger SV",
           "shortName": "HSV",
           "crest": "assets/teams/bundesliga/7.png",
-          "rawScore": -0.4178,
+          "rawScore": -0.4223,
           "probability": 0.0213,
           "confidence": 0.7053,
           "features": {
@@ -16164,21 +16112,21 @@
             "pointsGapAdjusted": 0.5,
             "goalDiffPerGame": -1.5,
             "recentPpg": 0,
-            "remainingScheduleAdvantage": -0.015
+            "remainingScheduleAdvantage": -0.0139
           },
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": -0.004,
-          "probabilityDelta7d": -0.0015
+          "probabilityDeltaPrevious": 0,
+          "probabilityDelta7d": -0.0014
         },
         {
           "teamId": 6,
           "teamName": "FC Schalke 04",
           "shortName": "Schalke",
           "crest": "assets/teams/bundesliga/6.png",
-          "rawScore": -0.5986,
-          "probability": 0.0178,
+          "rawScore": -0.6044,
+          "probability": 0.0177,
           "confidence": 0.7053,
           "features": {
             "pointsPerGame": 0.75,
@@ -16190,7 +16138,7 @@
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": -0.0008,
+          "probabilityDeltaPrevious": -0.0001,
           "probabilityDelta7d": 0.0015
         },
         {
@@ -16198,28 +16146,28 @@
           "teamName": "1. FC Union Berlin",
           "shortName": "Union Berlin",
           "crest": "assets/teams/bundesliga/28.png",
-          "rawScore": -0.6633,
-          "probability": 0.0166,
+          "rawScore": -0.6575,
+          "probability": 0.0168,
           "confidence": 0.7053,
           "features": {
             "pointsPerGame": 0.875,
             "pointsGapAdjusted": 0.3889,
             "goalDiffPerGame": -1.5,
             "recentPpg": 0,
-            "remainingScheduleAdvantage": -0.0005
+            "remainingScheduleAdvantage": 0.0093
           },
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": 0.0009,
-          "probabilityDelta7d": 0.0038
+          "probabilityDeltaPrevious": 0.0002,
+          "probabilityDelta7d": 0.0041
         },
         {
           "teamId": 18,
           "teamName": "Borussia Mönchengladbach",
           "shortName": "M'gladbach",
           "crest": "assets/teams/bundesliga/18.png",
-          "rawScore": -1.1017,
+          "rawScore": -1.1075,
           "probability": 0.0107,
           "confidence": 0.7053,
           "features": {
@@ -16232,7 +16180,7 @@
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": -0.0005,
+          "probabilityDeltaPrevious": 0,
           "probabilityDelta7d": 0.0039
         }
       ],
@@ -16242,8 +16190,8 @@
           "teamName": "FC Bayern München",
           "shortName": "Bayern",
           "crest": "assets/teams/bundesliga/5.png",
-          "rawScore": 1.8022,
-          "probability": 0.1958,
+          "rawScore": 1.7964,
+          "probability": 0.1956,
           "confidence": 0.7053,
           "features": {
             "pointsPerGame": 2.25,
@@ -16255,16 +16203,16 @@
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": -0.0015,
-          "probabilityDelta7d": -0.0548
+          "probabilityDeltaPrevious": -0.0002,
+          "probabilityDelta7d": -0.0577
         },
         {
           "teamId": 4,
           "teamName": "Borussia Dortmund",
           "shortName": "Dortmund",
           "crest": "assets/teams/bundesliga/4.png",
-          "rawScore": 1.4421,
-          "probability": 0.1366,
+          "rawScore": 1.4363,
+          "probability": 0.1364,
           "confidence": 0.7053,
           "features": {
             "pointsPerGame": 2.25,
@@ -16276,16 +16224,16 @@
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": 0.0007,
-          "probabilityDelta7d": -0.0395
+          "probabilityDeltaPrevious": -0.0002,
+          "probabilityDelta7d": -0.038
         },
         {
           "teamId": 17,
           "teamName": "SC Freiburg",
           "shortName": "Freiburg",
           "crest": "assets/teams/bundesliga/17.png",
-          "rawScore": 1.1453,
-          "probability": 0.1015,
+          "rawScore": 1.1395,
+          "probability": 0.1014,
           "confidence": 0.7053,
           "features": {
             "pointsPerGame": 2,
@@ -16297,16 +16245,16 @@
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": 0.0014,
-          "probabilityDelta7d": 0.0219
+          "probabilityDeltaPrevious": -0.0001,
+          "probabilityDelta7d": 0.0188
         },
         {
           "teamId": 721,
           "teamName": "RB Leipzig",
           "shortName": "RB Leipzig",
           "crest": "assets/teams/bundesliga/721.png",
-          "rawScore": 1.1142,
-          "probability": 0.0984,
+          "rawScore": 1.1084,
+          "probability": 0.0983,
           "confidence": 0.7053,
           "features": {
             "pointsPerGame": 1.875,
@@ -16318,16 +16266,16 @@
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": -0.0005,
-          "probabilityDelta7d": 0.0228
+          "probabilityDeltaPrevious": -0.0001,
+          "probabilityDelta7d": 0.0235
         },
         {
           "teamId": 12,
           "teamName": "SV Werder Bremen",
           "shortName": "Bremen",
           "crest": "assets/teams/bundesliga/12.png",
-          "rawScore": 0.9114,
-          "probability": 0.0804,
+          "rawScore": 0.9056,
+          "probability": 0.0802,
           "confidence": 0.7053,
           "features": {
             "pointsPerGame": 1.875,
@@ -16339,15 +16287,15 @@
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": -0.0021,
-          "probabilityDelta7d": 0.0198
+          "probabilityDeltaPrevious": -0.0002,
+          "probabilityDelta7d": 0.0204
         },
         {
           "teamId": 3,
           "teamName": "Bayer 04 Leverkusen",
           "shortName": "Leverkusen",
           "crest": "assets/teams/bundesliga/3.png",
-          "rawScore": 0.5565,
+          "rawScore": 0.5507,
           "probability": 0.0563,
           "confidence": 0.7053,
           "features": {
@@ -16360,15 +16308,15 @@
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": -0.0008,
-          "probabilityDelta7d": -0.0205
+          "probabilityDeltaPrevious": 0,
+          "probabilityDelta7d": -0.0197
         },
         {
           "teamId": 719,
           "teamName": "SV 07 Elversberg",
           "shortName": "Elversberg",
           "crest": "assets/teams/bundesliga/719.png",
-          "rawScore": 0.463,
+          "rawScore": 0.4572,
           "probability": 0.0513,
           "confidence": 0.7053,
           "features": {
@@ -16381,29 +16329,29 @@
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": -0.0001,
-          "probabilityDelta7d": 0.0176
+          "probabilityDeltaPrevious": 0,
+          "probabilityDelta7d": 0.0178
         },
         {
           "teamId": 19,
           "teamName": "Eintracht Frankfurt",
           "shortName": "Frankfurt",
           "crest": "assets/teams/bundesliga/19.png",
-          "rawScore": 0.0921,
-          "probability": 0.0354,
+          "rawScore": 0.0971,
+          "probability": 0.0358,
           "confidence": 0.7053,
           "features": {
             "pointsPerGame": 1.375,
             "pointsGapAdjusted": 0.6111,
             "goalDiffPerGame": -0.625,
             "recentPpg": 0,
-            "remainingScheduleAdvantage": 0.0187
+            "remainingScheduleAdvantage": 0.0278
           },
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": 0.0105,
-          "probabilityDelta7d": 0.014
+          "probabilityDeltaPrevious": 0.0004,
+          "probabilityDelta7d": 0.0146
         }
       ],
       "dataQuality": {
@@ -16411,12 +16359,12 @@
         "warnings": [
           "Odds unavailable: The Odds API soccer_germany_bundesliga returned 422"
         ],
-        "standingsUpdatedAt": "2026-11-01T18:56:28.781Z",
-        "matchesUpdatedAt": "2026-11-01T18:56:28.781Z"
+        "standingsUpdatedAt": "2026-11-01T23:36:09.532Z",
+        "matchesUpdatedAt": "2026-11-01T23:36:09.532Z"
       },
       "matchOdds": {
         "leagueId": "bundesliga",
-        "fetchedAt": "2026-11-01T18:57:39.029Z",
+        "fetchedAt": "2026-11-01T23:37:18.801Z",
         "source": "the-odds-api",
         "matches": [
           {
@@ -16429,18 +16377,18 @@
             "outcomes": [
               {
                 "name": "Borussia Monchengladbach",
-                "oddsDecimal": 2.8915,
-                "impliedProbability": 0.3458
+                "oddsDecimal": 2.8944,
+                "impliedProbability": 0.3455
               },
               {
                 "name": "Hamburger SV",
-                "oddsDecimal": 2.4985,
-                "impliedProbability": 0.4002
+                "oddsDecimal": 2.4996,
+                "impliedProbability": 0.4001
               },
               {
                 "name": "Draw",
-                "oddsDecimal": 3.9385,
-                "impliedProbability": 0.2539
+                "oddsDecimal": 3.9301,
+                "impliedProbability": 0.2544
               }
             ],
             "bookmakerCount": 39
@@ -16455,17 +16403,17 @@
             "outcomes": [
               {
                 "name": "Augsburg",
-                "oddsDecimal": 5.7672,
-                "impliedProbability": 0.1734
+                "oddsDecimal": 5.7531,
+                "impliedProbability": 0.1738
               },
               {
                 "name": "RB Leipzig",
-                "oddsDecimal": 1.5504,
-                "impliedProbability": 0.645
+                "oddsDecimal": 1.5513,
+                "impliedProbability": 0.6446
               },
               {
                 "name": "Draw",
-                "oddsDecimal": 5.506,
+                "oddsDecimal": 5.5072,
                 "impliedProbability": 0.1816
               }
             ],
@@ -16481,18 +16429,18 @@
             "outcomes": [
               {
                 "name": "Bayern Munich",
-                "oddsDecimal": 1.5531,
-                "impliedProbability": 0.6439
+                "oddsDecimal": 1.5343,
+                "impliedProbability": 0.6518
               },
               {
                 "name": "FSV Mainz 05",
-                "oddsDecimal": 5.5421,
-                "impliedProbability": 0.1804
+                "oddsDecimal": 5.701,
+                "impliedProbability": 0.1754
               },
               {
                 "name": "Draw",
-                "oddsDecimal": 5.6925,
-                "impliedProbability": 0.1757
+                "oddsDecimal": 5.7863,
+                "impliedProbability": 0.1728
               }
             ],
             "bookmakerCount": 39
@@ -16512,13 +16460,13 @@
               },
               {
                 "name": "Elversberg",
-                "oddsDecimal": 8.942,
-                "impliedProbability": 0.1118
+                "oddsDecimal": 8.9579,
+                "impliedProbability": 0.1116
               },
               {
                 "name": "Draw",
-                "oddsDecimal": 6.4931,
-                "impliedProbability": 0.154
+                "oddsDecimal": 6.4853,
+                "impliedProbability": 0.1542
               }
             ],
             "bookmakerCount": 39
@@ -16533,18 +16481,18 @@
             "outcomes": [
               {
                 "name": "Eintracht Frankfurt",
-                "oddsDecimal": 2.3071,
-                "impliedProbability": 0.4335
+                "oddsDecimal": 2.3189,
+                "impliedProbability": 0.4312
               },
               {
                 "name": "SC Paderborn",
-                "oddsDecimal": 3.1042,
-                "impliedProbability": 0.3221
+                "oddsDecimal": 3.0889,
+                "impliedProbability": 0.3237
               },
               {
                 "name": "Draw",
-                "oddsDecimal": 4.0916,
-                "impliedProbability": 0.2444
+                "oddsDecimal": 4.0813,
+                "impliedProbability": 0.245
               }
             ],
             "bookmakerCount": 39
@@ -16559,18 +16507,18 @@
             "outcomes": [
               {
                 "name": "VfB Stuttgart",
-                "oddsDecimal": 1.6086,
-                "impliedProbability": 0.6216
+                "oddsDecimal": 1.6043,
+                "impliedProbability": 0.6233
               },
               {
                 "name": "Werder Bremen",
-                "oddsDecimal": 5.4398,
-                "impliedProbability": 0.1838
+                "oddsDecimal": 5.4482,
+                "impliedProbability": 0.1835
               },
               {
                 "name": "Draw",
-                "oddsDecimal": 5.1409,
-                "impliedProbability": 0.1945
+                "oddsDecimal": 5.1777,
+                "impliedProbability": 0.1931
               }
             ],
             "bookmakerCount": 39
@@ -16585,18 +16533,18 @@
             "outcomes": [
               {
                 "name": "1. FC Köln",
-                "oddsDecimal": 4.4957,
-                "impliedProbability": 0.2224
+                "oddsDecimal": 4.4213,
+                "impliedProbability": 0.2262
               },
               {
                 "name": "Bayer Leverkusen",
-                "oddsDecimal": 1.7894,
-                "impliedProbability": 0.5589
+                "oddsDecimal": 1.805,
+                "impliedProbability": 0.554
               },
               {
                 "name": "Draw",
-                "oddsDecimal": 4.5723,
-                "impliedProbability": 0.2187
+                "oddsDecimal": 4.5492,
+                "impliedProbability": 0.2198
               }
             ],
             "bookmakerCount": 38
@@ -16611,18 +16559,18 @@
             "outcomes": [
               {
                 "name": "SC Freiburg",
-                "oddsDecimal": 1.5884,
-                "impliedProbability": 0.6295
+                "oddsDecimal": 1.5909,
+                "impliedProbability": 0.6286
               },
               {
                 "name": "Union Berlin",
-                "oddsDecimal": 6.1637,
-                "impliedProbability": 0.1622
+                "oddsDecimal": 6.1732,
+                "impliedProbability": 0.162
               },
               {
                 "name": "Draw",
-                "oddsDecimal": 4.8028,
-                "impliedProbability": 0.2082
+                "oddsDecimal": 4.7751,
+                "impliedProbability": 0.2094
               }
             ],
             "bookmakerCount": 38
@@ -16637,18 +16585,18 @@
             "outcomes": [
               {
                 "name": "FC Schalke 04",
-                "oddsDecimal": 4.89,
-                "impliedProbability": 0.2045
+                "oddsDecimal": 4.8738,
+                "impliedProbability": 0.2052
               },
               {
                 "name": "TSG Hoffenheim",
-                "oddsDecimal": 1.7257,
-                "impliedProbability": 0.5795
+                "oddsDecimal": 1.7284,
+                "impliedProbability": 0.5786
               },
               {
                 "name": "Draw",
-                "oddsDecimal": 4.6289,
-                "impliedProbability": 0.216
+                "oddsDecimal": 4.6244,
+                "impliedProbability": 0.2162
               }
             ],
             "bookmakerCount": 38
@@ -16659,134 +16607,134 @@
             "teamId": 4,
             "teamName": "Borussia Dortmund",
             "matches": 1,
-            "expectedPoints": 2.3566,
-            "expectedPpg": 2.3566
-          },
-          {
-            "teamId": 721,
-            "teamName": "RB Leipzig",
-            "matches": 1,
-            "expectedPoints": 2.1166,
-            "expectedPpg": 2.1166
+            "expectedPoints": 2.3568,
+            "expectedPpg": 2.3568
           },
           {
             "teamId": 5,
             "teamName": "FC Bayern München",
             "matches": 1,
-            "expectedPoints": 2.1074,
-            "expectedPpg": 2.1074
+            "expectedPoints": 2.1282,
+            "expectedPpg": 2.1282
+          },
+          {
+            "teamId": 721,
+            "teamName": "RB Leipzig",
+            "matches": 1,
+            "expectedPoints": 2.1154,
+            "expectedPpg": 2.1154
           },
           {
             "teamId": 17,
             "teamName": "SC Freiburg",
             "matches": 1,
-            "expectedPoints": 2.0967,
-            "expectedPpg": 2.0967
+            "expectedPoints": 2.0952,
+            "expectedPpg": 2.0952
           },
           {
             "teamId": 10,
             "teamName": "VfB Stuttgart",
             "matches": 1,
-            "expectedPoints": 2.0593,
-            "expectedPpg": 2.0593
+            "expectedPoints": 2.063,
+            "expectedPpg": 2.063
           },
           {
             "teamId": 2,
             "teamName": "TSG 1899 Hoffenheim",
             "matches": 1,
-            "expectedPoints": 1.9545,
-            "expectedPpg": 1.9545
+            "expectedPoints": 1.952,
+            "expectedPpg": 1.952
           },
           {
             "teamId": 3,
             "teamName": "Bayer 04 Leverkusen",
             "matches": 1,
-            "expectedPoints": 1.8954,
-            "expectedPpg": 1.8954
+            "expectedPoints": 1.8818,
+            "expectedPpg": 1.8818
           },
           {
             "teamId": 19,
             "teamName": "Eintracht Frankfurt",
             "matches": 1,
-            "expectedPoints": 1.5449,
-            "expectedPpg": 1.5449
+            "expectedPoints": 1.5386,
+            "expectedPpg": 1.5386
           },
           {
             "teamId": 7,
             "teamName": "Hamburger SV",
             "matches": 1,
-            "expectedPoints": 1.4545,
-            "expectedPpg": 1.4545
+            "expectedPoints": 1.4547,
+            "expectedPpg": 1.4547
           },
           {
             "teamId": 18,
             "teamName": "Borussia Mönchengladbach",
             "matches": 1,
-            "expectedPoints": 1.2913,
-            "expectedPpg": 1.2913
+            "expectedPoints": 1.2909,
+            "expectedPpg": 1.2909
           },
           {
             "teamId": 1,
             "teamName": "1. FC Köln",
             "matches": 1,
-            "expectedPoints": 0.8859,
-            "expectedPpg": 0.8859
+            "expectedPoints": 0.8984,
+            "expectedPpg": 0.8984
           },
           {
             "teamId": 6,
             "teamName": "FC Schalke 04",
             "matches": 1,
-            "expectedPoints": 0.8295,
-            "expectedPpg": 0.8295
+            "expectedPoints": 0.8318,
+            "expectedPpg": 0.8318
           },
           {
             "teamId": 12,
             "teamName": "SV Werder Bremen",
             "matches": 1,
-            "expectedPoints": 0.7459,
-            "expectedPpg": 0.7459
-          },
-          {
-            "teamId": 15,
-            "teamName": "1. FSV Mainz 05",
-            "matches": 1,
-            "expectedPoints": 0.7169,
-            "expectedPpg": 0.7169
+            "expectedPoints": 0.7436,
+            "expectedPpg": 0.7436
           },
           {
             "teamId": 16,
             "teamName": "FC Augsburg",
             "matches": 1,
-            "expectedPoints": 0.7018,
-            "expectedPpg": 0.7018
+            "expectedPoints": 0.703,
+            "expectedPpg": 0.703
+          },
+          {
+            "teamId": 15,
+            "teamName": "1. FSV Mainz 05",
+            "matches": 1,
+            "expectedPoints": 0.699,
+            "expectedPpg": 0.699
           },
           {
             "teamId": 29,
             "teamName": "SC Paderborn 07",
             "matches": 1,
-            "expectedPoints": 0.2444,
-            "expectedPpg": 0.2444
+            "expectedPoints": 0.245,
+            "expectedPpg": 0.245
           },
           {
             "teamId": 28,
             "teamName": "1. FC Union Berlin",
             "matches": 1,
-            "expectedPoints": 0.2082,
-            "expectedPpg": 0.2082
+            "expectedPoints": 0.2094,
+            "expectedPpg": 0.2094
           },
           {
             "teamId": 719,
             "teamName": "SV 07 Elversberg",
             "matches": 1,
-            "expectedPoints": 0.154,
-            "expectedPpg": 0.154
+            "expectedPoints": 0.1542,
+            "expectedPpg": 0.1542
           }
         ],
         "dataQuality": {
           "bookmakerCount": 348,
           "matchedOutcomeCount": 27,
           "unmatchedOutcomeCount": 0,
-          "coverageRatio": 0.0385,
+          "coverageRatio": 0.0381,
           "warnings": []
         }
       }
@@ -16896,18 +16844,34 @@
           "form": null
         },
         {
+          "teamId": 109,
+          "teamName": "Juventus FC",
+          "shortName": "Juventus",
+          "crest": "assets/teams/seriea/109.png",
+          "position": 7,
+          "playedGames": 10,
+          "won": 5,
+          "draw": 2,
+          "lost": 3,
+          "goalsFor": 13,
+          "goalsAgainst": 10,
+          "goalDifference": 3,
+          "points": 17,
+          "form": null
+        },
+        {
           "teamId": 113,
           "teamName": "SSC Napoli",
           "shortName": "Napoli",
           "crest": "assets/teams/seriea/113.png",
-          "position": 7,
-          "playedGames": 9,
+          "position": 8,
+          "playedGames": 10,
           "won": 4,
           "draw": 2,
-          "lost": 3,
+          "lost": 4,
           "goalsFor": 17,
-          "goalsAgainst": 11,
-          "goalDifference": 6,
+          "goalsAgainst": 13,
+          "goalDifference": 4,
           "points": 14,
           "form": null
         },
@@ -16916,29 +16880,13 @@
           "teamName": "Bologna FC 1909",
           "shortName": "Bologna",
           "crest": "assets/teams/seriea/103.png",
-          "position": 8,
+          "position": 9,
           "playedGames": 10,
           "won": 4,
           "draw": 2,
           "lost": 4,
           "goalsFor": 14,
           "goalsAgainst": 13,
-          "goalDifference": 1,
-          "points": 14,
-          "form": null
-        },
-        {
-          "teamId": 109,
-          "teamName": "Juventus FC",
-          "shortName": "Juventus",
-          "crest": "assets/teams/seriea/109.png",
-          "position": 9,
-          "playedGames": 9,
-          "won": 4,
-          "draw": 2,
-          "lost": 3,
-          "goalsFor": 11,
-          "goalsAgainst": 10,
           "goalDifference": 1,
           "points": 14,
           "form": null
@@ -18240,62 +18188,62 @@
         {
           "id": 558543,
           "utcDate": "2026-11-01T11:30:00Z",
-          "status": "TIMED",
+          "status": "FINISHED",
           "matchday": 10,
           "homeTeamId": 7397,
           "homeTeamName": "Como 1907",
           "awayTeamId": 454,
           "awayTeamName": "Venezia FC",
-          "homeScore": null,
-          "awayScore": null
+          "homeScore": 1,
+          "awayScore": 0
         },
         {
           "id": 558544,
           "utcDate": "2026-11-01T14:00:00Z",
-          "status": "TIMED",
+          "status": "FINISHED",
           "matchday": 10,
           "homeTeamId": 470,
           "homeTeamName": "Frosinone Calcio",
           "awayTeamId": 586,
           "awayTeamName": "Torino FC",
-          "homeScore": null,
-          "awayScore": null
+          "homeScore": 2,
+          "awayScore": 0
         },
         {
           "id": 558546,
           "utcDate": "2026-11-01T14:00:00Z",
-          "status": "TIMED",
+          "status": "FINISHED",
           "matchday": 10,
           "homeTeamId": 110,
           "homeTeamName": "SS Lazio",
           "awayTeamId": 104,
           "awayTeamName": "Cagliari Calcio",
-          "homeScore": null,
-          "awayScore": null
+          "homeScore": 2,
+          "awayScore": 1
         },
         {
           "id": 558540,
           "utcDate": "2026-11-01T17:00:00Z",
-          "status": "TIMED",
+          "status": "FINISHED",
           "matchday": 10,
           "homeTeamId": 5890,
           "homeTeamName": "US Lecce",
           "awayTeamId": 107,
           "awayTeamName": "Genoa CFC",
-          "homeScore": null,
-          "awayScore": null
+          "homeScore": 1,
+          "awayScore": 2
         },
         {
           "id": 558547,
           "utcDate": "2026-11-01T19:45:00Z",
-          "status": "TIMED",
+          "status": "FINISHED",
           "matchday": 10,
           "homeTeamId": 109,
           "homeTeamName": "Juventus FC",
           "awayTeamId": 113,
           "awayTeamName": "SSC Napoli",
-          "homeScore": null,
-          "awayScore": null
+          "homeScore": 2,
+          "awayScore": 0
         },
         {
           "id": 558541,
@@ -21688,7 +21636,7 @@
           "teamName": "SS Lazio",
           "shortName": "Lazio",
           "crest": "assets/teams/seriea/110.png",
-          "rawScore": 1.0856,
+          "rawScore": 1.0789,
           "probability": 0.1179,
           "confidence": 0.7142,
           "features": {
@@ -21696,272 +21644,272 @@
             "pointsGapAdjusted": 1,
             "goalDiffPerGame": 1.6,
             "recentPpg": 0,
-            "remainingScheduleAdvantage": -0.0198
+            "remainingScheduleAdvantage": -0.0189
           },
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": -0.0024,
-          "probabilityDelta7d": -0.02
+          "probabilityDeltaPrevious": 0,
+          "probabilityDelta7d": -0.0142
         },
         {
           "teamId": 100,
           "teamName": "AS Roma",
           "shortName": "Roma",
           "crest": "assets/teams/seriea/100.png",
-          "rawScore": 0.9358,
-          "probability": 0.1015,
+          "rawScore": 0.9205,
+          "probability": 0.1006,
           "confidence": 0.7142,
           "features": {
             "pointsPerGame": 2.4,
             "pointsGapAdjusted": 0.8571,
             "goalDiffPerGame": 1.8,
             "recentPpg": 0,
-            "remainingScheduleAdvantage": 0.0483
+            "remainingScheduleAdvantage": 0.043
           },
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": -0.0093,
-          "probabilityDelta7d": -0.0048
+          "probabilityDeltaPrevious": -0.0009,
+          "probabilityDelta7d": -0.0013
         },
         {
           "teamId": 108,
           "teamName": "FC Internazionale Milano",
           "shortName": "Inter",
           "crest": "assets/teams/seriea/108.png",
-          "rawScore": 0.8715,
-          "probability": 0.0952,
+          "rawScore": 0.859,
+          "probability": 0.0946,
           "confidence": 0.7142,
           "features": {
             "pointsPerGame": 2.5,
             "pointsGapAdjusted": 0.8929,
             "goalDiffPerGame": 1.3,
             "recentPpg": 0,
-            "remainingScheduleAdvantage": -0.0183
+            "remainingScheduleAdvantage": -0.0237
           },
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": -0.0092,
-          "probabilityDelta7d": -0.0526
+          "probabilityDeltaPrevious": -0.0006,
+          "probabilityDelta7d": -0.0453
         },
         {
           "teamId": 7397,
           "teamName": "Como 1907",
           "shortName": "Como 1907",
           "crest": "assets/teams/seriea/7397.png",
-          "rawScore": 0.7393,
-          "probability": 0.0834,
+          "rawScore": 0.6898,
+          "probability": 0.0799,
           "confidence": 0.7142,
           "features": {
             "pointsPerGame": 2.3,
             "pointsGapAdjusted": 0.8214,
             "goalDiffPerGame": 1,
             "recentPpg": 0,
-            "remainingScheduleAdvantage": 0.0063
+            "remainingScheduleAdvantage": -0.0383
           },
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": 0.0045,
-          "probabilityDelta7d": 0.0061
+          "probabilityDeltaPrevious": -0.0035,
+          "probabilityDelta7d": 0.0052
         },
         {
           "teamId": 98,
           "teamName": "AC Milan",
           "shortName": "Milan",
           "crest": "assets/teams/seriea/98.png",
-          "rawScore": 0.6251,
-          "probability": 0.0744,
+          "rawScore": 0.6206,
+          "probability": 0.0745,
           "confidence": 0.7142,
           "features": {
             "pointsPerGame": 2.1,
             "pointsGapAdjusted": 0.75,
             "goalDiffPerGame": 0.9,
             "recentPpg": 0,
-            "remainingScheduleAdvantage": 0.0245
+            "remainingScheduleAdvantage": 0.0299
           },
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": -0.0049,
-          "probabilityDelta7d": -0.0041
+          "probabilityDeltaPrevious": 0.0001,
+          "probabilityDelta7d": -0.0157
         },
         {
           "teamId": 470,
           "teamName": "Frosinone Calcio",
           "shortName": "Frosinone",
           "crest": "assets/teams/seriea/470.png",
-          "rawScore": 0.5244,
-          "probability": 0.0672,
+          "rawScore": 0.5126,
+          "probability": 0.0669,
           "confidence": 0.7142,
           "features": {
             "pointsPerGame": 2,
             "pointsGapAdjusted": 0.7143,
             "goalDiffPerGame": 1,
             "recentPpg": 0,
-            "remainingScheduleAdvantage": -0.0309
+            "remainingScheduleAdvantage": -0.036
           },
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": 0.0071,
-          "probabilityDelta7d": 0.0139
-        },
-        {
-          "teamId": 113,
-          "teamName": "SSC Napoli",
-          "shortName": "Napoli",
-          "crest": "assets/teams/seriea/113.png",
-          "rawScore": 0.2495,
-          "probability": 0.0511,
-          "confidence": 0.7058,
-          "features": {
-            "pointsPerGame": 1.5556,
-            "pointsGapAdjusted": 0.5,
-            "goalDiffPerGame": 0.6667,
-            "recentPpg": 0,
-            "remainingScheduleAdvantage": 0.0377
-          },
-          "missingFeatures": [
-            "recentPpg"
-          ],
-          "probabilityDeltaPrevious": 0.0006,
-          "probabilityDelta7d": 0.0101
+          "probabilityDeltaPrevious": -0.0003,
+          "probabilityDelta7d": 0.0143
         },
         {
           "teamId": 109,
           "teamName": "Juventus FC",
           "shortName": "Juventus",
           "crest": "assets/teams/seriea/109.png",
-          "rawScore": 0.1696,
-          "probability": 0.0472,
-          "confidence": 0.7058,
+          "rawScore": 0.3142,
+          "probability": 0.0549,
+          "confidence": 0.7142,
           "features": {
-            "pointsPerGame": 1.5556,
-            "pointsGapAdjusted": 0.5,
-            "goalDiffPerGame": 0.1111,
+            "pointsPerGame": 1.7,
+            "pointsGapAdjusted": 0.6071,
+            "goalDiffPerGame": 0.3,
             "recentPpg": 0,
-            "remainingScheduleAdvantage": 0.0243
+            "remainingScheduleAdvantage": 0.0355
           },
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": 0.0002,
-          "probabilityDelta7d": 0.003
+          "probabilityDeltaPrevious": 0.0077,
+          "probabilityDelta7d": -0.001
+        },
+        {
+          "teamId": 113,
+          "teamName": "SSC Napoli",
+          "shortName": "Napoli",
+          "crest": "assets/teams/seriea/113.png",
+          "rawScore": 0.1498,
+          "probability": 0.0466,
+          "confidence": 0.7142,
+          "features": {
+            "pointsPerGame": 1.4,
+            "pointsGapAdjusted": 0.5,
+            "goalDiffPerGame": 0.4,
+            "recentPpg": 0,
+            "remainingScheduleAdvantage": 0.0387
+          },
+          "missingFeatures": [
+            "recentPpg"
+          ],
+          "probabilityDeltaPrevious": -0.0045,
+          "probabilityDelta7d": 0.0059
         },
         {
           "teamId": 103,
           "teamName": "Bologna FC 1909",
           "shortName": "Bologna",
           "crest": "assets/teams/seriea/103.png",
-          "rawScore": 0.1271,
-          "probability": 0.0452,
+          "rawScore": 0.1121,
+          "probability": 0.0448,
           "confidence": 0.7142,
           "features": {
             "pointsPerGame": 1.4,
             "pointsGapAdjusted": 0.5,
             "goalDiffPerGame": 0.1,
             "recentPpg": 0,
-            "remainingScheduleAdvantage": 0.0424
+            "remainingScheduleAdvantage": 0.0371
           },
           "missingFeatures": [
             "recentPpg"
           ],
           "probabilityDeltaPrevious": -0.0004,
-          "probabilityDelta7d": 0.0169
+          "probabilityDelta7d": 0.0163
         },
         {
           "teamId": 107,
           "teamName": "Genoa CFC",
           "shortName": "Genoa",
           "crest": "assets/teams/seriea/107.png",
-          "rawScore": 0.0044,
-          "probability": 0.04,
+          "rawScore": -0.021,
+          "probability": 0.0392,
           "confidence": 0.7142,
           "features": {
             "pointsPerGame": 1.3,
             "pointsGapAdjusted": 0.4643,
             "goalDiffPerGame": -0.4,
             "recentPpg": 0,
-            "remainingScheduleAdvantage": 0.0396
+            "remainingScheduleAdvantage": 0.0228
           },
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": 0.0077,
-          "probabilityDelta7d": 0.0184
+          "probabilityDeltaPrevious": -0.0008,
+          "probabilityDelta7d": 0.0173
         },
         {
           "teamId": 586,
           "teamName": "Torino FC",
           "shortName": "Torino",
           "crest": "assets/teams/seriea/586.png",
-          "rawScore": -0.0579,
-          "probability": 0.0376,
+          "rawScore": -0.0463,
+          "probability": 0.0383,
           "confidence": 0.7142,
           "features": {
             "pointsPerGame": 1.3,
             "pointsGapAdjusted": 0.4643,
             "goalDiffPerGame": -0.2,
             "recentPpg": 0,
-            "remainingScheduleAdvantage": -0.0508
+            "remainingScheduleAdvantage": -0.0312
           },
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": -0.0027,
-          "probabilityDelta7d": -0.0081
-        },
-        {
-          "teamId": 102,
-          "teamName": "Atalanta BC",
-          "shortName": "Atalanta",
-          "crest": "assets/teams/seriea/102.png",
-          "rawScore": -0.0897,
-          "probability": 0.0364,
-          "confidence": 0.7058,
-          "features": {
-            "pointsPerGame": 1.2222,
-            "pointsGapAdjusted": 0.3929,
-            "goalDiffPerGame": -0.1111,
-            "recentPpg": 0,
-            "remainingScheduleAdvantage": -0.0182
-          },
-          "missingFeatures": [
-            "recentPpg"
-          ],
-          "probabilityDeltaPrevious": 0.001,
-          "probabilityDelta7d": 0.0027
+          "probabilityDeltaPrevious": 0.0007,
+          "probabilityDelta7d": -0.0068
         },
         {
           "teamId": 104,
           "teamName": "Cagliari Calcio",
           "shortName": "Cagliari",
           "crest": "assets/teams/seriea/104.png",
-          "rawScore": -0.0952,
-          "probability": 0.0362,
+          "rawScore": -0.0528,
+          "probability": 0.038,
           "confidence": 0.7142,
           "features": {
             "pointsPerGame": 1.3,
             "pointsGapAdjusted": 0.4643,
             "goalDiffPerGame": -0.6,
             "recentPpg": 0,
-            "remainingScheduleAdvantage": -0.0393
+            "remainingScheduleAdvantage": 0.0144
           },
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": -0.0021,
-          "probabilityDelta7d": -0.0054
+          "probabilityDeltaPrevious": 0.0018,
+          "probabilityDelta7d": -0.0034
+        },
+        {
+          "teamId": 102,
+          "teamName": "Atalanta BC",
+          "shortName": "Atalanta",
+          "crest": "assets/teams/seriea/102.png",
+          "rawScore": -0.0926,
+          "probability": 0.0365,
+          "confidence": 0.7058,
+          "features": {
+            "pointsPerGame": 1.2222,
+            "pointsGapAdjusted": 0.3929,
+            "goalDiffPerGame": -0.1111,
+            "recentPpg": 0,
+            "remainingScheduleAdvantage": -0.013
+          },
+          "missingFeatures": [
+            "recentPpg"
+          ],
+          "probabilityDeltaPrevious": 0.0001,
+          "probabilityDelta7d": 0.0024
         },
         {
           "teamId": 471,
           "teamName": "US Sassuolo Calcio",
           "shortName": "Sassuolo",
           "crest": "assets/teams/seriea/471.png",
-          "rawScore": -0.3025,
+          "rawScore": -0.3086,
           "probability": 0.0294,
           "confidence": 0.7058,
           "features": {
@@ -21969,20 +21917,20 @@
             "pointsGapAdjusted": 0.2857,
             "goalDiffPerGame": -0.8889,
             "recentPpg": 0,
-            "remainingScheduleAdvantage": 0.058
+            "remainingScheduleAdvantage": 0.0632
           },
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": 0.0016,
-          "probabilityDelta7d": 0.0033
+          "probabilityDeltaPrevious": 0,
+          "probabilityDelta7d": 0.0028
         },
         {
           "teamId": 5890,
           "teamName": "US Lecce",
           "shortName": "Lecce",
           "crest": "assets/teams/seriea/5890.png",
-          "rawScore": -0.3918,
+          "rawScore": -0.3983,
           "probability": 0.0269,
           "confidence": 0.7142,
           "features": {
@@ -21990,117 +21938,117 @@
             "pointsGapAdjusted": 0.3214,
             "goalDiffPerGame": -1,
             "recentPpg": 0,
-            "remainingScheduleAdvantage": -0.0489
+            "remainingScheduleAdvantage": -0.049
           },
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": 0.0002,
-          "probabilityDelta7d": -0.0042
+          "probabilityDeltaPrevious": 0,
+          "probabilityDelta7d": -0.0003
         },
         {
           "teamId": 5911,
           "teamName": "AC Monza",
           "shortName": "Monza",
           "crest": "assets/teams/seriea/5911.png",
-          "rawScore": -0.4892,
-          "probability": 0.0244,
+          "rawScore": -0.4998,
+          "probability": 0.0243,
           "confidence": 0.7142,
           "features": {
             "pointsPerGame": 0.7,
             "pointsGapAdjusted": 0.25,
             "goalDiffPerGame": -0.7,
             "recentPpg": 0,
-            "remainingScheduleAdvantage": -0.0636
+            "remainingScheduleAdvantage": -0.0689
           },
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": 0.0014,
-          "probabilityDelta7d": 0.0004
+          "probabilityDeltaPrevious": -0.0001,
+          "probabilityDelta7d": 0.0002
         },
         {
           "teamId": 99,
           "teamName": "ACF Fiorentina",
           "shortName": "Fiorentina",
           "crest": "assets/teams/seriea/99.png",
-          "rawScore": -0.5597,
-          "probability": 0.0227,
+          "rawScore": -0.5735,
+          "probability": 0.0226,
           "confidence": 0.7058,
           "features": {
             "pointsPerGame": 0.5556,
             "pointsGapAdjusted": 0.1786,
             "goalDiffPerGame": -1.1111,
             "recentPpg": 0,
-            "remainingScheduleAdvantage": 0.0178
+            "remainingScheduleAdvantage": 0.0126
           },
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": 0.0019,
-          "probabilityDelta7d": 0.0073
-        },
-        {
-          "teamId": 115,
-          "teamName": "Udinese Calcio",
-          "shortName": "Udinese",
-          "crest": "assets/teams/seriea/115.png",
-          "rawScore": -0.575,
-          "probability": 0.0224,
-          "confidence": 0.7142,
-          "features": {
-            "pointsPerGame": 0.5,
-            "pointsGapAdjusted": 0.1786,
-            "goalDiffPerGame": -1.2,
-            "recentPpg": 0,
-            "remainingScheduleAdvantage": 0.0348
-          },
-          "missingFeatures": [
-            "recentPpg"
-          ],
-          "probabilityDeltaPrevious": 0.0016,
-          "probabilityDelta7d": 0.0051
+          "probabilityDeltaPrevious": -0.0001,
+          "probabilityDelta7d": 0.0067
         },
         {
           "teamId": 112,
           "teamName": "Parma Calcio 1913",
           "shortName": "Parma",
           "crest": "assets/teams/seriea/112.png",
-          "rawScore": -0.5802,
-          "probability": 0.0223,
+          "rawScore": -0.5837,
+          "probability": 0.0224,
           "confidence": 0.7058,
           "features": {
             "pointsPerGame": 0.5556,
             "pointsGapAdjusted": 0.1786,
             "goalDiffPerGame": -1.1111,
             "recentPpg": 0,
-            "remainingScheduleAdvantage": -0.0037
+            "remainingScheduleAdvantage": 0.0015
           },
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": 0.0018,
-          "probabilityDelta7d": 0.0065
+          "probabilityDeltaPrevious": 0.0001,
+          "probabilityDelta7d": 0.006
+        },
+        {
+          "teamId": 115,
+          "teamName": "Udinese Calcio",
+          "shortName": "Udinese",
+          "crest": "assets/teams/seriea/115.png",
+          "rawScore": -0.5846,
+          "probability": 0.0223,
+          "confidence": 0.7142,
+          "features": {
+            "pointsPerGame": 0.5,
+            "pointsGapAdjusted": 0.1786,
+            "goalDiffPerGame": -1.2,
+            "recentPpg": 0,
+            "remainingScheduleAdvantage": 0.0351
+          },
+          "missingFeatures": [
+            "recentPpg"
+          ],
+          "probabilityDeltaPrevious": -0.0001,
+          "probabilityDelta7d": 0.0051
         },
         {
           "teamId": 454,
           "teamName": "Venezia FC",
           "shortName": "Venezia FC",
           "crest": "assets/teams/seriea/454.png",
-          "rawScore": -0.75,
-          "probability": 0.0188,
+          "rawScore": -0.7341,
+          "probability": 0.0192,
           "confidence": 0.7142,
           "features": {
             "pointsPerGame": 0.3,
             "pointsGapAdjusted": 0.1071,
             "goalDiffPerGame": -1.4,
             "recentPpg": 0,
-            "remainingScheduleAdvantage": 0.0021
+            "remainingScheduleAdvantage": 0.0287
           },
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": 0.0018,
+          "probabilityDeltaPrevious": 0.0004,
           "probabilityDelta7d": 0.0056
         }
       ],
@@ -22110,7 +22058,7 @@
           "teamName": "SS Lazio",
           "shortName": "Lazio",
           "crest": "assets/teams/seriea/110.png",
-          "rawScore": 1.0856,
+          "rawScore": 1.0789,
           "probability": 0.1179,
           "confidence": 0.7142,
           "features": {
@@ -22118,160 +22066,160 @@
             "pointsGapAdjusted": 1,
             "goalDiffPerGame": 1.6,
             "recentPpg": 0,
-            "remainingScheduleAdvantage": -0.0198
+            "remainingScheduleAdvantage": -0.0189
           },
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": -0.0024,
-          "probabilityDelta7d": -0.02
+          "probabilityDeltaPrevious": 0,
+          "probabilityDelta7d": -0.0142
         },
         {
           "teamId": 100,
           "teamName": "AS Roma",
           "shortName": "Roma",
           "crest": "assets/teams/seriea/100.png",
-          "rawScore": 0.9358,
-          "probability": 0.1015,
+          "rawScore": 0.9205,
+          "probability": 0.1006,
           "confidence": 0.7142,
           "features": {
             "pointsPerGame": 2.4,
             "pointsGapAdjusted": 0.8571,
             "goalDiffPerGame": 1.8,
             "recentPpg": 0,
-            "remainingScheduleAdvantage": 0.0483
+            "remainingScheduleAdvantage": 0.043
           },
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": -0.0093,
-          "probabilityDelta7d": -0.0048
+          "probabilityDeltaPrevious": -0.0009,
+          "probabilityDelta7d": -0.0013
         },
         {
           "teamId": 108,
           "teamName": "FC Internazionale Milano",
           "shortName": "Inter",
           "crest": "assets/teams/seriea/108.png",
-          "rawScore": 0.8715,
-          "probability": 0.0952,
+          "rawScore": 0.859,
+          "probability": 0.0946,
           "confidence": 0.7142,
           "features": {
             "pointsPerGame": 2.5,
             "pointsGapAdjusted": 0.8929,
             "goalDiffPerGame": 1.3,
             "recentPpg": 0,
-            "remainingScheduleAdvantage": -0.0183
+            "remainingScheduleAdvantage": -0.0237
           },
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": -0.0092,
-          "probabilityDelta7d": -0.0526
+          "probabilityDeltaPrevious": -0.0006,
+          "probabilityDelta7d": -0.0453
         },
         {
           "teamId": 7397,
           "teamName": "Como 1907",
           "shortName": "Como 1907",
           "crest": "assets/teams/seriea/7397.png",
-          "rawScore": 0.7393,
-          "probability": 0.0834,
+          "rawScore": 0.6898,
+          "probability": 0.0799,
           "confidence": 0.7142,
           "features": {
             "pointsPerGame": 2.3,
             "pointsGapAdjusted": 0.8214,
             "goalDiffPerGame": 1,
             "recentPpg": 0,
-            "remainingScheduleAdvantage": 0.0063
+            "remainingScheduleAdvantage": -0.0383
           },
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": 0.0045,
-          "probabilityDelta7d": 0.0061
+          "probabilityDeltaPrevious": -0.0035,
+          "probabilityDelta7d": 0.0052
         },
         {
           "teamId": 98,
           "teamName": "AC Milan",
           "shortName": "Milan",
           "crest": "assets/teams/seriea/98.png",
-          "rawScore": 0.6251,
-          "probability": 0.0744,
+          "rawScore": 0.6206,
+          "probability": 0.0745,
           "confidence": 0.7142,
           "features": {
             "pointsPerGame": 2.1,
             "pointsGapAdjusted": 0.75,
             "goalDiffPerGame": 0.9,
             "recentPpg": 0,
-            "remainingScheduleAdvantage": 0.0245
+            "remainingScheduleAdvantage": 0.0299
           },
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": -0.0049,
-          "probabilityDelta7d": -0.0041
+          "probabilityDeltaPrevious": 0.0001,
+          "probabilityDelta7d": -0.0157
         },
         {
           "teamId": 470,
           "teamName": "Frosinone Calcio",
           "shortName": "Frosinone",
           "crest": "assets/teams/seriea/470.png",
-          "rawScore": 0.5244,
-          "probability": 0.0672,
+          "rawScore": 0.5126,
+          "probability": 0.0669,
           "confidence": 0.7142,
           "features": {
             "pointsPerGame": 2,
             "pointsGapAdjusted": 0.7143,
             "goalDiffPerGame": 1,
             "recentPpg": 0,
-            "remainingScheduleAdvantage": -0.0309
+            "remainingScheduleAdvantage": -0.036
           },
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": 0.0071,
-          "probabilityDelta7d": 0.0139
-        },
-        {
-          "teamId": 113,
-          "teamName": "SSC Napoli",
-          "shortName": "Napoli",
-          "crest": "assets/teams/seriea/113.png",
-          "rawScore": 0.2495,
-          "probability": 0.0511,
-          "confidence": 0.7058,
-          "features": {
-            "pointsPerGame": 1.5556,
-            "pointsGapAdjusted": 0.5,
-            "goalDiffPerGame": 0.6667,
-            "recentPpg": 0,
-            "remainingScheduleAdvantage": 0.0377
-          },
-          "missingFeatures": [
-            "recentPpg"
-          ],
-          "probabilityDeltaPrevious": 0.0006,
-          "probabilityDelta7d": 0.0101
+          "probabilityDeltaPrevious": -0.0003,
+          "probabilityDelta7d": 0.0143
         },
         {
           "teamId": 109,
           "teamName": "Juventus FC",
           "shortName": "Juventus",
           "crest": "assets/teams/seriea/109.png",
-          "rawScore": 0.1696,
-          "probability": 0.0472,
-          "confidence": 0.7058,
+          "rawScore": 0.3142,
+          "probability": 0.0549,
+          "confidence": 0.7142,
           "features": {
-            "pointsPerGame": 1.5556,
-            "pointsGapAdjusted": 0.5,
-            "goalDiffPerGame": 0.1111,
+            "pointsPerGame": 1.7,
+            "pointsGapAdjusted": 0.6071,
+            "goalDiffPerGame": 0.3,
             "recentPpg": 0,
-            "remainingScheduleAdvantage": 0.0243
+            "remainingScheduleAdvantage": 0.0355
           },
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": 0.0002,
-          "probabilityDelta7d": 0.003
+          "probabilityDeltaPrevious": 0.0077,
+          "probabilityDelta7d": -0.001
+        },
+        {
+          "teamId": 113,
+          "teamName": "SSC Napoli",
+          "shortName": "Napoli",
+          "crest": "assets/teams/seriea/113.png",
+          "rawScore": 0.1498,
+          "probability": 0.0466,
+          "confidence": 0.7142,
+          "features": {
+            "pointsPerGame": 1.4,
+            "pointsGapAdjusted": 0.5,
+            "goalDiffPerGame": 0.4,
+            "recentPpg": 0,
+            "remainingScheduleAdvantage": 0.0387
+          },
+          "missingFeatures": [
+            "recentPpg"
+          ],
+          "probabilityDeltaPrevious": -0.0045,
+          "probabilityDelta7d": 0.0059
         }
       ],
       "dataQuality": {
@@ -22279,66 +22227,14 @@
         "warnings": [
           "Odds unavailable: The Odds API soccer_italy_serie_a returned 422"
         ],
-        "standingsUpdatedAt": "2026-11-01T18:56:28.781Z",
-        "matchesUpdatedAt": "2026-11-01T18:56:28.781Z"
+        "standingsUpdatedAt": "2026-11-01T23:36:09.532Z",
+        "matchesUpdatedAt": "2026-11-01T23:36:09.532Z"
       },
       "matchOdds": {
         "leagueId": "seriea",
-        "fetchedAt": "2026-11-01T18:57:40.126Z",
+        "fetchedAt": "2026-11-01T23:37:19.955Z",
         "source": "the-odds-api",
         "matches": [
-          {
-            "matchId": 558540,
-            "utcDate": "2026-11-01T17:00:00Z",
-            "homeTeamId": 5890,
-            "awayTeamId": 107,
-            "homeTeamName": "US Lecce",
-            "awayTeamName": "Genoa CFC",
-            "outcomes": [
-              {
-                "name": "Genoa",
-                "oddsDecimal": 1.0995,
-                "impliedProbability": 0.9095
-              },
-              {
-                "name": "Lecce",
-                "oddsDecimal": 76.5648,
-                "impliedProbability": 0.0131
-              },
-              {
-                "name": "Draw",
-                "oddsDecimal": 7.3461,
-                "impliedProbability": 0.1361
-              }
-            ],
-            "bookmakerCount": 31
-          },
-          {
-            "matchId": 558547,
-            "utcDate": "2026-11-01T19:45:00Z",
-            "homeTeamId": 109,
-            "awayTeamId": 113,
-            "homeTeamName": "Juventus FC",
-            "awayTeamName": "SSC Napoli",
-            "outcomes": [
-              {
-                "name": "Juventus",
-                "oddsDecimal": 2.2819,
-                "impliedProbability": 0.4382
-              },
-              {
-                "name": "Napoli",
-                "oddsDecimal": 3.5865,
-                "impliedProbability": 0.2788
-              },
-              {
-                "name": "Draw",
-                "oddsDecimal": 3.5342,
-                "impliedProbability": 0.2829
-              }
-            ],
-            "bookmakerCount": 42
-          },
           {
             "matchId": 558541,
             "utcDate": "2026-11-02T17:30:00Z",
@@ -22349,18 +22245,18 @@
             "outcomes": [
               {
                 "name": "Fiorentina",
-                "oddsDecimal": 2.4612,
-                "impliedProbability": 0.4063
+                "oddsDecimal": 2.4651,
+                "impliedProbability": 0.4057
               },
               {
                 "name": "Sassuolo",
-                "oddsDecimal": 2.9817,
-                "impliedProbability": 0.3354
+                "oddsDecimal": 2.9794,
+                "impliedProbability": 0.3356
               },
               {
                 "name": "Draw",
-                "oddsDecimal": 3.8712,
-                "impliedProbability": 0.2583
+                "oddsDecimal": 3.8654,
+                "impliedProbability": 0.2587
               }
             ],
             "bookmakerCount": 42
@@ -22375,18 +22271,18 @@
             "outcomes": [
               {
                 "name": "Atalanta BC",
-                "oddsDecimal": 1.5866,
-                "impliedProbability": 0.6303
+                "oddsDecimal": 1.5883,
+                "impliedProbability": 0.6296
               },
               {
                 "name": "Parma",
-                "oddsDecimal": 6.2681,
-                "impliedProbability": 0.1595
+                "oddsDecimal": 6.2305,
+                "impliedProbability": 0.1605
               },
               {
                 "name": "Draw",
-                "oddsDecimal": 4.7573,
-                "impliedProbability": 0.2102
+                "oddsDecimal": 4.7645,
+                "impliedProbability": 0.2099
               }
             ],
             "bookmakerCount": 42
@@ -22401,18 +22297,18 @@
             "outcomes": [
               {
                 "name": "Udinese",
-                "oddsDecimal": 3.3637,
-                "impliedProbability": 0.2973
+                "oddsDecimal": 3.361,
+                "impliedProbability": 0.2975
               },
               {
                 "name": "Venezia",
-                "oddsDecimal": 2.267,
-                "impliedProbability": 0.4411
+                "oddsDecimal": 2.2698,
+                "impliedProbability": 0.4406
               },
               {
                 "name": "Draw",
-                "oddsDecimal": 3.8228,
-                "impliedProbability": 0.2616
+                "oddsDecimal": 3.8183,
+                "impliedProbability": 0.2619
               }
             ],
             "bookmakerCount": 37
@@ -22427,18 +22323,18 @@
             "outcomes": [
               {
                 "name": "Cagliari",
-                "oddsDecimal": 2.8548,
-                "impliedProbability": 0.3503
+                "oddsDecimal": 2.8786,
+                "impliedProbability": 0.3474
               },
               {
                 "name": "Frosinone",
-                "oddsDecimal": 2.5505,
-                "impliedProbability": 0.3921
+                "oddsDecimal": 2.5276,
+                "impliedProbability": 0.3956
               },
               {
                 "name": "Draw",
-                "oddsDecimal": 3.8814,
-                "impliedProbability": 0.2576
+                "oddsDecimal": 3.8913,
+                "impliedProbability": 0.257
               }
             ],
             "bookmakerCount": 37
@@ -22453,18 +22349,18 @@
             "outcomes": [
               {
                 "name": "Lecce",
-                "oddsDecimal": 4.6485,
-                "impliedProbability": 0.2151
+                "oddsDecimal": 4.6369,
+                "impliedProbability": 0.2157
               },
               {
                 "name": "Torino",
-                "oddsDecimal": 1.9213,
-                "impliedProbability": 0.5205
+                "oddsDecimal": 1.9255,
+                "impliedProbability": 0.5193
               },
               {
                 "name": "Draw",
-                "oddsDecimal": 3.7823,
-                "impliedProbability": 0.2644
+                "oddsDecimal": 3.7737,
+                "impliedProbability": 0.265
               }
             ],
             "bookmakerCount": 37
@@ -22479,18 +22375,18 @@
             "outcomes": [
               {
                 "name": "Bologna",
-                "oddsDecimal": 1.9463,
+                "oddsDecimal": 1.9462,
                 "impliedProbability": 0.5138
               },
               {
                 "name": "Parma",
-                "oddsDecimal": 4.6422,
-                "impliedProbability": 0.2154
+                "oddsDecimal": 4.6469,
+                "impliedProbability": 0.2152
               },
               {
                 "name": "Draw",
-                "oddsDecimal": 3.6929,
-                "impliedProbability": 0.2708
+                "oddsDecimal": 3.6904,
+                "impliedProbability": 0.271
               }
             ],
             "bookmakerCount": 37
@@ -22505,18 +22401,18 @@
             "outcomes": [
               {
                 "name": "AS Roma",
-                "oddsDecimal": 1.4269,
-                "impliedProbability": 0.7008
+                "oddsDecimal": 1.4242,
+                "impliedProbability": 0.7021
               },
               {
                 "name": "Sassuolo",
-                "oddsDecimal": 8.1078,
-                "impliedProbability": 0.1233
+                "oddsDecimal": 8.1643,
+                "impliedProbability": 0.1225
               },
               {
                 "name": "Draw",
-                "oddsDecimal": 5.6876,
-                "impliedProbability": 0.1758
+                "oddsDecimal": 5.7021,
+                "impliedProbability": 0.1754
               }
             ],
             "bookmakerCount": 37
@@ -22531,21 +22427,21 @@
             "outcomes": [
               {
                 "name": "Lazio",
-                "oddsDecimal": 3.7488,
-                "impliedProbability": 0.2668
+                "oddsDecimal": 3.6862,
+                "impliedProbability": 0.2713
               },
               {
                 "name": "Napoli",
-                "oddsDecimal": 2.1062,
-                "impliedProbability": 0.4748
+                "oddsDecimal": 2.1309,
+                "impliedProbability": 0.4693
               },
               {
                 "name": "Draw",
-                "oddsDecimal": 3.8692,
-                "impliedProbability": 0.2585
+                "oddsDecimal": 3.8545,
+                "impliedProbability": 0.2594
               }
             ],
-            "bookmakerCount": 35
+            "bookmakerCount": 36
           },
           {
             "matchId": 558536,
@@ -22557,18 +22453,18 @@
             "outcomes": [
               {
                 "name": "AC Milan",
-                "oddsDecimal": 1.8931,
-                "impliedProbability": 0.5282
+                "oddsDecimal": 1.9,
+                "impliedProbability": 0.5263
               },
               {
                 "name": "Genoa",
-                "oddsDecimal": 4.8045,
-                "impliedProbability": 0.2081
+                "oddsDecimal": 4.8119,
+                "impliedProbability": 0.2078
               },
               {
                 "name": "Draw",
-                "oddsDecimal": 3.7932,
-                "impliedProbability": 0.2636
+                "oddsDecimal": 3.7613,
+                "impliedProbability": 0.2659
               }
             ],
             "bookmakerCount": 35
@@ -22583,21 +22479,21 @@
             "outcomes": [
               {
                 "name": "Atalanta BC",
-                "oddsDecimal": 2.1435,
-                "impliedProbability": 0.4665
+                "oddsDecimal": 2.1423,
+                "impliedProbability": 0.4668
               },
               {
                 "name": "Monza",
-                "oddsDecimal": 3.5397,
-                "impliedProbability": 0.2825
+                "oddsDecimal": 3.5417,
+                "impliedProbability": 0.2823
               },
               {
                 "name": "Draw",
-                "oddsDecimal": 3.9848,
-                "impliedProbability": 0.251
+                "oddsDecimal": 3.9863,
+                "impliedProbability": 0.2509
               }
             ],
-            "bookmakerCount": 35
+            "bookmakerCount": 36
           },
           {
             "matchId": 558530,
@@ -22609,18 +22505,18 @@
             "outcomes": [
               {
                 "name": "Como",
-                "oddsDecimal": 4.252,
-                "impliedProbability": 0.2352
+                "oddsDecimal": 4.2361,
+                "impliedProbability": 0.2361
               },
               {
                 "name": "Inter Milan",
-                "oddsDecimal": 1.8568,
-                "impliedProbability": 0.5386
+                "oddsDecimal": 1.8614,
+                "impliedProbability": 0.5372
               },
               {
                 "name": "Draw",
-                "oddsDecimal": 4.4199,
-                "impliedProbability": 0.2262
+                "oddsDecimal": 4.4109,
+                "impliedProbability": 0.2267
               }
             ],
             "bookmakerCount": 35
@@ -22635,21 +22531,21 @@
             "outcomes": [
               {
                 "name": "Fiorentina",
-                "oddsDecimal": 3.9958,
-                "impliedProbability": 0.2503
+                "oddsDecimal": 3.9709,
+                "impliedProbability": 0.2518
               },
               {
                 "name": "Juventus",
-                "oddsDecimal": 2.0306,
-                "impliedProbability": 0.4925
+                "oddsDecimal": 2.039,
+                "impliedProbability": 0.4904
               },
               {
                 "name": "Draw",
-                "oddsDecimal": 3.8869,
-                "impliedProbability": 0.2573
+                "oddsDecimal": 3.88,
+                "impliedProbability": 0.2577
               }
             ],
-            "bookmakerCount": 34
+            "bookmakerCount": 35
           }
         ],
         "teamSchedules": [
@@ -22657,119 +22553,133 @@
             "teamId": 100,
             "teamName": "AS Roma",
             "matches": 1,
-            "expectedPoints": 2.2782,
-            "expectedPpg": 2.2782
+            "expectedPoints": 2.2817,
+            "expectedPpg": 2.2817
           },
           {
             "teamId": 102,
             "teamName": "Atalanta BC",
             "matches": 2,
-            "expectedPoints": 3.7516,
-            "expectedPpg": 1.8758
+            "expectedPoints": 3.75,
+            "expectedPpg": 1.875
           },
           {
             "teamId": 98,
             "teamName": "AC Milan",
             "matches": 1,
-            "expectedPoints": 1.8482,
-            "expectedPpg": 1.8482
+            "expectedPoints": 1.8448,
+            "expectedPpg": 1.8448
           },
           {
             "teamId": 108,
             "teamName": "FC Internazionale Milano",
             "matches": 1,
-            "expectedPoints": 1.842,
-            "expectedPpg": 1.842
+            "expectedPoints": 1.8383,
+            "expectedPpg": 1.8383
           },
           {
             "teamId": 586,
             "teamName": "Torino FC",
             "matches": 1,
-            "expectedPoints": 1.8259,
-            "expectedPpg": 1.8259
+            "expectedPoints": 1.8229,
+            "expectedPpg": 1.8229
           },
           {
             "teamId": 109,
             "teamName": "Juventus FC",
-            "matches": 2,
-            "expectedPoints": 3.3323,
-            "expectedPpg": 1.6662
+            "matches": 1,
+            "expectedPoints": 1.7289,
+            "expectedPpg": 1.7289
           },
           {
             "teamId": 454,
             "teamName": "Venezia FC",
             "matches": 1,
-            "expectedPoints": 1.5849,
-            "expectedPpg": 1.5849
+            "expectedPoints": 1.5837,
+            "expectedPpg": 1.5837
           },
           {
             "teamId": 470,
             "teamName": "Frosinone Calcio",
             "matches": 1,
-            "expectedPoints": 1.4339,
-            "expectedPpg": 1.4339
+            "expectedPoints": 1.4438,
+            "expectedPpg": 1.4438
           },
           {
             "teamId": 104,
             "teamName": "Cagliari Calcio",
             "matches": 1,
-            "expectedPoints": 1.3085,
-            "expectedPpg": 1.3085
+            "expectedPoints": 1.2992,
+            "expectedPpg": 1.2992
           },
           {
             "teamId": 115,
             "teamName": "Udinese Calcio",
             "matches": 1,
-            "expectedPoints": 1.1535,
-            "expectedPpg": 1.1535
+            "expectedPoints": 1.1544,
+            "expectedPpg": 1.1544
           },
           {
             "teamId": 7397,
             "teamName": "Como 1907",
             "matches": 1,
-            "expectedPoints": 0.9318,
-            "expectedPpg": 0.9318
+            "expectedPoints": 0.935,
+            "expectedPpg": 0.935
           },
           {
             "teamId": 103,
             "teamName": "Bologna FC 1909",
             "matches": 1,
-            "expectedPoints": 0.2708,
-            "expectedPpg": 0.2708
+            "expectedPoints": 0.271,
+            "expectedPpg": 0.271
           },
           {
-            "teamId": 113,
-            "teamName": "SSC Napoli",
-            "matches": 2,
-            "expectedPoints": 0.5414,
-            "expectedPpg": 0.2707
+            "teamId": 107,
+            "teamName": "Genoa CFC",
+            "matches": 1,
+            "expectedPoints": 0.2659,
+            "expectedPpg": 0.2659
+          },
+          {
+            "teamId": 5890,
+            "teamName": "US Lecce",
+            "matches": 1,
+            "expectedPoints": 0.265,
+            "expectedPpg": 0.265
           },
           {
             "teamId": 110,
             "teamName": "SS Lazio",
             "matches": 1,
-            "expectedPoints": 0.2585,
-            "expectedPpg": 0.2585
+            "expectedPoints": 0.2594,
+            "expectedPpg": 0.2594
+          },
+          {
+            "teamId": 113,
+            "teamName": "SSC Napoli",
+            "matches": 1,
+            "expectedPoints": 0.2594,
+            "expectedPpg": 0.2594
           },
           {
             "teamId": 99,
             "teamName": "ACF Fiorentina",
             "matches": 2,
-            "expectedPoints": 0.5156,
-            "expectedPpg": 0.2578
+            "expectedPoints": 0.5164,
+            "expectedPpg": 0.2582
           },
           {
             "teamId": 5911,
             "teamName": "AC Monza",
             "matches": 1,
-            "expectedPoints": 0.251,
-            "expectedPpg": 0.251
+            "expectedPoints": 0.2509,
+            "expectedPpg": 0.2509
           },
           {
             "teamId": 112,
             "teamName": "Parma Calcio 1913",
             "matches": 2,
-            "expectedPoints": 0.481,
+            "expectedPoints": 0.4809,
             "expectedPpg": 0.2405
           },
           {
@@ -22778,27 +22688,13 @@
             "matches": 2,
             "expectedPoints": 0.4341,
             "expectedPpg": 0.2171
-          },
-          {
-            "teamId": 5890,
-            "teamName": "US Lecce",
-            "matches": 2,
-            "expectedPoints": 0.4005,
-            "expectedPpg": 0.2003
-          },
-          {
-            "teamId": 107,
-            "teamName": "Genoa CFC",
-            "matches": 2,
-            "expectedPoints": 0.3997,
-            "expectedPpg": 0.1999
           }
         ],
         "dataQuality": {
-          "bookmakerCount": 516,
-          "matchedOutcomeCount": 42,
+          "bookmakerCount": 446,
+          "matchedOutcomeCount": 36,
           "unmatchedOutcomeCount": 0,
-          "coverageRatio": 0.0488,
+          "coverageRatio": 0.0426,
           "warnings": []
         }
       }
@@ -22892,11 +22788,27 @@
           "form": null
         },
         {
+          "teamId": 516,
+          "teamName": "Olympique de Marseille",
+          "shortName": "Marseille",
+          "crest": "assets/teams/ligue1/516.png",
+          "position": 6,
+          "playedGames": 9,
+          "won": 5,
+          "draw": 0,
+          "lost": 4,
+          "goalsFor": 20,
+          "goalsAgainst": 13,
+          "goalDifference": 7,
+          "points": 15,
+          "form": null
+        },
+        {
           "teamId": 548,
           "teamName": "AS Monaco FC",
           "shortName": "Monaco",
           "crest": "assets/teams/ligue1/548.png",
-          "position": 6,
+          "position": 7,
           "playedGames": 9,
           "won": 4,
           "draw": 3,
@@ -22912,7 +22824,7 @@
           "teamName": "OGC Nice",
           "shortName": "Nice",
           "crest": "assets/teams/ligue1/522.png",
-          "position": 7,
+          "position": 8,
           "playedGames": 9,
           "won": 4,
           "draw": 2,
@@ -22928,7 +22840,7 @@
           "teamName": "Racing Club de Lens",
           "shortName": "RC Lens",
           "crest": "assets/teams/ligue1/546.png",
-          "position": 8,
+          "position": 9,
           "playedGames": 9,
           "won": 4,
           "draw": 1,
@@ -22937,22 +22849,6 @@
           "goalsAgainst": 13,
           "goalDifference": 3,
           "points": 13,
-          "form": null
-        },
-        {
-          "teamId": 516,
-          "teamName": "Olympique de Marseille",
-          "shortName": "Marseille",
-          "crest": "assets/teams/ligue1/516.png",
-          "position": 9,
-          "playedGames": 8,
-          "won": 4,
-          "draw": 0,
-          "lost": 4,
-          "goalsFor": 18,
-          "goalsAgainst": 13,
-          "goalDifference": 5,
-          "points": 12,
           "form": null
         },
         {
@@ -22977,13 +22873,13 @@
           "shortName": "Toulouse",
           "crest": "assets/teams/ligue1/511.png",
           "position": 11,
-          "playedGames": 8,
+          "playedGames": 9,
           "won": 2,
           "draw": 4,
-          "lost": 2,
+          "lost": 3,
           "goalsFor": 12,
-          "goalsAgainst": 11,
-          "goalDifference": 1,
+          "goalsAgainst": 13,
+          "goalDifference": -1,
           "points": 10,
           "form": null
         },
@@ -24052,14 +23948,14 @@
         {
           "id": 559645,
           "utcDate": "2026-11-01T19:45:00Z",
-          "status": "TIMED",
+          "status": "FINISHED",
           "matchday": 9,
           "homeTeamId": 516,
           "homeTeamName": "Olympique de Marseille",
           "awayTeamId": 511,
           "awayTeamName": "Toulouse FC",
-          "homeScore": null,
-          "awayScore": null
+          "homeScore": 2,
+          "awayScore": 0
         },
         {
           "id": 559641,
@@ -26780,209 +26676,251 @@
           "teamName": "Paris Saint-Germain FC",
           "shortName": "PSG",
           "crest": "assets/teams/ligue1/524.png",
-          "rawScore": 1.1029,
-          "probability": 0.1475,
+          "rawScore": 1.0812,
+          "probability": 0.1456,
           "confidence": 0.7058,
           "features": {
             "pointsPerGame": 2.2222,
             "pointsGapAdjusted": 1,
             "goalDiffPerGame": 1.2222,
             "recentPpg": 0,
-            "remainingScheduleAdvantage": 0.0539
+            "remainingScheduleAdvantage": 0.0598
           },
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": -0.0022,
-          "probabilityDelta7d": 0.0531
+          "probabilityDeltaPrevious": -0.0019,
+          "probabilityDelta7d": 0.0519
         },
         {
           "teamId": 521,
           "teamName": "Lille OSC",
           "shortName": "Lille",
           "crest": "assets/teams/ligue1/521.png",
-          "rawScore": 0.7274,
-          "probability": 0.1013,
+          "rawScore": 0.7021,
+          "probability": 0.0996,
           "confidence": 0.7058,
           "features": {
             "pointsPerGame": 2,
             "pointsGapAdjusted": 0.9,
             "goalDiffPerGame": 0.6667,
             "recentPpg": 0,
-            "remainingScheduleAdvantage": 0.0039
+            "remainingScheduleAdvantage": -0.0024
           },
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": -0.0037,
-          "probabilityDelta7d": 0.0182
+          "probabilityDeltaPrevious": -0.0017,
+          "probabilityDelta7d": 0.0147
         },
         {
           "teamId": 523,
           "teamName": "Olympique Lyonnais",
           "shortName": "Olympique Lyon",
           "crest": "assets/teams/ligue1/523.png",
-          "rawScore": 0.6711,
-          "probability": 0.0958,
+          "rawScore": 0.6439,
+          "probability": 0.094,
           "confidence": 0.7058,
           "features": {
             "pointsPerGame": 1.8889,
             "pointsGapAdjusted": 0.85,
             "goalDiffPerGame": 0.8889,
             "recentPpg": 0,
-            "remainingScheduleAdvantage": 0.0389
+            "remainingScheduleAdvantage": 0.0326
           },
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": 0.019,
-          "probabilityDelta7d": -0.0037
+          "probabilityDeltaPrevious": -0.0018,
+          "probabilityDelta7d": -0.0056
         },
         {
           "teamId": 1045,
           "teamName": "Paris FC",
           "shortName": "Paris FC",
           "crest": "assets/teams/ligue1/1045.png",
-          "rawScore": 0.6544,
-          "probability": 0.0942,
+          "rawScore": 0.6347,
+          "probability": 0.0931,
           "confidence": 0.7058,
           "features": {
             "pointsPerGame": 1.8889,
             "pointsGapAdjusted": 0.85,
             "goalDiffPerGame": 0.6667,
             "recentPpg": 0,
-            "remainingScheduleAdvantage": 0.0777
+            "remainingScheduleAdvantage": 0.0837
           },
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": 0.0211,
-          "probabilityDelta7d": 0.0165
+          "probabilityDeltaPrevious": -0.0011,
+          "probabilityDelta7d": 0.0155
         },
         {
           "teamId": 529,
           "teamName": "Stade Rennais FC 1901",
           "shortName": "Stade Rennais",
           "crest": "assets/teams/ligue1/529.png",
-          "rawScore": 0.4151,
-          "probability": 0.0742,
+          "rawScore": 0.3988,
+          "probability": 0.0736,
           "confidence": 0.7058,
           "features": {
             "pointsPerGame": 1.7778,
             "pointsGapAdjusted": 0.8,
             "goalDiffPerGame": 0.1111,
             "recentPpg": 0,
-            "remainingScheduleAdvantage": 0.0533
+            "remainingScheduleAdvantage": 0.0593
           },
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": -0.0025,
-          "probabilityDelta7d": -0.0268
-        },
-        {
-          "teamId": 548,
-          "teamName": "AS Monaco FC",
-          "shortName": "Monaco",
-          "crest": "assets/teams/ligue1/548.png",
-          "rawScore": 0.3151,
-          "probability": 0.0671,
-          "confidence": 0.7058,
-          "features": {
-            "pointsPerGame": 1.6667,
-            "pointsGapAdjusted": 0.75,
-            "goalDiffPerGame": 0.2222,
-            "recentPpg": 0,
-            "remainingScheduleAdvantage": 0.0522
-          },
-          "missingFeatures": [
-            "recentPpg"
-          ],
-          "probabilityDeltaPrevious": -0.0157,
-          "probabilityDelta7d": -0.0189
-        },
-        {
-          "teamId": 522,
-          "teamName": "OGC Nice",
-          "shortName": "Nice",
-          "crest": "assets/teams/ligue1/522.png",
-          "rawScore": 0.1698,
-          "probability": 0.058,
-          "confidence": 0.7058,
-          "features": {
-            "pointsPerGame": 1.5556,
-            "pointsGapAdjusted": 0.7,
-            "goalDiffPerGame": 0.1111,
-            "recentPpg": 0,
-            "remainingScheduleAdvantage": 0.045
-          },
-          "missingFeatures": [
-            "recentPpg"
-          ],
-          "probabilityDeltaPrevious": -0.0021,
-          "probabilityDelta7d": 0.0122
+          "probabilityDeltaPrevious": -0.0006,
+          "probabilityDelta7d": -0.0251
         },
         {
           "teamId": 516,
           "teamName": "Olympique de Marseille",
           "shortName": "Marseille",
           "crest": "assets/teams/ligue1/516.png",
-          "rawScore": 0.1099,
-          "probability": 0.0547,
-          "confidence": 0.6974,
+          "rawScore": 0.3619,
+          "probability": 0.0709,
+          "confidence": 0.7058,
           "features": {
-            "pointsPerGame": 1.5,
-            "pointsGapAdjusted": 0.6,
-            "goalDiffPerGame": 0.625,
+            "pointsPerGame": 1.6667,
+            "pointsGapAdjusted": 0.75,
+            "goalDiffPerGame": 0.7778,
             "recentPpg": 0,
-            "remainingScheduleAdvantage": -0.0047
+            "remainingScheduleAdvantage": -0.0029
           },
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": -0.0016,
-          "probabilityDelta7d": -0.0113
+          "probabilityDeltaPrevious": 0.0162,
+          "probabilityDelta7d": 0.0109
+        },
+        {
+          "teamId": 548,
+          "teamName": "AS Monaco FC",
+          "shortName": "Monaco",
+          "crest": "assets/teams/ligue1/548.png",
+          "rawScore": 0.2949,
+          "probability": 0.0663,
+          "confidence": 0.7058,
+          "features": {
+            "pointsPerGame": 1.6667,
+            "pointsGapAdjusted": 0.75,
+            "goalDiffPerGame": 0.2222,
+            "recentPpg": 0,
+            "remainingScheduleAdvantage": 0.0526
+          },
+          "missingFeatures": [
+            "recentPpg"
+          ],
+          "probabilityDeltaPrevious": -0.0008,
+          "probabilityDelta7d": -0.02
+        },
+        {
+          "teamId": 522,
+          "teamName": "OGC Nice",
+          "shortName": "Nice",
+          "crest": "assets/teams/ligue1/522.png",
+          "rawScore": 0.1495,
+          "probability": 0.0573,
+          "confidence": 0.7058,
+          "features": {
+            "pointsPerGame": 1.5556,
+            "pointsGapAdjusted": 0.7,
+            "goalDiffPerGame": 0.1111,
+            "recentPpg": 0,
+            "remainingScheduleAdvantage": 0.0443
+          },
+          "missingFeatures": [
+            "recentPpg"
+          ],
+          "probabilityDeltaPrevious": -0.0007,
+          "probabilityDelta7d": 0.0109
         },
         {
           "teamId": 546,
           "teamName": "Racing Club de Lens",
           "shortName": "RC Lens",
           "crest": "assets/teams/ligue1/546.png",
-          "rawScore": 0.0767,
-          "probability": 0.0529,
+          "rawScore": 0.056,
+          "probability": 0.0522,
           "confidence": 0.7058,
           "features": {
             "pointsPerGame": 1.4444,
             "pointsGapAdjusted": 0.65,
             "goalDiffPerGame": 0.3333,
             "recentPpg": 0,
-            "remainingScheduleAdvantage": 0.0222
+            "remainingScheduleAdvantage": 0.0215
           },
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": -0.0022,
-          "probabilityDelta7d": -0.0134
+          "probabilityDeltaPrevious": -0.0007,
+          "probabilityDelta7d": -0.0149
         },
         {
           "teamId": 525,
           "teamName": "FC Lorient",
           "shortName": "Lorient",
           "crest": "assets/teams/ligue1/525.png",
-          "rawScore": 0.0091,
-          "probability": 0.0494,
+          "rawScore": -0.0128,
+          "probability": 0.0487,
           "confidence": 0.6974,
           "features": {
             "pointsPerGame": 1.5,
             "pointsGapAdjusted": 0.6,
             "goalDiffPerGame": 0.125,
             "recentPpg": 0,
-            "remainingScheduleAdvantage": -0.0164
+            "remainingScheduleAdvantage": -0.0224
           },
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": -0.002,
+          "probabilityDeltaPrevious": -0.0007,
+          "probabilityDelta7d": -0.0061
+        },
+        {
+          "teamId": 576,
+          "teamName": "RC Strasbourg Alsace",
+          "shortName": "Strasbourg",
+          "crest": "assets/teams/ligue1/576.png",
+          "rawScore": -0.3875,
+          "probability": 0.0335,
+          "confidence": 0.7058,
+          "features": {
+            "pointsPerGame": 1.1111,
+            "pointsGapAdjusted": 0.5,
+            "goalDiffPerGame": -0.2222,
+            "recentPpg": 0,
+            "remainingScheduleAdvantage": 0.0504
+          },
+          "missingFeatures": [
+            "recentPpg"
+          ],
+          "probabilityDeltaPrevious": -0.0002,
+          "probabilityDelta7d": 0.0066
+        },
+        {
+          "teamId": 512,
+          "teamName": "Stade Brestois 29",
+          "shortName": "Brest",
+          "crest": "assets/teams/ligue1/512.png",
+          "rawScore": -0.4047,
+          "probability": 0.0329,
+          "confidence": 0.6974,
+          "features": {
+            "pointsPerGame": 1.125,
+            "pointsGapAdjusted": 0.45,
+            "goalDiffPerGame": 0.25,
+            "recentPpg": 0,
+            "remainingScheduleAdvantage": -0.064
+          },
+          "missingFeatures": [
+            "recentPpg"
+          ],
+          "probabilityDeltaPrevious": -0.0005,
           "probabilityDelta7d": -0.0052
         },
         {
@@ -26990,91 +26928,49 @@
           "teamName": "Toulouse FC",
           "shortName": "Toulouse",
           "crest": "assets/teams/ligue1/511.png",
-          "rawScore": -0.2697,
-          "probability": 0.0374,
-          "confidence": 0.6974,
-          "features": {
-            "pointsPerGame": 1.25,
-            "pointsGapAdjusted": 0.5,
-            "goalDiffPerGame": 0.125,
-            "recentPpg": 0,
-            "remainingScheduleAdvantage": -0.0469
-          },
-          "missingFeatures": [
-            "recentPpg"
-          ],
-          "probabilityDeltaPrevious": -0.0016,
-          "probabilityDelta7d": -0.0052
-        },
-        {
-          "teamId": 576,
-          "teamName": "RC Strasbourg Alsace",
-          "shortName": "Strasbourg",
-          "crest": "assets/teams/ligue1/576.png",
-          "rawScore": -0.3729,
-          "probability": 0.0337,
+          "rawScore": -0.4281,
+          "probability": 0.0322,
           "confidence": 0.7058,
           "features": {
             "pointsPerGame": 1.1111,
             "pointsGapAdjusted": 0.5,
-            "goalDiffPerGame": -0.2222,
+            "goalDiffPerGame": -0.1111,
             "recentPpg": 0,
-            "remainingScheduleAdvantage": 0.0444
+            "remainingScheduleAdvantage": -0.049
           },
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": 0.0094,
-          "probabilityDelta7d": 0.0076
-        },
-        {
-          "teamId": 512,
-          "teamName": "Stade Brestois 29",
-          "shortName": "Brest",
-          "crest": "assets/teams/ligue1/512.png",
-          "rawScore": -0.3832,
-          "probability": 0.0334,
-          "confidence": 0.6974,
-          "features": {
-            "pointsPerGame": 1.125,
-            "pointsGapAdjusted": 0.45,
-            "goalDiffPerGame": 0.25,
-            "recentPpg": 0,
-            "remainingScheduleAdvantage": -0.0581
-          },
-          "missingFeatures": [
-            "recentPpg"
-          ],
-          "probabilityDeltaPrevious": -0.0017,
-          "probabilityDelta7d": -0.0034
+          "probabilityDeltaPrevious": -0.0052,
+          "probabilityDelta7d": -0.0103
         },
         {
           "teamId": 519,
           "teamName": "AJ Auxerre",
           "shortName": "Auxerre",
           "crest": "assets/teams/ligue1/519.png",
-          "rawScore": -0.6219,
-          "probability": 0.0263,
+          "rawScore": -0.633,
+          "probability": 0.0262,
           "confidence": 0.7058,
           "features": {
             "pointsPerGame": 1.1111,
             "pointsGapAdjusted": 0.5,
             "goalDiffPerGame": -1.1111,
             "recentPpg": 0,
-            "remainingScheduleAdvantage": -0.0861
+            "remainingScheduleAdvantage": -0.0868
           },
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": -0.0067,
-          "probabilityDelta7d": -0.0098
+          "probabilityDeltaPrevious": -0.0001,
+          "probabilityDelta7d": -0.0101
         },
         {
           "teamId": 532,
           "teamName": "Angers SCO",
           "shortName": "Angers SCO",
           "crest": "assets/teams/ligue1/532.png",
-          "rawScore": -0.8007,
+          "rawScore": -0.8096,
           "probability": 0.022,
           "confidence": 0.7058,
           "features": {
@@ -27082,62 +26978,62 @@
             "pointsGapAdjusted": 0.4,
             "goalDiffPerGame": -0.8889,
             "recentPpg": 0,
-            "remainingScheduleAdvantage": -0.055
+            "remainingScheduleAdvantage": -0.049
           },
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": -0.0037,
-          "probabilityDelta7d": -0.0052
+          "probabilityDeltaPrevious": 0,
+          "probabilityDelta7d": -0.0063
         },
         {
           "teamId": 531,
           "teamName": "ES Troyes AC",
           "shortName": "Troyes",
           "crest": "assets/teams/ligue1/531.png",
-          "rawScore": -0.8126,
-          "probability": 0.0217,
+          "rawScore": -0.8247,
+          "probability": 0.0216,
           "confidence": 0.7058,
           "features": {
             "pointsPerGame": 0.8889,
             "pointsGapAdjusted": 0.4,
             "goalDiffPerGame": -1,
             "recentPpg": 0,
-            "remainingScheduleAdvantage": -0.0411
+            "remainingScheduleAdvantage": -0.0407
           },
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": -0.0014,
-          "probabilityDelta7d": 0.0041
+          "probabilityDeltaPrevious": -0.0001,
+          "probabilityDelta7d": 0.0036
         },
         {
           "teamId": 535,
           "teamName": "Le Mans FC",
           "shortName": "Le Mans",
           "crest": "assets/teams/ligue1/535.png",
-          "rawScore": -0.8837,
-          "probability": 0.0202,
+          "rawScore": -0.9012,
+          "probability": 0.02,
           "confidence": 0.7058,
           "features": {
             "pointsPerGame": 0.7778,
             "pointsGapAdjusted": 0.35,
             "goalDiffPerGame": -0.7778,
             "recentPpg": 0,
-            "remainingScheduleAdvantage": -0.0295
+            "remainingScheduleAdvantage": -0.0357
           },
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": -0.0016,
-          "probabilityDelta7d": -0.0066
+          "probabilityDeltaPrevious": -0.0002,
+          "probabilityDelta7d": -0.007
         },
         {
           "teamId": 533,
           "teamName": "Le Havre AC",
           "shortName": "Le Havre",
           "crest": "assets/teams/ligue1/533.png",
-          "rawScore": -1.5753,
+          "rawScore": -1.5863,
           "probability": 0.0101,
           "confidence": 0.7058,
           "features": {
@@ -27145,13 +27041,13 @@
             "pointsGapAdjusted": 0.1,
             "goalDiffPerGame": -1.2222,
             "recentPpg": 0,
-            "remainingScheduleAdvantage": -0.0428
+            "remainingScheduleAdvantage": -0.0424
           },
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": -0.0011,
-          "probabilityDelta7d": -0.0023
+          "probabilityDeltaPrevious": 0,
+          "probabilityDelta7d": -0.0037
         }
       ],
       "topContenders": [
@@ -27160,168 +27056,168 @@
           "teamName": "Paris Saint-Germain FC",
           "shortName": "PSG",
           "crest": "assets/teams/ligue1/524.png",
-          "rawScore": 1.1029,
-          "probability": 0.1475,
+          "rawScore": 1.0812,
+          "probability": 0.1456,
           "confidence": 0.7058,
           "features": {
             "pointsPerGame": 2.2222,
             "pointsGapAdjusted": 1,
             "goalDiffPerGame": 1.2222,
             "recentPpg": 0,
-            "remainingScheduleAdvantage": 0.0539
+            "remainingScheduleAdvantage": 0.0598
           },
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": -0.0022,
-          "probabilityDelta7d": 0.0531
+          "probabilityDeltaPrevious": -0.0019,
+          "probabilityDelta7d": 0.0519
         },
         {
           "teamId": 521,
           "teamName": "Lille OSC",
           "shortName": "Lille",
           "crest": "assets/teams/ligue1/521.png",
-          "rawScore": 0.7274,
-          "probability": 0.1013,
+          "rawScore": 0.7021,
+          "probability": 0.0996,
           "confidence": 0.7058,
           "features": {
             "pointsPerGame": 2,
             "pointsGapAdjusted": 0.9,
             "goalDiffPerGame": 0.6667,
             "recentPpg": 0,
-            "remainingScheduleAdvantage": 0.0039
+            "remainingScheduleAdvantage": -0.0024
           },
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": -0.0037,
-          "probabilityDelta7d": 0.0182
+          "probabilityDeltaPrevious": -0.0017,
+          "probabilityDelta7d": 0.0147
         },
         {
           "teamId": 523,
           "teamName": "Olympique Lyonnais",
           "shortName": "Olympique Lyon",
           "crest": "assets/teams/ligue1/523.png",
-          "rawScore": 0.6711,
-          "probability": 0.0958,
+          "rawScore": 0.6439,
+          "probability": 0.094,
           "confidence": 0.7058,
           "features": {
             "pointsPerGame": 1.8889,
             "pointsGapAdjusted": 0.85,
             "goalDiffPerGame": 0.8889,
             "recentPpg": 0,
-            "remainingScheduleAdvantage": 0.0389
+            "remainingScheduleAdvantage": 0.0326
           },
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": 0.019,
-          "probabilityDelta7d": -0.0037
+          "probabilityDeltaPrevious": -0.0018,
+          "probabilityDelta7d": -0.0056
         },
         {
           "teamId": 1045,
           "teamName": "Paris FC",
           "shortName": "Paris FC",
           "crest": "assets/teams/ligue1/1045.png",
-          "rawScore": 0.6544,
-          "probability": 0.0942,
+          "rawScore": 0.6347,
+          "probability": 0.0931,
           "confidence": 0.7058,
           "features": {
             "pointsPerGame": 1.8889,
             "pointsGapAdjusted": 0.85,
             "goalDiffPerGame": 0.6667,
             "recentPpg": 0,
-            "remainingScheduleAdvantage": 0.0777
+            "remainingScheduleAdvantage": 0.0837
           },
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": 0.0211,
-          "probabilityDelta7d": 0.0165
+          "probabilityDeltaPrevious": -0.0011,
+          "probabilityDelta7d": 0.0155
         },
         {
           "teamId": 529,
           "teamName": "Stade Rennais FC 1901",
           "shortName": "Stade Rennais",
           "crest": "assets/teams/ligue1/529.png",
-          "rawScore": 0.4151,
-          "probability": 0.0742,
+          "rawScore": 0.3988,
+          "probability": 0.0736,
           "confidence": 0.7058,
           "features": {
             "pointsPerGame": 1.7778,
             "pointsGapAdjusted": 0.8,
             "goalDiffPerGame": 0.1111,
             "recentPpg": 0,
-            "remainingScheduleAdvantage": 0.0533
+            "remainingScheduleAdvantage": 0.0593
           },
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": -0.0025,
-          "probabilityDelta7d": -0.0268
-        },
-        {
-          "teamId": 548,
-          "teamName": "AS Monaco FC",
-          "shortName": "Monaco",
-          "crest": "assets/teams/ligue1/548.png",
-          "rawScore": 0.3151,
-          "probability": 0.0671,
-          "confidence": 0.7058,
-          "features": {
-            "pointsPerGame": 1.6667,
-            "pointsGapAdjusted": 0.75,
-            "goalDiffPerGame": 0.2222,
-            "recentPpg": 0,
-            "remainingScheduleAdvantage": 0.0522
-          },
-          "missingFeatures": [
-            "recentPpg"
-          ],
-          "probabilityDeltaPrevious": -0.0157,
-          "probabilityDelta7d": -0.0189
-        },
-        {
-          "teamId": 522,
-          "teamName": "OGC Nice",
-          "shortName": "Nice",
-          "crest": "assets/teams/ligue1/522.png",
-          "rawScore": 0.1698,
-          "probability": 0.058,
-          "confidence": 0.7058,
-          "features": {
-            "pointsPerGame": 1.5556,
-            "pointsGapAdjusted": 0.7,
-            "goalDiffPerGame": 0.1111,
-            "recentPpg": 0,
-            "remainingScheduleAdvantage": 0.045
-          },
-          "missingFeatures": [
-            "recentPpg"
-          ],
-          "probabilityDeltaPrevious": -0.0021,
-          "probabilityDelta7d": 0.0122
+          "probabilityDeltaPrevious": -0.0006,
+          "probabilityDelta7d": -0.0251
         },
         {
           "teamId": 516,
           "teamName": "Olympique de Marseille",
           "shortName": "Marseille",
           "crest": "assets/teams/ligue1/516.png",
-          "rawScore": 0.1099,
-          "probability": 0.0547,
-          "confidence": 0.6974,
+          "rawScore": 0.3619,
+          "probability": 0.0709,
+          "confidence": 0.7058,
           "features": {
-            "pointsPerGame": 1.5,
-            "pointsGapAdjusted": 0.6,
-            "goalDiffPerGame": 0.625,
+            "pointsPerGame": 1.6667,
+            "pointsGapAdjusted": 0.75,
+            "goalDiffPerGame": 0.7778,
             "recentPpg": 0,
-            "remainingScheduleAdvantage": -0.0047
+            "remainingScheduleAdvantage": -0.0029
           },
           "missingFeatures": [
             "recentPpg"
           ],
-          "probabilityDeltaPrevious": -0.0016,
-          "probabilityDelta7d": -0.0113
+          "probabilityDeltaPrevious": 0.0162,
+          "probabilityDelta7d": 0.0109
+        },
+        {
+          "teamId": 548,
+          "teamName": "AS Monaco FC",
+          "shortName": "Monaco",
+          "crest": "assets/teams/ligue1/548.png",
+          "rawScore": 0.2949,
+          "probability": 0.0663,
+          "confidence": 0.7058,
+          "features": {
+            "pointsPerGame": 1.6667,
+            "pointsGapAdjusted": 0.75,
+            "goalDiffPerGame": 0.2222,
+            "recentPpg": 0,
+            "remainingScheduleAdvantage": 0.0526
+          },
+          "missingFeatures": [
+            "recentPpg"
+          ],
+          "probabilityDeltaPrevious": -0.0008,
+          "probabilityDelta7d": -0.02
+        },
+        {
+          "teamId": 522,
+          "teamName": "OGC Nice",
+          "shortName": "Nice",
+          "crest": "assets/teams/ligue1/522.png",
+          "rawScore": 0.1495,
+          "probability": 0.0573,
+          "confidence": 0.7058,
+          "features": {
+            "pointsPerGame": 1.5556,
+            "pointsGapAdjusted": 0.7,
+            "goalDiffPerGame": 0.1111,
+            "recentPpg": 0,
+            "remainingScheduleAdvantage": 0.0443
+          },
+          "missingFeatures": [
+            "recentPpg"
+          ],
+          "probabilityDeltaPrevious": -0.0007,
+          "probabilityDelta7d": 0.0109
         }
       ],
       "dataQuality": {
@@ -27329,40 +27225,14 @@
         "warnings": [
           "Odds unavailable: The Odds API soccer_france_ligue_one returned 422"
         ],
-        "standingsUpdatedAt": "2026-11-01T18:56:28.781Z",
-        "matchesUpdatedAt": "2026-11-01T18:56:28.781Z"
+        "standingsUpdatedAt": "2026-11-01T23:36:09.532Z",
+        "matchesUpdatedAt": "2026-11-01T23:36:09.532Z"
       },
       "matchOdds": {
         "leagueId": "ligue1",
-        "fetchedAt": "2026-11-01T18:57:41.314Z",
+        "fetchedAt": "2026-11-01T23:37:21.043Z",
         "source": "the-odds-api",
         "matches": [
-          {
-            "matchId": 559645,
-            "utcDate": "2026-11-01T19:45:00Z",
-            "homeTeamId": 516,
-            "awayTeamId": 511,
-            "homeTeamName": "Olympique de Marseille",
-            "awayTeamName": "Toulouse FC",
-            "outcomes": [
-              {
-                "name": "Marseille",
-                "oddsDecimal": 1.9742,
-                "impliedProbability": 0.5065
-              },
-              {
-                "name": "Toulouse",
-                "oddsDecimal": 3.9263,
-                "impliedProbability": 0.2547
-              },
-              {
-                "name": "Draw",
-                "oddsDecimal": 4.1883,
-                "impliedProbability": 0.2388
-              }
-            ],
-            "bookmakerCount": 39
-          },
           {
             "matchId": 559641,
             "utcDate": "2026-11-02T19:45:00Z",
@@ -27373,18 +27243,18 @@
             "outcomes": [
               {
                 "name": "Brest",
-                "oddsDecimal": 3.1476,
-                "impliedProbability": 0.3177
+                "oddsDecimal": 3.1236,
+                "impliedProbability": 0.3201
               },
               {
                 "name": "Lorient",
-                "oddsDecimal": 2.56,
-                "impliedProbability": 0.3906
+                "oddsDecimal": 2.5758,
+                "impliedProbability": 0.3882
               },
               {
                 "name": "Draw",
-                "oddsDecimal": 3.4285,
-                "impliedProbability": 0.2917
+                "oddsDecimal": 3.4289,
+                "impliedProbability": 0.2916
               }
             ],
             "bookmakerCount": 40
@@ -27399,21 +27269,21 @@
             "outcomes": [
               {
                 "name": "Strasbourg",
-                "oddsDecimal": 3.5009,
-                "impliedProbability": 0.2856
+                "oddsDecimal": 3.4963,
+                "impliedProbability": 0.286
               },
               {
                 "name": "Toulouse",
-                "oddsDecimal": 2.1601,
-                "impliedProbability": 0.4629
+                "oddsDecimal": 2.1612,
+                "impliedProbability": 0.4627
               },
               {
                 "name": "Draw",
-                "oddsDecimal": 3.9773,
-                "impliedProbability": 0.2514
+                "oddsDecimal": 3.9795,
+                "impliedProbability": 0.2513
               }
             ],
-            "bookmakerCount": 36
+            "bookmakerCount": 37
           },
           {
             "matchId": 559637,
@@ -27425,21 +27295,21 @@
             "outcomes": [
               {
                 "name": "Auxerre",
-                "oddsDecimal": 4.1797,
-                "impliedProbability": 0.2393
+                "oddsDecimal": 4.1931,
+                "impliedProbability": 0.2385
               },
               {
                 "name": "Paris FC",
-                "oddsDecimal": 1.9588,
-                "impliedProbability": 0.5105
+                "oddsDecimal": 1.9539,
+                "impliedProbability": 0.5118
               },
               {
                 "name": "Draw",
-                "oddsDecimal": 3.9962,
-                "impliedProbability": 0.2502
+                "oddsDecimal": 4.0048,
+                "impliedProbability": 0.2497
               }
             ],
-            "bookmakerCount": 37
+            "bookmakerCount": 38
           },
           {
             "matchId": 559635,
@@ -27451,21 +27321,21 @@
             "outcomes": [
               {
                 "name": "Paris Saint Germain",
-                "oddsDecimal": 1.2066,
-                "impliedProbability": 0.8288
+                "oddsDecimal": 1.206,
+                "impliedProbability": 0.8292
               },
               {
                 "name": "Troyes",
-                "oddsDecimal": 15.7761,
-                "impliedProbability": 0.0634
+                "oddsDecimal": 15.8491,
+                "impliedProbability": 0.0631
               },
               {
                 "name": "Draw",
-                "oddsDecimal": 9.2745,
-                "impliedProbability": 0.1078
+                "oddsDecimal": 9.2811,
+                "impliedProbability": 0.1077
               }
             ],
-            "bookmakerCount": 37
+            "bookmakerCount": 38
           },
           {
             "matchId": 559636,
@@ -27477,17 +27347,17 @@
             "outcomes": [
               {
                 "name": "Lille",
-                "oddsDecimal": 3.5018,
-                "impliedProbability": 0.2856
+                "oddsDecimal": 3.5022,
+                "impliedProbability": 0.2855
               },
               {
                 "name": "Rennes",
-                "oddsDecimal": 2.1759,
+                "oddsDecimal": 2.1758,
                 "impliedProbability": 0.4596
               },
               {
                 "name": "Draw",
-                "oddsDecimal": 3.9237,
+                "oddsDecimal": 3.9238,
                 "impliedProbability": 0.2549
               }
             ],
@@ -27503,18 +27373,18 @@
             "outcomes": [
               {
                 "name": "AS Monaco",
-                "oddsDecimal": 1.8545,
-                "impliedProbability": 0.5392
+                "oddsDecimal": 1.8564,
+                "impliedProbability": 0.5387
               },
               {
                 "name": "Le Mans FC",
-                "oddsDecimal": 4.3898,
-                "impliedProbability": 0.2278
+                "oddsDecimal": 4.3855,
+                "impliedProbability": 0.228
               },
               {
                 "name": "Draw",
-                "oddsDecimal": 4.2925,
-                "impliedProbability": 0.233
+                "oddsDecimal": 4.2864,
+                "impliedProbability": 0.2333
               }
             ],
             "bookmakerCount": 36
@@ -27529,18 +27399,18 @@
             "outcomes": [
               {
                 "name": "Angers",
-                "oddsDecimal": 3.5773,
-                "impliedProbability": 0.2795
+                "oddsDecimal": 3.6004,
+                "impliedProbability": 0.2777
               },
               {
                 "name": "Nice",
-                "oddsDecimal": 2.1781,
-                "impliedProbability": 0.4591
+                "oddsDecimal": 2.1671,
+                "impliedProbability": 0.4614
               },
               {
                 "name": "Draw",
-                "oddsDecimal": 3.8265,
-                "impliedProbability": 0.2613
+                "oddsDecimal": 3.8343,
+                "impliedProbability": 0.2608
               }
             ],
             "bookmakerCount": 36
@@ -27555,13 +27425,13 @@
             "outcomes": [
               {
                 "name": "Brest",
-                "oddsDecimal": 3.0127,
-                "impliedProbability": 0.3319
+                "oddsDecimal": 3.0121,
+                "impliedProbability": 0.332
               },
               {
                 "name": "Lyon",
-                "oddsDecimal": 2.4624,
-                "impliedProbability": 0.4061
+                "oddsDecimal": 2.4628,
+                "impliedProbability": 0.406
               },
               {
                 "name": "Draw",
@@ -27581,18 +27451,18 @@
             "outcomes": [
               {
                 "name": "Le Havre",
-                "oddsDecimal": 2.9412,
-                "impliedProbability": 0.34
+                "oddsDecimal": 2.9389,
+                "impliedProbability": 0.3403
               },
               {
                 "name": "Lorient",
-                "oddsDecimal": 2.6495,
-                "impliedProbability": 0.3774
+                "oddsDecimal": 2.6542,
+                "impliedProbability": 0.3768
               },
               {
                 "name": "Draw",
-                "oddsDecimal": 3.539,
-                "impliedProbability": 0.2826
+                "oddsDecimal": 3.5338,
+                "impliedProbability": 0.283
               }
             ],
             "bookmakerCount": 36
@@ -27607,21 +27477,21 @@
             "outcomes": [
               {
                 "name": "Marseille",
-                "oddsDecimal": 3.3333,
+                "oddsDecimal": 3.3329,
                 "impliedProbability": 0.3
               },
               {
                 "name": "RC Lens",
-                "oddsDecimal": 2.1831,
+                "oddsDecimal": 2.1828,
                 "impliedProbability": 0.4581
               },
               {
                 "name": "Draw",
-                "oddsDecimal": 4.1335,
-                "impliedProbability": 0.2419
+                "oddsDecimal": 4.1352,
+                "impliedProbability": 0.2418
               }
             ],
-            "bookmakerCount": 34
+            "bookmakerCount": 36
           }
         ],
         "teamSchedules": [
@@ -27629,22 +27499,29 @@
             "teamId": 524,
             "teamName": "Paris Saint-Germain FC",
             "matches": 1,
-            "expectedPoints": 2.5942,
-            "expectedPpg": 2.5942
+            "expectedPoints": 2.5953,
+            "expectedPpg": 2.5953
           },
           {
             "teamId": 548,
             "teamName": "AS Monaco FC",
             "matches": 1,
-            "expectedPoints": 1.8506,
-            "expectedPpg": 1.8506
+            "expectedPoints": 1.8494,
+            "expectedPpg": 1.8494
           },
           {
             "teamId": 1045,
             "teamName": "Paris FC",
             "matches": 1,
-            "expectedPoints": 1.7817,
-            "expectedPpg": 1.7817
+            "expectedPoints": 1.7851,
+            "expectedPpg": 1.7851
+          },
+          {
+            "teamId": 511,
+            "teamName": "Toulouse FC",
+            "matches": 1,
+            "expectedPoints": 1.6394,
+            "expectedPpg": 1.6394
           },
           {
             "teamId": 529,
@@ -27657,57 +27534,50 @@
             "teamId": 523,
             "teamName": "Olympique Lyonnais",
             "matches": 1,
-            "expectedPoints": 1.4803,
-            "expectedPpg": 1.4803
+            "expectedPoints": 1.48,
+            "expectedPpg": 1.48
           },
           {
             "teamId": 525,
             "teamName": "FC Lorient",
             "matches": 2,
-            "expectedPoints": 2.8783,
-            "expectedPpg": 1.4392
-          },
-          {
-            "teamId": 511,
-            "teamName": "Toulouse FC",
-            "matches": 2,
-            "expectedPoints": 2.643,
-            "expectedPpg": 1.3215
+            "expectedPoints": 2.8696,
+            "expectedPpg": 1.4348
           },
           {
             "teamId": 532,
             "teamName": "Angers SCO",
             "matches": 1,
-            "expectedPoints": 1.0998,
-            "expectedPpg": 1.0998
+            "expectedPoints": 1.0939,
+            "expectedPpg": 1.0939
           },
           {
             "teamId": 535,
             "teamName": "Le Mans FC",
             "matches": 1,
-            "expectedPoints": 0.9164,
-            "expectedPpg": 0.9164
+            "expectedPoints": 0.9173,
+            "expectedPpg": 0.9173
           },
           {
             "teamId": 533,
             "teamName": "Le Havre AC",
             "matches": 1,
-            "expectedPoints": 0.2826,
-            "expectedPpg": 0.2826
+            "expectedPoints": 0.283,
+            "expectedPpg": 0.283
           },
           {
             "teamId": 512,
             "teamName": "Stade Brestois 29",
             "matches": 2,
-            "expectedPoints": 0.5537,
-            "expectedPpg": 0.2769
+            "expectedPoints": 0.5536,
+            "expectedPpg": 0.2768
           },
           {
             "teamId": 522,
             "teamName": "OGC Nice",
             "matches": 1,
-            "expectedPoints": 0.2613,
-            "expectedPpg": 0.2613
+            "expectedPoints": 0.2608,
+            "expectedPpg": 0.2608
           },
           {
             "teamId": 521,
@@ -27720,43 +27590,43 @@
             "teamId": 576,
             "teamName": "RC Strasbourg Alsace",
             "matches": 1,
-            "expectedPoints": 0.2514,
-            "expectedPpg": 0.2514
+            "expectedPoints": 0.2513,
+            "expectedPpg": 0.2513
           },
           {
             "teamId": 519,
             "teamName": "AJ Auxerre",
             "matches": 1,
-            "expectedPoints": 0.2502,
-            "expectedPpg": 0.2502
+            "expectedPoints": 0.2497,
+            "expectedPpg": 0.2497
+          },
+          {
+            "teamId": 516,
+            "teamName": "Olympique de Marseille",
+            "matches": 1,
+            "expectedPoints": 0.2418,
+            "expectedPpg": 0.2418
           },
           {
             "teamId": 546,
             "teamName": "Racing Club de Lens",
             "matches": 1,
-            "expectedPoints": 0.2419,
-            "expectedPpg": 0.2419
-          },
-          {
-            "teamId": 516,
-            "teamName": "Olympique de Marseille",
-            "matches": 2,
-            "expectedPoints": 0.4807,
-            "expectedPpg": 0.2404
+            "expectedPoints": 0.2418,
+            "expectedPpg": 0.2418
           },
           {
             "teamId": 531,
             "teamName": "ES Troyes AC",
             "matches": 1,
-            "expectedPoints": 0.1078,
-            "expectedPpg": 0.1078
+            "expectedPoints": 0.1077,
+            "expectedPpg": 0.1077
           }
         ],
         "dataQuality": {
-          "bookmakerCount": 402,
-          "matchedOutcomeCount": 33,
+          "bookmakerCount": 368,
+          "matchedOutcomeCount": 30,
           "unmatchedOutcomeCount": 0,
-          "coverageRatio": 0.0485,
+          "coverageRatio": 0.0442,
           "warnings": []
         }
       }
