@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-14T23:55:10.154Z",
+  "generatedAt": "2026-11-15T09:26:49.922Z",
   "modelVersion": "rule-softmax-v0.1.0",
   "leagues": [
     {
@@ -5490,12 +5490,12 @@
         "warnings": [
           "Odds unavailable: The Odds API soccer_epl returned 422"
         ],
-        "standingsUpdatedAt": "2026-11-14T23:55:10.154Z",
-        "matchesUpdatedAt": "2026-11-14T23:55:10.154Z"
+        "standingsUpdatedAt": "2026-11-15T09:26:49.922Z",
+        "matchesUpdatedAt": "2026-11-15T09:26:49.922Z"
       },
       "matchOdds": {
         "leagueId": "epl",
-        "fetchedAt": "2026-11-14T23:56:20.695Z",
+        "fetchedAt": "2026-11-15T09:27:57.994Z",
         "source": "the-odds-api",
         "matches": [
           {
@@ -5508,21 +5508,21 @@
             "outcomes": [
               {
                 "name": "Fulham",
-                "oddsDecimal": 7.1863,
-                "impliedProbability": 0.1392
+                "oddsDecimal": 7.2308,
+                "impliedProbability": 0.1383
               },
               {
                 "name": "Manchester City",
-                "oddsDecimal": 1.4863,
-                "impliedProbability": 0.6728
+                "oddsDecimal": 1.4839,
+                "impliedProbability": 0.6739
               },
               {
                 "name": "Draw",
-                "oddsDecimal": 5.3183,
-                "impliedProbability": 0.188
+                "oddsDecimal": 5.3252,
+                "impliedProbability": 0.1878
               }
             ],
-            "bookmakerCount": 41
+            "bookmakerCount": 42
           },
           {
             "matchId": 560644,
@@ -5534,21 +5534,21 @@
             "outcomes": [
               {
                 "name": "Aston Villa",
-                "oddsDecimal": 1.8612,
-                "impliedProbability": 0.5373
+                "oddsDecimal": 1.8607,
+                "impliedProbability": 0.5374
               },
               {
                 "name": "Sunderland",
-                "oddsDecimal": 4.6681,
-                "impliedProbability": 0.2142
+                "oddsDecimal": 4.6711,
+                "impliedProbability": 0.2141
               },
               {
                 "name": "Draw",
-                "oddsDecimal": 4.0243,
+                "oddsDecimal": 4.0244,
                 "impliedProbability": 0.2485
               }
             ],
-            "bookmakerCount": 41
+            "bookmakerCount": 42
           },
           {
             "matchId": 560647,
@@ -5560,21 +5560,21 @@
             "outcomes": [
               {
                 "name": "Bournemouth",
-                "oddsDecimal": 2.1147,
+                "oddsDecimal": 2.1146,
                 "impliedProbability": 0.4729
               },
               {
                 "name": "Nottingham Forest",
-                "oddsDecimal": 3.8124,
+                "oddsDecimal": 3.8121,
                 "impliedProbability": 0.2623
               },
               {
                 "name": "Draw",
-                "oddsDecimal": 3.7763,
+                "oddsDecimal": 3.7769,
                 "impliedProbability": 0.2648
               }
             ],
-            "bookmakerCount": 41
+            "bookmakerCount": 42
           },
           {
             "matchId": 560642,
@@ -5586,21 +5586,21 @@
             "outcomes": [
               {
                 "name": "Chelsea",
-                "oddsDecimal": 1.9607,
-                "impliedProbability": 0.51
+                "oddsDecimal": 1.9589,
+                "impliedProbability": 0.5105
               },
               {
                 "name": "Leeds United",
-                "oddsDecimal": 4.2013,
-                "impliedProbability": 0.238
+                "oddsDecimal": 4.1993,
+                "impliedProbability": 0.2381
               },
               {
                 "name": "Draw",
-                "oddsDecimal": 3.9692,
-                "impliedProbability": 0.2519
+                "oddsDecimal": 3.9782,
+                "impliedProbability": 0.2514
               }
             ],
-            "bookmakerCount": 41
+            "bookmakerCount": 42
           },
           {
             "matchId": 560650,
@@ -5612,21 +5612,21 @@
             "outcomes": [
               {
                 "name": "Coventry City",
-                "oddsDecimal": 2.5188,
-                "impliedProbability": 0.397
+                "oddsDecimal": 2.5181,
+                "impliedProbability": 0.3971
               },
               {
                 "name": "Crystal Palace",
-                "oddsDecimal": 2.9716,
-                "impliedProbability": 0.3365
+                "oddsDecimal": 2.9747,
+                "impliedProbability": 0.3362
               },
               {
                 "name": "Draw",
-                "oddsDecimal": 3.7527,
-                "impliedProbability": 0.2665
+                "oddsDecimal": 3.7494,
+                "impliedProbability": 0.2667
               }
             ],
-            "bookmakerCount": 41
+            "bookmakerCount": 42
           },
           {
             "matchId": 560648,
@@ -5638,21 +5638,21 @@
             "outcomes": [
               {
                 "name": "Ipswich Town",
-                "oddsDecimal": 5.8571,
-                "impliedProbability": 0.1707
+                "oddsDecimal": 5.8705,
+                "impliedProbability": 0.1703
               },
               {
                 "name": "Tottenham Hotspur",
-                "oddsDecimal": 1.6281,
-                "impliedProbability": 0.6142
+                "oddsDecimal": 1.6273,
+                "impliedProbability": 0.6145
               },
               {
                 "name": "Draw",
-                "oddsDecimal": 4.6497,
+                "oddsDecimal": 4.6484,
                 "impliedProbability": 0.2151
               }
             ],
-            "bookmakerCount": 41
+            "bookmakerCount": 42
           },
           {
             "matchId": 560651,
@@ -5664,21 +5664,21 @@
             "outcomes": [
               {
                 "name": "Arsenal",
-                "oddsDecimal": 1.672,
-                "impliedProbability": 0.5981
+                "oddsDecimal": 1.6724,
+                "impliedProbability": 0.5979
               },
               {
                 "name": "Newcastle United",
-                "oddsDecimal": 5.6943,
-                "impliedProbability": 0.1756
+                "oddsDecimal": 5.6918,
+                "impliedProbability": 0.1757
               },
               {
                 "name": "Draw",
-                "oddsDecimal": 4.4186,
-                "impliedProbability": 0.2263
+                "oddsDecimal": 4.4174,
+                "impliedProbability": 0.2264
               }
             ],
-            "bookmakerCount": 41
+            "bookmakerCount": 42
           },
           {
             "matchId": 560646,
@@ -5721,12 +5721,12 @@
               },
               {
                 "name": "Manchester United",
-                "oddsDecimal": 4.4115,
-                "impliedProbability": 0.2267
+                "oddsDecimal": 4.4128,
+                "impliedProbability": 0.2266
               },
               {
                 "name": "Draw",
-                "oddsDecimal": 4.3502,
+                "oddsDecimal": 4.3489,
                 "impliedProbability": 0.2299
               }
             ],
@@ -5747,13 +5747,13 @@
               },
               {
                 "name": "Everton",
-                "oddsDecimal": 3.615,
-                "impliedProbability": 0.2766
+                "oddsDecimal": 3.6176,
+                "impliedProbability": 0.2764
               },
               {
                 "name": "Draw",
-                "oddsDecimal": 3.8438,
-                "impliedProbability": 0.2602
+                "oddsDecimal": 3.8409,
+                "impliedProbability": 0.2604
               }
             ],
             "bookmakerCount": 39
@@ -5768,18 +5768,18 @@
             "outcomes": [
               {
                 "name": "Chelsea",
-                "oddsDecimal": 2.6443,
-                "impliedProbability": 0.3782
+                "oddsDecimal": 2.6417,
+                "impliedProbability": 0.3785
               },
               {
                 "name": "Nottingham Forest",
-                "oddsDecimal": 2.8162,
-                "impliedProbability": 0.3551
+                "oddsDecimal": 2.8199,
+                "impliedProbability": 0.3546
               },
               {
                 "name": "Draw",
-                "oddsDecimal": 3.7489,
-                "impliedProbability": 0.2667
+                "oddsDecimal": 3.7477,
+                "impliedProbability": 0.2668
               }
             ],
             "bookmakerCount": 24
@@ -5820,18 +5820,18 @@
             "outcomes": [
               {
                 "name": "Coventry City",
-                "oddsDecimal": 5.7271,
-                "impliedProbability": 0.1746
+                "oddsDecimal": 5.7454,
+                "impliedProbability": 0.1741
               },
               {
                 "name": "Leeds United",
-                "oddsDecimal": 1.6655,
-                "impliedProbability": 0.6004
+                "oddsDecimal": 1.6654,
+                "impliedProbability": 0.6005
               },
               {
                 "name": "Draw",
-                "oddsDecimal": 4.4453,
-                "impliedProbability": 0.225
+                "oddsDecimal": 4.4351,
+                "impliedProbability": 0.2255
               }
             ],
             "bookmakerCount": 20
@@ -5846,21 +5846,21 @@
             "outcomes": [
               {
                 "name": "Aston Villa",
-                "oddsDecimal": 2.1442,
-                "impliedProbability": 0.4664
+                "oddsDecimal": 2.1353,
+                "impliedProbability": 0.4683
               },
               {
                 "name": "Ipswich Town",
-                "oddsDecimal": 3.5229,
-                "impliedProbability": 0.2839
+                "oddsDecimal": 3.5172,
+                "impliedProbability": 0.2843
               },
               {
                 "name": "Draw",
-                "oddsDecimal": 4.0037,
-                "impliedProbability": 0.2498
+                "oddsDecimal": 4.0428,
+                "impliedProbability": 0.2474
               }
             ],
-            "bookmakerCount": 16
+            "bookmakerCount": 20
           },
           {
             "matchId": 560656,
@@ -6031,22 +6031,22 @@
             "teamId": 57,
             "teamName": "Arsenal FC",
             "matches": 2,
-            "expectedPoints": 3.6688,
-            "expectedPpg": 1.8344
+            "expectedPoints": 3.6683,
+            "expectedPpg": 1.8342
           },
           {
             "teamId": 73,
             "teamName": "Tottenham Hotspur FC",
             "matches": 2,
-            "expectedPoints": 3.62,
-            "expectedPpg": 1.81
+            "expectedPoints": 3.6209,
+            "expectedPpg": 1.8105
           },
           {
             "teamId": 58,
             "teamName": "Aston Villa FC",
             "matches": 2,
-            "expectedPoints": 3.5094,
-            "expectedPpg": 1.7547
+            "expectedPoints": 3.513,
+            "expectedPpg": 1.7565
           },
           {
             "teamId": 64,
@@ -6059,22 +6059,22 @@
             "teamId": 65,
             "teamName": "Manchester City FC",
             "matches": 2,
-            "expectedPoints": 3.2981,
-            "expectedPpg": 1.6491
+            "expectedPoints": 3.3012,
+            "expectedPpg": 1.6506
           },
           {
             "teamId": 61,
             "teamName": "Chelsea FC",
             "matches": 2,
-            "expectedPoints": 3.1832,
-            "expectedPpg": 1.5916
+            "expectedPoints": 3.1852,
+            "expectedPpg": 1.5926
           },
           {
             "teamId": 354,
             "teamName": "Crystal Palace FC",
             "matches": 2,
-            "expectedPoints": 3.0604,
-            "expectedPpg": 1.5302
+            "expectedPoints": 3.0597,
+            "expectedPpg": 1.5299
           },
           {
             "teamId": 1044,
@@ -6087,64 +6087,64 @@
             "teamId": 341,
             "teamName": "Leeds United FC",
             "matches": 2,
-            "expectedPoints": 2.9921,
-            "expectedPpg": 1.4961
+            "expectedPoints": 2.9927,
+            "expectedPpg": 1.4964
           },
           {
             "teamId": 402,
             "teamName": "Brentford FC",
             "matches": 2,
-            "expectedPoints": 2.7186,
-            "expectedPpg": 1.3593
+            "expectedPoints": 2.7188,
+            "expectedPpg": 1.3594
           },
           {
             "teamId": 66,
             "teamName": "Manchester United FC",
             "matches": 2,
-            "expectedPoints": 2.5932,
-            "expectedPpg": 1.2966
+            "expectedPoints": 2.5929,
+            "expectedPpg": 1.2965
           },
           {
             "teamId": 351,
             "teamName": "Nottingham Forest FC",
             "matches": 2,
-            "expectedPoints": 2.3837,
-            "expectedPpg": 1.1919
+            "expectedPoints": 2.3823,
+            "expectedPpg": 1.1912
           },
           {
             "teamId": 1076,
             "teamName": "Coventry City FC",
             "matches": 2,
-            "expectedPoints": 2.2063,
-            "expectedPpg": 1.1032
+            "expectedPoints": 2.2058,
+            "expectedPpg": 1.1029
           },
           {
             "teamId": 62,
             "teamName": "Everton FC",
             "matches": 2,
-            "expectedPoints": 2.1951,
-            "expectedPpg": 1.0976
+            "expectedPoints": 2.1947,
+            "expectedPpg": 1.0974
           },
           {
             "teamId": 71,
             "teamName": "Sunderland AFC",
             "matches": 2,
-            "expectedPoints": 2.0493,
-            "expectedPpg": 1.0246
+            "expectedPoints": 2.049,
+            "expectedPpg": 1.0245
           },
           {
             "teamId": 63,
             "teamName": "Fulham FC",
             "matches": 2,
-            "expectedPoints": 1.9632,
-            "expectedPpg": 0.9816
+            "expectedPoints": 1.9603,
+            "expectedPpg": 0.9802
           },
           {
             "teamId": 349,
             "teamName": "Ipswich Town FC",
             "matches": 2,
-            "expectedPoints": 1.8287,
-            "expectedPpg": 0.9144
+            "expectedPoints": 1.8263,
+            "expectedPpg": 0.9132
           },
           {
             "teamId": 322,
@@ -6157,12 +6157,12 @@
             "teamId": 67,
             "teamName": "Newcastle United FC",
             "matches": 2,
-            "expectedPoints": 1.5172,
-            "expectedPpg": 0.7586
+            "expectedPoints": 1.5176,
+            "expectedPpg": 0.7588
           }
         ],
         "dataQuality": {
-          "bookmakerCount": 570,
+          "bookmakerCount": 581,
           "matchedOutcomeCount": 60,
           "unmatchedOutcomeCount": 0,
           "coverageRatio": 0.0714,
@@ -11659,12 +11659,12 @@
           "Odds unavailable: The Odds API soccer_spain_la_liga returned 422",
           "Match odds Unmatched teams: Deportivo La Coruña"
         ],
-        "standingsUpdatedAt": "2026-11-14T23:55:10.154Z",
-        "matchesUpdatedAt": "2026-11-14T23:55:10.154Z"
+        "standingsUpdatedAt": "2026-11-15T09:26:49.922Z",
+        "matchesUpdatedAt": "2026-11-15T09:26:49.922Z"
       },
       "matchOdds": {
         "leagueId": "laliga",
-        "fetchedAt": "2026-11-14T23:56:21.801Z",
+        "fetchedAt": "2026-11-15T09:27:59.045Z",
         "source": "the-odds-api",
         "matches": [
           {
@@ -11677,18 +11677,18 @@
             "outcomes": [
               {
                 "name": "Athletic Bilbao",
-                "oddsDecimal": 1.5704,
-                "impliedProbability": 0.6368
+                "oddsDecimal": 1.5705,
+                "impliedProbability": 0.6367
               },
               {
                 "name": "Espanyol",
-                "oddsDecimal": 6.8538,
+                "oddsDecimal": 6.8542,
                 "impliedProbability": 0.1459
               },
               {
                 "name": "Draw",
-                "oddsDecimal": 4.6014,
-                "impliedProbability": 0.2173
+                "oddsDecimal": 4.6003,
+                "impliedProbability": 0.2174
               }
             ],
             "bookmakerCount": 37
@@ -11703,18 +11703,18 @@
             "outcomes": [
               {
                 "name": "Rayo Vallecano",
-                "oddsDecimal": 2.076,
-                "impliedProbability": 0.4817
+                "oddsDecimal": 2.0745,
+                "impliedProbability": 0.4821
               },
               {
                 "name": "Valencia",
-                "oddsDecimal": 4.0886,
+                "oddsDecimal": 4.0881,
                 "impliedProbability": 0.2446
               },
               {
                 "name": "Draw",
-                "oddsDecimal": 3.6534,
-                "impliedProbability": 0.2737
+                "oddsDecimal": 3.6586,
+                "impliedProbability": 0.2733
               }
             ],
             "bookmakerCount": 37
@@ -11729,18 +11729,18 @@
             "outcomes": [
               {
                 "name": "Real Betis",
-                "oddsDecimal": 2.3915,
-                "impliedProbability": 0.4181
+                "oddsDecimal": 2.3928,
+                "impliedProbability": 0.4179
               },
               {
                 "name": "Sevilla",
-                "oddsDecimal": 3.1715,
-                "impliedProbability": 0.3153
+                "oddsDecimal": 3.1703,
+                "impliedProbability": 0.3154
               },
               {
                 "name": "Draw",
-                "oddsDecimal": 3.7517,
-                "impliedProbability": 0.2665
+                "oddsDecimal": 3.7503,
+                "impliedProbability": 0.2666
               }
             ],
             "bookmakerCount": 37
@@ -11755,18 +11755,18 @@
             "outcomes": [
               {
                 "name": "Celta Vigo",
-                "oddsDecimal": 13.0018,
-                "impliedProbability": 0.0769
+                "oddsDecimal": 13.0764,
+                "impliedProbability": 0.0765
               },
               {
                 "name": "Real Madrid",
-                "oddsDecimal": 1.2683,
-                "impliedProbability": 0.7885
+                "oddsDecimal": 1.2671,
+                "impliedProbability": 0.7892
               },
               {
                 "name": "Draw",
-                "oddsDecimal": 7.4288,
-                "impliedProbability": 0.1346
+                "oddsDecimal": 7.4443,
+                "impliedProbability": 0.1343
               }
             ],
             "bookmakerCount": 37
@@ -11781,18 +11781,18 @@
             "outcomes": [
               {
                 "name": "Barcelona",
-                "oddsDecimal": 1.3014,
-                "impliedProbability": 0.7684
+                "oddsDecimal": 1.2824,
+                "impliedProbability": 0.7798
               },
               {
                 "name": "Villarreal",
-                "oddsDecimal": 10.4921,
-                "impliedProbability": 0.0953
+                "oddsDecimal": 11.187,
+                "impliedProbability": 0.0894
               },
               {
                 "name": "Draw",
-                "oddsDecimal": 7.3367,
-                "impliedProbability": 0.1363
+                "oddsDecimal": 7.6426,
+                "impliedProbability": 0.1308
               }
             ],
             "bookmakerCount": 35
@@ -11911,18 +11911,18 @@
             "outcomes": [
               {
                 "name": "Levante",
-                "oddsDecimal": 2.2512,
-                "impliedProbability": 0.4442
+                "oddsDecimal": 2.2519,
+                "impliedProbability": 0.4441
               },
               {
                 "name": "Real Racing Club de Santander",
-                "oddsDecimal": 3.2878,
+                "oddsDecimal": 3.287,
                 "impliedProbability": 0.3042
               },
               {
                 "name": "Draw",
-                "oddsDecimal": 3.974,
-                "impliedProbability": 0.2516
+                "oddsDecimal": 3.9731,
+                "impliedProbability": 0.2517
               }
             ],
             "bookmakerCount": 26
@@ -11937,17 +11937,17 @@
             "outcomes": [
               {
                 "name": "Rayo Vallecano",
-                "oddsDecimal": 5.8217,
-                "impliedProbability": 0.1718
+                "oddsDecimal": 5.835,
+                "impliedProbability": 0.1714
               },
               {
                 "name": "Real Betis",
-                "oddsDecimal": 1.6153,
-                "impliedProbability": 0.6191
+                "oddsDecimal": 1.6143,
+                "impliedProbability": 0.6195
               },
               {
                 "name": "Draw",
-                "oddsDecimal": 4.7814,
+                "oddsDecimal": 4.7813,
                 "impliedProbability": 0.2091
               }
             ],
@@ -11963,21 +11963,21 @@
             "outcomes": [
               {
                 "name": "Athletic Bilbao",
-                "oddsDecimal": 1.9354,
-                "impliedProbability": 0.5167
+                "oddsDecimal": 1.8661,
+                "impliedProbability": 0.5359
               },
               {
                 "name": "Málaga",
-                "oddsDecimal": 4.4318,
-                "impliedProbability": 0.2256
+                "oddsDecimal": 4.6757,
+                "impliedProbability": 0.2139
               },
               {
                 "name": "Draw",
-                "oddsDecimal": 3.8807,
-                "impliedProbability": 0.2577
+                "oddsDecimal": 3.9958,
+                "impliedProbability": 0.2503
               }
             ],
-            "bookmakerCount": 22
+            "bookmakerCount": 24
           },
           {
             "matchId": 564759,
@@ -11989,17 +11989,17 @@
             "outcomes": [
               {
                 "name": "Atlético Madrid",
-                "oddsDecimal": 1.6739,
-                "impliedProbability": 0.5974
+                "oddsDecimal": 1.6754,
+                "impliedProbability": 0.5969
               },
               {
                 "name": "Elche CF",
-                "oddsDecimal": 5.4595,
-                "impliedProbability": 0.1832
+                "oddsDecimal": 5.4418,
+                "impliedProbability": 0.1838
               },
               {
                 "name": "Draw",
-                "oddsDecimal": 4.5576,
+                "oddsDecimal": 4.5585,
                 "impliedProbability": 0.2194
               }
             ],
@@ -12093,18 +12093,18 @@
             "outcomes": [
               {
                 "name": "Real Sociedad",
-                "oddsDecimal": 2.3031,
-                "impliedProbability": 0.4342
+                "oddsDecimal": 2.3024,
+                "impliedProbability": 0.4343
               },
               {
                 "name": "Sevilla",
-                "oddsDecimal": 3.3497,
+                "oddsDecimal": 3.3506,
                 "impliedProbability": 0.2985
               },
               {
                 "name": "Draw",
-                "oddsDecimal": 3.7415,
-                "impliedProbability": 0.2673
+                "oddsDecimal": 3.7424,
+                "impliedProbability": 0.2672
               }
             ],
             "bookmakerCount": 16
@@ -12141,29 +12141,29 @@
             "teamId": 86,
             "teamName": "Real Madrid CF",
             "matches": 2,
-            "expectedPoints": 5.0565,
-            "expectedPpg": 2.5283
+            "expectedPoints": 5.0583,
+            "expectedPpg": 2.5292
           },
           {
             "teamId": 81,
             "teamName": "FC Barcelona",
             "matches": 1,
-            "expectedPoints": 2.4415,
-            "expectedPpg": 2.4415
+            "expectedPoints": 2.4702,
+            "expectedPpg": 2.4702
           },
           {
             "teamId": 78,
             "teamName": "Club Atlético de Madrid",
             "matches": 2,
-            "expectedPoints": 4.013,
-            "expectedPpg": 2.0065
+            "expectedPoints": 4.0115,
+            "expectedPpg": 2.0058
           },
           {
             "teamId": 77,
             "teamName": "Athletic Club",
             "matches": 2,
-            "expectedPoints": 3.9355,
-            "expectedPpg": 1.9678
+            "expectedPoints": 3.9855,
+            "expectedPpg": 1.9928
           },
           {
             "teamId": 79,
@@ -12176,29 +12176,29 @@
             "teamId": 95,
             "teamName": "Valencia CF",
             "matches": 2,
-            "expectedPoints": 2.5934,
-            "expectedPpg": 1.2967
+            "expectedPoints": 2.593,
+            "expectedPpg": 1.2965
           },
           {
             "teamId": 559,
             "teamName": "Sevilla FC",
             "matches": 2,
-            "expectedPoints": 2.3752,
-            "expectedPpg": 1.1876
+            "expectedPoints": 2.3755,
+            "expectedPpg": 1.1878
           },
           {
             "teamId": 5335,
             "teamName": "Real Racing Club de Santander",
             "matches": 2,
-            "expectedPoints": 2.3187,
+            "expectedPoints": 2.3188,
             "expectedPpg": 1.1594
           },
           {
             "teamId": 285,
             "teamName": "Elche CF",
             "matches": 2,
-            "expectedPoints": 1.934,
-            "expectedPpg": 0.967
+            "expectedPoints": 1.9358,
+            "expectedPpg": 0.9679
           },
           {
             "teamId": 82,
@@ -12211,57 +12211,57 @@
             "teamId": 94,
             "teamName": "Villarreal CF",
             "matches": 2,
-            "expectedPoints": 1.822,
-            "expectedPpg": 0.911
+            "expectedPoints": 1.7988,
+            "expectedPpg": 0.8994
           },
           {
             "teamId": 84,
             "teamName": "Málaga CF",
             "matches": 2,
-            "expectedPoints": 1.8163,
-            "expectedPpg": 0.9081
+            "expectedPoints": 1.7738,
+            "expectedPpg": 0.8869
           },
           {
             "teamId": 558,
             "teamName": "RC Celta de Vigo",
             "matches": 2,
-            "expectedPoints": 1.6928,
-            "expectedPpg": 0.8464
+            "expectedPoints": 1.6913,
+            "expectedPpg": 0.8457
           },
           {
             "teamId": 80,
             "teamName": "RCD Espanyol de Barcelona",
             "matches": 2,
-            "expectedPoints": 0.5142,
-            "expectedPpg": 0.2571
+            "expectedPoints": 0.5143,
+            "expectedPpg": 0.2572
           },
           {
             "teamId": 92,
             "teamName": "Real Sociedad de Fútbol",
             "matches": 2,
-            "expectedPoints": 0.5089,
-            "expectedPpg": 0.2545
+            "expectedPoints": 0.5088,
+            "expectedPpg": 0.2544
           },
           {
             "teamId": 88,
             "teamName": "Levante UD",
             "matches": 2,
-            "expectedPoints": 0.5085,
-            "expectedPpg": 0.2542
+            "expectedPoints": 0.5086,
+            "expectedPpg": 0.2543
           },
           {
             "teamId": 87,
             "teamName": "Rayo Vallecano de Madrid",
             "matches": 2,
-            "expectedPoints": 0.4828,
-            "expectedPpg": 0.2414
+            "expectedPoints": 0.4824,
+            "expectedPpg": 0.2412
           },
           {
             "teamId": 90,
             "teamName": "Real Betis Balompié",
             "matches": 2,
-            "expectedPoints": 0.4756,
-            "expectedPpg": 0.2378
+            "expectedPoints": 0.4757,
+            "expectedPpg": 0.2379
           },
           {
             "teamId": 263,
@@ -12272,7 +12272,7 @@
           }
         ],
         "dataQuality": {
-          "bookmakerCount": 494,
+          "bookmakerCount": 496,
           "matchedOutcomeCount": 54,
           "unmatchedOutcomeCount": 2,
           "coverageRatio": 0.069,
@@ -16808,12 +16808,12 @@
         "warnings": [
           "Odds unavailable: The Odds API soccer_germany_bundesliga returned 422"
         ],
-        "standingsUpdatedAt": "2026-11-14T23:55:10.154Z",
-        "matchesUpdatedAt": "2026-11-14T23:55:10.154Z"
+        "standingsUpdatedAt": "2026-11-15T09:26:49.922Z",
+        "matchesUpdatedAt": "2026-11-15T09:26:49.922Z"
       },
       "matchOdds": {
         "leagueId": "bundesliga",
-        "fetchedAt": "2026-11-14T23:56:22.909Z",
+        "fetchedAt": "2026-11-15T09:28:00.108Z",
         "source": "the-odds-api",
         "matches": [
           {
@@ -16826,8 +16826,8 @@
             "outcomes": [
               {
                 "name": "1. FC Köln",
-                "oddsDecimal": 20.7148,
-                "impliedProbability": 0.0483
+                "oddsDecimal": 20.7618,
+                "impliedProbability": 0.0482
               },
               {
                 "name": "Bayern Munich",
@@ -16836,8 +16836,8 @@
               },
               {
                 "name": "Draw",
-                "oddsDecimal": 12.0487,
-                "impliedProbability": 0.083
+                "oddsDecimal": 12.0315,
+                "impliedProbability": 0.0831
               }
             ],
             "bookmakerCount": 40
@@ -16852,21 +16852,21 @@
             "outcomes": [
               {
                 "name": "Bayer Leverkusen",
-                "oddsDecimal": 1.3394,
-                "impliedProbability": 0.7466
+                "oddsDecimal": 1.3393,
+                "impliedProbability": 0.7467
               },
               {
                 "name": "SC Paderborn",
-                "oddsDecimal": 9.4886,
-                "impliedProbability": 0.1054
+                "oddsDecimal": 9.5011,
+                "impliedProbability": 0.1053
               },
               {
                 "name": "Draw",
-                "oddsDecimal": 6.7566,
-                "impliedProbability": 0.148
+                "oddsDecimal": 6.7529,
+                "impliedProbability": 0.1481
               }
             ],
-            "bookmakerCount": 39
+            "bookmakerCount": 40
           },
           {
             "matchId": 565862,
@@ -16878,21 +16878,21 @@
             "outcomes": [
               {
                 "name": "Borussia Dortmund",
-                "oddsDecimal": 1.7231,
-                "impliedProbability": 0.5804
+                "oddsDecimal": 1.7222,
+                "impliedProbability": 0.5807
               },
               {
                 "name": "Borussia Monchengladbach",
-                "oddsDecimal": 4.968,
-                "impliedProbability": 0.2013
+                "oddsDecimal": 4.9726,
+                "impliedProbability": 0.2011
               },
               {
                 "name": "Draw",
-                "oddsDecimal": 4.5797,
-                "impliedProbability": 0.2184
+                "oddsDecimal": 4.582,
+                "impliedProbability": 0.2182
               }
             ],
-            "bookmakerCount": 39
+            "bookmakerCount": 40
           },
           {
             "matchId": 565865,
@@ -16904,21 +16904,21 @@
             "outcomes": [
               {
                 "name": "Eintracht Frankfurt",
-                "oddsDecimal": 2.4523,
-                "impliedProbability": 0.4078
+                "oddsDecimal": 2.4528,
+                "impliedProbability": 0.4077
               },
               {
                 "name": "TSG Hoffenheim",
-                "oddsDecimal": 2.8415,
-                "impliedProbability": 0.3519
+                "oddsDecimal": 2.8446,
+                "impliedProbability": 0.3515
               },
               {
                 "name": "Draw",
-                "oddsDecimal": 4.1616,
-                "impliedProbability": 0.2403
+                "oddsDecimal": 4.1536,
+                "impliedProbability": 0.2408
               }
             ],
-            "bookmakerCount": 39
+            "bookmakerCount": 40
           },
           {
             "matchId": 565860,
@@ -16930,21 +16930,21 @@
             "outcomes": [
               {
                 "name": "Elversberg",
-                "oddsDecimal": 3.5765,
-                "impliedProbability": 0.2796
+                "oddsDecimal": 3.575,
+                "impliedProbability": 0.2797
               },
               {
                 "name": "SC Freiburg",
-                "oddsDecimal": 2.1305,
+                "oddsDecimal": 2.1303,
                 "impliedProbability": 0.4694
               },
               {
                 "name": "Draw",
-                "oddsDecimal": 3.9837,
-                "impliedProbability": 0.251
+                "oddsDecimal": 3.9861,
+                "impliedProbability": 0.2509
               }
             ],
-            "bookmakerCount": 39
+            "bookmakerCount": 40
           },
           {
             "matchId": 565858,
@@ -16956,21 +16956,21 @@
             "outcomes": [
               {
                 "name": "RB Leipzig",
-                "oddsDecimal": 1.6605,
+                "oddsDecimal": 1.6607,
                 "impliedProbability": 0.6022
               },
               {
                 "name": "Union Berlin",
-                "oddsDecimal": 5.3672,
-                "impliedProbability": 0.1863
+                "oddsDecimal": 5.3645,
+                "impliedProbability": 0.1864
               },
               {
                 "name": "Draw",
-                "oddsDecimal": 4.7291,
-                "impliedProbability": 0.2115
+                "oddsDecimal": 4.7297,
+                "impliedProbability": 0.2114
               }
             ],
-            "bookmakerCount": 39
+            "bookmakerCount": 40
           },
           {
             "matchId": 565861,
@@ -16982,21 +16982,21 @@
             "outcomes": [
               {
                 "name": "FC Schalke 04",
-                "oddsDecimal": 4.0896,
-                "impliedProbability": 0.2445
+                "oddsDecimal": 4.0758,
+                "impliedProbability": 0.2454
               },
               {
                 "name": "VfB Stuttgart",
-                "oddsDecimal": 1.9134,
-                "impliedProbability": 0.5226
+                "oddsDecimal": 1.9143,
+                "impliedProbability": 0.5224
               },
               {
                 "name": "Draw",
-                "oddsDecimal": 4.2946,
-                "impliedProbability": 0.2328
+                "oddsDecimal": 4.3055,
+                "impliedProbability": 0.2323
               }
             ],
-            "bookmakerCount": 39
+            "bookmakerCount": 40
           },
           {
             "matchId": 565864,
@@ -17034,18 +17034,18 @@
             "outcomes": [
               {
                 "name": "Hamburger SV",
-                "oddsDecimal": 4.7686,
-                "impliedProbability": 0.2097
+                "oddsDecimal": 4.7649,
+                "impliedProbability": 0.2099
               },
               {
                 "name": "Werder Bremen",
-                "oddsDecimal": 1.7699,
-                "impliedProbability": 0.565
+                "oddsDecimal": 1.7696,
+                "impliedProbability": 0.5651
               },
               {
                 "name": "Draw",
-                "oddsDecimal": 4.4387,
-                "impliedProbability": 0.2253
+                "oddsDecimal": 4.4438,
+                "impliedProbability": 0.225
               }
             ],
             "bookmakerCount": 38
@@ -17060,18 +17060,18 @@
             "outcomes": [
               {
                 "name": "Borussia Monchengladbach",
-                "oddsDecimal": 4.1946,
-                "impliedProbability": 0.2384
+                "oddsDecimal": 4.204,
+                "impliedProbability": 0.2379
               },
               {
                 "name": "Werder Bremen",
-                "oddsDecimal": 1.8672,
-                "impliedProbability": 0.5356
+                "oddsDecimal": 1.8659,
+                "impliedProbability": 0.5359
               },
               {
                 "name": "Draw",
-                "oddsDecimal": 4.4239,
-                "impliedProbability": 0.226
+                "oddsDecimal": 4.4209,
+                "impliedProbability": 0.2262
               }
             ],
             "bookmakerCount": 21
@@ -17086,18 +17086,18 @@
             "outcomes": [
               {
                 "name": "1. FC Köln",
-                "oddsDecimal": 2.0887,
-                "impliedProbability": 0.4788
+                "oddsDecimal": 2.0868,
+                "impliedProbability": 0.4792
               },
               {
                 "name": "Elversberg",
-                "oddsDecimal": 3.5989,
+                "oddsDecimal": 3.5984,
                 "impliedProbability": 0.2779
               },
               {
                 "name": "Draw",
-                "oddsDecimal": 4.1089,
-                "impliedProbability": 0.2434
+                "oddsDecimal": 4.1169,
+                "impliedProbability": 0.2429
               }
             ],
             "bookmakerCount": 21
@@ -17112,18 +17112,18 @@
             "outcomes": [
               {
                 "name": "Bayern Munich",
-                "oddsDecimal": 1.295,
-                "impliedProbability": 0.7722
+                "oddsDecimal": 1.2143,
+                "impliedProbability": 0.8235
               },
               {
                 "name": "Hamburger SV",
-                "oddsDecimal": 10.1054,
-                "impliedProbability": 0.099
+                "oddsDecimal": 13.9816,
+                "impliedProbability": 0.0715
               },
               {
                 "name": "Draw",
-                "oddsDecimal": 7.7612,
-                "impliedProbability": 0.1288
+                "oddsDecimal": 9.5247,
+                "impliedProbability": 0.105
               }
             ],
             "bookmakerCount": 21
@@ -17138,18 +17138,18 @@
             "outcomes": [
               {
                 "name": "FC Schalke 04",
-                "oddsDecimal": 3.088,
-                "impliedProbability": 0.3238
+                "oddsDecimal": 3.073,
+                "impliedProbability": 0.3254
               },
               {
                 "name": "SC Paderborn",
-                "oddsDecimal": 2.5025,
-                "impliedProbability": 0.3996
+                "oddsDecimal": 2.4841,
+                "impliedProbability": 0.4026
               },
               {
                 "name": "Draw",
-                "oddsDecimal": 3.6158,
-                "impliedProbability": 0.2766
+                "oddsDecimal": 3.6761,
+                "impliedProbability": 0.272
               }
             ],
             "bookmakerCount": 21
@@ -17164,18 +17164,18 @@
             "outcomes": [
               {
                 "name": "FSV Mainz 05",
-                "oddsDecimal": 1.6824,
-                "impliedProbability": 0.5944
+                "oddsDecimal": 1.5896,
+                "impliedProbability": 0.6291
               },
               {
                 "name": "Union Berlin",
-                "oddsDecimal": 5.3753,
-                "impliedProbability": 0.186
+                "oddsDecimal": 6.0495,
+                "impliedProbability": 0.1653
               },
               {
                 "name": "Draw",
-                "oddsDecimal": 4.5539,
-                "impliedProbability": 0.2196
+                "oddsDecimal": 4.8634,
+                "impliedProbability": 0.2056
               }
             ],
             "bookmakerCount": 21
@@ -17190,18 +17190,18 @@
             "outcomes": [
               {
                 "name": "Eintracht Frankfurt",
-                "oddsDecimal": 4.1476,
-                "impliedProbability": 0.2411
+                "oddsDecimal": 4.3174,
+                "impliedProbability": 0.2316
               },
               {
                 "name": "VfB Stuttgart",
-                "oddsDecimal": 1.8504,
-                "impliedProbability": 0.5404
+                "oddsDecimal": 1.7747,
+                "impliedProbability": 0.5635
               },
               {
                 "name": "Draw",
-                "oddsDecimal": 4.5774,
-                "impliedProbability": 0.2185
+                "oddsDecimal": 4.8802,
+                "impliedProbability": 0.2049
               }
             ],
             "bookmakerCount": 21
@@ -17290,78 +17290,78 @@
             "teamId": 5,
             "teamName": "FC Bayern München",
             "matches": 2,
-            "expectedPoints": 5.1345,
-            "expectedPpg": 2.5673
+            "expectedPoints": 5.2647,
+            "expectedPpg": 2.6323
           },
           {
             "teamId": 12,
             "teamName": "SV Werder Bremen",
             "matches": 2,
-            "expectedPoints": 3.7531,
-            "expectedPpg": 1.8766
+            "expectedPoints": 3.7542,
+            "expectedPpg": 1.8771
           },
           {
             "teamId": 10,
             "teamName": "VfB Stuttgart",
             "matches": 2,
-            "expectedPoints": 3.6403,
-            "expectedPpg": 1.8202
+            "expectedPoints": 3.6949,
+            "expectedPpg": 1.8475
           },
           {
             "teamId": 3,
             "teamName": "Bayer 04 Leverkusen",
             "matches": 2,
-            "expectedPoints": 3.5627,
-            "expectedPpg": 1.7814
-          },
-          {
-            "teamId": 4,
-            "teamName": "Borussia Dortmund",
-            "matches": 2,
-            "expectedPoints": 3.544,
-            "expectedPpg": 1.772
+            "expectedPoints": 3.5631,
+            "expectedPpg": 1.7816
           },
           {
             "teamId": 15,
             "teamName": "1. FSV Mainz 05",
             "matches": 2,
-            "expectedPoints": 3.4561,
-            "expectedPpg": 1.7281
+            "expectedPoints": 3.5462,
+            "expectedPpg": 1.7731
+          },
+          {
+            "teamId": 4,
+            "teamName": "Borussia Dortmund",
+            "matches": 2,
+            "expectedPoints": 3.5447,
+            "expectedPpg": 1.7724
           },
           {
             "teamId": 721,
             "teamName": "RB Leipzig",
             "matches": 2,
-            "expectedPoints": 3.4225,
-            "expectedPpg": 1.7113
+            "expectedPoints": 3.4224,
+            "expectedPpg": 1.7112
           },
           {
             "teamId": 2,
             "teamName": "TSG 1899 Hoffenheim",
             "matches": 2,
-            "expectedPoints": 3.2029,
-            "expectedPpg": 1.6014
+            "expectedPoints": 3.2022,
+            "expectedPpg": 1.6011
           },
           {
             "teamId": 17,
             "teamName": "SC Freiburg",
             "matches": 2,
-            "expectedPoints": 3.0141,
-            "expectedPpg": 1.5071
+            "expectedPoints": 3.014,
+            "expectedPpg": 1.507
           },
           {
             "teamId": 19,
             "teamName": "Eintracht Frankfurt",
             "matches": 2,
-            "expectedPoints": 2.4055,
-            "expectedPpg": 1.2028
+            "expectedPoints": 2.3636,
+            "expectedPpg": 1.1818
           },
           {
             "teamId": 6,
             "teamName": "FC Schalke 04",
             "matches": 2,
-            "expectedPoints": 2.2143,
-            "expectedPpg": 1.1072
+            "expectedPoints": 2.2167,
+            "expectedPpg": 1.1084
           },
           {
             "teamId": 16,
@@ -17374,47 +17374,47 @@
             "teamId": 1,
             "teamName": "1. FC Köln",
             "matches": 2,
-            "expectedPoints": 1.9077,
-            "expectedPpg": 0.9539
+            "expectedPoints": 1.9082,
+            "expectedPpg": 0.9541
           },
           {
             "teamId": 18,
             "teamName": "Borussia Mönchengladbach",
             "matches": 2,
-            "expectedPoints": 1.7635,
-            "expectedPpg": 0.8818
+            "expectedPoints": 1.7614,
+            "expectedPpg": 0.8807
           },
           {
             "teamId": 7,
             "teamName": "Hamburger SV",
             "matches": 2,
-            "expectedPoints": 1.2802,
-            "expectedPpg": 0.6401
+            "expectedPoints": 1.1742,
+            "expectedPpg": 0.5871
           },
           {
             "teamId": 719,
             "teamName": "SV 07 Elversberg",
             "matches": 2,
-            "expectedPoints": 0.4944,
-            "expectedPpg": 0.2472
-          },
-          {
-            "teamId": 28,
-            "teamName": "1. FC Union Berlin",
-            "matches": 2,
-            "expectedPoints": 0.4311,
-            "expectedPpg": 0.2156
+            "expectedPoints": 0.4938,
+            "expectedPpg": 0.2469
           },
           {
             "teamId": 29,
             "teamName": "SC Paderborn 07",
             "matches": 2,
-            "expectedPoints": 0.4246,
-            "expectedPpg": 0.2123
+            "expectedPoints": 0.4201,
+            "expectedPpg": 0.2101
+          },
+          {
+            "teamId": 28,
+            "teamName": "1. FC Union Berlin",
+            "matches": 2,
+            "expectedPoints": 0.417,
+            "expectedPpg": 0.2085
           }
         ],
         "dataQuality": {
-          "bookmakerCount": 516,
+          "bookmakerCount": 522,
           "matchedOutcomeCount": 54,
           "unmatchedOutcomeCount": 0,
           "coverageRatio": 0.08,
@@ -22910,12 +22910,12 @@
         "warnings": [
           "Odds unavailable: The Odds API soccer_italy_serie_a returned 422"
         ],
-        "standingsUpdatedAt": "2026-11-14T23:55:10.154Z",
-        "matchesUpdatedAt": "2026-11-14T23:55:10.154Z"
+        "standingsUpdatedAt": "2026-11-15T09:26:49.922Z",
+        "matchesUpdatedAt": "2026-11-15T09:26:49.922Z"
       },
       "matchOdds": {
         "leagueId": "seriea",
-        "fetchedAt": "2026-11-14T23:56:24.122Z",
+        "fetchedAt": "2026-11-15T09:28:01.158Z",
         "source": "the-odds-api",
         "matches": [
           {
@@ -22928,21 +22928,21 @@
             "outcomes": [
               {
                 "name": "Cagliari",
-                "oddsDecimal": 9.4955,
+                "oddsDecimal": 9.5001,
                 "impliedProbability": 0.1053
               },
               {
                 "name": "Como",
-                "oddsDecimal": 1.3836,
-                "impliedProbability": 0.7228
+                "oddsDecimal": 1.3832,
+                "impliedProbability": 0.723
               },
               {
                 "name": "Draw",
-                "oddsDecimal": 5.8163,
-                "impliedProbability": 0.1719
+                "oddsDecimal": 5.8224,
+                "impliedProbability": 0.1718
               }
             ],
-            "bookmakerCount": 38
+            "bookmakerCount": 39
           },
           {
             "matchId": 558528,
@@ -22954,21 +22954,21 @@
             "outcomes": [
               {
                 "name": "Lazio",
-                "oddsDecimal": 1.4393,
-                "impliedProbability": 0.6948
+                "oddsDecimal": 1.4394,
+                "impliedProbability": 0.6947
               },
               {
                 "name": "Lecce",
-                "oddsDecimal": 8.3577,
-                "impliedProbability": 0.1196
+                "oddsDecimal": 8.3571,
+                "impliedProbability": 0.1197
               },
               {
                 "name": "Draw",
-                "oddsDecimal": 5.389,
+                "oddsDecimal": 5.3872,
                 "impliedProbability": 0.1856
               }
             ],
-            "bookmakerCount": 38
+            "bookmakerCount": 39
           },
           {
             "matchId": 558526,
@@ -22980,21 +22980,21 @@
             "outcomes": [
               {
                 "name": "AS Roma",
-                "oddsDecimal": 1.3731,
-                "impliedProbability": 0.7283
+                "oddsDecimal": 1.3718,
+                "impliedProbability": 0.7289
               },
               {
                 "name": "Parma",
-                "oddsDecimal": 9.909,
-                "impliedProbability": 0.1009
+                "oddsDecimal": 9.9338,
+                "impliedProbability": 0.1007
               },
               {
                 "name": "Draw",
-                "oddsDecimal": 5.8548,
-                "impliedProbability": 0.1708
+                "oddsDecimal": 5.8691,
+                "impliedProbability": 0.1704
               }
             ],
-            "bookmakerCount": 38
+            "bookmakerCount": 39
           },
           {
             "matchId": 558527,
@@ -23006,21 +23006,21 @@
             "outcomes": [
               {
                 "name": "Napoli",
-                "oddsDecimal": 1.5605,
-                "impliedProbability": 0.6408
+                "oddsDecimal": 1.5599,
+                "impliedProbability": 0.6411
               },
               {
                 "name": "Torino",
-                "oddsDecimal": 6.7061,
-                "impliedProbability": 0.1491
+                "oddsDecimal": 6.7131,
+                "impliedProbability": 0.149
               },
               {
                 "name": "Draw",
-                "oddsDecimal": 4.7604,
-                "impliedProbability": 0.2101
+                "oddsDecimal": 4.7629,
+                "impliedProbability": 0.21
               }
             ],
-            "bookmakerCount": 37
+            "bookmakerCount": 39
           },
           {
             "matchId": 558521,
@@ -23032,18 +23032,18 @@
             "outcomes": [
               {
                 "name": "Juventus",
-                "oddsDecimal": 1.4327,
-                "impliedProbability": 0.698
+                "oddsDecimal": 1.434,
+                "impliedProbability": 0.6973
               },
               {
                 "name": "Venezia",
-                "oddsDecimal": 8.5224,
-                "impliedProbability": 0.1173
+                "oddsDecimal": 8.5129,
+                "impliedProbability": 0.1175
               },
               {
                 "name": "Draw",
-                "oddsDecimal": 5.4151,
-                "impliedProbability": 0.1847
+                "oddsDecimal": 5.4001,
+                "impliedProbability": 0.1852
               }
             ],
             "bookmakerCount": 37
@@ -23058,18 +23058,18 @@
             "outcomes": [
               {
                 "name": "Bologna",
-                "oddsDecimal": 1.8366,
+                "oddsDecimal": 1.8365,
                 "impliedProbability": 0.5445
               },
               {
                 "name": "Udinese",
-                "oddsDecimal": 4.9194,
-                "impliedProbability": 0.2033
+                "oddsDecimal": 4.9165,
+                "impliedProbability": 0.2034
               },
               {
                 "name": "Draw",
-                "oddsDecimal": 3.9645,
-                "impliedProbability": 0.2522
+                "oddsDecimal": 3.967,
+                "impliedProbability": 0.2521
               }
             ],
             "bookmakerCount": 37
@@ -23084,18 +23084,18 @@
             "outcomes": [
               {
                 "name": "Genoa",
-                "oddsDecimal": 2.8187,
-                "impliedProbability": 0.3548
+                "oddsDecimal": 2.7947,
+                "impliedProbability": 0.3578
               },
               {
                 "name": "Sassuolo",
-                "oddsDecimal": 2.755,
-                "impliedProbability": 0.363
+                "oddsDecimal": 2.7732,
+                "impliedProbability": 0.3606
               },
               {
                 "name": "Draw",
-                "oddsDecimal": 3.5429,
-                "impliedProbability": 0.2823
+                "oddsDecimal": 3.5512,
+                "impliedProbability": 0.2816
               }
             ],
             "bookmakerCount": 37
@@ -23162,18 +23162,18 @@
             "outcomes": [
               {
                 "name": "Fiorentina",
-                "oddsDecimal": 2.0814,
-                "impliedProbability": 0.4804
+                "oddsDecimal": 2.0703,
+                "impliedProbability": 0.483
               },
               {
                 "name": "Monza",
-                "oddsDecimal": 3.7261,
-                "impliedProbability": 0.2684
+                "oddsDecimal": 3.7479,
+                "impliedProbability": 0.2668
               },
               {
                 "name": "Draw",
-                "oddsDecimal": 3.981,
-                "impliedProbability": 0.2512
+                "oddsDecimal": 3.9974,
+                "impliedProbability": 0.2502
               }
             ],
             "bookmakerCount": 36
@@ -23188,18 +23188,18 @@
             "outcomes": [
               {
                 "name": "Bologna",
-                "oddsDecimal": 2.1082,
-                "impliedProbability": 0.4743
+                "oddsDecimal": 2.1065,
+                "impliedProbability": 0.4747
               },
               {
                 "name": "Venezia",
-                "oddsDecimal": 3.7865,
-                "impliedProbability": 0.2641
+                "oddsDecimal": 3.7954,
+                "impliedProbability": 0.2635
               },
               {
                 "name": "Draw",
-                "oddsDecimal": 3.8232,
-                "impliedProbability": 0.2616
+                "oddsDecimal": 3.8195,
+                "impliedProbability": 0.2618
               }
             ],
             "bookmakerCount": 27
@@ -23214,21 +23214,21 @@
             "outcomes": [
               {
                 "name": "Frosinone",
-                "oddsDecimal": 1.5918,
-                "impliedProbability": 0.6282
+                "oddsDecimal": 1.5887,
+                "impliedProbability": 0.6295
               },
               {
                 "name": "Parma",
-                "oddsDecimal": 5.9488,
-                "impliedProbability": 0.1681
+                "oddsDecimal": 5.9083,
+                "impliedProbability": 0.1693
               },
               {
                 "name": "Draw",
-                "oddsDecimal": 4.91,
-                "impliedProbability": 0.2037
+                "oddsDecimal": 4.9681,
+                "impliedProbability": 0.2013
               }
             ],
-            "bookmakerCount": 21
+            "bookmakerCount": 27
           },
           {
             "matchId": 558514,
@@ -23240,21 +23240,21 @@
             "outcomes": [
               {
                 "name": "Lazio",
-                "oddsDecimal": 2.197,
-                "impliedProbability": 0.4552
+                "oddsDecimal": 2.1972,
+                "impliedProbability": 0.4551
               },
               {
                 "name": "Torino",
-                "oddsDecimal": 3.6503,
-                "impliedProbability": 0.2739
+                "oddsDecimal": 3.6494,
+                "impliedProbability": 0.274
               },
               {
                 "name": "Draw",
-                "oddsDecimal": 3.6917,
+                "oddsDecimal": 3.6919,
                 "impliedProbability": 0.2709
               }
             ],
-            "bookmakerCount": 21
+            "bookmakerCount": 23
           },
           {
             "matchId": 558518,
@@ -23444,8 +23444,8 @@
             "teamId": 100,
             "teamName": "AS Roma",
             "matches": 2,
-            "expectedPoints": 4.7741,
-            "expectedPpg": 2.387
+            "expectedPoints": 4.7755,
+            "expectedPpg": 2.3877
           },
           {
             "teamId": 108,
@@ -23465,22 +23465,22 @@
             "teamId": 7397,
             "teamName": "Como 1907",
             "matches": 2,
-            "expectedPoints": 3.8757,
-            "expectedPpg": 1.9379
+            "expectedPoints": 3.8762,
+            "expectedPpg": 1.9381
           },
           {
             "teamId": 109,
             "teamName": "Juventus FC",
             "matches": 2,
-            "expectedPoints": 3.4772,
-            "expectedPpg": 1.7386
+            "expectedPoints": 3.4756,
+            "expectedPpg": 1.7378
           },
           {
             "teamId": 470,
             "teamName": "Frosinone Calcio",
             "matches": 2,
-            "expectedPoints": 2.8426,
-            "expectedPpg": 1.4213
+            "expectedPoints": 2.8441,
+            "expectedPpg": 1.4221
           },
           {
             "teamId": 102,
@@ -23493,50 +23493,50 @@
             "teamId": 115,
             "teamName": "Udinese Calcio",
             "matches": 2,
-            "expectedPoints": 1.9976,
-            "expectedPpg": 0.9988
+            "expectedPoints": 1.9978,
+            "expectedPpg": 0.9989
           },
           {
             "teamId": 586,
             "teamName": "Torino FC",
             "matches": 2,
-            "expectedPoints": 1.75,
-            "expectedPpg": 0.875
+            "expectedPoints": 1.7499,
+            "expectedPpg": 0.8749
           },
           {
             "teamId": 454,
             "teamName": "Venezia FC",
             "matches": 2,
-            "expectedPoints": 1.5905,
-            "expectedPpg": 0.7953
+            "expectedPoints": 1.59,
+            "expectedPpg": 0.795
           },
           {
             "teamId": 104,
             "teamName": "Cagliari Calcio",
             "matches": 2,
-            "expectedPoints": 1.3519,
-            "expectedPpg": 0.676
+            "expectedPoints": 1.3518,
+            "expectedPpg": 0.6759
           },
           {
             "teamId": 103,
             "teamName": "Bologna FC 1909",
             "matches": 2,
-            "expectedPoints": 0.5138,
-            "expectedPpg": 0.2569
+            "expectedPoints": 0.5139,
+            "expectedPpg": 0.257
           },
           {
             "teamId": 471,
             "teamName": "US Sassuolo Calcio",
             "matches": 2,
-            "expectedPoints": 0.5134,
-            "expectedPpg": 0.2567
+            "expectedPoints": 0.5127,
+            "expectedPpg": 0.2564
           },
           {
             "teamId": 99,
             "teamName": "ACF Fiorentina",
             "matches": 2,
-            "expectedPoints": 0.5125,
-            "expectedPpg": 0.2563
+            "expectedPoints": 0.5115,
+            "expectedPpg": 0.2558
           },
           {
             "teamId": 110,
@@ -23549,14 +23549,14 @@
             "teamId": 107,
             "teamName": "Genoa CFC",
             "matches": 2,
-            "expectedPoints": 0.4453,
-            "expectedPpg": 0.2227
+            "expectedPoints": 0.4446,
+            "expectedPpg": 0.2223
           },
           {
             "teamId": 113,
             "teamName": "SSC Napoli",
             "matches": 2,
-            "expectedPoints": 0.4412,
+            "expectedPoints": 0.4411,
             "expectedPpg": 0.2206
           },
           {
@@ -23570,19 +23570,19 @@
             "teamId": 5911,
             "teamName": "AC Monza",
             "matches": 2,
-            "expectedPoints": 0.4016,
-            "expectedPpg": 0.2008
+            "expectedPoints": 0.4006,
+            "expectedPpg": 0.2003
           },
           {
             "teamId": 112,
             "teamName": "Parma Calcio 1913",
             "matches": 2,
-            "expectedPoints": 0.3745,
-            "expectedPpg": 0.1873
+            "expectedPoints": 0.3717,
+            "expectedPpg": 0.1859
           }
         ],
         "dataQuality": {
-          "bookmakerCount": 554,
+          "bookmakerCount": 567,
           "matchedOutcomeCount": 60,
           "unmatchedOutcomeCount": 0,
           "coverageRatio": 0.0741,
@@ -28116,12 +28116,12 @@
         "warnings": [
           "Odds unavailable: The Odds API soccer_france_ligue_one returned 422"
         ],
-        "standingsUpdatedAt": "2026-11-14T23:55:10.154Z",
-        "matchesUpdatedAt": "2026-11-14T23:55:10.154Z"
+        "standingsUpdatedAt": "2026-11-15T09:26:49.922Z",
+        "matchesUpdatedAt": "2026-11-15T09:26:49.922Z"
       },
       "matchOdds": {
         "leagueId": "ligue1",
-        "fetchedAt": "2026-11-14T23:56:25.333Z",
+        "fetchedAt": "2026-11-15T09:28:02.213Z",
         "source": "the-odds-api",
         "matches": [
           {
@@ -28160,21 +28160,21 @@
             "outcomes": [
               {
                 "name": "Nice",
-                "oddsDecimal": 6.2832,
-                "impliedProbability": 0.1592
+                "oddsDecimal": 6.3074,
+                "impliedProbability": 0.1585
               },
               {
                 "name": "Paris Saint Germain",
-                "oddsDecimal": 1.5352,
-                "impliedProbability": 0.6514
+                "oddsDecimal": 1.534,
+                "impliedProbability": 0.6519
               },
               {
                 "name": "Draw",
-                "oddsDecimal": 5.2779,
-                "impliedProbability": 0.1895
+                "oddsDecimal": 5.275,
+                "impliedProbability": 0.1896
               }
             ],
-            "bookmakerCount": 37
+            "bookmakerCount": 39
           },
           {
             "matchId": 559621,
@@ -28186,21 +28186,21 @@
             "outcomes": [
               {
                 "name": "AS Monaco",
-                "oddsDecimal": 1.4841,
+                "oddsDecimal": 1.484,
                 "impliedProbability": 0.6738
               },
               {
                 "name": "Auxerre",
-                "oddsDecimal": 7.2649,
+                "oddsDecimal": 7.2651,
                 "impliedProbability": 0.1376
               },
               {
                 "name": "Draw",
-                "oddsDecimal": 5.3036,
-                "impliedProbability": 0.1886
+                "oddsDecimal": 5.3047,
+                "impliedProbability": 0.1885
               }
             ],
-            "bookmakerCount": 38
+            "bookmakerCount": 39
           },
           {
             "matchId": 559627,
@@ -28212,21 +28212,21 @@
             "outcomes": [
               {
                 "name": "Brest",
-                "oddsDecimal": 3.1532,
+                "oddsDecimal": 3.1531,
                 "impliedProbability": 0.3171
               },
               {
                 "name": "Strasbourg",
-                "oddsDecimal": 2.3349,
+                "oddsDecimal": 2.3348,
                 "impliedProbability": 0.4283
               },
               {
                 "name": "Draw",
-                "oddsDecimal": 3.928,
-                "impliedProbability": 0.2546
+                "oddsDecimal": 3.9285,
+                "impliedProbability": 0.2545
               }
             ],
-            "bookmakerCount": 38
+            "bookmakerCount": 39
           },
           {
             "matchId": 559624,
@@ -28238,21 +28238,21 @@
             "outcomes": [
               {
                 "name": "Lille",
-                "oddsDecimal": 2.474,
-                "impliedProbability": 0.4042
+                "oddsDecimal": 2.4736,
+                "impliedProbability": 0.4043
               },
               {
                 "name": "Lyon",
-                "oddsDecimal": 3.1983,
+                "oddsDecimal": 3.1978,
                 "impliedProbability": 0.3127
               },
               {
                 "name": "Draw",
-                "oddsDecimal": 3.5319,
-                "impliedProbability": 0.2831
+                "oddsDecimal": 3.5334,
+                "impliedProbability": 0.283
               }
             ],
-            "bookmakerCount": 37
+            "bookmakerCount": 38
           },
           {
             "matchId": 559623,
@@ -28264,21 +28264,21 @@
             "outcomes": [
               {
                 "name": "RC Lens",
-                "oddsDecimal": 1.9408,
-                "impliedProbability": 0.5153
+                "oddsDecimal": 1.9376,
+                "impliedProbability": 0.5161
               },
               {
                 "name": "Toulouse",
-                "oddsDecimal": 4.114,
-                "impliedProbability": 0.2431
+                "oddsDecimal": 4.13,
+                "impliedProbability": 0.2421
               },
               {
                 "name": "Draw",
-                "oddsDecimal": 4.1379,
-                "impliedProbability": 0.2417
+                "oddsDecimal": 4.1362,
+                "impliedProbability": 0.2418
               }
             ],
-            "bookmakerCount": 38
+            "bookmakerCount": 39
           },
           {
             "matchId": 559625,
@@ -28290,18 +28290,18 @@
             "outcomes": [
               {
                 "name": "Angers",
-                "oddsDecimal": 8.4386,
-                "impliedProbability": 0.1185
+                "oddsDecimal": 8.5065,
+                "impliedProbability": 0.1176
               },
               {
                 "name": "Paris FC",
-                "oddsDecimal": 1.4409,
-                "impliedProbability": 0.694
+                "oddsDecimal": 1.4377,
+                "impliedProbability": 0.6955
               },
               {
                 "name": "Draw",
-                "oddsDecimal": 5.334,
-                "impliedProbability": 0.1875
+                "oddsDecimal": 5.3504,
+                "impliedProbability": 0.1869
               }
             ],
             "bookmakerCount": 38
@@ -28368,18 +28368,18 @@
             "outcomes": [
               {
                 "name": "Brest",
-                "oddsDecimal": 3.2798,
-                "impliedProbability": 0.3049
+                "oddsDecimal": 3.2821,
+                "impliedProbability": 0.3047
               },
               {
                 "name": "Paris FC",
-                "oddsDecimal": 2.3675,
-                "impliedProbability": 0.4224
+                "oddsDecimal": 2.3709,
+                "impliedProbability": 0.4218
               },
               {
                 "name": "Draw",
-                "oddsDecimal": 3.6669,
-                "impliedProbability": 0.2727
+                "oddsDecimal": 3.6558,
+                "impliedProbability": 0.2735
               }
             ],
             "bookmakerCount": 14
@@ -28394,21 +28394,21 @@
             "outcomes": [
               {
                 "name": "Angers",
-                "oddsDecimal": 4.4689,
-                "impliedProbability": 0.2238
+                "oddsDecimal": 4.4817,
+                "impliedProbability": 0.2231
               },
               {
                 "name": "RC Lens",
-                "oddsDecimal": 1.8363,
+                "oddsDecimal": 1.8362,
                 "impliedProbability": 0.5446
               },
               {
                 "name": "Draw",
-                "oddsDecimal": 4.3169,
-                "impliedProbability": 0.2316
+                "oddsDecimal": 4.3054,
+                "impliedProbability": 0.2323
               }
             ],
-            "bookmakerCount": 14
+            "bookmakerCount": 18
           },
           {
             "matchId": 559613,
@@ -28446,21 +28446,21 @@
             "outcomes": [
               {
                 "name": "Le Mans FC",
-                "oddsDecimal": 4.305,
-                "impliedProbability": 0.2323
+                "oddsDecimal": 4.0701,
+                "impliedProbability": 0.2457
               },
               {
                 "name": "Lille",
-                "oddsDecimal": 1.9818,
-                "impliedProbability": 0.5046
+                "oddsDecimal": 2.0692,
+                "impliedProbability": 0.4833
               },
               {
                 "name": "Draw",
-                "oddsDecimal": 3.8004,
-                "impliedProbability": 0.2631
+                "oddsDecimal": 3.6896,
+                "impliedProbability": 0.271
               }
             ],
-            "bookmakerCount": 13
+            "bookmakerCount": 17
           },
           {
             "matchId": 559614,
@@ -28472,17 +28472,17 @@
             "outcomes": [
               {
                 "name": "Lorient",
-                "oddsDecimal": 11.3903,
-                "impliedProbability": 0.0878
+                "oddsDecimal": 11.2249,
+                "impliedProbability": 0.0891
               },
               {
                 "name": "Paris Saint Germain",
-                "oddsDecimal": 1.3041,
-                "impliedProbability": 0.7668
+                "oddsDecimal": 1.3062,
+                "impliedProbability": 0.7656
               },
               {
                 "name": "Draw",
-                "oddsDecimal": 6.8774,
+                "oddsDecimal": 6.8798,
                 "impliedProbability": 0.1454
               }
             ],
@@ -28498,18 +28498,18 @@
             "outcomes": [
               {
                 "name": "Nice",
-                "oddsDecimal": 1.7989,
-                "impliedProbability": 0.5559
+                "oddsDecimal": 1.7724,
+                "impliedProbability": 0.5642
               },
               {
                 "name": "Troyes",
-                "oddsDecimal": 4.8199,
-                "impliedProbability": 0.2075
+                "oddsDecimal": 4.9502,
+                "impliedProbability": 0.202
               },
               {
                 "name": "Draw",
-                "oddsDecimal": 4.226,
-                "impliedProbability": 0.2366
+                "oddsDecimal": 4.2773,
+                "impliedProbability": 0.2338
               }
             ],
             "bookmakerCount": 18
@@ -28598,21 +28598,21 @@
             "teamId": 524,
             "teamName": "Paris Saint-Germain FC",
             "matches": 2,
-            "expectedPoints": 4.5895,
-            "expectedPpg": 2.2948
+            "expectedPoints": 4.5875,
+            "expectedPpg": 2.2938
           },
           {
             "teamId": 1045,
             "teamName": "Paris FC",
             "matches": 2,
-            "expectedPoints": 3.8094,
-            "expectedPpg": 1.9047
+            "expectedPoints": 3.8123,
+            "expectedPpg": 1.9062
           },
           {
             "teamId": 548,
             "teamName": "AS Monaco FC",
             "matches": 2,
-            "expectedPoints": 3.4212,
+            "expectedPoints": 3.4211,
             "expectedPpg": 1.7106
           },
           {
@@ -28626,50 +28626,50 @@
             "teamId": 523,
             "teamName": "Olympique Lyonnais",
             "matches": 2,
-            "expectedPoints": 2.7456,
+            "expectedPoints": 2.7455,
             "expectedPpg": 1.3728
           },
           {
             "teamId": 511,
             "teamName": "Toulouse FC",
             "matches": 2,
-            "expectedPoints": 2.3021,
-            "expectedPpg": 1.1511
+            "expectedPoints": 2.2992,
+            "expectedPpg": 1.1496
           },
           {
             "teamId": 525,
             "teamName": "FC Lorient",
             "matches": 2,
-            "expectedPoints": 1.6704,
-            "expectedPpg": 0.8352
+            "expectedPoints": 1.6743,
+            "expectedPpg": 0.8371
           },
           {
             "teamId": 535,
             "teamName": "Le Mans FC",
             "matches": 2,
-            "expectedPoints": 1.5958,
-            "expectedPpg": 0.7979
+            "expectedPoints": 1.6439,
+            "expectedPpg": 0.822
           },
           {
             "teamId": 532,
             "teamName": "Angers SCO",
             "matches": 2,
-            "expectedPoints": 1.446,
-            "expectedPpg": 0.723
+            "expectedPoints": 1.4413,
+            "expectedPpg": 0.7207
           },
           {
             "teamId": 521,
             "teamName": "Lille OSC",
             "matches": 2,
-            "expectedPoints": 0.5462,
-            "expectedPpg": 0.2731
+            "expectedPoints": 0.554,
+            "expectedPpg": 0.277
           },
           {
             "teamId": 512,
             "teamName": "Stade Brestois 29",
             "matches": 2,
-            "expectedPoints": 0.5273,
-            "expectedPpg": 0.2637
+            "expectedPoints": 0.528,
+            "expectedPpg": 0.264
           },
           {
             "teamId": 533,
@@ -28682,22 +28682,22 @@
             "teamId": 576,
             "teamName": "RC Strasbourg Alsace",
             "matches": 2,
-            "expectedPoints": 0.5063,
-            "expectedPpg": 0.2532
+            "expectedPoints": 0.5062,
+            "expectedPpg": 0.2531
           },
           {
             "teamId": 531,
             "teamName": "ES Troyes AC",
             "matches": 2,
-            "expectedPoints": 0.503,
-            "expectedPpg": 0.2515
+            "expectedPoints": 0.5002,
+            "expectedPpg": 0.2501
           },
           {
             "teamId": 546,
             "teamName": "Racing Club de Lens",
             "matches": 2,
-            "expectedPoints": 0.4733,
-            "expectedPpg": 0.2367
+            "expectedPoints": 0.4741,
+            "expectedPpg": 0.2371
           },
           {
             "teamId": 516,
@@ -28710,19 +28710,19 @@
             "teamId": 519,
             "teamName": "AJ Auxerre",
             "matches": 2,
-            "expectedPoints": 0.432,
+            "expectedPoints": 0.4319,
             "expectedPpg": 0.216
           },
           {
             "teamId": 522,
             "teamName": "OGC Nice",
             "matches": 2,
-            "expectedPoints": 0.4261,
-            "expectedPpg": 0.2131
+            "expectedPoints": 0.4234,
+            "expectedPpg": 0.2117
           }
         ],
         "dataQuality": {
-          "bookmakerCount": 460,
+          "bookmakerCount": 474,
           "matchedOutcomeCount": 54,
           "unmatchedOutcomeCount": 0,
           "coverageRatio": 0.0833,
