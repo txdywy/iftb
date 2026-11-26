@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-26T10:54:29.217Z",
+  "generatedAt": "2026-11-26T22:59:17.142Z",
   "modelVersion": "rule-softmax-v0.1.0",
   "leagues": [
     {
@@ -5488,11 +5488,11 @@
       "dataQuality": {
         "status": "ok",
         "warnings": [
-          "Match odds unavailable: The Odds API soccer_epl match odds returned 401",
-          "Odds unavailable: The Odds API soccer_epl returned 422"
+          "Odds unavailable: The Odds API soccer_epl returned 422",
+          "Match odds unavailable: The Odds API soccer_epl match odds returned 401"
         ],
-        "standingsUpdatedAt": "2026-11-26T10:54:29.217Z",
-        "matchesUpdatedAt": "2026-11-26T10:54:29.217Z"
+        "standingsUpdatedAt": "2026-11-26T22:59:17.142Z",
+        "matchesUpdatedAt": "2026-11-26T22:59:17.142Z"
       }
     },
     {
@@ -10984,8 +10984,8 @@
           "Match odds unavailable: The Odds API soccer_spain_la_liga match odds returned 401",
           "Odds unavailable: The Odds API soccer_spain_la_liga returned 422"
         ],
-        "standingsUpdatedAt": "2026-11-26T10:54:29.217Z",
-        "matchesUpdatedAt": "2026-11-26T10:54:29.217Z"
+        "standingsUpdatedAt": "2026-11-26T22:59:17.142Z",
+        "matchesUpdatedAt": "2026-11-26T22:59:17.142Z"
       }
     },
     {
@@ -15515,8 +15515,8 @@
           "Match odds unavailable: The Odds API soccer_germany_bundesliga match odds returned 401",
           "Odds unavailable: The Odds API soccer_germany_bundesliga returned 422"
         ],
-        "standingsUpdatedAt": "2026-11-26T10:54:29.217Z",
-        "matchesUpdatedAt": "2026-11-26T10:54:29.217Z"
+        "standingsUpdatedAt": "2026-11-26T22:59:17.142Z",
+        "matchesUpdatedAt": "2026-11-26T22:59:17.142Z"
       }
     },
     {
@@ -21008,8 +21008,8 @@
           "Match odds unavailable: The Odds API soccer_italy_serie_a match odds returned 401",
           "Odds unavailable: The Odds API soccer_italy_serie_a returned 422"
         ],
-        "standingsUpdatedAt": "2026-11-26T10:54:29.217Z",
-        "matchesUpdatedAt": "2026-11-26T10:54:29.217Z"
+        "standingsUpdatedAt": "2026-11-26T22:59:17.142Z",
+        "matchesUpdatedAt": "2026-11-26T22:59:17.142Z"
       }
     },
     {
@@ -21216,7 +21216,7 @@
           "teamId": 535,
           "teamName": "Le Mans FC",
           "shortName": "Le Mans",
-          "crest": "assets/teams/ligue1/535.png",
+          "crest": "assets/teams/ligue1/535.svg",
           "position": 13,
           "playedGames": 11,
           "won": 2,
@@ -25240,7 +25240,7 @@
           "teamId": 535,
           "teamName": "Le Mans FC",
           "shortName": "Le Mans",
-          "crest": "assets/teams/ligue1/535.png",
+          "crest": "assets/teams/ligue1/535.svg",
           "rawScore": -0.6979,
           "probability": 0.0254,
           "confidence": 0.7226,
@@ -25539,8 +25539,8 @@
           "Match odds unavailable: The Odds API soccer_france_ligue_one match odds returned 401",
           "Odds unavailable: The Odds API soccer_france_ligue_one returned 422"
         ],
-        "standingsUpdatedAt": "2026-11-26T10:54:29.217Z",
-        "matchesUpdatedAt": "2026-11-26T10:54:29.217Z"
+        "standingsUpdatedAt": "2026-11-26T22:59:17.142Z",
+        "matchesUpdatedAt": "2026-11-26T22:59:17.142Z"
       }
     }
   ]
